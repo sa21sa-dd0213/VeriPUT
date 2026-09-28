@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.870564075s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.788634965s)
+
+echidna: Constructor arguments are required: [("crossDomainMessenger_",address)]

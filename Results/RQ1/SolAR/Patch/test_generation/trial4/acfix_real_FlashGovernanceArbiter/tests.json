@@ -1,0 +1,170 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00020",
+        true
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "assertGovernanceApproved",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setEnforcement",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        166,
+        6237726025680827042379467037110887697911713914731427945129597997745382538642,
+        154
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "configureSecurityParameters",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setEnforcement",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00025",
+        "anonymous_hex_00017",
+        29862406220811005410867105204976490467314270273353342179102072045654107102094
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "burnFlashGovernanceAsset",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00020",
+        true
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "assertGovernanceApproved",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        94384916338455726945466924527941666849914991336038700411263930582991152769182
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "enforceToleranceInt",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "withdrawGovernanceAsset",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        76084857109119922482412741149464220901173598095322084176923988797386910865594,
+        39791318080620049476687367258092954888880707966149735519240502898065865141398
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "enforceTolerance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        false
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setEnforcement",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

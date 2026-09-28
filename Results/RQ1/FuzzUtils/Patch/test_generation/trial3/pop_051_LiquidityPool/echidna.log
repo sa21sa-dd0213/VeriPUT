@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.796196611s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.786626497s)
+
+echidna: Constructor arguments are required: [("poolId_",uint64),("trancheId_",bytes16),("asset_",address),("share_",address),("investmentManager_",address)]

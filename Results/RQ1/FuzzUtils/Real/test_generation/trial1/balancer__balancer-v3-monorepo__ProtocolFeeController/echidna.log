@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (2.791227246s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (2.799789275s)
+
+echidna: Constructor arguments are required: [("vault_",address),("initialGlobalSwapFeePercentage",uint256),("initialGlobalYieldFeePercentage",uint256)]

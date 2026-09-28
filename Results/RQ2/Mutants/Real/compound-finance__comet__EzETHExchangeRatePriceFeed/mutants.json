@@ -1,0 +1,607 @@
+{
+  "compile_failed": 13,
+  "compile_ok": 47,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "ezETHRateProvider",
+      "replacement_expression": "address(this)",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "ezETHRateProvider",
+      "replacement_expression": "address(0)",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "constructor",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "scalePrice",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "scalePrice",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "scalePrice",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "scalePrice",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "constructor",
+      "mutant_id": "m000019",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "constructor",
+      "mutant_id": "m000020",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 71
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 76,
+      "function": "constructor",
+      "mutant_id": "m000021",
+      "operator": "CCD",
+      "original_expression": "constructor(address ezETHRateProvider, uint8 decimals_, string memory description_) {\n        underlyingPriceFeed = ezETHRateProvider;\n        if (decimals_ > 18) revert BadDecimals();\n        decimals = decimals_;\n        description = description_;\n\n        uint8 ezETHRateProviderDecimals = 18;\n        \n        shouldUpscale = ezETHRateProviderDecimals < decimals_ ? true : false;\n        rescaleFactor = (shouldUpscale\n            ? signed256(10 ** (decimals_ - ezETHRateProviderDecimals))\n            : signed256(10 ** (ezETHRateProviderDecimals - decimals_))\n        );\n    }",
+      "replacement_expression": "",
+      "start_line": 63
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000022",
+      "operator": "CSC",
+      "original_expression": "decimals_ > 18",
+      "replacement_expression": "true",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000023",
+      "operator": "CSC",
+      "original_expression": "decimals_ > 18",
+      "replacement_expression": "false",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000024",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "true",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000025",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "false",
+      "start_line": 100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "scalePrice",
+      "mutant_id": "m000026",
+      "operator": "CSC",
+      "original_expression": "shouldUpscale",
+      "replacement_expression": "true",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "scalePrice",
+      "mutant_id": "m000027",
+      "operator": "CSC",
+      "original_expression": "shouldUpscale",
+      "replacement_expression": "false",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "scalePrice",
+      "mutant_id": "m000028",
+      "operator": "CSC",
+      "original_expression": "else {\n            scaledPrice = price / rescaleFactor;\n        }",
+      "replacement_expression": "",
+      "start_line": 108
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 12,
+      "function": "description",
+      "mutant_id": "m000029",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 12
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 63,
+      "function": "constructor",
+      "mutant_id": "m000030",
+      "operator": "DLR",
+      "original_expression": "string memory description_",
+      "replacement_expression": "string storage description_",
+      "start_line": 63
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000031",
+      "operator": "ECS",
+      "original_expression": "uint256(type(int256).max)",
+      "replacement_expression": "uint248(type(int256).max)",
+      "start_line": 100
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 101,
+      "function": "signed256",
+      "mutant_id": "m000032",
+      "operator": "ECS",
+      "original_expression": "int256(n)",
+      "replacement_expression": "int248(n)",
+      "start_line": 101
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000033",
+      "operator": "EHD",
+      "original_expression": "revert BadDecimals();",
+      "replacement_expression": "/* revert BadDecimals(); */",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 100,
+      "function": "signed256",
+      "mutant_id": "m000034",
+      "operator": "EHD",
+      "original_expression": "revert InvalidInt256();",
+      "replacement_expression": "/* revert InvalidInt256(); */",
+      "start_line": 100
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000035",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 96
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000036",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000037",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "stateVariable",
+      "mutant_id": "m000038",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000039",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "constructor",
+      "mutant_id": "m000040",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "constructor",
+      "mutant_id": "m000041",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 69,
+      "function": "constructor",
+      "mutant_id": "m000042",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 69
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "constructor",
+      "mutant_id": "m000043",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "constructor",
+      "mutant_id": "m000044",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 73
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000045",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "constructor",
+      "mutant_id": "m000046",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000047",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000048",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000049",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000050",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "version",
+      "mutant_id": "m000051",
+      "operator": "OLFD",
+      "original_expression": "function version() external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "latestRoundData",
+      "mutant_id": "m000052",
+      "operator": "OLFD",
+      "original_expression": "function latestRoundData()\n    external\n    view\n    returns (\n      uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound\n    );",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 120,
+      "function": "version",
+      "mutant_id": "m000053",
+      "operator": "OLFD",
+      "original_expression": "function version() external pure returns (uint256) {\n        return VERSION;\n    }",
+      "replacement_expression": "",
+      "start_line": 118
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 97,
+      "function": "latestRoundData",
+      "mutant_id": "m000054",
+      "operator": "ORFD",
+      "original_expression": "function latestRoundData() override external view returns (\n        uint80 roundId,\n        int256 answer,\n        uint256 startedAt,\n        uint256 updatedAt,\n        uint80 answeredInRound\n    ) {\n        uint256 rate = IBalancerRateProvider(underlyingPriceFeed).getRate();\n        \n        \n        return (1, scalePrice(signed256(rate)), block.timestamp, block.timestamp, 1);\n    }",
+      "replacement_expression": "",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000055",
+      "operator": "RSD",
+      "original_expression": "return (1, scalePrice(signed256(rate)), block.timestamp, block.timestamp, 1);",
+      "replacement_expression": "/* return (1, scalePrice(signed256(rate)), block.timestamp, block.timestamp, 1); */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "signed256",
+      "mutant_id": "m000056",
+      "operator": "RSD",
+      "original_expression": "return int256(n);",
+      "replacement_expression": "int256(n);",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "scalePrice",
+      "mutant_id": "m000057",
+      "operator": "RSD",
+      "original_expression": "return scaledPrice;",
+      "replacement_expression": "/* return scaledPrice; */",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "version",
+      "mutant_id": "m000058",
+      "operator": "RSD",
+      "original_expression": "return VERSION;",
+      "replacement_expression": "/* return VERSION; */",
+      "start_line": 119
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 24,
+      "function": "latestRoundData",
+      "mutant_id": "m000059",
+      "operator": "RVS",
+      "original_expression": "uint80 roundId,\n      int256 answer,\n      uint256 startedAt,\n      uint256 updatedAt,\n      uint80 answeredInRound",
+      "replacement_expression": "uint80 answeredInRound,\n      int256 answer,\n      uint80 roundId,\n      uint256 startedAt,\n      uint256 updatedAt",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "latestRoundData",
+      "mutant_id": "m000060",
+      "operator": "RVS",
+      "original_expression": "1, scalePrice(signed256(rate)), block.timestamp, block.timestamp, 1",
+      "replacement_expression": "1, scalePrice(signed256(rate)), block.timestamp, block.timestamp, 1",
+      "start_line": 96
+    }
+  ],
+  "subject_id": "compound-finance__comet__EzETHExchangeRatePriceFeed"
+}

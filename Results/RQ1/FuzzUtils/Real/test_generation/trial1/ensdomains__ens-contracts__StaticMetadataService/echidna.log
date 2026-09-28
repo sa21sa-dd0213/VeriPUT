@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.507832086s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.774018103s)
+
+echidna: Constructor arguments are required: [("_metaDataUri",string)]

@@ -1,0 +1,2627 @@
+{
+  "compile_failed": 58,
+  "compile_ok": 204,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 438,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " ^= ",
+      "replacement_expression": " = ",
+      "start_line": 438
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 456,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " ^= ",
+      "replacement_expression": " = ",
+      "start_line": 456
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "_requireFallback",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 163,
+      "function": "modifier:onlySelf",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 163
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 163,
+      "function": "modifier:onlySelf",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 163
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 163,
+      "function": "modifier:onlySelf",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 163
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "fallback",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "fallback",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "fallback",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "fallback",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "fallback",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 341,
+      "function": "isValidSignature",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 341
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 441,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 441
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 454
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 454
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 459,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 459
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 474,
+      "function": "supportsInterface",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "supportsInterface",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "supportsInterface",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 471
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 471,
+      "function": "supportsInterface",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 471
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 471,
+      "function": "supportsInterface",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 471
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 471,
+      "function": "supportsInterface",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 471
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "supportsInterface",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "supportsInterface",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "supportsInterface",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "_supportsInterface",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 548
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 548,
+      "function": "_supportsInterface",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 547
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 547,
+      "function": "_supportsInterface",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "_supportsInterface",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 545
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 545,
+      "function": "_supportsInterface",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "_supportsInterface",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "_supportsInterface",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "_supportsInterface",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 545,
+      "function": "_supportsInterface",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 545
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 545,
+      "function": "_supportsInterface",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 545
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 545,
+      "function": "_supportsInterface",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 545
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "_supportsInterface",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "_supportsInterface",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "_supportsInterface",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 547,
+      "function": "_supportsInterface",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 547
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 547,
+      "function": "_supportsInterface",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 547
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 547,
+      "function": "_supportsInterface",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 547
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 548,
+      "function": "_supportsInterface",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 548
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 548,
+      "function": "_supportsInterface",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 548
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 548,
+      "function": "_supportsInterface",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 548
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "_supportsInterface",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "_supportsInterface",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "_supportsInterface",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " & ",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " ^ ",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " & ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " ^ ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " & ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " ^ ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 442,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000084",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 442
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 460,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000085",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 460
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000086",
+      "operator": "CSC",
+      "original_expression": "address(newHandler) == address(0)",
+      "replacement_expression": "true",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "address(newHandler) == address(0)",
+      "replacement_expression": "false",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "fallback",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "isStatic",
+      "replacement_expression": "true",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "fallback",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "isStatic",
+      "replacement_expression": "false",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "fallback",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "else {\n            result = IFallbackMethod(handler).handle(safe, sender, 0, msg.data[:msg.data.length - 20]);\n        }",
+      "replacement_expression": "",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "signature.length >= 4",
+      "replacement_expression": "true",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "signature.length >= 4",
+      "replacement_expression": "false",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "sigSelector == SAFE_SIGNATURE_MAGIC_VALUE && signature.length >= 68",
+      "replacement_expression": "true",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "sigSelector == SAFE_SIGNATURE_MAGIC_VALUE && signature.length >= 68",
+      "replacement_expression": "false",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 341,
+      "function": "isValidSignature",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "address(verifier) != address(0)",
+      "replacement_expression": "true",
+      "start_line": 341
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 341,
+      "function": "isValidSignature",
+      "mutant_id": "m000096",
+      "operator": "CSC",
+      "original_expression": "address(verifier) != address(0)",
+      "replacement_expression": "false",
+      "start_line": 341
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000097",
+      "operator": "CSC",
+      "original_expression": "keccak256(EIP712.encodeMessageData(domainSeparator, typeHash, encodeData)) == _hash",
+      "replacement_expression": "true",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000098",
+      "operator": "CSC",
+      "original_expression": "keccak256(EIP712.encodeMessageData(domainSeparator, typeHash, encodeData)) == _hash",
+      "replacement_expression": "false",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000099",
+      "operator": "CSC",
+      "original_expression": "signature.length == 0",
+      "replacement_expression": "true",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000100",
+      "operator": "CSC",
+      "original_expression": "signature.length == 0",
+      "replacement_expression": "false",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 376,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000101",
+      "operator": "CSC",
+      "original_expression": "else {\n            \n            safe.checkSignatures(address(0), messageHash, signature);\n        }",
+      "replacement_expression": "",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000102",
+      "operator": "CSC",
+      "original_expression": "supported != current",
+      "replacement_expression": "true",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000103",
+      "operator": "CSC",
+      "original_expression": "supported != current",
+      "replacement_expression": "false",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 418,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000104",
+      "operator": "CSC",
+      "original_expression": "supported",
+      "replacement_expression": "true",
+      "start_line": 418
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 418,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000105",
+      "operator": "CSC",
+      "original_expression": "supported",
+      "replacement_expression": "false",
+      "start_line": 418
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 422,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000106",
+      "operator": "CSC",
+      "original_expression": "else {\n                emit RemovedInterface(safe, interfaceId);\n            }",
+      "replacement_expression": "",
+      "start_line": 420
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "_requireFallback",
+      "mutant_id": "m000107",
+      "operator": "DLR",
+      "original_expression": "bytes memory storageData",
+      "replacement_expression": "bytes storage storageData",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 170,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000108",
+      "operator": "DLR",
+      "original_expression": "mapping(bytes4 => bytes32) storage safeMethod",
+      "replacement_expression": "mapping(bytes4 => bytes32) memory safeMethod",
+      "start_line": 170
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 236,
+      "function": "fallback",
+      "mutant_id": "m000109",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 236
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 342,
+      "function": "isValidSignature",
+      "mutant_id": "m000110",
+      "operator": "DLR",
+      "original_expression": "bytes memory encodeData",
+      "replacement_expression": "bytes storage encodeData",
+      "start_line": 342
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 342,
+      "function": "isValidSignature",
+      "mutant_id": "m000111",
+      "operator": "DLR",
+      "original_expression": "bytes memory payload",
+      "replacement_expression": "bytes storage payload",
+      "start_line": 342
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 363,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000112",
+      "operator": "DLR",
+      "original_expression": "bytes memory signature",
+      "replacement_expression": "bytes storage signature",
+      "start_line": 363
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 364,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000113",
+      "operator": "DLR",
+      "original_expression": "bytes memory messageData",
+      "replacement_expression": "bytes storage messageData",
+      "start_line": 364
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 414,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000114",
+      "operator": "DLR",
+      "original_expression": "mapping(bytes4 => bool) storage safeInterface",
+      "replacement_expression": "mapping(bytes4 => bool) memory safeInterface",
+      "start_line": 414
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 780,
+      "function": "getOwners",
+      "mutant_id": "m000115",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 780
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 796,
+      "function": "getStorageAt",
+      "mutant_id": "m000116",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 796
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 807,
+      "function": "simulateAndRevert",
+      "mutant_id": "m000117",
+      "operator": "DLR",
+      "original_expression": "bytes memory calldataPayload",
+      "replacement_expression": "bytes storage calldataPayload",
+      "start_line": 807
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1018,
+      "function": "execTransactionFromModule",
+      "mutant_id": "m000118",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1018
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1034,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000119",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1034
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1036,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000120",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 1036
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1053,
+      "function": "getModulesPaginated",
+      "mutant_id": "m000121",
+      "operator": "DLR",
+      "original_expression": "address[] memory array",
+      "replacement_expression": "address[] storage array",
+      "start_line": 1053
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1174,
+      "function": "execTransaction",
+      "mutant_id": "m000122",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 1174
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1186,
+      "function": "checkSignatures",
+      "mutant_id": "m000123",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 1186
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1199,
+      "function": "checkNSignatures",
+      "mutant_id": "m000124",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 1199
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1247,
+      "function": "VERSION",
+      "mutant_id": "m000125",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 1247
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1276,
+      "function": "handle",
+      "mutant_id": "m000126",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 1276
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1280,
+      "function": "handle",
+      "mutant_id": "m000127",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1314,
+      "function": "encodeMessageData",
+      "mutant_id": "m000128",
+      "operator": "DLR",
+      "original_expression": "bytes memory message",
+      "replacement_expression": "bytes storage message",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1314,
+      "function": "encodeMessageData",
+      "mutant_id": "m000129",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000130",
+      "operator": "EED",
+      "original_expression": "emit ChangedSafeMethod(safe, selector, oldMethod, newMethod);",
+      "replacement_expression": "/* emit ChangedSafeMethod(safe, selector, oldMethod, newMethod); */",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 299,
+      "function": "setDomainVerifier",
+      "mutant_id": "m000131",
+      "operator": "EED",
+      "original_expression": "emit ChangedDomainVerifier(safe, domainSeparator, oldVerifier, newVerifier);",
+      "replacement_expression": "/* emit ChangedDomainVerifier(safe, domainSeparator, oldVerifier, newVerifier); */",
+      "start_line": 299
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000132",
+      "operator": "EED",
+      "original_expression": "emit AddedInterface(safe, interfaceId);",
+      "replacement_expression": "/* emit AddedInterface(safe, interfaceId); */",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000133",
+      "operator": "EED",
+      "original_expression": "emit RemovedInterface(safe, interfaceId);",
+      "replacement_expression": "/* emit RemovedInterface(safe, interfaceId); */",
+      "start_line": 421
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "_requireFallback",
+      "mutant_id": "m000134",
+      "operator": "ECS",
+      "original_expression": "uint256(FALLBACK_HANDLER_STORAGE_SLOT)",
+      "replacement_expression": "uint248(FALLBACK_HANDLER_STORAGE_SLOT)",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 179,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000135",
+      "operator": "ECS",
+      "original_expression": "bytes32(0)",
+      "replacement_expression": "bytes31(0)",
+      "start_line": 179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 433,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000136",
+      "operator": "ECS",
+      "original_expression": "bytes4(0)",
+      "replacement_expression": "bytes3(0)",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 452,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000137",
+      "operator": "ECS",
+      "original_expression": "bytes4(0)",
+      "replacement_expression": "bytes3(0)",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000138",
+      "operator": "ECS",
+      "original_expression": "bytes32(0)",
+      "replacement_expression": "bytes31(0)",
+      "start_line": 455
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000139",
+      "operator": "ECS",
+      "original_expression": "bytes32(uint256(uint160(handler)) | (isStatic ? 0 : (1 << 248)))",
+      "replacement_expression": "bytes31(uint256(uint160(handler)) | (isStatic ? 0 : (1 << 248)))",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000140",
+      "operator": "ECS",
+      "original_expression": "uint256(uint160(handler))",
+      "replacement_expression": "uint248(uint160(handler))",
+      "start_line": 821
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000141",
+      "operator": "ECS",
+      "original_expression": "uint160(handler)",
+      "replacement_expression": "uint152(handler)",
+      "start_line": 821
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000142",
+      "operator": "ECS",
+      "original_expression": "bytes32(uint256(uint160(handler)) | (isStatic ? 0 : (1 << 248)) | (uint256(uint32(selector)) << 216))",
+      "replacement_expression": "bytes31(uint256(uint160(handler)) | (isStatic ? 0 : (1 << 248)) | (uint256(uint32(selector)) << 216))",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000143",
+      "operator": "ECS",
+      "original_expression": "uint256(uint160(handler))",
+      "replacement_expression": "uint248(uint160(handler))",
+      "start_line": 834
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000144",
+      "operator": "ECS",
+      "original_expression": "uint160(handler)",
+      "replacement_expression": "uint152(handler)",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000145",
+      "operator": "ECS",
+      "original_expression": "uint256(uint32(selector))",
+      "replacement_expression": "uint248(uint32(selector))",
+      "start_line": 834
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000146",
+      "operator": "ECS",
+      "original_expression": "uint32(selector)",
+      "replacement_expression": "uint24(selector)",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "_requireFallback",
+      "mutant_id": "m000147",
+      "operator": "EHD",
+      "original_expression": "require(fallbackHandler == address(this), \"not a fallback call\");",
+      "replacement_expression": "/* require(fallbackHandler == address(this), \"not a fallback call\"); */",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000148",
+      "operator": "EHD",
+      "original_expression": "require(msg.data.length >= 20, \"Invalid calldata length\");",
+      "replacement_expression": "/* require(msg.data.length >= 20, \"Invalid calldata length\"); */",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 163,
+      "function": "modifier:onlySelf",
+      "mutant_id": "m000149",
+      "operator": "EHD",
+      "original_expression": "require(_msgSender() == _manager(), \"only safe can call this method\");",
+      "replacement_expression": "/* require(_msgSender() == _manager(), \"only safe can call this method\"); */",
+      "start_line": 163
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000150",
+      "operator": "EHD",
+      "original_expression": "require(msg.data.length >= 24, \"invalid method selector\");",
+      "replacement_expression": "/* require(msg.data.length >= 24, \"invalid method selector\"); */",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "fallback",
+      "mutant_id": "m000151",
+      "operator": "EHD",
+      "original_expression": "require(handler != address(0), \"method handler not set\");",
+      "replacement_expression": "/* require(handler != address(0), \"method handler not set\"); */",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000152",
+      "operator": "EHD",
+      "original_expression": "require(safe.signedMessages(messageHash) != 0, \"Hash not approved\");",
+      "replacement_expression": "/* require(safe.signedMessages(messageHash) != 0, \"Hash not approved\"); */",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000153",
+      "operator": "EHD",
+      "original_expression": "require(interfaceId != 0xffffffff, \"invalid interface id\");",
+      "replacement_expression": "/* require(interfaceId != 0xffffffff, \"invalid interface id\"); */",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 441,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000154",
+      "operator": "EHD",
+      "original_expression": "require(interfaceId == _interfaceId, \"interface id mismatch\");",
+      "replacement_expression": "/* require(interfaceId == _interfaceId, \"interface id mismatch\"); */",
+      "start_line": 441
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 459,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000155",
+      "operator": "EHD",
+      "original_expression": "require(interfaceId == _interfaceId, \"interface id mismatch\");",
+      "replacement_expression": "/* require(interfaceId == _interfaceId, \"interface id mismatch\"); */",
+      "start_line": 459
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "modifier:onlyFallback",
+      "mutant_id": "m000156",
+      "operator": "FCD",
+      "original_expression": "_requireFallback();",
+      "replacement_expression": "/*_requireFallback();*/",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "setSafeMethod",
+      "mutant_id": "m000157",
+      "operator": "FCD",
+      "original_expression": "_setSafeMethod(ISafe(payable(_msgSender())), selector, newMethod);",
+      "replacement_expression": "/*_setSafeMethod(ISafe(payable(_msgSender())), selector, newMethod);*/",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 375,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000158",
+      "operator": "FCD",
+      "original_expression": "safe.checkSignatures(address(0), messageHash, signature);",
+      "replacement_expression": "/*safe.checkSignatures(address(0), messageHash, signature);*/",
+      "start_line": 375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 437,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000159",
+      "operator": "FCD",
+      "original_expression": "_setSafeMethod(safe, selector, MarshalLib.encode(isStatic, handlerAddress));",
+      "replacement_expression": "/*_setSafeMethod(safe, selector, MarshalLib.encode(isStatic, handlerAddress));*/",
+      "start_line": 437
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 442,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000160",
+      "operator": "FCD",
+      "original_expression": "setSupportedInterface(_interfaceId, true);",
+      "replacement_expression": "/*setSupportedInterface(_interfaceId, true);*/",
+      "start_line": 442
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000161",
+      "operator": "FCD",
+      "original_expression": "_setSafeMethod(safe, selectors[i], bytes32(0));",
+      "replacement_expression": "/*_setSafeMethod(safe, selectors[i], bytes32(0));*/",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 460,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000162",
+      "operator": "FCD",
+      "original_expression": "setSupportedInterface(_interfaceId, false);",
+      "replacement_expression": "/*setSupportedInterface(_interfaceId, false);*/",
+      "start_line": 460
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "_requireFallback",
+      "mutant_id": "m000163",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 107,
+      "function": "_requireFallback",
+      "mutant_id": "m000164",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000165",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "19",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "_msgSender",
+      "mutant_id": "m000166",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "21",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000167",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 174
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 179,
+      "function": "_setSafeMethod",
+      "mutant_id": "m000168",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000169",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "23",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 237,
+      "function": "fallback",
+      "mutant_id": "m000170",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "25",
+      "start_line": 237
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "fallback",
+      "mutant_id": "m000171",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "fallback",
+      "mutant_id": "m000172",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "fallback",
+      "mutant_id": "m000173",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "19",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "fallback",
+      "mutant_id": "m000174",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "21",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "fallback",
+      "mutant_id": "m000175",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "fallback",
+      "mutant_id": "m000176",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "19",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "fallback",
+      "mutant_id": "m000177",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "21",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000178",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "isValidSignature",
+      "mutant_id": "m000179",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 313
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000180",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "67",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 323,
+      "function": "isValidSignature",
+      "mutant_id": "m000181",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "69",
+      "start_line": 323
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 337,
+      "function": "isValidSignature",
+      "mutant_id": "m000182",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 337
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 337,
+      "function": "isValidSignature",
+      "mutant_id": "m000183",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 337
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 337,
+      "function": "isValidSignature",
+      "mutant_id": "m000184",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "67",
+      "start_line": 337
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 337,
+      "function": "isValidSignature",
+      "mutant_id": "m000185",
+      "operator": "ILR",
+      "original_expression": "68",
+      "replacement_expression": "69",
+      "start_line": 337
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 341,
+      "function": "isValidSignature",
+      "mutant_id": "m000186",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 341
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 342,
+      "function": "isValidSignature",
+      "mutant_id": "m000187",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 342
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 342,
+      "function": "isValidSignature",
+      "mutant_id": "m000188",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 342
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000189",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000190",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 375,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000191",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 375
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 433,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000192",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000193",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 435
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 452,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000194",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000195",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 454
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 455,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000196",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000197",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000198",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000199",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000200",
+      "operator": "ILR",
+      "original_expression": "248",
+      "replacement_expression": "247",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 821,
+      "function": "encode",
+      "mutant_id": "m000201",
+      "operator": "ILR",
+      "original_expression": "248",
+      "replacement_expression": "249",
+      "start_line": 821
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000202",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000203",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000204",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000205",
+      "operator": "ILR",
+      "original_expression": "248",
+      "replacement_expression": "247",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000206",
+      "operator": "ILR",
+      "original_expression": "248",
+      "replacement_expression": "249",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "encodeWithSelector",
+      "mutant_id": "m000207",
+      "operator": "ILR",
+      "original_expression": "216",
+      "replacement_expression": "215",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000208",
+      "operator": "LSC",
+      "original_expression": "i < len",
+      "replacement_expression": "false",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000209",
+      "operator": "LSC",
+      "original_expression": "i < len",
+      "replacement_expression": "false",
+      "start_line": 454
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 345,
+      "function": "isValidSignature",
+      "mutant_id": "m000210",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 345
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 367,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000211",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 367
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 369,
+      "function": "defaultIsValidSignature",
+      "mutant_id": "m000212",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 369
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1315,
+      "function": "encodeMessageData",
+      "mutant_id": "m000213",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 1315
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "setSafeMethod",
+      "mutant_id": "m000214",
+      "operator": "MOD",
+      "original_expression": "function setSafeMethod(bytes4 selector, bytes32 newMethod) public override onlySelf ",
+      "replacement_expression": "function setSafeMethod(bytes4 selector, bytes32 newMethod) public override  ",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "setDomainVerifier",
+      "mutant_id": "m000215",
+      "operator": "MOD",
+      "original_expression": "function setDomainVerifier(bytes32 domainSeparator, ISafeSignatureVerifier newVerifier) public override onlySelf ",
+      "replacement_expression": "function setDomainVerifier(bytes32 domainSeparator, ISafeSignatureVerifier newVerifier) public override  ",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000216",
+      "operator": "MOD",
+      "original_expression": "function setSupportedInterface(bytes4 interfaceId, bool supported) public override onlySelf ",
+      "replacement_expression": "function setSupportedInterface(bytes4 interfaceId, bool supported) public override  ",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 431,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000217",
+      "operator": "MOD",
+      "original_expression": "function addSupportedInterfaceBatch(bytes4 _interfaceId, bytes32[] calldata handlerWithSelectors) external override onlySelf ",
+      "replacement_expression": "function addSupportedInterfaceBatch(bytes4 _interfaceId, bytes32[] calldata handlerWithSelectors) external override  ",
+      "start_line": 431
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 450,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000218",
+      "operator": "MOD",
+      "original_expression": "function removeSupportedInterfaceBatch(bytes4 _interfaceId, bytes4[] calldata selectors) external override onlySelf ",
+      "replacement_expression": "function removeSupportedInterfaceBatch(bytes4 _interfaceId, bytes4[] calldata selectors) external override  ",
+      "start_line": 450
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 499,
+      "function": "onERC1155Received",
+      "mutant_id": "m000219",
+      "operator": "MOD",
+      "original_expression": "function onERC1155Received(address, address, uint256, uint256, bytes calldata) external view override onlyFallback returns (bytes4) ",
+      "replacement_expression": "function onERC1155Received(address, address, uint256, uint256, bytes calldata) external view override  returns (bytes4) ",
+      "start_line": 499
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "onERC1155BatchReceived",
+      "mutant_id": "m000220",
+      "operator": "MOD",
+      "original_expression": "function onERC1155BatchReceived(\n        address,\n        address,\n        uint256[] calldata,\n        uint256[] calldata,\n        bytes calldata\n    ) external view override onlyFallback returns (bytes4) ",
+      "replacement_expression": "function onERC1155BatchReceived(\n        address,\n        address,\n        uint256[] calldata,\n        uint256[] calldata,\n        bytes calldata\n    ) external view override  returns (bytes4) ",
+      "start_line": 508
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 523,
+      "function": "onERC721Received",
+      "mutant_id": "m000221",
+      "operator": "MOD",
+      "original_expression": "function onERC721Received(address, address, uint256, bytes calldata) external view override onlyFallback returns (bytes4) ",
+      "replacement_expression": "function onERC721Received(address, address, uint256, bytes calldata) external view override  returns (bytes4) ",
+      "start_line": 523
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 30,
+      "function": "onERC1155Received",
+      "mutant_id": "m000222",
+      "operator": "OLFD",
+      "original_expression": "function onERC1155Received(\n        address _operator,\n        address _from,\n        uint256 _id,\n        uint256 _value,\n        bytes calldata _data\n    ) external returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 24
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 51,
+      "function": "onERC1155BatchReceived",
+      "mutant_id": "m000223",
+      "operator": "OLFD",
+      "original_expression": "function onERC1155BatchReceived(\n        address _operator,\n        address _from,\n        uint256[] calldata _ids,\n        uint256[] calldata _values,\n        bytes calldata _data\n    ) external returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 45
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 75,
+      "function": "onERC721Received",
+      "mutant_id": "m000224",
+      "operator": "OLFD",
+      "original_expression": "function onERC721Received(address _operator, address _from, uint256 _tokenId, bytes calldata _data) external returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 75
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 212,
+      "function": "setSafeMethod",
+      "mutant_id": "m000225",
+      "operator": "OLFD",
+      "original_expression": "function setSafeMethod(bytes4 selector, bytes32 newMethod) external;",
+      "replacement_expression": "",
+      "start_line": 212
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 254,
+      "function": "isValidSignature",
+      "mutant_id": "m000226",
+      "operator": "OLFD",
+      "original_expression": "function isValidSignature(bytes32 hash, bytes calldata signature) external view returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 254
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 260,
+      "function": "setDomainVerifier",
+      "mutant_id": "m000227",
+      "operator": "OLFD",
+      "original_expression": "function setDomainVerifier(bytes32 domainSeparator, ISafeSignatureVerifier verifier) external;",
+      "replacement_expression": "",
+      "start_line": 260
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 386,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000228",
+      "operator": "OLFD",
+      "original_expression": "function setSupportedInterface(bytes4 interfaceId, bool supported) external;",
+      "replacement_expression": "",
+      "start_line": 386
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 388,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000229",
+      "operator": "OLFD",
+      "original_expression": "function addSupportedInterfaceBatch(bytes4 interfaceId, bytes32[] calldata handlerWithSelectors) external;",
+      "replacement_expression": "",
+      "start_line": 388
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 390,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000230",
+      "operator": "OLFD",
+      "original_expression": "function removeSupportedInterfaceBatch(bytes4 interfaceId, bytes4[] calldata selectors) external;",
+      "replacement_expression": "",
+      "start_line": 390
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "supportsInterface",
+      "mutant_id": "m000231",
+      "operator": "OLFD",
+      "original_expression": "function supportsInterface(bytes4 interfaceId) external view returns (bool) {\n        return\n            interfaceId == type(IERC165).interfaceId ||\n            interfaceId == type(IERC165Handler).interfaceId ||\n            _supportsInterface(interfaceId) ||\n            safeInterfaces[ISafe(payable(_manager()))][interfaceId];\n    }",
+      "replacement_expression": "",
+      "start_line": 469
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 484,
+      "function": "_supportsInterface",
+      "mutant_id": "m000232",
+      "operator": "OLFD",
+      "original_expression": "function _supportsInterface(bytes4 interfaceId) internal view virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 484
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 587,
+      "function": "supportsInterface",
+      "mutant_id": "m000233",
+      "operator": "OLFD",
+      "original_expression": "function supportsInterface(bytes4 interfaceId) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 587
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1276,
+      "function": "handle",
+      "mutant_id": "m000234",
+      "operator": "OLFD",
+      "original_expression": "function handle(ISafe safe, address sender, uint256 value, bytes calldata data) external returns (bytes memory result);",
+      "replacement_expression": "",
+      "start_line": 1276
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1280,
+      "function": "handle",
+      "mutant_id": "m000235",
+      "operator": "OLFD",
+      "original_expression": "function handle(ISafe safe, address sender, uint256 value, bytes calldata data) external view returns (bytes memory result);",
+      "replacement_expression": "",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 231,
+      "function": "setSafeMethod",
+      "mutant_id": "m000236",
+      "operator": "ORFD",
+      "original_expression": "function setSafeMethod(bytes4 selector, bytes32 newMethod) public override onlySelf {\n        _setSafeMethod(ISafe(payable(_msgSender())), selector, newMethod);\n    }",
+      "replacement_expression": "",
+      "start_line": 229
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 300,
+      "function": "setDomainVerifier",
+      "mutant_id": "m000237",
+      "operator": "ORFD",
+      "original_expression": "function setDomainVerifier(bytes32 domainSeparator, ISafeSignatureVerifier newVerifier) public override onlySelf {\n        ISafe safe = ISafe(payable(_msgSender()));\n        ISafeSignatureVerifier oldVerifier = domainVerifiers[safe][domainSeparator];\n        domainVerifiers[safe][domainSeparator] = newVerifier;\n        emit ChangedDomainVerifier(safe, domainSeparator, oldVerifier, newVerifier);\n    }",
+      "replacement_expression": "",
+      "start_line": 295
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 355,
+      "function": "isValidSignature",
+      "mutant_id": "m000238",
+      "operator": "ORFD",
+      "original_expression": "function isValidSignature(bytes32 _hash, bytes calldata signature) external view override returns (bytes4 magic) {\n        (ISafe safe, address sender) = _getContext();\n\n        \n        if (signature.length >= 4) {\n            bytes4 sigSelector;\n            \n            \n            assembly {\n                sigSelector := calldataload(signature.offset)\n            }\n            \n\n            \n            if (sigSelector == SAFE_SIGNATURE_MAGIC_VALUE && signature.length >= 68) {\n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                (bytes32 domainSeparator, bytes32 typeHash) = abi.decode(signature[4:68], (bytes32, bytes32));\n\n                ISafeSignatureVerifier verifier = domainVerifiers[safe][domainSeparator];\n                \n                if (address(verifier) != address(0)) {\n                    (, , bytes memory encodeData, bytes memory payload) = abi.decode(signature[4:], (bytes32, bytes32, bytes, bytes));\n\n                    \n                    if (keccak256(EIP712.encodeMessageData(domainSeparator, typeHash, encodeData)) == _hash) {\n                        \n                        return verifier.isValidSafeSignature(safe, sender, _hash, domainSeparator, typeHash, encodeData, payload);\n                    }\n                }\n            }\n        }\n\n        \n        return defaultIsValidSignature(safe, _hash, signature);\n    }",
+      "replacement_expression": "",
+      "start_line": 309
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 424,
+      "function": "setSupportedInterface",
+      "mutant_id": "m000239",
+      "operator": "ORFD",
+      "original_expression": "function setSupportedInterface(bytes4 interfaceId, bool supported) public override onlySelf {\n        ISafe safe = ISafe(payable(_manager()));\n        \n        require(interfaceId != 0xffffffff, \"invalid interface id\");\n        mapping(bytes4 => bool) storage safeInterface = safeInterfaces[safe];\n        bool current = safeInterface[interfaceId];\n        if (supported != current) {\n            safeInterface[interfaceId] = supported;\n            if (supported) {\n                emit AddedInterface(safe, interfaceId);\n            } else {\n                emit RemovedInterface(safe, interfaceId);\n            }\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 410
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 443,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000240",
+      "operator": "ORFD",
+      "original_expression": "function addSupportedInterfaceBatch(bytes4 _interfaceId, bytes32[] calldata handlerWithSelectors) external override onlySelf {\n        ISafe safe = ISafe(payable(_msgSender()));\n        bytes4 interfaceId = bytes4(0);\n        uint256 len = handlerWithSelectors.length;\n        for (uint256 i = 0; i < len; ++i) {\n            (bool isStatic, bytes4 selector, address handlerAddress) = MarshalLib.decodeWithSelector(handlerWithSelectors[i]);\n            _setSafeMethod(safe, selector, MarshalLib.encode(isStatic, handlerAddress));\n            interfaceId ^= selector;\n        }\n\n        require(interfaceId == _interfaceId, \"interface id mismatch\");\n        setSupportedInterface(_interfaceId, true);\n    }",
+      "replacement_expression": "",
+      "start_line": 431
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 461,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000241",
+      "operator": "ORFD",
+      "original_expression": "function removeSupportedInterfaceBatch(bytes4 _interfaceId, bytes4[] calldata selectors) external override onlySelf {\n        ISafe safe = ISafe(payable(_msgSender()));\n        bytes4 interfaceId = bytes4(0);\n        uint256 len = selectors.length;\n        for (uint256 i = 0; i < len; ++i) {\n            _setSafeMethod(safe, selectors[i], bytes32(0));\n            interfaceId ^= selectors[i];\n        }\n\n        require(interfaceId == _interfaceId, \"interface id mismatch\");\n        setSupportedInterface(_interfaceId, false);\n    }",
+      "replacement_expression": "",
+      "start_line": 450
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 502,
+      "function": "onERC1155Received",
+      "mutant_id": "m000242",
+      "operator": "ORFD",
+      "original_expression": "function onERC1155Received(address, address, uint256, uint256, bytes calldata) external view override onlyFallback returns (bytes4) {\n        \n        return 0xf23a6e61;\n    }",
+      "replacement_expression": "",
+      "start_line": 499
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 517,
+      "function": "onERC1155BatchReceived",
+      "mutant_id": "m000243",
+      "operator": "ORFD",
+      "original_expression": "function onERC1155BatchReceived(\n        address,\n        address,\n        uint256[] calldata,\n        uint256[] calldata,\n        bytes calldata\n    ) external view override onlyFallback returns (bytes4) {\n        \n        return 0xbc197c81;\n    }",
+      "replacement_expression": "",
+      "start_line": 508
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 526,
+      "function": "onERC721Received",
+      "mutant_id": "m000244",
+      "operator": "ORFD",
+      "original_expression": "function onERC721Received(address, address, uint256, bytes calldata) external view override onlyFallback returns (bytes4) {\n        \n        return 0x150b7a02;\n    }",
+      "replacement_expression": "",
+      "start_line": 523
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 550,
+      "function": "_supportsInterface",
+      "mutant_id": "m000245",
+      "operator": "ORFD",
+      "original_expression": "function _supportsInterface(bytes4 interfaceId) internal pure override returns (bool) {\n        return\n            interfaceId == type(ERC721TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1155TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1271).interfaceId ||\n            interfaceId == type(ISignatureVerifierMuxer).interfaceId ||\n            interfaceId == type(ERC165Handler).interfaceId ||\n            interfaceId == type(IFallbackHandler).interfaceId;\n    }",
+      "replacement_expression": "",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1175,
+      "function": "execTransaction",
+      "mutant_id": "m000246",
+      "operator": "PKD",
+      "original_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external payable returns (bool success)",
+      "replacement_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external  returns (bool success)",
+      "start_line": 1164
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "_manager",
+      "mutant_id": "m000247",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 347,
+      "function": "isValidSignature",
+      "mutant_id": "m000248",
+      "operator": "RSD",
+      "original_expression": "return verifier.isValidSafeSignature(safe, sender, _hash, domainSeparator, typeHash, encodeData, payload);",
+      "replacement_expression": "verifier.isValidSafeSignature(safe, sender, _hash, domainSeparator, typeHash, encodeData, payload);",
+      "start_line": 347
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 354,
+      "function": "isValidSignature",
+      "mutant_id": "m000249",
+      "operator": "RSD",
+      "original_expression": "return defaultIsValidSignature(safe, _hash, signature);",
+      "replacement_expression": "defaultIsValidSignature(safe, _hash, signature);",
+      "start_line": 354
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 474,
+      "function": "supportsInterface",
+      "mutant_id": "m000250",
+      "operator": "RSD",
+      "original_expression": "return\n            interfaceId == type(IERC165).interfaceId ||\n            interfaceId == type(IERC165Handler).interfaceId ||\n            _supportsInterface(interfaceId) ||\n            safeInterfaces[ISafe(payable(_manager()))][interfaceId];",
+      "replacement_expression": "/* return\n            interfaceId == type(IERC165).interfaceId ||\n            interfaceId == type(IERC165Handler).interfaceId ||\n            _supportsInterface(interfaceId) ||\n            safeInterfaces[ISafe(payable(_manager()))][interfaceId]; */",
+      "start_line": 470
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "onERC1155Received",
+      "mutant_id": "m000251",
+      "operator": "RSD",
+      "original_expression": "return 0xf23a6e61;",
+      "replacement_expression": "/* return 0xf23a6e61; */",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "onERC1155BatchReceived",
+      "mutant_id": "m000252",
+      "operator": "RSD",
+      "original_expression": "return 0xbc197c81;",
+      "replacement_expression": "/* return 0xbc197c81; */",
+      "start_line": 516
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 525,
+      "function": "onERC721Received",
+      "mutant_id": "m000253",
+      "operator": "RSD",
+      "original_expression": "return 0x150b7a02;",
+      "replacement_expression": "/* return 0x150b7a02; */",
+      "start_line": 525
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "_supportsInterface",
+      "mutant_id": "m000254",
+      "operator": "RSD",
+      "original_expression": "return\n            interfaceId == type(ERC721TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1155TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1271).interfaceId ||\n            interfaceId == type(ISignatureVerifierMuxer).interfaceId ||\n            interfaceId == type(ERC165Handler).interfaceId ||\n            interfaceId == type(IFallbackHandler).interfaceId;",
+      "replacement_expression": "/* return\n            interfaceId == type(ERC721TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1155TokenReceiver).interfaceId ||\n            interfaceId == type(ERC1271).interfaceId ||\n            interfaceId == type(ISignatureVerifierMuxer).interfaceId ||\n            interfaceId == type(ERC165Handler).interfaceId ||\n            interfaceId == type(IFallbackHandler).interfaceId; */",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1315,
+      "function": "encodeMessageData",
+      "mutant_id": "m000255",
+      "operator": "RSD",
+      "original_expression": "return abi.encodePacked(bytes1(0x19), bytes1(0x01), domainSeparator, keccak256(abi.encodePacked(typeHash, message)));",
+      "replacement_expression": "abi.encodePacked(bytes1(0x19), bytes1(0x01), domainSeparator, keccak256(abi.encodePacked(typeHash, message)));",
+      "start_line": 1315
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 203,
+      "function": "_getContextAndHandler",
+      "mutant_id": "m000256",
+      "operator": "RVS",
+      "original_expression": "ISafe safe, address sender, bool isStatic, address handler",
+      "replacement_expression": "bool isStatic, address sender, ISafe safe, address handler",
+      "start_line": 203
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 442,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000257",
+      "operator": "SKID",
+      "original_expression": "setSupportedInterface",
+      "replacement_expression": "super.setSupportedInterface",
+      "start_line": 442
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 460,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000258",
+      "operator": "SKID",
+      "original_expression": "setSupportedInterface",
+      "replacement_expression": "super.setSupportedInterface",
+      "start_line": 460
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000259",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "addSupportedInterfaceBatch",
+      "mutant_id": "m000260",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000261",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 454
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 454,
+      "function": "removeSupportedInterfaceBatch",
+      "mutant_id": "m000262",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 454
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__ExtensibleFallbackHandler"
+}

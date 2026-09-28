@@ -1,0 +1,437 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        300
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "collectPercentOfFees",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        6673
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "changeMultiplier",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        111905117508018598112796719301139808209609705758222049340695845402847835169798
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "changeFeePercentage",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        7503
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "changeMultiplier",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        7503
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "changeFeePercentage",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "DynamicPyramid",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "numberOfParticipantsWaitingForPayout",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeOwner",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [
+        8371513502465375586301198652592742077121843925492667193079548191033066247290
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "changeFeePercentage",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "changeOwner",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "numberOfParticipantsWaitingForPayout",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [
+        11966441577349651399349373958501370383351956345480571462082231878847428891436
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "changeFeePercentage",
+      "n": 12,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "currentFeePercentage",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "feesSeperateFromBalanceApproximately",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "collectAllFees",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "n": 16,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "collectAllFees",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "currentMultiplier",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "DynamicPyramid",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "DynamicPyramid",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "currentPyramidBalanceApproximately",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        300
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "collectPercentOfFees",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "feesSeperateFromBalanceApproximately",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeOwner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        85146379958905595383684662946973350371681531203631872276672436888256709228288
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "changeFeePercentage",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "numberOfParticipantsWaitingForPayout",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        7503
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "changeMultiplier",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "currentPyramidBalanceApproximately",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        11249008613992858441764570151114558747220417471700779148759011193742714332530
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "collectFeesInEther",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "nextPayoutWhenPyramidBalanceTotalsApproximately",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "currentPyramidBalanceApproximately",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "currentFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        13891355167774020730932661180768531164797739594032474753583366714395772839193
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "participantDetails",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "currentPyramidBalanceApproximately",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "totalParticipants",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeOwner",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

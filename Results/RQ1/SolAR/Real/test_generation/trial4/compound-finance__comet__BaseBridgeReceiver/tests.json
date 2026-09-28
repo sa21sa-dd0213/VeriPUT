@@ -1,0 +1,57 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        39351836276162326795249890780604888682218450835684746246642699924230365432094
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "state",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "initialize",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        103208648786378637747551999587909103058605416222417437361743382281015863563531
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "executeProposal",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

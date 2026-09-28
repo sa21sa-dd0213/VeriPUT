@@ -1,0 +1,107 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 10,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000003",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000004",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "f",
+      "mutant_id": "m000005",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000006",
+      "operator": "CSC",
+      "original_expression": "a < x",
+      "replacement_expression": "true",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000007",
+      "operator": "CSC",
+      "original_expression": "a < x",
+      "replacement_expression": "false",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "f",
+      "mutant_id": "m000008",
+      "operator": "CSC",
+      "original_expression": "else {\n      return false;\n    }",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000009",
+      "operator": "EHD",
+      "original_expression": "assert(true);",
+      "replacement_expression": "/* assert(true); */",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "f",
+      "mutant_id": "m000010",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 13
+    }
+  ],
+  "subject_id": "peer_soltg__exampl"
+}

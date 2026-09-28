@@ -1,0 +1,247 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "revoke_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        58
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "withdraw_from_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "set_controller",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        1
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "create_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        249,
+        0
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "move_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        99603532296537303602848565661793457446151299620049573718177286497218829901783,
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "stake_tokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        99603532296537303602848565661793457446151299620049573718177286497218829901783,
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        15278142880997866074609908640539018570612056526777022607703137884087328928674
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "remove_stake",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        61,
+        11783038890364068097763809072140502948332047202159026268078153751531749727519
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "issue_into_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        5603567747873252640946490523292575924698027248428370773992582889253437969525
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "permit_issuer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        2
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "get_vested_for_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "user_total_all_tranches",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        60
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "get_tranche_balance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        1
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "create_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

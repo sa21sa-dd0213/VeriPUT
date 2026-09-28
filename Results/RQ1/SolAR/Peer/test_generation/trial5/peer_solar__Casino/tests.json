@@ -1,0 +1,109 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "checkWinner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100,
+        256
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "unsafeEntry",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        73615890498153549385149055018259747373300922423598637727762073151719822776748
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "buyTicket",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "claim",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100,
+        0
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "verifyTicket",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        256,
+        1890098626293208627092736881627209970453131834016924488317086616680952799763
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "generateHash",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

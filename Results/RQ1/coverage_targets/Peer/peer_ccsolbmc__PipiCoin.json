@@ -1,0 +1,81 @@
+{
+  "contract": "PipiCoin",
+  "dataset": "Peer",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "44811d615b6945fad9968f9d5e70d3e485cf89b0cc6d05c163b3ed0b15695641",
+  "subject_id": "peer_ccsolbmc__PipiCoin",
+  "targets": [
+    {
+      "declaration_line": 447,
+      "external_selector": "ee97f7f3",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 447,
+        "name": "PipiCoin.master",
+        "record": "FN"
+      },
+      "length": 31,
+      "line": 447,
+      "name": "master",
+      "site": "body-entry",
+      "src": "14154:31:0",
+      "start": 14154,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 447,
+      "external_selector": "ee97f7f3",
+      "id": "line:447",
+      "kind": "line",
+      "lcov": {
+        "line": 447,
+        "record": "DA"
+      },
+      "length": 31,
+      "line": 447,
+      "site": "body-entry",
+      "src": "14154:31:0",
+      "start": 14154,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:448",
+      "kind": "line",
+      "lcov": {
+        "line": 448,
+        "record": "DA"
+      },
+      "length": 14,
+      "line": 448,
+      "site": "statement-entry",
+      "src": "14164:14:0",
+      "start": 14164,
+      "statement_type": "Return",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (2.373226969s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.81794302s)
+
+echidna: Constructor arguments are required: [("_root",address),("_oldAuthorizer",address),("_vault",address),("_changeRootDelay",uint256),("_rolesData",(address,bytes32,address)[]),("_grantersData",(address,bytes32,address)[]),("_revokersData",(address,bytes32,address)[]),("_executeDelaysData",(bytes32,uint256)[]),("_grantDelaysData",(bytes32,uint256)[])]

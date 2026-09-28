@@ -1,0 +1,547 @@
+{
+  "compile_failed": 3,
+  "compile_ok": 51,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 24
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 15,
+      "function": "constructor",
+      "mutant_id": "m000025",
+      "operator": "CCD",
+      "original_expression": "constructor(int b) {\n\t\tif (b > 0) {\n\t\t\tx = 1;\n\t\t\treturn;\n\t\t}\n\t\telse {\n\t\t\tx = 2;\n\t\t\treturn;\n\t\t}\n\t\tx = 3; // dead code\n\t}",
+      "replacement_expression": "",
+      "start_line": 5
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "constructor",
+      "mutant_id": "m000026",
+      "operator": "CCD",
+      "original_expression": "constructor(int a) Bcs(a) {\n\t\tassert(a > 0 || x == 2); // should hold\n\t\tassert(a <= 0 || x == 1); // should hold\n\t\tassert(x == 3); // should fail\n\t\tassert(x == 2); // should fail\n\t\tassert(x == 1); // should fail\n\t}",
+      "replacement_expression": "",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000027",
+      "operator": "CSC",
+      "original_expression": "b > 0",
+      "replacement_expression": "true",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000028",
+      "operator": "CSC",
+      "original_expression": "b > 0",
+      "replacement_expression": "false",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "constructor",
+      "mutant_id": "m000029",
+      "operator": "CSC",
+      "original_expression": "\t\telse {\n\t\t\tx = 2;\n\t\t\treturn;\n\t\t}",
+      "replacement_expression": "",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000030",
+      "operator": "EHD",
+      "original_expression": "assert(a > 0 || x == 2);",
+      "replacement_expression": "/* assert(a > 0 || x == 2); */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000031",
+      "operator": "EHD",
+      "original_expression": "assert(a <= 0 || x == 1);",
+      "replacement_expression": "/* assert(a <= 0 || x == 1); */",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000032",
+      "operator": "EHD",
+      "original_expression": "assert(x == 3);",
+      "replacement_expression": "/* assert(x == 3); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000033",
+      "operator": "EHD",
+      "original_expression": "assert(x == 2);",
+      "replacement_expression": "/* assert(x == 2); */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000034",
+      "operator": "EHD",
+      "original_expression": "assert(x == 1);",
+      "replacement_expression": "/* assert(x == 1); */",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000035",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "constructor",
+      "mutant_id": "m000036",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "constructor",
+      "mutant_id": "m000037",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "constructor",
+      "mutant_id": "m000038",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "constructor",
+      "mutant_id": "m000039",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "constructor",
+      "mutant_id": "m000040",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "constructor",
+      "mutant_id": "m000041",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000042",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000043",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "constructor",
+      "mutant_id": "m000044",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000045",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000046",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "constructor",
+      "mutant_id": "m000047",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000048",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000049",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000050",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "constructor",
+      "mutant_id": "m000051",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000052",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "constructor",
+      "mutant_id": "m000053",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 24
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 19,
+      "function": "constructor",
+      "mutant_id": "m000054",
+      "operator": "MOD",
+      "original_expression": "constructor(int a) Bcs(a) ",
+      "replacement_expression": "constructor(int a)  ",
+      "start_line": 19
+    }
+  ],
+  "subject_id": "peer_soltg__constructors"
+}

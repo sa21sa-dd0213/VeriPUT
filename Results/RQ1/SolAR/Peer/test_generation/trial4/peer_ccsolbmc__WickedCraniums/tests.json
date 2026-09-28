@@ -1,0 +1,173 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "flipSaleState",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "withdraw",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "reserveCraniums",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "reserveCraniums",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        30242716735305659065579262960265951609626164612052425956199401592294957979637
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "mintCraniums",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "asdf5",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        ""
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "setBaseURI",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        "\"totalSupply()\""
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "setBaseURI",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "withdraw",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "reserveCraniums",
+      "n": 9,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "\"tokenByIndex(uint256)\""
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "setBaseURI",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "asdf5",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        872
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "mintCraniums",
+      "n": 2,
+      "value": 106830279436062446
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "reserveCraniums",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,99 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        34923385680655238017531818428633007222950537722293982638323301040012326431985
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "SetMinSum",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        11801619870192326015202427569831310452866024607876813361384031601077126530857
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "Collect",
+      "n": 3,
+      "value": 36690956930606143
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "Put",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        29536034686232969510098413580752496394882759114817610024380331236212002447492
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "Collect",
+      "n": 2,
+      "value": 15825246007681957
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "Initialized",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "SetLogFile",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

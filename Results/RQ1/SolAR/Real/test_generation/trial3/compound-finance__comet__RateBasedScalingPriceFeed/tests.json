@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        15,
+        8,
+        "Standard String"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "version",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        18,
+        18,
+        "UsvWGVrxphBRrBVqSoUXAbCErXWojQiXSffdwdaxlEvGvemvVloagBtIPfheDNUaVUC"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "latestRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

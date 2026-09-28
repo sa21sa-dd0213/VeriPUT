@@ -1,0 +1,62 @@
+===== FeeVault =====  (src/flat.sol = Motivation_Examples/FeeVault.sol; test/Put.t.sol = FeeVault_withdraw_put119.t.sol; test/Point.t.sol = KillPoint.t.sol wrapper)
+$ forge test --match-contract KillPoint --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 22 files with Solc 0.8.35
+Solc 0.8.35 finished in 4.85s
+Compiler run successful!
+
+Ran 2 tests for test/Point.t.sol:KillPoint
+[PASS] test_point_discount100_deposits100() (gas: 106673)
+[PASS] test_put_FeeVault_withdraw_path119p1(address,uint256,uint256,uint256,uint256,uint16) (runs: 10000, μ: 106326, ~: 107239)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 333.44ms (333.01ms CPU time)
+
+Ran 1 test suite in 334.51ms (333.44ms CPU time): 2 tests passed, 0 failed, 0 skipped (2 total tests)
+
+
+===== FeeVault_M1 =====  (src/flat.sol = Motivation_Examples/FeeVault_M1.sol; test/Put.t.sol = FeeVault_withdraw_put119.t.sol; test/Point.t.sol = KillPoint.t.sol wrapper)
+$ forge test --match-contract KillPoint --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 22 files with Solc 0.8.35
+Solc 0.8.35 finished in 4.78s
+Compiler run successful!
+
+Ran 2 tests for test/Point.t.sol:KillPoint
+[FAIL: return: return != 0] test_point_discount100_deposits100() (gas: 64829)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0xf802316700000000000000000000000000000000000000000000000000000000b5508aaa00000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000006f737472657475726e3a2072657475726e00000000000000000000000000000000000000000000000000000000000027102da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c40000000000000000000000000000000000000000000000000000000000000002 args=[0x00000000000000000000000000000000b5508aAa, 4294967295 [4.294e9], 37924808574407806285897835509633932161646 [3.792e40], 10000 [1e4], 20644549604082266639320257001935285394590065917650136896563126397825491550916 [2.064e76], 2]] test_put_FeeVault_withdraw_path119p1(address,uint256,uint256,uint256,uint256,uint16) (runs: 2, μ: 97442, ~: 97442)
+Suite result: FAILED. 0 passed; 2 failed; 0 skipped; finished in 8.86ms (8.26ms CPU time)
+
+Ran 1 test suite in 10.27ms (8.86ms CPU time): 0 tests passed, 2 failed, 0 skipped (2 total tests)
+
+Failing tests:
+Encountered 2 failing tests in test/Point.t.sol:KillPoint
+[FAIL: return: return != 0] test_point_discount100_deposits100() (gas: 64829)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0xf802316700000000000000000000000000000000000000000000000000000000b5508aaa00000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000006f737472657475726e3a2072657475726e00000000000000000000000000000000000000000000000000000000000027102da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c40000000000000000000000000000000000000000000000000000000000000002 args=[0x00000000000000000000000000000000b5508aAa, 4294967295 [4.294e9], 37924808574407806285897835509633932161646 [3.792e40], 10000 [1e4], 20644549604082266639320257001935285394590065917650136896563126397825491550916 [2.064e76], 2]] test_put_FeeVault_withdraw_path119p1(address,uint256,uint256,uint256,uint256,uint16) (runs: 2, μ: 97442, ~: 97442)
+
+Encountered a total of 2 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 2 failed tests
+
+Fuzz seed: 0x56657269505554 (use `--fuzz-seed` to reproduce)
+
+
+===== FeeVault_M2 =====  (src/flat.sol = Motivation_Examples/FeeVault_M2.sol; test/Put.t.sol = FeeVault_withdraw_put119.t.sol; test/Point.t.sol = KillPoint.t.sol wrapper)
+$ forge test --match-contract KillPoint --fuzz-runs 10000 --fuzz-seed 0x56657269505554 -vv
+Compiling 22 files with Solc 0.8.35
+Solc 0.8.35 finished in 5.71s
+Compiler run successful!
+
+Ran 2 tests for test/Point.t.sol:KillPoint
+[FAIL: return: return != 0] test_point_discount100_deposits100() (gas: 64823)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0xf8023167000000000000000000000000000000000000000000000000000000000000366f00000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000006f737472657475726e3a2072657475726e00000000000000000000000000000000000000000000000000000000ffbfffff2da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c40000000000000000000000000000000000000000000000000000000000000002 args=[0x000000000000000000000000000000000000366f, 4294967295 [4.294e9], 37924808574407806285897835509633932161646 [3.792e40], 4290772991 [4.29e9], 20644549604082266639320257001935285394590065917650136896563126397825491550916 [2.064e76], 2]] test_put_FeeVault_withdraw_path119p1(address,uint256,uint256,uint256,uint256,uint16) (runs: 1, μ: 87647, ~: 87647)
+Suite result: FAILED. 0 passed; 2 failed; 0 skipped; finished in 7.25ms (6.87ms CPU time)
+
+Ran 1 test suite in 8.26ms (7.25ms CPU time): 0 tests passed, 2 failed, 0 skipped (2 total tests)
+
+Failing tests:
+Encountered 2 failing tests in test/Point.t.sol:KillPoint
+[FAIL: return: return != 0] test_point_discount100_deposits100() (gas: 64823)
+[FAIL: panic: arithmetic underflow or overflow (0x11); counterexample: calldata=0xf8023167000000000000000000000000000000000000000000000000000000000000366f00000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000006f737472657475726e3a2072657475726e00000000000000000000000000000000000000000000000000000000ffbfffff2da466a7b24304f47e87fa2e1e5a81b9831ce54fec19055ce277ca2f39ba42c40000000000000000000000000000000000000000000000000000000000000002 args=[0x000000000000000000000000000000000000366f, 4294967295 [4.294e9], 37924808574407806285897835509633932161646 [3.792e40], 4290772991 [4.29e9], 20644549604082266639320257001935285394590065917650136896563126397825491550916 [2.064e76], 2]] test_put_FeeVault_withdraw_path119p1(address,uint256,uint256,uint256,uint256,uint16) (runs: 1, μ: 87647, ~: 87647)
+
+Encountered a total of 2 failing tests, 0 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 2 failed tests
+
+Fuzz seed: 0x56657269505554 (use `--fuzz-seed` to reproduce)

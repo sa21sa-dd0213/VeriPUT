@@ -1,0 +1,37 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 3,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "transferUniswapV3MigratorProxy",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "transferUniswapV3MigratorProxy",
+      "mutant_id": "m000002",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == owner);",
+      "replacement_expression": "/* require(msg.sender == owner); */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "transferUniswapV3MigratorProxy",
+      "mutant_id": "m000003",
+      "operator": "RSD",
+      "original_expression": "return _token.transferFrom(_sender, _receiver, _amount);",
+      "replacement_expression": "_token.transferFrom(_sender, _receiver, _amount);",
+      "start_line": 24
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__UniswapV3MigratorProxy"
+}

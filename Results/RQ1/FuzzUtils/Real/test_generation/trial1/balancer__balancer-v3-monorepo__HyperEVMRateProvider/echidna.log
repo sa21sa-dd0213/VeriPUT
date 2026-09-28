@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.483276766s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.722521271s)
+
+echidna: Constructor arguments are required: [("tokenIndex",uint32),("pairIndex",uint32)]

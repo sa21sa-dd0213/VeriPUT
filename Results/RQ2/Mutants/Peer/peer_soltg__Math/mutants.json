@@ -1,0 +1,707 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 70,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "max",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "max",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "max",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "max",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": " >",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "max",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": "<=",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "max",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": ">=",
+      "replacement_expression": "==",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "max",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": ">",
+      "replacement_expression": "<",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "max",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": ">",
+      "replacement_expression": ">= ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "min",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "min",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "min",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": ">",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "min",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": "<",
+      "replacement_expression": "<=",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "min",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": ">",
+      "replacement_expression": "<",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "min",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": ">",
+      "replacement_expression": ">= ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "+",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "**",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " & ",
+      "replacement_expression": " | ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " & ",
+      "replacement_expression": " ^ ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " & ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " | ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "-",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "*",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " & ",
+      "replacement_expression": " | ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " & ",
+      "replacement_expression": " ^ ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " & ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " | ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "max",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "a >= b",
+      "replacement_expression": "true",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "max",
+      "mutant_id": "m000045",
+      "operator": "CSC",
+      "original_expression": "a >= b",
+      "replacement_expression": "false",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "max",
+      "mutant_id": "m000046",
+      "operator": "CSC",
+      "original_expression": "else {\n            assert(b>a);\n            return b;\n        }",
+      "replacement_expression": "",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "min",
+      "mutant_id": "m000047",
+      "operator": "CSC",
+      "original_expression": "a < b",
+      "replacement_expression": "true",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "min",
+      "mutant_id": "m000048",
+      "operator": "CSC",
+      "original_expression": "a < b",
+      "replacement_expression": "false",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 24,
+      "function": "min",
+      "mutant_id": "m000049",
+      "operator": "CSC",
+      "original_expression": "else {\n            assert(b>a);\n            return b;\n        }",
+      "replacement_expression": "",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "max",
+      "mutant_id": "m000050",
+      "operator": "EHD",
+      "original_expression": "assert(a>=b);",
+      "replacement_expression": "/* assert(a>=b); */",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "max",
+      "mutant_id": "m000051",
+      "operator": "EHD",
+      "original_expression": "assert(b>a);",
+      "replacement_expression": "/* assert(b>a); */",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "min",
+      "mutant_id": "m000052",
+      "operator": "EHD",
+      "original_expression": "assert(a<b);",
+      "replacement_expression": "/* assert(a<b); */",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "min",
+      "mutant_id": "m000053",
+      "operator": "EHD",
+      "original_expression": "assert(b>a);",
+      "replacement_expression": "/* assert(b>a); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000054",
+      "operator": "EHD",
+      "original_expression": "assert(((a & b) + (a ^ b) / 2)*2 == a+b);",
+      "replacement_expression": "/* assert(((a & b) + (a ^ b) / 2)*2 == a+b); */",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000055",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000056",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000057",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "average",
+      "mutant_id": "m000058",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000059",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000060",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000061",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000062",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000063",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000064",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "max",
+      "mutant_id": "m000065",
+      "operator": "RSD",
+      "original_expression": "return a;",
+      "replacement_expression": "/* return a; */",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "max",
+      "mutant_id": "m000066",
+      "operator": "RSD",
+      "original_expression": "return b;",
+      "replacement_expression": "/* return b; */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "min",
+      "mutant_id": "m000067",
+      "operator": "RSD",
+      "original_expression": "return a;",
+      "replacement_expression": "/* return a; */",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "min",
+      "mutant_id": "m000068",
+      "operator": "RSD",
+      "original_expression": "return b;",
+      "replacement_expression": "/* return b; */",
+      "start_line": 23
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "average",
+      "mutant_id": "m000069",
+      "operator": "RSD",
+      "original_expression": "return (a & b) + (a ^ b) / 2;",
+      "replacement_expression": "/* return (a & b) + (a ^ b) / 2; */",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "ceilDiv",
+      "mutant_id": "m000070",
+      "operator": "RSD",
+      "original_expression": "return a / b + (a % b == 0 ? 0 : 1);",
+      "replacement_expression": "/* return a / b + (a % b == 0 ? 0 : 1); */",
+      "start_line": 36
+    }
+  ],
+  "subject_id": "peer_soltg__Math"
+}

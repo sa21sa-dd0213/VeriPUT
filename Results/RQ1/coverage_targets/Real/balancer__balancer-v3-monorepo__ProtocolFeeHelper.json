@@ -1,0 +1,187 @@
+{
+  "contract": "ProtocolFeeHelper",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 3,
+    "LF": 6
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "5e8201da5ba095eac30df84fa718b2c9687aa04e58cafb18b67b351792b7532d",
+  "subject_id": "balancer__balancer-v3-monorepo__ProtocolFeeHelper",
+  "targets": [
+    {
+      "declaration_line": 878,
+      "external_selector": "fd267f39",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 878,
+        "name": "ProtocolFeeHelper.setProtocolSwapFeePercentage",
+        "record": "FN"
+      },
+      "length": 109,
+      "line": 881,
+      "name": "setProtocolSwapFeePercentage",
+      "site": "body-entry",
+      "src": "14714:109:0",
+      "start": 14714,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 886,
+      "external_selector": "abaa3356",
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 886,
+        "name": "ProtocolFeeHelper.setProtocolYieldFeePercentage",
+        "record": "FN"
+      },
+      "length": 111,
+      "line": 889,
+      "name": "setProtocolYieldFeePercentage",
+      "site": "body-entry",
+      "src": "14986:111:0",
+      "start": 14986,
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 898,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:4",
+      "kind": "function",
+      "lcov": {
+        "line": 898,
+        "name": "ProtocolFeeHelper._getProtocolFeeController",
+        "record": "FN"
+      },
+      "length": 56,
+      "line": 898,
+      "name": "_getProtocolFeeController",
+      "site": "body-entry",
+      "src": "15200:56:0",
+      "start": 15200,
+      "trap_id": 3,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 878,
+      "external_selector": "fd267f39",
+      "id": "line:878",
+      "kind": "line",
+      "lcov": {
+        "line": 878,
+        "record": "DA"
+      },
+      "length": 109,
+      "line": 881,
+      "site": "body-entry",
+      "src": "14714:109:0",
+      "start": 14714,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 4,
+      "visibility": "external"
+    },
+    {
+      "id": "line:882",
+      "kind": "line",
+      "lcov": {
+        "line": 882,
+        "record": "DA"
+      },
+      "length": 92,
+      "line": 882,
+      "site": "statement-entry",
+      "src": "14724:92:0",
+      "start": 14724,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    },
+    {
+      "declaration_line": 886,
+      "external_selector": "abaa3356",
+      "id": "line:886",
+      "kind": "line",
+      "lcov": {
+        "line": 886,
+        "record": "DA"
+      },
+      "length": 111,
+      "line": 889,
+      "site": "body-entry",
+      "src": "14986:111:0",
+      "start": 14986,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 6,
+      "visibility": "external"
+    },
+    {
+      "id": "line:890",
+      "kind": "line",
+      "lcov": {
+        "line": 890,
+        "record": "DA"
+      },
+      "length": 94,
+      "line": 890,
+      "site": "statement-entry",
+      "src": "14996:94:0",
+      "start": 14996,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 7
+    },
+    {
+      "declaration_line": 898,
+      "external_selector": null,
+      "id": "line:898",
+      "kind": "line",
+      "lcov": {
+        "line": 898,
+        "record": "DA"
+      },
+      "length": 56,
+      "line": 898,
+      "site": "body-entry",
+      "src": "15200:56:0",
+      "start": 15200,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 8,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:899",
+      "kind": "line",
+      "lcov": {
+        "line": 899,
+        "record": "DA"
+      },
+      "length": 39,
+      "line": 899,
+      "site": "statement-entry",
+      "src": "15210:39:0",
+      "start": 15210,
+      "statement_type": "Return",
+      "trap_id": 9
+    }
+  ],
+  "totals": {
+    "all": 9,
+    "branch": 0,
+    "function": 3,
+    "line": 6
+  }
+}

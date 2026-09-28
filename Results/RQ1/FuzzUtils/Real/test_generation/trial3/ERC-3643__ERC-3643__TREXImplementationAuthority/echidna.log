@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.116885082s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.737060914s)
+
+echidna: Constructor arguments are required: [("referenceStatus",bool),("trexFactory",address),("iaFactory",address)]

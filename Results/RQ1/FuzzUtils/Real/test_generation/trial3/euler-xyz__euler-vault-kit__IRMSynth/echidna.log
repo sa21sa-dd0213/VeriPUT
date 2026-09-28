@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.614057446s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.763448848s)
+
+echidna: Constructor arguments are required: [("synth_",address),("referenceAsset_",address),("oracle_",address),("targetQuote_",uint256)]

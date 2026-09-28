@@ -1,0 +1,27 @@
+{
+  "compile_failed": 1,
+  "compile_ok": 1,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 28,
+      "function": "multiSend",
+      "mutant_id": "m000001",
+      "operator": "DLR",
+      "original_expression": "bytes memory transactions",
+      "replacement_expression": "bytes storage transactions",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "multiSend",
+      "mutant_id": "m000002",
+      "operator": "PKD",
+      "original_expression": "function multiSend(bytes memory transactions) public payable ",
+      "replacement_expression": "function multiSend(bytes memory transactions) public  ",
+      "start_line": 28
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__MultiSendCallOnly"
+}

@@ -1,0 +1,171 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getBalance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "getBankBalance",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "withdraw",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "refund",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "deposit",
+      "n": 6,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "deposit",
+      "n": 7,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "refund",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "getBankBalance",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "deposit",
+      "n": 10,
+      "value": 89593813205349867
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "refund",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "deposit",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "getBalance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "getBankBalance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 10000000000000000000
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "withdraw",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "withdraw",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

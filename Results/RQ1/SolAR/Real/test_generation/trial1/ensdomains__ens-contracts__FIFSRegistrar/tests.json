@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "0x63484f5456414943646151667868576a6d78496b7953414c4b70595656424b62"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x6e494f6d4463597a536f7457455872485a54586452656a6d5242204876596265",
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "register",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

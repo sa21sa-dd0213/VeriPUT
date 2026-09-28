@@ -1,0 +1,8 @@
+{
+  "contract": "Wallet",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rc_access_control__wallet_02_refund_nosub__SmartFix__wallet_02_refund_nosub"
+}

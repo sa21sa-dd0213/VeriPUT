@@ -1,0 +1,227 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 22,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "setupToL2",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "l2Singleton",
+      "replacement_expression": "address(this)",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 139,
+      "function": "setupToL2",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "l2Singleton",
+      "replacement_expression": "address(0)",
+      "start_line": 139
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:onlyNonceZero",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "modifier:onlyContract",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "CCD",
+      "original_expression": "constructor() {\n        SELF = address(this);\n    }",
+      "replacement_expression": "",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "chainId() != 1",
+      "replacement_expression": "true",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "chainId() != 1",
+      "replacement_expression": "false",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "setupToL2",
+      "mutant_id": "m000012",
+      "operator": "EED",
+      "original_expression": "emit ChangedMasterCopy(l2Singleton);",
+      "replacement_expression": "/* emit ChangedMasterCopy(l2Singleton); */",
+      "start_line": 140
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 111,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000013",
+      "operator": "EHD",
+      "original_expression": "require(address(this) != SELF, \"SafeToL2Setup should only be called via delegatecall\");",
+      "replacement_expression": "/* require(address(this) != SELF, \"SafeToL2Setup should only be called via delegatecall\"); */",
+      "start_line": 111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:onlyNonceZero",
+      "mutant_id": "m000014",
+      "operator": "EHD",
+      "original_expression": "require(nonce == 0, \"Safe must have not executed any tx\");",
+      "replacement_expression": "/* require(nonce == 0, \"Safe must have not executed any tx\"); */",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "modifier:onlyContract",
+      "mutant_id": "m000015",
+      "operator": "EHD",
+      "original_expression": "require(codeSize(account) != 0, \"Account doesn't contain code\");",
+      "replacement_expression": "/* require(codeSize(account) != 0, \"Account doesn't contain code\"); */",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:onlyNonceZero",
+      "mutant_id": "m000016",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "modifier:onlyContract",
+      "mutant_id": "m000017",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000018",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "setupToL2",
+      "mutant_id": "m000019",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "setupToL2",
+      "mutant_id": "m000020",
+      "operator": "MOD",
+      "original_expression": "function setupToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero onlyContract(l2Singleton) ",
+      "replacement_expression": "function setupToL2(address l2Singleton) external  onlyNonceZero onlyContract(l2Singleton) ",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "setupToL2",
+      "mutant_id": "m000021",
+      "operator": "MOD",
+      "original_expression": "function setupToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero onlyContract(l2Singleton) ",
+      "replacement_expression": "function setupToL2(address l2Singleton) external onlyDelegateCall  onlyContract(l2Singleton) ",
+      "start_line": 137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 137,
+      "function": "setupToL2",
+      "mutant_id": "m000022",
+      "operator": "MOD",
+      "original_expression": "function setupToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero onlyContract(l2Singleton) ",
+      "replacement_expression": "function setupToL2(address l2Singleton) external onlyDelegateCall onlyNonceZero  ",
+      "start_line": 137
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__SafeToL2Setup"
+}

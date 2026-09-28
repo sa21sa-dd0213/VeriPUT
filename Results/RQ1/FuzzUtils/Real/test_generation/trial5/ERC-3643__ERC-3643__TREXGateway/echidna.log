@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.848697559s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.711136393s)
+
+echidna: Constructor arguments are required: [("factory",address),("publicDeploymentStatus",bool)]

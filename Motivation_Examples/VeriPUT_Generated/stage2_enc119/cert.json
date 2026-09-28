@@ -1,0 +1,138 @@
+{
+  "box": [
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "amount"
+    },
+    {
+      "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "lo": "0",
+      "name": "block.number"
+    },
+    {
+      "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "lo": "0",
+      "name": "block.timestamp"
+    },
+    {
+      "hi": "4294967295",
+      "lo": "0",
+      "name": "msg.sender"
+    },
+    {
+      "hi": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "lo": "0",
+      "name": "state.deposits$19[msg.sender]"
+    },
+    {
+      "hi": "65535",
+      "lo": "0",
+      "name": "state.discountBps$23[msg.sender]"
+    },
+    {
+      "hi": "1461501637330902918203684832716283019655932542975",
+      "lo": "0",
+      "name": "state.feeReceiver"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.basefee"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.blobbasefee"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.chainid"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.coinbase"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.difficulty"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "block.prevrandao"
+    },
+    {
+      "hi": "1",
+      "lo": "1",
+      "name": "extcall.ok1"
+    },
+    {
+      "hi": "1",
+      "lo": "1",
+      "name": "extcall.ok2"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "msg.value"
+    },
+    {
+      "hi": "250",
+      "lo": "250",
+      "name": "state.feeBps"
+    },
+    {
+      "hi": "100000000000000000",
+      "lo": "100000000000000000",
+      "name": "state.maxFee"
+    },
+    {
+      "hi": "0",
+      "lo": "0",
+      "name": "tx.gasprice"
+    }
+  ],
+  "ce": {
+    "amount": "0",
+    "block.basefee": "0",
+    "block.blobbasefee": "0",
+    "block.chainid": "0",
+    "block.coinbase": "0",
+    "block.difficulty": "0",
+    "block.gaslimit": "0",
+    "block.number": "0",
+    "block.prevrandao": "0",
+    "block.timestamp": "0",
+    "msg.data": "0",
+    "msg.sender": "0",
+    "msg.sig": "0",
+    "msg.value": "0",
+    "state.feeBps": "250",
+    "state.feeReceiver": "0",
+    "state.maxFee": "100000000000000000",
+    "state.owner": "0",
+    "tx.gasprice": "0",
+    "tx.origin": "0"
+  },
+  "depth": 2,
+  "enc": 6,
+  "establish": [
+    {
+      "source": "*",
+      "target": "state.deposits$19[msg.sender]"
+    },
+    {
+      "source": "*",
+      "target": "state.discountBps$23[msg.sender]"
+    },
+    {
+      "source": "*",
+      "target": "state.feeReceiver"
+    }
+  ],
+  "unit": "sol:@C@FeeVault@F@withdraw#193"
+}

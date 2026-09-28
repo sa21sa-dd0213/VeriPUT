@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (4.022624339s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (3.064933878s)
+
+echidna: Constructor arguments are required: [("vault",address),("sequencerUptimeFeed",address),("uptimeResyncWindow",uint256),("factoryVersion",string),("oracleVersion",uint256)]

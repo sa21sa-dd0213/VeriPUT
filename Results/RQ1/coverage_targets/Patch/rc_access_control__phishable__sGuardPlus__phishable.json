@@ -1,0 +1,195 @@
+{
+  "contract": "Phishable",
+  "dataset": "Patch",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 2,
+    "FNF": 2,
+    "LF": 5
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "e8d2f4e61771b1123ce563c61dc43b3557f5e6afdb77524ec1eee26dc25deaf9",
+  "subject_id": "rc_access_control__phishable__sGuardPlus__phishable",
+  "targets": [
+    {
+      "declaration_line": 4,
+      "external_selector": null,
+      "function_kind": "constructor",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 4,
+        "name": "Phishable.constructor",
+        "record": "FN"
+      },
+      "length": 17,
+      "line": 4,
+      "name": "constructor",
+      "site": "body-entry",
+      "src": "98:17:0",
+      "start": 98,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 11,
+      "external_selector": "fa09e630",
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 11,
+        "name": "Phishable.withdrawAll",
+        "record": "FN"
+      },
+      "length": 84,
+      "line": 11,
+      "name": "withdrawAll",
+      "site": "body-entry",
+      "src": "203:84:0",
+      "start": 203,
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 4,
+      "external_selector": null,
+      "id": "line:4",
+      "kind": "line",
+      "lcov": {
+        "line": 4,
+        "record": "DA"
+      },
+      "length": 17,
+      "line": 4,
+      "site": "body-entry",
+      "src": "98:17:0",
+      "start": 98,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "id": "line:5",
+      "kind": "line",
+      "lcov": {
+        "line": 5,
+        "record": "DA"
+      },
+      "length": 12,
+      "line": 5,
+      "site": "statement-entry",
+      "src": "100:12:0",
+      "start": 100,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "declaration_line": 11,
+      "external_selector": "fa09e630",
+      "id": "line:11",
+      "kind": "line",
+      "lcov": {
+        "line": 11,
+        "record": "DA"
+      },
+      "length": 84,
+      "line": 11,
+      "site": "body-entry",
+      "src": "203:84:0",
+      "start": 203,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 5,
+      "visibility": "public"
+    },
+    {
+      "id": "line:12",
+      "kind": "line",
+      "lcov": {
+        "line": 12,
+        "record": "DA"
+      },
+      "length": 26,
+      "line": 12,
+      "site": "statement-entry",
+      "src": "205:26:0",
+      "start": 205,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 6
+    },
+    {
+      "id": "line:13",
+      "kind": "line",
+      "lcov": {
+        "line": 13,
+        "record": "DA"
+      },
+      "length": 51,
+      "line": 13,
+      "site": "statement-entry",
+      "src": "233:51:0",
+      "start": 233,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 7
+    },
+    {
+      "branch_id": "branch:4",
+      "condition_src": "213:17:0",
+      "id": "branch:4:require-fail",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 12,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 26,
+      "line": 12,
+      "outcome": false,
+      "require_arg_srcs": [
+        "213:17:0"
+      ],
+      "site": "require-branch",
+      "src": "205:26:0",
+      "start": 205,
+      "trap_id": 8
+    },
+    {
+      "branch_id": "branch:4",
+      "condition_src": "213:17:0",
+      "id": "branch:4:require-pass",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 1,
+        "line": 12,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 26,
+      "line": 12,
+      "outcome": true,
+      "require_arg_srcs": [
+        "213:17:0"
+      ],
+      "site": "require-branch",
+      "src": "205:26:0",
+      "start": 205,
+      "trap_id": 9
+    }
+  ],
+  "totals": {
+    "all": 9,
+    "branch": 2,
+    "function": 2,
+    "line": 5
+  }
+}

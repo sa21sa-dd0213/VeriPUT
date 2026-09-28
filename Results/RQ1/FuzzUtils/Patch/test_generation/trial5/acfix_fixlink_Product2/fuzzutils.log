@@ -1,0 +1,22 @@
+Running Slither...
+Generating Foundry unit tests based on the Echidna reproducers...
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* Attempted to decode an unidentified type UFixed18, this call will be skipped. Please open an issue at https://github.com/crytic/fuzz-utils/issues
+
+* The parameter tag `AbiAddress` could not be found in the call object. This could indicate an issue in decoding the call sequence, or a missing feature. Please open an issue at https://github.com/crytic/fuzz-utils/issues

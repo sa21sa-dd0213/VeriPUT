@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+node_modules/
+out/
+cache/
+lib/
+corpus/
+crytic-export/
+.veriput-work/
+.DS_Store

@@ -1,0 +1,96 @@
+{
+  "contract": "AssetListFactory",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "d4ef8713e989153f73504ebbd83e805abff85dd09fdeb4e8fbcb6326ff2d237c",
+  "subject_id": "compound-finance__comet__AssetListFactory",
+  "targets": [
+    {
+      "declaration_line": 17,
+      "external_selector": "ba15b9d1",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 17,
+        "name": "AssetListFactory.createAssetList",
+        "record": "FN"
+      },
+      "length": 121,
+      "line": 17,
+      "name": "createAssetList",
+      "site": "body-entry",
+      "src": "268:121:0",
+      "start": 268,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 17,
+      "external_selector": "ba15b9d1",
+      "id": "line:17",
+      "kind": "line",
+      "lcov": {
+        "line": 17,
+        "record": "DA"
+      },
+      "length": 121,
+      "line": 17,
+      "site": "body-entry",
+      "src": "268:121:0",
+      "start": 268,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:18",
+      "kind": "line",
+      "lcov": {
+        "line": 18,
+        "record": "DA"
+      },
+      "length": 48,
+      "line": 18,
+      "site": "statement-entry",
+      "src": "278:48:0",
+      "start": 278,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:19",
+      "kind": "line",
+      "lcov": {
+        "line": 19,
+        "record": "DA"
+      },
+      "length": 46,
+      "line": 19,
+      "site": "statement-entry",
+      "src": "336:46:0",
+      "start": 336,
+      "statement_type": "EmitStatement",
+      "trap_id": 4
+    }
+  ],
+  "totals": {
+    "all": 4,
+    "branch": 0,
+    "function": 1,
+    "line": 3
+  }
+}

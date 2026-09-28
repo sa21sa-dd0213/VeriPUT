@@ -1,0 +1,555 @@
+{
+  "contract": "Greeter2",
+  "dataset": "Peer",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 7,
+    "FNF": 5,
+    "LF": 18
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "4221811090cbcb291b27620d94ef0cd7d41720b0b1815de221bb0cc3f08f9a11",
+  "subject_id": "peer_solar__Greeter2",
+  "targets": [
+    {
+      "declaration_line": 22,
+      "external_selector": null,
+      "function_kind": "constructor",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 22,
+        "name": "Greeter2.constructor",
+        "record": "FN"
+      },
+      "length": 119,
+      "line": 22,
+      "name": "constructor",
+      "site": "body-entry",
+      "src": "949:119:0",
+      "start": 949,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 30,
+      "external_selector": "13ee648c",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 30,
+        "name": "Greeter2.sayHello",
+        "record": "FN"
+      },
+      "length": 41,
+      "line": 30,
+      "name": "sayHello",
+      "site": "body-entry",
+      "src": "1376:41:0",
+      "start": 1376,
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 37,
+      "external_selector": "f8f7a514",
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 37,
+        "name": "Greeter2.changeHello",
+        "record": "FN"
+      },
+      "length": 43,
+      "line": 37,
+      "name": "changeHello",
+      "site": "body-entry",
+      "src": "1715:43:0",
+      "start": 1715,
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 45,
+      "external_selector": "2feae5c8",
+      "function_kind": "function",
+      "id": "function:4",
+      "kind": "function",
+      "lcov": {
+        "line": 45,
+        "name": "Greeter2.sayGoodbye",
+        "record": "FN"
+      },
+      "length": 218,
+      "line": 45,
+      "name": "sayGoodbye",
+      "site": "body-entry",
+      "src": "2141:218:0",
+      "start": 2141,
+      "trap_id": 4,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 58,
+      "external_selector": "66cad460",
+      "function_kind": "function",
+      "id": "function:7",
+      "kind": "function",
+      "lcov": {
+        "line": 58,
+        "name": "Greeter2.changeGoodbye",
+        "record": "FN"
+      },
+      "length": 186,
+      "line": 58,
+      "name": "changeGoodbye",
+      "site": "body-entry",
+      "src": "2669:186:0",
+      "start": 2669,
+      "trap_id": 5,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 22,
+      "external_selector": null,
+      "id": "line:22",
+      "kind": "line",
+      "lcov": {
+        "line": 22,
+        "record": "DA"
+      },
+      "length": 119,
+      "line": 22,
+      "site": "body-entry",
+      "src": "949:119:0",
+      "start": 949,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 6,
+      "visibility": "public"
+    },
+    {
+      "id": "line:23",
+      "kind": "line",
+      "lcov": {
+        "line": 23,
+        "record": "DA"
+      },
+      "length": 50,
+      "line": 23,
+      "site": "statement-entry",
+      "src": "959:50:0",
+      "start": 959,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 7
+    },
+    {
+      "id": "line:24",
+      "kind": "line",
+      "lcov": {
+        "line": 24,
+        "record": "DA"
+      },
+      "length": 42,
+      "line": 24,
+      "site": "statement-entry",
+      "src": "1019:42:0",
+      "start": 1019,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 8
+    },
+    {
+      "declaration_line": 30,
+      "external_selector": "13ee648c",
+      "id": "line:30",
+      "kind": "line",
+      "lcov": {
+        "line": 30,
+        "record": "DA"
+      },
+      "length": 41,
+      "line": 30,
+      "site": "body-entry",
+      "src": "1376:41:0",
+      "start": 1376,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 9,
+      "visibility": "public"
+    },
+    {
+      "id": "line:31",
+      "kind": "line",
+      "lcov": {
+        "line": 31,
+        "record": "DA"
+      },
+      "length": 24,
+      "line": 31,
+      "site": "statement-entry",
+      "src": "1386:24:0",
+      "start": 1386,
+      "statement_type": "Return",
+      "trap_id": 10
+    },
+    {
+      "declaration_line": 37,
+      "external_selector": "f8f7a514",
+      "id": "line:37",
+      "kind": "line",
+      "lcov": {
+        "line": 37,
+        "record": "DA"
+      },
+      "length": 43,
+      "line": 37,
+      "site": "body-entry",
+      "src": "1715:43:0",
+      "start": 1715,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 11,
+      "visibility": "public"
+    },
+    {
+      "id": "line:38",
+      "kind": "line",
+      "lcov": {
+        "line": 38,
+        "record": "DA"
+      },
+      "length": 26,
+      "line": 38,
+      "site": "statement-entry",
+      "src": "1725:26:0",
+      "start": 1725,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 12
+    },
+    {
+      "declaration_line": 45,
+      "external_selector": "2feae5c8",
+      "id": "line:45",
+      "kind": "line",
+      "lcov": {
+        "line": 45,
+        "record": "DA"
+      },
+      "length": 218,
+      "line": 45,
+      "site": "body-entry",
+      "src": "2141:218:0",
+      "start": 2141,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 13,
+      "visibility": "public"
+    },
+    {
+      "id": "line:46",
+      "kind": "line",
+      "lcov": {
+        "line": 46,
+        "record": "DA"
+      },
+      "length": 202,
+      "line": 46,
+      "site": "statement-entry",
+      "src": "2151:202:0",
+      "start": 2151,
+      "statement_type": "IfStatement",
+      "trap_id": 14
+    },
+    {
+      "id": "line:47",
+      "kind": "line",
+      "lcov": {
+        "line": 47,
+        "record": "DA"
+      },
+      "length": 20,
+      "line": 47,
+      "site": "statement-entry",
+      "src": "2197:20:0",
+      "start": 2197,
+      "statement_type": "Return",
+      "trap_id": 15
+    },
+    {
+      "block_role": "if-false",
+      "id": "line:48",
+      "kind": "line",
+      "lcov": {
+        "line": 48,
+        "record": "DA"
+      },
+      "length": 119,
+      "line": 48,
+      "site": "branch-entry",
+      "src": "2234:119:0",
+      "start": 2234,
+      "statement_type": "Block",
+      "trap_id": 16
+    },
+    {
+      "id": "line:49",
+      "kind": "line",
+      "lcov": {
+        "line": 49,
+        "record": "DA"
+      },
+      "length": 21,
+      "line": 49,
+      "site": "statement-entry",
+      "src": "2281:21:0",
+      "start": 2281,
+      "statement_type": "Return",
+      "trap_id": 17
+    },
+    {
+      "id": "line:51",
+      "kind": "line",
+      "lcov": {
+        "line": 51,
+        "record": "DA"
+      },
+      "length": 9,
+      "line": 51,
+      "site": "statement-entry",
+      "src": "2333:9:0",
+      "start": 2333,
+      "statement_type": "Return",
+      "trap_id": 18
+    },
+    {
+      "declaration_line": 58,
+      "external_selector": "66cad460",
+      "id": "line:58",
+      "kind": "line",
+      "lcov": {
+        "line": 58,
+        "record": "DA"
+      },
+      "length": 186,
+      "line": 58,
+      "site": "body-entry",
+      "src": "2669:186:0",
+      "start": 2669,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 19,
+      "visibility": "public"
+    },
+    {
+      "id": "line:59",
+      "kind": "line",
+      "lcov": {
+        "line": 59,
+        "record": "DA"
+      },
+      "length": 170,
+      "line": 59,
+      "site": "statement-entry",
+      "src": "2679:170:0",
+      "start": 2679,
+      "statement_type": "IfStatement",
+      "trap_id": 20
+    },
+    {
+      "id": "line:60",
+      "kind": "line",
+      "lcov": {
+        "line": 60,
+        "record": "DA"
+      },
+      "length": 24,
+      "line": 60,
+      "site": "statement-entry",
+      "src": "2725:24:0",
+      "start": 2725,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 21
+    },
+    {
+      "block_role": "if-false",
+      "id": "line:61",
+      "kind": "line",
+      "lcov": {
+        "line": 61,
+        "record": "DA"
+      },
+      "length": 83,
+      "line": 61,
+      "site": "branch-entry",
+      "src": "2766:83:0",
+      "start": 2766,
+      "statement_type": "Block",
+      "trap_id": 22
+    },
+    {
+      "id": "line:62",
+      "kind": "line",
+      "lcov": {
+        "line": 62,
+        "record": "DA"
+      },
+      "length": 25,
+      "line": 62,
+      "site": "statement-entry",
+      "src": "2813:25:0",
+      "start": 2813,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 23
+    },
+    {
+      "branch_id": "branch:5",
+      "condition_src": "2155:26:0",
+      "id": "branch:5:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 46,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 45,
+      "line": 46,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "2183:45:0",
+      "start": 2183,
+      "trap_id": 24
+    },
+    {
+      "branch_id": "branch:5",
+      "condition_src": "2155:26:0",
+      "id": "branch:5:false",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 1,
+        "line": 46,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 119,
+      "line": 48,
+      "outcome": false,
+      "site": "branch-entry",
+      "src": "2234:119:0",
+      "start": 2234,
+      "trap_id": 25
+    },
+    {
+      "branch_id": "branch:6",
+      "condition_src": "2238:27:0",
+      "id": "branch:6:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 1,
+        "branch": 0,
+        "line": 48,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 46,
+      "line": 48,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "2267:46:0",
+      "start": 2267,
+      "trap_id": 26
+    },
+    {
+      "branch_id": "branch:6",
+      "condition_src": "2238:27:0",
+      "id": "branch:6:false",
+      "kind": "branch",
+      "lcov": {
+        "block": 1,
+        "branch": 1,
+        "line": 48,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 34,
+      "line": 50,
+      "outcome": false,
+      "site": "branch-entry",
+      "src": "2319:34:0",
+      "start": 2319,
+      "trap_id": 27
+    },
+    {
+      "branch_id": "branch:8",
+      "condition_src": "2683:26:0",
+      "id": "branch:8:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 2,
+        "branch": 0,
+        "line": 59,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 49,
+      "line": 59,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "2711:49:0",
+      "start": 2711,
+      "trap_id": 28
+    },
+    {
+      "branch_id": "branch:8",
+      "condition_src": "2683:26:0",
+      "id": "branch:8:false",
+      "kind": "branch",
+      "lcov": {
+        "block": 2,
+        "branch": 1,
+        "line": 59,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 83,
+      "line": 61,
+      "outcome": false,
+      "site": "branch-entry",
+      "src": "2766:83:0",
+      "start": 2766,
+      "trap_id": 29
+    },
+    {
+      "branch_id": "branch:9",
+      "condition_src": "2770:27:0",
+      "id": "branch:9:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 3,
+        "branch": 0,
+        "line": 61,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 50,
+      "line": 61,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "2799:50:0",
+      "start": 2799,
+      "trap_id": 30
+    }
+  ],
+  "totals": {
+    "all": 30,
+    "branch": 7,
+    "function": 5,
+    "line": 18
+  }
+}

@@ -1,0 +1,5487 @@
+{
+  "compile_failed": 92,
+  "compile_ok": 456,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 619,
+      "function": "liquidate",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "_isHealthy(marketParams, id, borrower, collateralPrice)",
+      "replacement_expression": "_isHealthy(marketParams, id, onBehalf)",
+      "start_line": 619
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 775,
+      "function": "_isHealthy",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "_isHealthy(marketParams, id, borrower, collateralPrice)",
+      "replacement_expression": "_isHealthy(marketParams, id, onBehalf)",
+      "start_line": 775
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 442,
+      "function": "supply",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 442
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 443,
+      "function": "supply",
+      "mutant_id": "m000004",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 443
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 444,
+      "function": "supply",
+      "mutant_id": "m000005",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 444
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "withdraw",
+      "mutant_id": "m000006",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 475
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 476,
+      "function": "withdraw",
+      "mutant_id": "m000007",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 476
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 477,
+      "function": "withdraw",
+      "mutant_id": "m000008",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 477
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "borrow",
+      "mutant_id": "m000009",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 511,
+      "function": "borrow",
+      "mutant_id": "m000010",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 511
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "borrow",
+      "mutant_id": "m000011",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 542,
+      "function": "repay",
+      "mutant_id": "m000012",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 542
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 543,
+      "function": "repay",
+      "mutant_id": "m000013",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 543
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 569,
+      "function": "supplyCollateral",
+      "mutant_id": "m000014",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 569
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 591,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000015",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 591
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 639,
+      "function": "liquidate",
+      "mutant_id": "m000016",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 639
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 640,
+      "function": "liquidate",
+      "mutant_id": "m000017",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 640
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 643,
+      "function": "liquidate",
+      "mutant_id": "m000018",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 654,
+      "function": "liquidate",
+      "mutant_id": "m000019",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 654
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 655,
+      "function": "liquidate",
+      "mutant_id": "m000020",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 655
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 656,
+      "function": "liquidate",
+      "mutant_id": "m000021",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 656
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 745,
+      "function": "_accrueInterest",
+      "mutant_id": "m000022",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 745
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 746,
+      "function": "_accrueInterest",
+      "mutant_id": "m000023",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 746
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 755,
+      "function": "_accrueInterest",
+      "mutant_id": "m000024",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 755
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 756,
+      "function": "_accrueInterest",
+      "mutant_id": "m000025",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 756
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "constructor",
+      "mutant_id": "m000026",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "constructor",
+      "mutant_id": "m000027",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 354,
+      "function": "setOwner",
+      "mutant_id": "m000028",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 354
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 354,
+      "function": "setOwner",
+      "mutant_id": "m000029",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 354
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 398,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000030",
+      "operator": "AVR",
+      "original_expression": "newFeeRecipient",
+      "replacement_expression": "address(this)",
+      "start_line": 398
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 398,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000031",
+      "operator": "AVR",
+      "original_expression": "newFeeRecipient",
+      "replacement_expression": "address(0)",
+      "start_line": 398
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "constructor",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 352,
+      "function": "setOwner",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 352
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "enableLltv",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "enableLltv",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 381,
+      "function": "setFee",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 381
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "setFee",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 382
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "setFee",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 382
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "setFee",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 382
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "setFee",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "setFee",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "setFee",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 396,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "createMarket",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 433,
+      "function": "supply",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "supply",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "supply",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "supply",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 464,
+      "function": "withdraw",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 464
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 466,
+      "function": "withdraw",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 466
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "withdraw",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "withdraw",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "withdraw",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 479
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "withdraw",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 479
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "withdraw",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 479
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 499,
+      "function": "borrow",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 499
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "borrow",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "borrow",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "borrow",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "borrow",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "borrow",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "borrow",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "repay",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 535,
+      "function": "repay",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 535
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "repay",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "repay",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 563,
+      "function": "supplyCollateral",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 563
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 564,
+      "function": "supplyCollateral",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 564
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "supplyCollateral",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 583,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 583
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 584,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 584
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 585,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 585
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 611,
+      "function": "liquidate",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 611
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 624,
+      "function": "liquidate",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 624
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 624,
+      "function": "liquidate",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 624
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 624,
+      "function": "liquidate",
+      "mutant_id": "m000084",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 624
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 624,
+      "function": "liquidate",
+      "mutant_id": "m000085",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 624
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "liquidate",
+      "mutant_id": "m000086",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "liquidate",
+      "mutant_id": "m000087",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 647,
+      "function": "liquidate",
+      "mutant_id": "m000088",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 647
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000089",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 667
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000090",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 667
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 678,
+      "function": "flashLoan",
+      "mutant_id": "m000091",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 678
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 693,
+      "function": "setAuthorization",
+      "mutant_id": "m000092",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 693,
+      "function": "setAuthorization",
+      "mutant_id": "m000093",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "setAuthorization",
+      "mutant_id": "m000094",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 703,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000095",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 703
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 703,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000096",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 703
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 703,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000097",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 703
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000098",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000099",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000100",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000101",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000102",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000103",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000104",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000105",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 723,
+      "function": "_isSenderAuthorized",
+      "mutant_id": "m000106",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 723
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 723,
+      "function": "_isSenderAuthorized",
+      "mutant_id": "m000107",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 723
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 731,
+      "function": "accrueInterest",
+      "mutant_id": "m000108",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 731
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 739,
+      "function": "_accrueInterest",
+      "mutant_id": "m000109",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 739
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 739,
+      "function": "_accrueInterest",
+      "mutant_id": "m000110",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 739
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 740,
+      "function": "_accrueInterest",
+      "mutant_id": "m000111",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 740
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 742,
+      "function": "_accrueInterest",
+      "mutant_id": "m000112",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 742
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 749,
+      "function": "_accrueInterest",
+      "mutant_id": "m000113",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 749
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 754,
+      "function": "_accrueInterest",
+      "mutant_id": "m000114",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 754
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 754,
+      "function": "_accrueInterest",
+      "mutant_id": "m000115",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 754
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000116",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 771
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 792,
+      "function": "_isHealthy",
+      "mutant_id": "m000117",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 792
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 792,
+      "function": "_isHealthy",
+      "mutant_id": "m000118",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 792
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 792,
+      "function": "_isHealthy",
+      "mutant_id": "m000119",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 792
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "extSloads",
+      "mutant_id": "m000120",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "extSloads",
+      "mutant_id": "m000121",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1087,
+      "function": "mulDivDown",
+      "mutant_id": "m000122",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 1087
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1087,
+      "function": "mulDivDown",
+      "mutant_id": "m000123",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 1087
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1087,
+      "function": "mulDivDown",
+      "mutant_id": "m000124",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1087
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1087,
+      "function": "mulDivDown",
+      "mutant_id": "m000125",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1087
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000126",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000127",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000128",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000129",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000130",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000131",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000132",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000133",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1098,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000134",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1098
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1098,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000135",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1098
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1099,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000136",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1099
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1099,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000137",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1099
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1100,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000138",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1100,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000139",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000140",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000141",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000142",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000143",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000144",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000145",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1314,
+      "function": "toSharesDown",
+      "mutant_id": "m000146",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1314,
+      "function": "toSharesDown",
+      "mutant_id": "m000147",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1314,
+      "function": "toSharesDown",
+      "mutant_id": "m000148",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1314,
+      "function": "toSharesDown",
+      "mutant_id": "m000149",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1319,
+      "function": "toAssetsDown",
+      "mutant_id": "m000150",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1319,
+      "function": "toAssetsDown",
+      "mutant_id": "m000151",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1319,
+      "function": "toAssetsDown",
+      "mutant_id": "m000152",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1319,
+      "function": "toAssetsDown",
+      "mutant_id": "m000153",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1324,
+      "function": "toSharesUp",
+      "mutant_id": "m000154",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1324,
+      "function": "toSharesUp",
+      "mutant_id": "m000155",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1324,
+      "function": "toSharesUp",
+      "mutant_id": "m000156",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1324,
+      "function": "toSharesUp",
+      "mutant_id": "m000157",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1329,
+      "function": "toAssetsUp",
+      "mutant_id": "m000158",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1329
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1329,
+      "function": "toAssetsUp",
+      "mutant_id": "m000159",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1329
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1329,
+      "function": "toAssetsUp",
+      "mutant_id": "m000160",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 1329
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1329,
+      "function": "toAssetsUp",
+      "mutant_id": "m000161",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 1329
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1357,
+      "function": "toUint128",
+      "mutant_id": "m000162",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 1357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1357,
+      "function": "toUint128",
+      "mutant_id": "m000163",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 1357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1357,
+      "function": "toUint128",
+      "mutant_id": "m000164",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 1357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1383,
+      "function": "safeTransfer",
+      "mutant_id": "m000165",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1383,
+      "function": "safeTransfer",
+      "mutant_id": "m000166",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1388,
+      "function": "safeTransfer",
+      "mutant_id": "m000167",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 1388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1388,
+      "function": "safeTransfer",
+      "mutant_id": "m000168",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 1388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1392,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000169",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1392
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1392,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000170",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1392
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1397,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000171",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 1397
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1397,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000172",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 1397
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 363,
+      "function": "enableIrm",
+      "mutant_id": "m000173",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 363
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "enableLltv",
+      "mutant_id": "m000174",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000175",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 771
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 338,
+      "function": "constructor",
+      "mutant_id": "m000176",
+      "operator": "CCD",
+      "original_expression": "constructor(address newOwner) {\n        require(newOwner != address(0), ErrorsLib.ZERO_ADDRESS);\n\n        DOMAIN_SEPARATOR = keccak256(abi.encode(DOMAIN_TYPEHASH, block.chainid, address(this)));\n        owner = newOwner;\n\n        emit EventsLib.SetOwner(newOwner);\n    }",
+      "replacement_expression": "",
+      "start_line": 331
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000177",
+      "operator": "CSC",
+      "original_expression": "marketParams.irm != address(0)",
+      "replacement_expression": "true",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000178",
+      "operator": "CSC",
+      "original_expression": "marketParams.irm != address(0)",
+      "replacement_expression": "false",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "supply",
+      "mutant_id": "m000179",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "true",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "supply",
+      "mutant_id": "m000180",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "false",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 440,
+      "function": "supply",
+      "mutant_id": "m000181",
+      "operator": "CSC",
+      "original_expression": "        else assets = shares.toAssetsUp(market[id].totalSupplyAssets, market[id].totalSupplyShares);",
+      "replacement_expression": "",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000182",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "true",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000183",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "false",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "withdraw",
+      "mutant_id": "m000184",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "true",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "withdraw",
+      "mutant_id": "m000185",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "false",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "withdraw",
+      "mutant_id": "m000186",
+      "operator": "CSC",
+      "original_expression": "        else assets = shares.toAssetsDown(market[id].totalSupplyAssets, market[id].totalSupplyShares);",
+      "replacement_expression": "",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "borrow",
+      "mutant_id": "m000187",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "true",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "borrow",
+      "mutant_id": "m000188",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "false",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 508,
+      "function": "borrow",
+      "mutant_id": "m000189",
+      "operator": "CSC",
+      "original_expression": "        else assets = shares.toAssetsDown(market[id].totalBorrowAssets, market[id].totalBorrowShares);",
+      "replacement_expression": "",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "repay",
+      "mutant_id": "m000190",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "true",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "repay",
+      "mutant_id": "m000191",
+      "operator": "CSC",
+      "original_expression": "assets > 0",
+      "replacement_expression": "false",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 540,
+      "function": "repay",
+      "mutant_id": "m000192",
+      "operator": "CSC",
+      "original_expression": "        else assets = shares.toAssetsUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);",
+      "replacement_expression": "",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000193",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "true",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000194",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "false",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000195",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "true",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000196",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "false",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "liquidate",
+      "mutant_id": "m000197",
+      "operator": "CSC",
+      "original_expression": "seizedAssets > 0",
+      "replacement_expression": "true",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "liquidate",
+      "mutant_id": "m000198",
+      "operator": "CSC",
+      "original_expression": "seizedAssets > 0",
+      "replacement_expression": "false",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 635,
+      "function": "liquidate",
+      "mutant_id": "m000199",
+      "operator": "CSC",
+      "original_expression": "else {\n                seizedAssets = repaidShares.toAssetsDown(market[id].totalBorrowAssets, market[id].totalBorrowShares)\n                    .wMulDown(liquidationIncentiveFactor).mulDivDown(ORACLE_PRICE_SCALE, collateralPrice);\n            }",
+      "replacement_expression": "",
+      "start_line": 632
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 647,
+      "function": "liquidate",
+      "mutant_id": "m000200",
+      "operator": "CSC",
+      "original_expression": "position[id][borrower].collateral == 0",
+      "replacement_expression": "true",
+      "start_line": 647
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 647,
+      "function": "liquidate",
+      "mutant_id": "m000201",
+      "operator": "CSC",
+      "original_expression": "position[id][borrower].collateral == 0",
+      "replacement_expression": "false",
+      "start_line": 647
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000202",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "true",
+      "start_line": 667
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000203",
+      "operator": "CSC",
+      "original_expression": "data.length > 0",
+      "replacement_expression": "false",
+      "start_line": 667
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 740,
+      "function": "_accrueInterest",
+      "mutant_id": "m000204",
+      "operator": "CSC",
+      "original_expression": "elapsed == 0",
+      "replacement_expression": "true",
+      "start_line": 740
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 740,
+      "function": "_accrueInterest",
+      "mutant_id": "m000205",
+      "operator": "CSC",
+      "original_expression": "elapsed == 0",
+      "replacement_expression": "false",
+      "start_line": 740
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 742,
+      "function": "_accrueInterest",
+      "mutant_id": "m000206",
+      "operator": "CSC",
+      "original_expression": "marketParams.irm != address(0)",
+      "replacement_expression": "true",
+      "start_line": 742
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 742,
+      "function": "_accrueInterest",
+      "mutant_id": "m000207",
+      "operator": "CSC",
+      "original_expression": "marketParams.irm != address(0)",
+      "replacement_expression": "false",
+      "start_line": 742
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 749,
+      "function": "_accrueInterest",
+      "mutant_id": "m000208",
+      "operator": "CSC",
+      "original_expression": "market[id].fee != 0",
+      "replacement_expression": "true",
+      "start_line": 749
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 749,
+      "function": "_accrueInterest",
+      "mutant_id": "m000209",
+      "operator": "CSC",
+      "original_expression": "market[id].fee != 0",
+      "replacement_expression": "false",
+      "start_line": 749
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000210",
+      "operator": "CSC",
+      "original_expression": "position[id][borrower].borrowShares == 0",
+      "replacement_expression": "true",
+      "start_line": 771
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000211",
+      "operator": "CSC",
+      "original_expression": "position[id][borrower].borrowShares == 0",
+      "replacement_expression": "false",
+      "start_line": 771
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 50,
+      "function": "setFee",
+      "mutant_id": "m000212",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 50
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 85,
+      "function": "createMarket",
+      "mutant_id": "m000213",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 85
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 103,
+      "function": "supply",
+      "mutant_id": "m000214",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 103
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 107,
+      "function": "supply",
+      "mutant_id": "m000215",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 107
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 124,
+      "function": "withdraw",
+      "mutant_id": "m000216",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 124
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 147,
+      "function": "borrow",
+      "mutant_id": "m000217",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 147
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 169,
+      "function": "repay",
+      "mutant_id": "m000218",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 169
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 173,
+      "function": "repay",
+      "mutant_id": "m000219",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 173
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 184,
+      "function": "supplyCollateral",
+      "mutant_id": "m000220",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 184
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 184,
+      "function": "supplyCollateral",
+      "mutant_id": "m000221",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 184
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 194,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000222",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 194
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 212,
+      "function": "liquidate",
+      "mutant_id": "m000223",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 212
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 216,
+      "function": "liquidate",
+      "mutant_id": "m000224",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 216
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 245,
+      "function": "accrueInterest",
+      "mutant_id": "m000225",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 245
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 248,
+      "function": "extSloads",
+      "mutant_id": "m000226",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory slots",
+      "replacement_expression": "bytes32[] storage slots",
+      "start_line": 248
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 248,
+      "function": "extSloads",
+      "mutant_id": "m000227",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory",
+      "replacement_expression": "bytes32[] storage",
+      "start_line": 248
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 379,
+      "function": "setFee",
+      "mutant_id": "m000228",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 379
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 406,
+      "function": "createMarket",
+      "mutant_id": "m000229",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 406
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 426,
+      "function": "supply",
+      "mutant_id": "m000230",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 426
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 457,
+      "function": "withdraw",
+      "mutant_id": "m000231",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 457
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 492,
+      "function": "borrow",
+      "mutant_id": "m000232",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 492
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 526,
+      "function": "repay",
+      "mutant_id": "m000233",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 526
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 559,
+      "function": "supplyCollateral",
+      "mutant_id": "m000234",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 559
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 579,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000235",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 579
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 604,
+      "function": "liquidate",
+      "mutant_id": "m000236",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 604
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 701,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000237",
+      "operator": "DLR",
+      "original_expression": "Authorization memory authorization",
+      "replacement_expression": "Authorization storage authorization",
+      "start_line": 701
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 729,
+      "function": "accrueInterest",
+      "mutant_id": "m000238",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 729
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 738,
+      "function": "_accrueInterest",
+      "mutant_id": "m000239",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 738
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 770,
+      "function": "_isHealthy",
+      "mutant_id": "m000240",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 770
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 782,
+      "function": "_isHealthy",
+      "mutant_id": "m000241",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 782
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 798,
+      "function": "extSloads",
+      "mutant_id": "m000242",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory res",
+      "replacement_expression": "bytes32[] storage res",
+      "start_line": 798
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 979,
+      "function": "position",
+      "mutant_id": "m000243",
+      "operator": "DLR",
+      "original_expression": "Position memory p",
+      "replacement_expression": "Position storage p",
+      "start_line": 979
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 986,
+      "function": "market",
+      "mutant_id": "m000244",
+      "operator": "DLR",
+      "original_expression": "Market memory m",
+      "replacement_expression": "Market storage m",
+      "start_line": 986
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 991,
+      "function": "idToMarketParams",
+      "mutant_id": "m000245",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory",
+      "replacement_expression": "MarketParams storage",
+      "start_line": 991
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1263,
+      "function": "borrowRate",
+      "mutant_id": "m000246",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 1263
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1263,
+      "function": "borrowRate",
+      "mutant_id": "m000247",
+      "operator": "DLR",
+      "original_expression": "Market memory market",
+      "replacement_expression": "Market storage market",
+      "start_line": 1263
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1268,
+      "function": "borrowRateView",
+      "mutant_id": "m000248",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 1268
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1268,
+      "function": "borrowRateView",
+      "mutant_id": "m000249",
+      "operator": "DLR",
+      "original_expression": "Market memory market",
+      "replacement_expression": "Market storage market",
+      "start_line": 1268
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1283,
+      "function": "id",
+      "mutant_id": "m000250",
+      "operator": "DLR",
+      "original_expression": "MarketParams memory marketParams",
+      "replacement_expression": "MarketParams storage marketParams",
+      "start_line": 1283
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1385,
+      "function": "safeTransfer",
+      "mutant_id": "m000251",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1385
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1394,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000252",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1394
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 337,
+      "function": "constructor",
+      "mutant_id": "m000253",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetOwner(newOwner);",
+      "replacement_expression": "/* emit EventsLib.SetOwner(newOwner); */",
+      "start_line": 337
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 356,
+      "function": "setOwner",
+      "mutant_id": "m000254",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetOwner(newOwner);",
+      "replacement_expression": "/* emit EventsLib.SetOwner(newOwner); */",
+      "start_line": 356
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 365,
+      "function": "enableIrm",
+      "mutant_id": "m000255",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.EnableIrm(irm);",
+      "replacement_expression": "/* emit EventsLib.EnableIrm(irm); */",
+      "start_line": 365
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 375,
+      "function": "enableLltv",
+      "mutant_id": "m000256",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.EnableLltv(lltv);",
+      "replacement_expression": "/* emit EventsLib.EnableLltv(lltv); */",
+      "start_line": 375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 391,
+      "function": "setFee",
+      "mutant_id": "m000257",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetFee(id, newFee);",
+      "replacement_expression": "/* emit EventsLib.SetFee(id, newFee); */",
+      "start_line": 391
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 400,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000258",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetFeeRecipient(newFeeRecipient);",
+      "replacement_expression": "/* emit EventsLib.SetFeeRecipient(newFeeRecipient); */",
+      "start_line": 400
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "createMarket",
+      "mutant_id": "m000259",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.CreateMarket(id, marketParams);",
+      "replacement_expression": "/* emit EventsLib.CreateMarket(id, marketParams); */",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 446,
+      "function": "supply",
+      "mutant_id": "m000260",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.Supply(id, msg.sender, onBehalf, assets, shares);",
+      "replacement_expression": "/* emit EventsLib.Supply(id, msg.sender, onBehalf, assets, shares); */",
+      "start_line": 446
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 481,
+      "function": "withdraw",
+      "mutant_id": "m000261",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.Withdraw(id, msg.sender, onBehalf, receiver, assets, shares);",
+      "replacement_expression": "/* emit EventsLib.Withdraw(id, msg.sender, onBehalf, receiver, assets, shares); */",
+      "start_line": 481
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "borrow",
+      "mutant_id": "m000262",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.Borrow(id, msg.sender, onBehalf, receiver, assets, shares);",
+      "replacement_expression": "/* emit EventsLib.Borrow(id, msg.sender, onBehalf, receiver, assets, shares); */",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 547,
+      "function": "repay",
+      "mutant_id": "m000263",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.Repay(id, msg.sender, onBehalf, assets, shares);",
+      "replacement_expression": "/* emit EventsLib.Repay(id, msg.sender, onBehalf, assets, shares); */",
+      "start_line": 547
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 571,
+      "function": "supplyCollateral",
+      "mutant_id": "m000264",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SupplyCollateral(id, msg.sender, onBehalf, assets);",
+      "replacement_expression": "/* emit EventsLib.SupplyCollateral(id, msg.sender, onBehalf, assets); */",
+      "start_line": 571
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 595,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000265",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.WithdrawCollateral(id, msg.sender, onBehalf, receiver, assets);",
+      "replacement_expression": "/* emit EventsLib.WithdrawCollateral(id, msg.sender, onBehalf, receiver, assets); */",
+      "start_line": 595
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 663,
+      "function": "liquidate",
+      "mutant_id": "m000266",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.Liquidate(\n            id, msg.sender, borrower, repaidAssets, repaidShares, seizedAssets, badDebtAssets, badDebtShares\n        );",
+      "replacement_expression": "/* emit EventsLib.Liquidate(\n            id, msg.sender, borrower, repaidAssets, repaidShares, seizedAssets, badDebtAssets, badDebtShares\n        ); */",
+      "start_line": 661
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 680,
+      "function": "flashLoan",
+      "mutant_id": "m000267",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.FlashLoan(msg.sender, token, assets);",
+      "replacement_expression": "/* emit EventsLib.FlashLoan(msg.sender, token, assets); */",
+      "start_line": 680
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 697,
+      "function": "setAuthorization",
+      "mutant_id": "m000268",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetAuthorization(msg.sender, msg.sender, authorized, newIsAuthorized);",
+      "replacement_expression": "/* emit EventsLib.SetAuthorization(msg.sender, msg.sender, authorized, newIsAuthorized); */",
+      "start_line": 697
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 712,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000269",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.IncrementNonce(msg.sender, authorization.authorizer, authorization.nonce);",
+      "replacement_expression": "/* emit EventsLib.IncrementNonce(msg.sender, authorization.authorizer, authorization.nonce); */",
+      "start_line": 712
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 718,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000270",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.SetAuthorization(\n            msg.sender, authorization.authorizer, authorization.authorized, authorization.isAuthorized\n        );",
+      "replacement_expression": "/* emit EventsLib.SetAuthorization(\n            msg.sender, authorization.authorizer, authorization.authorized, authorization.isAuthorized\n        ); */",
+      "start_line": 716
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 759,
+      "function": "_accrueInterest",
+      "mutant_id": "m000271",
+      "operator": "EED",
+      "original_expression": "emit EventsLib.AccrueInterest(id, borrowRate, interest, feeShares);",
+      "replacement_expression": "/* emit EventsLib.AccrueInterest(id, borrowRate, interest, feeShares); */",
+      "start_line": 759
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 389,
+      "function": "setFee",
+      "mutant_id": "m000272",
+      "operator": "ECS",
+      "original_expression": "uint128(newFee)",
+      "replacement_expression": "uint120(newFee)",
+      "start_line": 389
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "createMarket",
+      "mutant_id": "m000273",
+      "operator": "ECS",
+      "original_expression": "uint128(block.timestamp)",
+      "replacement_expression": "uint120(block.timestamp)",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 763,
+      "function": "_accrueInterest",
+      "mutant_id": "m000274",
+      "operator": "ECS",
+      "original_expression": "uint128(block.timestamp)",
+      "replacement_expression": "uint120(block.timestamp)",
+      "start_line": 763
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 787,
+      "function": "_isHealthy",
+      "mutant_id": "m000275",
+      "operator": "ECS",
+      "original_expression": "uint256(position[id][borrower].borrowShares)",
+      "replacement_expression": "uint248(position[id][borrower].borrowShares)",
+      "start_line": 787
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 789,
+      "function": "_isHealthy",
+      "mutant_id": "m000276",
+      "operator": "ECS",
+      "original_expression": "uint256(position[id][borrower].collateral)",
+      "replacement_expression": "uint248(position[id][borrower].collateral)",
+      "start_line": 789
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1358,
+      "function": "toUint128",
+      "mutant_id": "m000277",
+      "operator": "ECS",
+      "original_expression": "uint128(x)",
+      "replacement_expression": "uint120(x)",
+      "start_line": 1358
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "constructor",
+      "mutant_id": "m000278",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(newOwner != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 344,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000279",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == owner, ErrorsLib.NOT_OWNER);",
+      "replacement_expression": "/* require(msg.sender == owner, ErrorsLib.NOT_OWNER); */",
+      "start_line": 344
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 352,
+      "function": "setOwner",
+      "mutant_id": "m000280",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != owner, ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(newOwner != owner, ErrorsLib.ALREADY_SET); */",
+      "start_line": 352
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 361,
+      "function": "enableIrm",
+      "mutant_id": "m000281",
+      "operator": "EHD",
+      "original_expression": "require(!isIrmEnabled[irm], ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(!isIrmEnabled[irm], ErrorsLib.ALREADY_SET); */",
+      "start_line": 361
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "enableLltv",
+      "mutant_id": "m000282",
+      "operator": "EHD",
+      "original_expression": "require(!isLltvEnabled[lltv], ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(!isLltvEnabled[lltv], ErrorsLib.ALREADY_SET); */",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "enableLltv",
+      "mutant_id": "m000283",
+      "operator": "EHD",
+      "original_expression": "require(lltv < WAD, ErrorsLib.MAX_LLTV_EXCEEDED);",
+      "replacement_expression": "/* require(lltv < WAD, ErrorsLib.MAX_LLTV_EXCEEDED); */",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 381,
+      "function": "setFee",
+      "mutant_id": "m000284",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 381
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "setFee",
+      "mutant_id": "m000285",
+      "operator": "EHD",
+      "original_expression": "require(newFee != market[id].fee, ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(newFee != market[id].fee, ErrorsLib.ALREADY_SET); */",
+      "start_line": 382
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "setFee",
+      "mutant_id": "m000286",
+      "operator": "EHD",
+      "original_expression": "require(newFee <= MAX_FEE, ErrorsLib.MAX_FEE_EXCEEDED);",
+      "replacement_expression": "/* require(newFee <= MAX_FEE, ErrorsLib.MAX_FEE_EXCEEDED); */",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 396,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000287",
+      "operator": "EHD",
+      "original_expression": "require(newFeeRecipient != feeRecipient, ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(newFeeRecipient != feeRecipient, ErrorsLib.ALREADY_SET); */",
+      "start_line": 396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "createMarket",
+      "mutant_id": "m000288",
+      "operator": "EHD",
+      "original_expression": "require(isIrmEnabled[marketParams.irm], ErrorsLib.IRM_NOT_ENABLED);",
+      "replacement_expression": "/* require(isIrmEnabled[marketParams.irm], ErrorsLib.IRM_NOT_ENABLED); */",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 409,
+      "function": "createMarket",
+      "mutant_id": "m000289",
+      "operator": "EHD",
+      "original_expression": "require(isLltvEnabled[marketParams.lltv], ErrorsLib.LLTV_NOT_ENABLED);",
+      "replacement_expression": "/* require(isLltvEnabled[marketParams.lltv], ErrorsLib.LLTV_NOT_ENABLED); */",
+      "start_line": 409
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "createMarket",
+      "mutant_id": "m000290",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate == 0, ErrorsLib.MARKET_ALREADY_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate == 0, ErrorsLib.MARKET_ALREADY_CREATED); */",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 433,
+      "function": "supply",
+      "mutant_id": "m000291",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 434,
+      "function": "supply",
+      "mutant_id": "m000292",
+      "operator": "EHD",
+      "original_expression": "require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);",
+      "replacement_expression": "/* require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT); */",
+      "start_line": 434
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "supply",
+      "mutant_id": "m000293",
+      "operator": "EHD",
+      "original_expression": "require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 464,
+      "function": "withdraw",
+      "mutant_id": "m000294",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 464
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 465,
+      "function": "withdraw",
+      "mutant_id": "m000295",
+      "operator": "EHD",
+      "original_expression": "require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);",
+      "replacement_expression": "/* require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT); */",
+      "start_line": 465
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 466,
+      "function": "withdraw",
+      "mutant_id": "m000296",
+      "operator": "EHD",
+      "original_expression": "require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(receiver != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 466
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "withdraw",
+      "mutant_id": "m000297",
+      "operator": "EHD",
+      "original_expression": "require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);",
+      "replacement_expression": "/* require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED); */",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "withdraw",
+      "mutant_id": "m000298",
+      "operator": "EHD",
+      "original_expression": "require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY);",
+      "replacement_expression": "/* require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY); */",
+      "start_line": 479
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 499,
+      "function": "borrow",
+      "mutant_id": "m000299",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 499
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 500,
+      "function": "borrow",
+      "mutant_id": "m000300",
+      "operator": "EHD",
+      "original_expression": "require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);",
+      "replacement_expression": "/* require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT); */",
+      "start_line": 500
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "borrow",
+      "mutant_id": "m000301",
+      "operator": "EHD",
+      "original_expression": "require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(receiver != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 503,
+      "function": "borrow",
+      "mutant_id": "m000302",
+      "operator": "EHD",
+      "original_expression": "require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);",
+      "replacement_expression": "/* require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED); */",
+      "start_line": 503
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 514,
+      "function": "borrow",
+      "mutant_id": "m000303",
+      "operator": "EHD",
+      "original_expression": "require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL);",
+      "replacement_expression": "/* require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL); */",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "borrow",
+      "mutant_id": "m000304",
+      "operator": "EHD",
+      "original_expression": "require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY);",
+      "replacement_expression": "/* require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY); */",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "repay",
+      "mutant_id": "m000305",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 534,
+      "function": "repay",
+      "mutant_id": "m000306",
+      "operator": "EHD",
+      "original_expression": "require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);",
+      "replacement_expression": "/* require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT); */",
+      "start_line": 534
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 535,
+      "function": "repay",
+      "mutant_id": "m000307",
+      "operator": "EHD",
+      "original_expression": "require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 535
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 563,
+      "function": "supplyCollateral",
+      "mutant_id": "m000308",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 563
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 564,
+      "function": "supplyCollateral",
+      "mutant_id": "m000309",
+      "operator": "EHD",
+      "original_expression": "require(assets != 0, ErrorsLib.ZERO_ASSETS);",
+      "replacement_expression": "/* require(assets != 0, ErrorsLib.ZERO_ASSETS); */",
+      "start_line": 564
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "supplyCollateral",
+      "mutant_id": "m000310",
+      "operator": "EHD",
+      "original_expression": "require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 583,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000311",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 583
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 584,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000312",
+      "operator": "EHD",
+      "original_expression": "require(assets != 0, ErrorsLib.ZERO_ASSETS);",
+      "replacement_expression": "/* require(assets != 0, ErrorsLib.ZERO_ASSETS); */",
+      "start_line": 584
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 585,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000313",
+      "operator": "EHD",
+      "original_expression": "require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);",
+      "replacement_expression": "/* require(receiver != address(0), ErrorsLib.ZERO_ADDRESS); */",
+      "start_line": 585
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 587,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000314",
+      "operator": "EHD",
+      "original_expression": "require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);",
+      "replacement_expression": "/* require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED); */",
+      "start_line": 587
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 593,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000315",
+      "operator": "EHD",
+      "original_expression": "require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL);",
+      "replacement_expression": "/* require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL); */",
+      "start_line": 593
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 611,
+      "function": "liquidate",
+      "mutant_id": "m000316",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 611
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 612,
+      "function": "liquidate",
+      "mutant_id": "m000317",
+      "operator": "EHD",
+      "original_expression": "require(UtilsLib.exactlyOneZero(seizedAssets, repaidShares), ErrorsLib.INCONSISTENT_INPUT);",
+      "replacement_expression": "/* require(UtilsLib.exactlyOneZero(seizedAssets, repaidShares), ErrorsLib.INCONSISTENT_INPUT); */",
+      "start_line": 612
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "liquidate",
+      "mutant_id": "m000318",
+      "operator": "EHD",
+      "original_expression": "require(!_isHealthy(marketParams, id, borrower, collateralPrice), ErrorsLib.HEALTHY_POSITION);",
+      "replacement_expression": "/* require(!_isHealthy(marketParams, id, borrower, collateralPrice), ErrorsLib.HEALTHY_POSITION); */",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 678,
+      "function": "flashLoan",
+      "mutant_id": "m000319",
+      "operator": "EHD",
+      "original_expression": "require(assets != 0, ErrorsLib.ZERO_ASSETS);",
+      "replacement_expression": "/* require(assets != 0, ErrorsLib.ZERO_ASSETS); */",
+      "start_line": 678
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 693,
+      "function": "setAuthorization",
+      "mutant_id": "m000320",
+      "operator": "EHD",
+      "original_expression": "require(newIsAuthorized != isAuthorized[msg.sender][authorized], ErrorsLib.ALREADY_SET);",
+      "replacement_expression": "/* require(newIsAuthorized != isAuthorized[msg.sender][authorized], ErrorsLib.ALREADY_SET); */",
+      "start_line": 693
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 703,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000321",
+      "operator": "EHD",
+      "original_expression": "require(block.timestamp <= authorization.deadline, ErrorsLib.SIGNATURE_EXPIRED);",
+      "replacement_expression": "/* require(block.timestamp <= authorization.deadline, ErrorsLib.SIGNATURE_EXPIRED); */",
+      "start_line": 703
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000322",
+      "operator": "EHD",
+      "original_expression": "require(authorization.nonce == nonce[authorization.authorizer]++, ErrorsLib.INVALID_NONCE);",
+      "replacement_expression": "/* require(authorization.nonce == nonce[authorization.authorizer]++, ErrorsLib.INVALID_NONCE); */",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000323",
+      "operator": "EHD",
+      "original_expression": "require(signatory != address(0) && authorization.authorizer == signatory, ErrorsLib.INVALID_SIGNATURE);",
+      "replacement_expression": "/* require(signatory != address(0) && authorization.authorizer == signatory, ErrorsLib.INVALID_SIGNATURE); */",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 731,
+      "function": "accrueInterest",
+      "mutant_id": "m000324",
+      "operator": "EHD",
+      "original_expression": "require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);",
+      "replacement_expression": "/* require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED); */",
+      "start_line": 731
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1357,
+      "function": "toUint128",
+      "mutant_id": "m000325",
+      "operator": "EHD",
+      "original_expression": "require(x <= type(uint128).max, ErrorsLib.MAX_UINT128_EXCEEDED);",
+      "replacement_expression": "/* require(x <= type(uint128).max, ErrorsLib.MAX_UINT128_EXCEEDED); */",
+      "start_line": 1357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1383,
+      "function": "safeTransfer",
+      "mutant_id": "m000326",
+      "operator": "EHD",
+      "original_expression": "require(address(token).code.length > 0, ErrorsLib.NO_CODE);",
+      "replacement_expression": "/* require(address(token).code.length > 0, ErrorsLib.NO_CODE); */",
+      "start_line": 1383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1387,
+      "function": "safeTransfer",
+      "mutant_id": "m000327",
+      "operator": "EHD",
+      "original_expression": "require(success, ErrorsLib.TRANSFER_REVERTED);",
+      "replacement_expression": "/* require(success, ErrorsLib.TRANSFER_REVERTED); */",
+      "start_line": 1387
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1388,
+      "function": "safeTransfer",
+      "mutant_id": "m000328",
+      "operator": "EHD",
+      "original_expression": "require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TRANSFER_RETURNED_FALSE);",
+      "replacement_expression": "/* require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TRANSFER_RETURNED_FALSE); */",
+      "start_line": 1388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1392,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000329",
+      "operator": "EHD",
+      "original_expression": "require(address(token).code.length > 0, ErrorsLib.NO_CODE);",
+      "replacement_expression": "/* require(address(token).code.length > 0, ErrorsLib.NO_CODE); */",
+      "start_line": 1392
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1396,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000330",
+      "operator": "EHD",
+      "original_expression": "require(success, ErrorsLib.TRANSFER_FROM_REVERTED);",
+      "replacement_expression": "/* require(success, ErrorsLib.TRANSFER_FROM_REVERTED); */",
+      "start_line": 1396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1397,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000331",
+      "operator": "EHD",
+      "original_expression": "require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TRANSFER_FROM_RETURNED_FALSE);",
+      "replacement_expression": "/* require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TRANSFER_FROM_RETURNED_FALSE); */",
+      "start_line": 1397
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1386,
+      "function": "safeTransfer",
+      "mutant_id": "m000332",
+      "operator": "ETR",
+      "original_expression": "address(token).call",
+      "replacement_expression": "address(token).delegatecall",
+      "start_line": 1386
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1386,
+      "function": "safeTransfer",
+      "mutant_id": "m000333",
+      "operator": "ETR",
+      "original_expression": "address(token).call",
+      "replacement_expression": "address(token).staticcall",
+      "start_line": 1386
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1395,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000334",
+      "operator": "ETR",
+      "original_expression": "address(token).call",
+      "replacement_expression": "address(token).delegatecall",
+      "start_line": 1395
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1395,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000335",
+      "operator": "ETR",
+      "original_expression": "address(token).call",
+      "replacement_expression": "address(token).staticcall",
+      "start_line": 1395
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 386,
+      "function": "setFee",
+      "mutant_id": "m000336",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 386
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000337",
+      "operator": "FCD",
+      "original_expression": "IIrm(marketParams.irm).borrowRate(marketParams, market[id]);",
+      "replacement_expression": "/*IIrm(marketParams.irm).borrowRate(marketParams, market[id]);*/",
+      "start_line": 419
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000338",
+      "operator": "FCD",
+      "original_expression": "IIrm(marketParams.irm).",
+      "replacement_expression": "/*IIrm(marketParams.irm).*/",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 437,
+      "function": "supply",
+      "mutant_id": "m000339",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 437
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000340",
+      "operator": "FCD",
+      "original_expression": "IMorphoSupplyCallback(msg.sender).onMorphoSupply(assets, data);",
+      "replacement_expression": "/*IMorphoSupplyCallback(msg.sender).onMorphoSupply(assets, data);*/",
+      "start_line": 448
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000341",
+      "operator": "FCD",
+      "original_expression": "IMorphoSupplyCallback(msg.sender).",
+      "replacement_expression": "/*IMorphoSupplyCallback(msg.sender).*/",
+      "start_line": 448
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 450,
+      "function": "supply",
+      "mutant_id": "m000342",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.loanToken).",
+      "replacement_expression": "/*IERC20(marketParams.loanToken).*/",
+      "start_line": 450
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 470,
+      "function": "withdraw",
+      "mutant_id": "m000343",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 470
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 483,
+      "function": "withdraw",
+      "mutant_id": "m000344",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.loanToken).",
+      "replacement_expression": "/*IERC20(marketParams.loanToken).*/",
+      "start_line": 483
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 505,
+      "function": "borrow",
+      "mutant_id": "m000345",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 505
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 519,
+      "function": "borrow",
+      "mutant_id": "m000346",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.loanToken).",
+      "replacement_expression": "/*IERC20(marketParams.loanToken).*/",
+      "start_line": 519
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 537,
+      "function": "repay",
+      "mutant_id": "m000347",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 537
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000348",
+      "operator": "FCD",
+      "original_expression": "IMorphoRepayCallback(msg.sender).onMorphoRepay(assets, data);",
+      "replacement_expression": "/*IMorphoRepayCallback(msg.sender).onMorphoRepay(assets, data);*/",
+      "start_line": 549
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000349",
+      "operator": "FCD",
+      "original_expression": "IMorphoRepayCallback(msg.sender).",
+      "replacement_expression": "/*IMorphoRepayCallback(msg.sender).*/",
+      "start_line": 549
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 551,
+      "function": "repay",
+      "mutant_id": "m000350",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.loanToken).",
+      "replacement_expression": "/*IERC20(marketParams.loanToken).*/",
+      "start_line": 551
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000351",
+      "operator": "FCD",
+      "original_expression": "IMorphoSupplyCollateralCallback(msg.sender).onMorphoSupplyCollateral(assets, data);",
+      "replacement_expression": "/*IMorphoSupplyCollateralCallback(msg.sender).onMorphoSupplyCollateral(assets, data);*/",
+      "start_line": 573
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000352",
+      "operator": "FCD",
+      "original_expression": "IMorphoSupplyCollateralCallback(msg.sender).",
+      "replacement_expression": "/*IMorphoSupplyCollateralCallback(msg.sender).*/",
+      "start_line": 573
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 575,
+      "function": "supplyCollateral",
+      "mutant_id": "m000353",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.collateralToken).",
+      "replacement_expression": "/*IERC20(marketParams.collateralToken).*/",
+      "start_line": 575
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 589,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000354",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 589
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 597,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000355",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.collateralToken).",
+      "replacement_expression": "/*IERC20(marketParams.collateralToken).*/",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 614,
+      "function": "liquidate",
+      "mutant_id": "m000356",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 614
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 665,
+      "function": "liquidate",
+      "mutant_id": "m000357",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.collateralToken).",
+      "replacement_expression": "/*IERC20(marketParams.collateralToken).*/",
+      "start_line": 665
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000358",
+      "operator": "FCD",
+      "original_expression": "IMorphoLiquidateCallback(msg.sender).onMorphoLiquidate(repaidAssets, data);",
+      "replacement_expression": "/*IMorphoLiquidateCallback(msg.sender).onMorphoLiquidate(repaidAssets, data);*/",
+      "start_line": 667
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000359",
+      "operator": "FCD",
+      "original_expression": "IMorphoLiquidateCallback(msg.sender).",
+      "replacement_expression": "/*IMorphoLiquidateCallback(msg.sender).*/",
+      "start_line": 667
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 669,
+      "function": "liquidate",
+      "mutant_id": "m000360",
+      "operator": "FCD",
+      "original_expression": "IERC20(marketParams.loanToken).",
+      "replacement_expression": "/*IERC20(marketParams.loanToken).*/",
+      "start_line": 669
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 682,
+      "function": "flashLoan",
+      "mutant_id": "m000361",
+      "operator": "FCD",
+      "original_expression": "IERC20(token).",
+      "replacement_expression": "/*IERC20(token).*/",
+      "start_line": 682
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 684,
+      "function": "flashLoan",
+      "mutant_id": "m000362",
+      "operator": "FCD",
+      "original_expression": "IMorphoFlashLoanCallback(msg.sender).onMorphoFlashLoan(assets, data);",
+      "replacement_expression": "/*IMorphoFlashLoanCallback(msg.sender).onMorphoFlashLoan(assets, data);*/",
+      "start_line": 684
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 684,
+      "function": "flashLoan",
+      "mutant_id": "m000363",
+      "operator": "FCD",
+      "original_expression": "IMorphoFlashLoanCallback(msg.sender).",
+      "replacement_expression": "/*IMorphoFlashLoanCallback(msg.sender).*/",
+      "start_line": 684
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 686,
+      "function": "flashLoan",
+      "mutant_id": "m000364",
+      "operator": "FCD",
+      "original_expression": "IERC20(token).",
+      "replacement_expression": "/*IERC20(token).*/",
+      "start_line": 686
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 733,
+      "function": "accrueInterest",
+      "mutant_id": "m000365",
+      "operator": "FCD",
+      "original_expression": "_accrueInterest(marketParams, id);",
+      "replacement_expression": "/*_accrueInterest(marketParams, id);*/",
+      "start_line": 733
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 334,
+      "function": "constructor",
+      "mutant_id": "m000366",
+      "operator": "GVR",
+      "original_expression": "block.chainid",
+      "replacement_expression": "block.chainid-1",
+      "start_line": 334
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "createMarket",
+      "mutant_id": "m000367",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 703,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000368",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 703
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 739,
+      "function": "_accrueInterest",
+      "mutant_id": "m000369",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 739
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 763,
+      "function": "_accrueInterest",
+      "mutant_id": "m000370",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 763
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 332,
+      "function": "constructor",
+      "mutant_id": "m000371",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 332
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 381,
+      "function": "setFee",
+      "mutant_id": "m000372",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 381
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "createMarket",
+      "mutant_id": "m000373",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "createMarket",
+      "mutant_id": "m000374",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 433,
+      "function": "supply",
+      "mutant_id": "m000375",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 435,
+      "function": "supply",
+      "mutant_id": "m000376",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 435
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 439,
+      "function": "supply",
+      "mutant_id": "m000377",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 439
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "supply",
+      "mutant_id": "m000378",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 464,
+      "function": "withdraw",
+      "mutant_id": "m000379",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 464
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 466,
+      "function": "withdraw",
+      "mutant_id": "m000380",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 466
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "withdraw",
+      "mutant_id": "m000381",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 499,
+      "function": "borrow",
+      "mutant_id": "m000382",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 499
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 501,
+      "function": "borrow",
+      "mutant_id": "m000383",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "borrow",
+      "mutant_id": "m000384",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 507
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 533,
+      "function": "repay",
+      "mutant_id": "m000385",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 533
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 535,
+      "function": "repay",
+      "mutant_id": "m000386",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 535
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 539,
+      "function": "repay",
+      "mutant_id": "m000387",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 539
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 549,
+      "function": "repay",
+      "mutant_id": "m000388",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 549
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 563,
+      "function": "supplyCollateral",
+      "mutant_id": "m000389",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 563
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 564,
+      "function": "supplyCollateral",
+      "mutant_id": "m000390",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 564
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "supplyCollateral",
+      "mutant_id": "m000391",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "supplyCollateral",
+      "mutant_id": "m000392",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 583,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000393",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 583
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 584,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000394",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 584
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 585,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000395",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 585
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 611,
+      "function": "liquidate",
+      "mutant_id": "m000396",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 611
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "liquidate",
+      "mutant_id": "m000397",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 647,
+      "function": "liquidate",
+      "mutant_id": "m000398",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 647
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 657,
+      "function": "liquidate",
+      "mutant_id": "m000399",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 657
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 667,
+      "function": "liquidate",
+      "mutant_id": "m000400",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 667
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 678,
+      "function": "flashLoan",
+      "mutant_id": "m000401",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 678
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 710,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000402",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 710
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 731,
+      "function": "accrueInterest",
+      "mutant_id": "m000403",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 731
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 740,
+      "function": "_accrueInterest",
+      "mutant_id": "m000404",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 740
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 742,
+      "function": "_accrueInterest",
+      "mutant_id": "m000405",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 742
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 749,
+      "function": "_accrueInterest",
+      "mutant_id": "m000406",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 749
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000407",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 771
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 817,
+      "function": "stateVariable",
+      "mutant_id": "m000408",
+      "operator": "ILR",
+      "original_expression": "0.25e18",
+      "replacement_expression": "undefined",
+      "start_line": 817
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 820,
+      "function": "stateVariable",
+      "mutant_id": "m000409",
+      "operator": "ILR",
+      "original_expression": "1e36",
+      "replacement_expression": "undefined",
+      "start_line": 820
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 823,
+      "function": "stateVariable",
+      "mutant_id": "m000410",
+      "operator": "ILR",
+      "original_expression": "0.3e18",
+      "replacement_expression": "undefined",
+      "start_line": 823
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 826,
+      "function": "stateVariable",
+      "mutant_id": "m000411",
+      "operator": "ILR",
+      "original_expression": "1.15e18",
+      "replacement_expression": "undefined",
+      "start_line": 826
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1063,
+      "function": "stateVariable",
+      "mutant_id": "m000412",
+      "operator": "ILR",
+      "original_expression": "1e18",
+      "replacement_expression": "undefined",
+      "start_line": 1063
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000413",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000414",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1099,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000415",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1099
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1099,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000416",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1099
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1100,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000417",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 1100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1100,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000418",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 1100
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000419",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "4",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000420",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "6",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000421",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1280,
+      "function": "stateVariable",
+      "mutant_id": "m000422",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 1280
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1306,
+      "function": "stateVariable",
+      "mutant_id": "m000423",
+      "operator": "ILR",
+      "original_expression": "1e6",
+      "replacement_expression": "999999",
+      "start_line": 1306
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1306,
+      "function": "stateVariable",
+      "mutant_id": "m000424",
+      "operator": "ILR",
+      "original_expression": "1e6",
+      "replacement_expression": "1000001",
+      "start_line": 1306
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1310,
+      "function": "stateVariable",
+      "mutant_id": "m000425",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 1310
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1310,
+      "function": "stateVariable",
+      "mutant_id": "m000426",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 1310
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1383,
+      "function": "safeTransfer",
+      "mutant_id": "m000427",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1388,
+      "function": "safeTransfer",
+      "mutant_id": "m000428",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1392,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000429",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1392
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1397,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000430",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1397
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "extSloads",
+      "mutant_id": "m000431",
+      "operator": "LSC",
+      "original_expression": "i < nSlots",
+      "replacement_expression": "false",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 334,
+      "function": "constructor",
+      "mutant_id": "m000432",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 334
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 706,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000433",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 706
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 707,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000434",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 707
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 829,
+      "function": "stateVariable",
+      "mutant_id": "m000435",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 829
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 833,
+      "function": "stateVariable",
+      "mutant_id": "m000436",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 833
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 351,
+      "function": "setOwner",
+      "mutant_id": "m000437",
+      "operator": "MOD",
+      "original_expression": "function setOwner(address newOwner) external onlyOwner ",
+      "replacement_expression": "function setOwner(address newOwner) external  ",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 360,
+      "function": "enableIrm",
+      "mutant_id": "m000438",
+      "operator": "MOD",
+      "original_expression": "function enableIrm(address irm) external onlyOwner ",
+      "replacement_expression": "function enableIrm(address irm) external  ",
+      "start_line": 360
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 369,
+      "function": "enableLltv",
+      "mutant_id": "m000439",
+      "operator": "MOD",
+      "original_expression": "function enableLltv(uint256 lltv) external onlyOwner ",
+      "replacement_expression": "function enableLltv(uint256 lltv) external  ",
+      "start_line": 369
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 379,
+      "function": "setFee",
+      "mutant_id": "m000440",
+      "operator": "MOD",
+      "original_expression": "function setFee(MarketParams memory marketParams, uint256 newFee) external onlyOwner ",
+      "replacement_expression": "function setFee(MarketParams memory marketParams, uint256 newFee) external  ",
+      "start_line": 379
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 395,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000441",
+      "operator": "MOD",
+      "original_expression": "function setFeeRecipient(address newFeeRecipient) external onlyOwner ",
+      "replacement_expression": "function setFeeRecipient(address newFeeRecipient) external  ",
+      "start_line": 395
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "setOwner",
+      "mutant_id": "m000442",
+      "operator": "OLFD",
+      "original_expression": "function setOwner(address newOwner) external;",
+      "replacement_expression": "",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "enableIrm",
+      "mutant_id": "m000443",
+      "operator": "OLFD",
+      "original_expression": "function enableIrm(address irm) external;",
+      "replacement_expression": "",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 45,
+      "function": "enableLltv",
+      "mutant_id": "m000444",
+      "operator": "OLFD",
+      "original_expression": "function enableLltv(uint256 lltv) external;",
+      "replacement_expression": "",
+      "start_line": 45
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "setFee",
+      "mutant_id": "m000445",
+      "operator": "OLFD",
+      "original_expression": "function setFee(MarketParams memory marketParams, uint256 newFee) external;",
+      "replacement_expression": "",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 56,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000446",
+      "operator": "OLFD",
+      "original_expression": "function setFeeRecipient(address newFeeRecipient) external;",
+      "replacement_expression": "",
+      "start_line": 56
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 85,
+      "function": "createMarket",
+      "mutant_id": "m000447",
+      "operator": "OLFD",
+      "original_expression": "function createMarket(MarketParams memory marketParams) external;",
+      "replacement_expression": "",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "supply",
+      "mutant_id": "m000448",
+      "operator": "OLFD",
+      "original_expression": "function supply(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        bytes memory data\n    ) external returns (uint256 assetsSupplied, uint256 sharesSupplied);",
+      "replacement_expression": "",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "withdraw",
+      "mutant_id": "m000449",
+      "operator": "OLFD",
+      "original_expression": "function withdraw(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        address receiver\n    ) external returns (uint256 assetsWithdrawn, uint256 sharesWithdrawn);",
+      "replacement_expression": "",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "borrow",
+      "mutant_id": "m000450",
+      "operator": "OLFD",
+      "original_expression": "function borrow(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        address receiver\n    ) external returns (uint256 assetsBorrowed, uint256 sharesBorrowed);",
+      "replacement_expression": "",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "repay",
+      "mutant_id": "m000451",
+      "operator": "OLFD",
+      "original_expression": "function repay(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        bytes memory data\n    ) external returns (uint256 assetsRepaid, uint256 sharesRepaid);",
+      "replacement_expression": "",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 185,
+      "function": "supplyCollateral",
+      "mutant_id": "m000452",
+      "operator": "OLFD",
+      "original_expression": "function supplyCollateral(MarketParams memory marketParams, uint256 assets, address onBehalf, bytes memory data)\n        external;",
+      "replacement_expression": "",
+      "start_line": 184
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 195,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000453",
+      "operator": "OLFD",
+      "original_expression": "function withdrawCollateral(MarketParams memory marketParams, uint256 assets, address onBehalf, address receiver)\n        external;",
+      "replacement_expression": "",
+      "start_line": 194
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "liquidate",
+      "mutant_id": "m000454",
+      "operator": "OLFD",
+      "original_expression": "function liquidate(\n        MarketParams memory marketParams,\n        address borrower,\n        uint256 seizedAssets,\n        uint256 repaidShares,\n        bytes memory data\n    ) external returns (uint256, uint256);",
+      "replacement_expression": "",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "flashLoan",
+      "mutant_id": "m000455",
+      "operator": "OLFD",
+      "original_expression": "function flashLoan(address token, uint256 assets, bytes calldata data) external;",
+      "replacement_expression": "",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 234,
+      "function": "setAuthorization",
+      "mutant_id": "m000456",
+      "operator": "OLFD",
+      "original_expression": "function setAuthorization(address authorized, bool newIsAuthorized) external;",
+      "replacement_expression": "",
+      "start_line": 234
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000457",
+      "operator": "OLFD",
+      "original_expression": "function setAuthorizationWithSig(Authorization calldata authorization, Signature calldata signature) external;",
+      "replacement_expression": "",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "accrueInterest",
+      "mutant_id": "m000458",
+      "operator": "OLFD",
+      "original_expression": "function accrueInterest(MarketParams memory marketParams) external;",
+      "replacement_expression": "",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "extSloads",
+      "mutant_id": "m000459",
+      "operator": "OLFD",
+      "original_expression": "function extSloads(bytes32[] memory slots) external view returns (bytes32[] memory);",
+      "replacement_expression": "",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 260,
+      "function": "position",
+      "mutant_id": "m000460",
+      "operator": "OLFD",
+      "original_expression": "function position(Id id, address user)\n        external\n        view\n        returns (uint256 supplyShares, uint128 borrowShares, uint128 collateral);",
+      "replacement_expression": "",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "market",
+      "mutant_id": "m000461",
+      "operator": "OLFD",
+      "original_expression": "function market(Id id)\n        external\n        view\n        returns (\n            uint128 totalSupplyAssets,\n            uint128 totalSupplyShares,\n            uint128 totalBorrowAssets,\n            uint128 totalBorrowShares,\n            uint128 lastUpdate,\n            uint128 fee\n        );",
+      "replacement_expression": "",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 285,
+      "function": "idToMarketParams",
+      "mutant_id": "m000462",
+      "operator": "OLFD",
+      "original_expression": "function idToMarketParams(Id id)\n        external\n        view\n        returns (address loanToken, address collateralToken, address oracle, address irm, uint256 lltv);",
+      "replacement_expression": "",
+      "start_line": 282
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 357,
+      "function": "setOwner",
+      "mutant_id": "m000463",
+      "operator": "OLFD",
+      "original_expression": "function setOwner(address newOwner) external onlyOwner {\n        require(newOwner != owner, ErrorsLib.ALREADY_SET);\n\n        owner = newOwner;\n\n        emit EventsLib.SetOwner(newOwner);\n    }",
+      "replacement_expression": "",
+      "start_line": 351
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 366,
+      "function": "enableIrm",
+      "mutant_id": "m000464",
+      "operator": "OLFD",
+      "original_expression": "function enableIrm(address irm) external onlyOwner {\n        require(!isIrmEnabled[irm], ErrorsLib.ALREADY_SET);\n\n        isIrmEnabled[irm] = true;\n\n        emit EventsLib.EnableIrm(irm);\n    }",
+      "replacement_expression": "",
+      "start_line": 360
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 376,
+      "function": "enableLltv",
+      "mutant_id": "m000465",
+      "operator": "OLFD",
+      "original_expression": "function enableLltv(uint256 lltv) external onlyOwner {\n        require(!isLltvEnabled[lltv], ErrorsLib.ALREADY_SET);\n        require(lltv < WAD, ErrorsLib.MAX_LLTV_EXCEEDED);\n\n        isLltvEnabled[lltv] = true;\n\n        emit EventsLib.EnableLltv(lltv);\n    }",
+      "replacement_expression": "",
+      "start_line": 369
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 392,
+      "function": "setFee",
+      "mutant_id": "m000466",
+      "operator": "OLFD",
+      "original_expression": "function setFee(MarketParams memory marketParams, uint256 newFee) external onlyOwner {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(newFee != market[id].fee, ErrorsLib.ALREADY_SET);\n        require(newFee <= MAX_FEE, ErrorsLib.MAX_FEE_EXCEEDED);\n\n        \n        _accrueInterest(marketParams, id);\n\n        \n        market[id].fee = uint128(newFee);\n\n        emit EventsLib.SetFee(id, newFee);\n    }",
+      "replacement_expression": "",
+      "start_line": 379
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 401,
+      "function": "setFeeRecipient",
+      "mutant_id": "m000467",
+      "operator": "OLFD",
+      "original_expression": "function setFeeRecipient(address newFeeRecipient) external onlyOwner {\n        require(newFeeRecipient != feeRecipient, ErrorsLib.ALREADY_SET);\n\n        feeRecipient = newFeeRecipient;\n\n        emit EventsLib.SetFeeRecipient(newFeeRecipient);\n    }",
+      "replacement_expression": "",
+      "start_line": 395
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 420,
+      "function": "createMarket",
+      "mutant_id": "m000468",
+      "operator": "OLFD",
+      "original_expression": "function createMarket(MarketParams memory marketParams) external {\n        Id id = marketParams.id();\n        require(isIrmEnabled[marketParams.irm], ErrorsLib.IRM_NOT_ENABLED);\n        require(isLltvEnabled[marketParams.lltv], ErrorsLib.LLTV_NOT_ENABLED);\n        require(market[id].lastUpdate == 0, ErrorsLib.MARKET_ALREADY_CREATED);\n\n        \n        market[id].lastUpdate = uint128(block.timestamp);\n        idToMarketParams[id] = marketParams;\n\n        emit EventsLib.CreateMarket(id, marketParams);\n\n        \n        if (marketParams.irm != address(0)) IIrm(marketParams.irm).borrowRate(marketParams, market[id]);\n    }",
+      "replacement_expression": "",
+      "start_line": 406
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 453,
+      "function": "supply",
+      "mutant_id": "m000469",
+      "operator": "OLFD",
+      "original_expression": "function supply(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        bytes calldata data\n    ) external returns (uint256, uint256) {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);\n        require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);\n\n        _accrueInterest(marketParams, id);\n\n        if (assets > 0) shares = assets.toSharesDown(market[id].totalSupplyAssets, market[id].totalSupplyShares);\n        else assets = shares.toAssetsUp(market[id].totalSupplyAssets, market[id].totalSupplyShares);\n\n        position[id][onBehalf].supplyShares += shares;\n        market[id].totalSupplyShares += shares.toUint128();\n        market[id].totalSupplyAssets += assets.toUint128();\n\n        emit EventsLib.Supply(id, msg.sender, onBehalf, assets, shares);\n\n        if (data.length > 0) IMorphoSupplyCallback(msg.sender).onMorphoSupply(assets, data);\n\n        IERC20(marketParams.loanToken).safeTransferFrom(msg.sender, address(this), assets);\n\n        return (assets, shares);\n    }",
+      "replacement_expression": "",
+      "start_line": 425
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 486,
+      "function": "withdraw",
+      "mutant_id": "m000470",
+      "operator": "OLFD",
+      "original_expression": "function withdraw(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        address receiver\n    ) external returns (uint256, uint256) {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);\n        require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);\n        \n        require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);\n\n        _accrueInterest(marketParams, id);\n\n        if (assets > 0) shares = assets.toSharesUp(market[id].totalSupplyAssets, market[id].totalSupplyShares);\n        else assets = shares.toAssetsDown(market[id].totalSupplyAssets, market[id].totalSupplyShares);\n\n        position[id][onBehalf].supplyShares -= shares;\n        market[id].totalSupplyShares -= shares.toUint128();\n        market[id].totalSupplyAssets -= assets.toUint128();\n\n        require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY);\n\n        emit EventsLib.Withdraw(id, msg.sender, onBehalf, receiver, assets, shares);\n\n        IERC20(marketParams.loanToken).safeTransfer(receiver, assets);\n\n        return (assets, shares);\n    }",
+      "replacement_expression": "",
+      "start_line": 456
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 522,
+      "function": "borrow",
+      "mutant_id": "m000471",
+      "operator": "OLFD",
+      "original_expression": "function borrow(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        address receiver\n    ) external returns (uint256, uint256) {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);\n        require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);\n        \n        require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);\n\n        _accrueInterest(marketParams, id);\n\n        if (assets > 0) shares = assets.toSharesUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n        else assets = shares.toAssetsDown(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n\n        position[id][onBehalf].borrowShares += shares.toUint128();\n        market[id].totalBorrowShares += shares.toUint128();\n        market[id].totalBorrowAssets += assets.toUint128();\n\n        require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL);\n        require(market[id].totalBorrowAssets <= market[id].totalSupplyAssets, ErrorsLib.INSUFFICIENT_LIQUIDITY);\n\n        emit EventsLib.Borrow(id, msg.sender, onBehalf, receiver, assets, shares);\n\n        IERC20(marketParams.loanToken).safeTransfer(receiver, assets);\n\n        return (assets, shares);\n    }",
+      "replacement_expression": "",
+      "start_line": 491
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 554,
+      "function": "repay",
+      "mutant_id": "m000472",
+      "operator": "OLFD",
+      "original_expression": "function repay(\n        MarketParams memory marketParams,\n        uint256 assets,\n        uint256 shares,\n        address onBehalf,\n        bytes calldata data\n    ) external returns (uint256, uint256) {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(UtilsLib.exactlyOneZero(assets, shares), ErrorsLib.INCONSISTENT_INPUT);\n        require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);\n\n        _accrueInterest(marketParams, id);\n\n        if (assets > 0) shares = assets.toSharesDown(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n        else assets = shares.toAssetsUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n\n        position[id][onBehalf].borrowShares -= shares.toUint128();\n        market[id].totalBorrowShares -= shares.toUint128();\n        market[id].totalBorrowAssets = UtilsLib.zeroFloorSub(market[id].totalBorrowAssets, assets).toUint128();\n\n        \n        emit EventsLib.Repay(id, msg.sender, onBehalf, assets, shares);\n\n        if (data.length > 0) IMorphoRepayCallback(msg.sender).onMorphoRepay(assets, data);\n\n        IERC20(marketParams.loanToken).safeTransferFrom(msg.sender, address(this), assets);\n\n        return (assets, shares);\n    }",
+      "replacement_expression": "",
+      "start_line": 525
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 576,
+      "function": "supplyCollateral",
+      "mutant_id": "m000473",
+      "operator": "OLFD",
+      "original_expression": "function supplyCollateral(MarketParams memory marketParams, uint256 assets, address onBehalf, bytes calldata data)\n        external\n    {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(assets != 0, ErrorsLib.ZERO_ASSETS);\n        require(onBehalf != address(0), ErrorsLib.ZERO_ADDRESS);\n\n        \n\n        position[id][onBehalf].collateral += assets.toUint128();\n\n        emit EventsLib.SupplyCollateral(id, msg.sender, onBehalf, assets);\n\n        if (data.length > 0) IMorphoSupplyCollateralCallback(msg.sender).onMorphoSupplyCollateral(assets, data);\n\n        IERC20(marketParams.collateralToken).safeTransferFrom(msg.sender, address(this), assets);\n    }",
+      "replacement_expression": "",
+      "start_line": 559
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 598,
+      "function": "withdrawCollateral",
+      "mutant_id": "m000474",
+      "operator": "OLFD",
+      "original_expression": "function withdrawCollateral(MarketParams memory marketParams, uint256 assets, address onBehalf, address receiver)\n        external\n    {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(assets != 0, ErrorsLib.ZERO_ASSETS);\n        require(receiver != address(0), ErrorsLib.ZERO_ADDRESS);\n        \n        require(_isSenderAuthorized(onBehalf), ErrorsLib.UNAUTHORIZED);\n\n        _accrueInterest(marketParams, id);\n\n        position[id][onBehalf].collateral -= assets.toUint128();\n\n        require(_isHealthy(marketParams, id, onBehalf), ErrorsLib.INSUFFICIENT_COLLATERAL);\n\n        emit EventsLib.WithdrawCollateral(id, msg.sender, onBehalf, receiver, assets);\n\n        IERC20(marketParams.collateralToken).safeTransfer(receiver, assets);\n    }",
+      "replacement_expression": "",
+      "start_line": 579
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 672,
+      "function": "liquidate",
+      "mutant_id": "m000475",
+      "operator": "OLFD",
+      "original_expression": "function liquidate(\n        MarketParams memory marketParams,\n        address borrower,\n        uint256 seizedAssets,\n        uint256 repaidShares,\n        bytes calldata data\n    ) external returns (uint256, uint256) {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n        require(UtilsLib.exactlyOneZero(seizedAssets, repaidShares), ErrorsLib.INCONSISTENT_INPUT);\n\n        _accrueInterest(marketParams, id);\n\n        {\n            uint256 collateralPrice = IOracle(marketParams.oracle).price();\n\n            require(!_isHealthy(marketParams, id, borrower, collateralPrice), ErrorsLib.HEALTHY_POSITION);\n\n            \n            uint256 liquidationIncentiveFactor = UtilsLib.min(\n                MAX_LIQUIDATION_INCENTIVE_FACTOR,\n                WAD.wDivDown(WAD - LIQUIDATION_CURSOR.wMulDown(WAD - marketParams.lltv))\n            );\n\n            if (seizedAssets > 0) {\n                uint256 seizedAssetsQuoted = seizedAssets.mulDivUp(collateralPrice, ORACLE_PRICE_SCALE);\n\n                repaidShares = seizedAssetsQuoted.wDivUp(liquidationIncentiveFactor)\n                    .toSharesUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n            } else {\n                seizedAssets = repaidShares.toAssetsDown(market[id].totalBorrowAssets, market[id].totalBorrowShares)\n                    .wMulDown(liquidationIncentiveFactor).mulDivDown(ORACLE_PRICE_SCALE, collateralPrice);\n            }\n        }\n        uint256 repaidAssets = repaidShares.toAssetsUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n\n        position[id][borrower].borrowShares -= repaidShares.toUint128();\n        market[id].totalBorrowShares -= repaidShares.toUint128();\n        market[id].totalBorrowAssets = UtilsLib.zeroFloorSub(market[id].totalBorrowAssets, repaidAssets).toUint128();\n\n        position[id][borrower].collateral -= seizedAssets.toUint128();\n\n        uint256 badDebtShares;\n        uint256 badDebtAssets;\n        if (position[id][borrower].collateral == 0) {\n            badDebtShares = position[id][borrower].borrowShares;\n            badDebtAssets = UtilsLib.min(\n                market[id].totalBorrowAssets,\n                badDebtShares.toAssetsUp(market[id].totalBorrowAssets, market[id].totalBorrowShares)\n            );\n\n            market[id].totalBorrowAssets -= badDebtAssets.toUint128();\n            market[id].totalSupplyAssets -= badDebtAssets.toUint128();\n            market[id].totalBorrowShares -= badDebtShares.toUint128();\n            position[id][borrower].borrowShares = 0;\n        }\n\n        \n        emit EventsLib.Liquidate(\n            id, msg.sender, borrower, repaidAssets, repaidShares, seizedAssets, badDebtAssets, badDebtShares\n        );\n\n        IERC20(marketParams.collateralToken).safeTransfer(msg.sender, seizedAssets);\n\n        if (data.length > 0) IMorphoLiquidateCallback(msg.sender).onMorphoLiquidate(repaidAssets, data);\n\n        IERC20(marketParams.loanToken).safeTransferFrom(msg.sender, address(this), repaidAssets);\n\n        return (seizedAssets, repaidAssets);\n    }",
+      "replacement_expression": "",
+      "start_line": 603
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 687,
+      "function": "flashLoan",
+      "mutant_id": "m000476",
+      "operator": "OLFD",
+      "original_expression": "function flashLoan(address token, uint256 assets, bytes calldata data) external {\n        require(assets != 0, ErrorsLib.ZERO_ASSETS);\n\n        emit EventsLib.FlashLoan(msg.sender, token, assets);\n\n        IERC20(token).safeTransfer(msg.sender, assets);\n\n        IMorphoFlashLoanCallback(msg.sender).onMorphoFlashLoan(assets, data);\n\n        IERC20(token).safeTransferFrom(msg.sender, address(this), assets);\n    }",
+      "replacement_expression": "",
+      "start_line": 677
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 698,
+      "function": "setAuthorization",
+      "mutant_id": "m000477",
+      "operator": "OLFD",
+      "original_expression": "function setAuthorization(address authorized, bool newIsAuthorized) external {\n        require(newIsAuthorized != isAuthorized[msg.sender][authorized], ErrorsLib.ALREADY_SET);\n\n        isAuthorized[msg.sender][authorized] = newIsAuthorized;\n\n        emit EventsLib.SetAuthorization(msg.sender, msg.sender, authorized, newIsAuthorized);\n    }",
+      "replacement_expression": "",
+      "start_line": 692
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 719,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000478",
+      "operator": "OLFD",
+      "original_expression": "function setAuthorizationWithSig(Authorization memory authorization, Signature calldata signature) external {\n        \n        require(block.timestamp <= authorization.deadline, ErrorsLib.SIGNATURE_EXPIRED);\n        require(authorization.nonce == nonce[authorization.authorizer]++, ErrorsLib.INVALID_NONCE);\n\n        bytes32 hashStruct = keccak256(abi.encode(AUTHORIZATION_TYPEHASH, authorization));\n        bytes32 digest = keccak256(bytes.concat(\"\\x19\\x01\", DOMAIN_SEPARATOR, hashStruct));\n        address signatory = ecrecover(digest, signature.v, signature.r, signature.s);\n\n        require(signatory != address(0) && authorization.authorizer == signatory, ErrorsLib.INVALID_SIGNATURE);\n\n        emit EventsLib.IncrementNonce(msg.sender, authorization.authorizer, authorization.nonce);\n\n        isAuthorized[authorization.authorizer][authorization.authorized] = authorization.isAuthorized;\n\n        emit EventsLib.SetAuthorization(\n            msg.sender, authorization.authorizer, authorization.authorized, authorization.isAuthorized\n        );\n    }",
+      "replacement_expression": "",
+      "start_line": 701
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 734,
+      "function": "accrueInterest",
+      "mutant_id": "m000479",
+      "operator": "OLFD",
+      "original_expression": "function accrueInterest(MarketParams memory marketParams) external {\n        Id id = marketParams.id();\n        require(market[id].lastUpdate != 0, ErrorsLib.MARKET_NOT_CREATED);\n\n        _accrueInterest(marketParams, id);\n    }",
+      "replacement_expression": "",
+      "start_line": 729
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 776,
+      "function": "_isHealthy",
+      "mutant_id": "m000480",
+      "operator": "OLFD",
+      "original_expression": "function _isHealthy(MarketParams memory marketParams, Id id, address borrower) internal view returns (bool) {\n        if (position[id][borrower].borrowShares == 0) return true;\n\n        uint256 collateralPrice = IOracle(marketParams.oracle).price();\n\n        return _isHealthy(marketParams, id, borrower, collateralPrice);\n    }",
+      "replacement_expression": "",
+      "start_line": 770
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 793,
+      "function": "_isHealthy",
+      "mutant_id": "m000481",
+      "operator": "OLFD",
+      "original_expression": "function _isHealthy(MarketParams memory marketParams, Id id, address borrower, uint256 collateralPrice)\n        internal\n        view\n        returns (bool)\n    {\n        uint256 borrowed = uint256(position[id][borrower].borrowShares)\n            .toAssetsUp(market[id].totalBorrowAssets, market[id].totalBorrowShares);\n        uint256 maxBorrow = uint256(position[id][borrower].collateral).mulDivDown(collateralPrice, ORACLE_PRICE_SCALE)\n            .wMulDown(marketParams.lltv);\n\n        return maxBorrow >= borrowed;\n    }",
+      "replacement_expression": "",
+      "start_line": 782
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 810,
+      "function": "extSloads",
+      "mutant_id": "m000482",
+      "operator": "OLFD",
+      "original_expression": "function extSloads(bytes32[] calldata slots) external view returns (bytes32[] memory res) {\n        uint256 nSlots = slots.length;\n\n        res = new bytes32[](nSlots);\n\n        for (uint256 i; i < nSlots;) {\n            bytes32 slot = slots[i++];\n\n            assembly (\"memory-safe\") {\n                mstore(add(res, mul(i, 32)), sload(slot))\n            }\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 798
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 979,
+      "function": "position",
+      "mutant_id": "m000483",
+      "operator": "OLFD",
+      "original_expression": "function position(Id id, address user) external view returns (Position memory p);",
+      "replacement_expression": "",
+      "start_line": 979
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 986,
+      "function": "market",
+      "mutant_id": "m000484",
+      "operator": "OLFD",
+      "original_expression": "function market(Id id) external view returns (Market memory m);",
+      "replacement_expression": "",
+      "start_line": 986
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 991,
+      "function": "idToMarketParams",
+      "mutant_id": "m000485",
+      "operator": "OLFD",
+      "original_expression": "function idToMarketParams(Id id) external view returns (MarketParams memory);",
+      "replacement_expression": "",
+      "start_line": 991
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 452,
+      "function": "supply",
+      "mutant_id": "m000486",
+      "operator": "RSD",
+      "original_expression": "return (assets, shares);",
+      "replacement_expression": "/* return (assets, shares); */",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 485,
+      "function": "withdraw",
+      "mutant_id": "m000487",
+      "operator": "RSD",
+      "original_expression": "return (assets, shares);",
+      "replacement_expression": "/* return (assets, shares); */",
+      "start_line": 485
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 521,
+      "function": "borrow",
+      "mutant_id": "m000488",
+      "operator": "RSD",
+      "original_expression": "return (assets, shares);",
+      "replacement_expression": "/* return (assets, shares); */",
+      "start_line": 521
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 553,
+      "function": "repay",
+      "mutant_id": "m000489",
+      "operator": "RSD",
+      "original_expression": "return (assets, shares);",
+      "replacement_expression": "/* return (assets, shares); */",
+      "start_line": 553
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 671,
+      "function": "liquidate",
+      "mutant_id": "m000490",
+      "operator": "RSD",
+      "original_expression": "return (seizedAssets, repaidAssets);",
+      "replacement_expression": "/* return (seizedAssets, repaidAssets); */",
+      "start_line": 671
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 723,
+      "function": "_isSenderAuthorized",
+      "mutant_id": "m000491",
+      "operator": "RSD",
+      "original_expression": "return msg.sender == onBehalf || isAuthorized[onBehalf][msg.sender];",
+      "replacement_expression": "/* return msg.sender == onBehalf || isAuthorized[onBehalf][msg.sender]; */",
+      "start_line": 723
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 771,
+      "function": "_isHealthy",
+      "mutant_id": "m000492",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 771
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 775,
+      "function": "_isHealthy",
+      "mutant_id": "m000493",
+      "operator": "RSD",
+      "original_expression": "return _isHealthy(marketParams, id, borrower, collateralPrice);",
+      "replacement_expression": "_isHealthy(marketParams, id, borrower, collateralPrice);",
+      "start_line": 775
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 792,
+      "function": "_isHealthy",
+      "mutant_id": "m000494",
+      "operator": "RSD",
+      "original_expression": "return maxBorrow >= borrowed;",
+      "replacement_expression": "/* return maxBorrow >= borrowed; */",
+      "start_line": 792
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1072,
+      "function": "wMulDown",
+      "mutant_id": "m000495",
+      "operator": "RSD",
+      "original_expression": "return mulDivDown(x, y, WAD);",
+      "replacement_expression": "mulDivDown(x, y, WAD);",
+      "start_line": 1072
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1077,
+      "function": "wDivDown",
+      "mutant_id": "m000496",
+      "operator": "RSD",
+      "original_expression": "return mulDivDown(x, WAD, y);",
+      "replacement_expression": "mulDivDown(x, WAD, y);",
+      "start_line": 1077
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1082,
+      "function": "wDivUp",
+      "mutant_id": "m000497",
+      "operator": "RSD",
+      "original_expression": "return mulDivUp(x, WAD, y);",
+      "replacement_expression": "mulDivUp(x, WAD, y);",
+      "start_line": 1082
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1087,
+      "function": "mulDivDown",
+      "mutant_id": "m000498",
+      "operator": "RSD",
+      "original_expression": "return (x * y) / d;",
+      "replacement_expression": "/* return (x * y) / d; */",
+      "start_line": 1087
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "mulDivUp",
+      "mutant_id": "m000499",
+      "operator": "RSD",
+      "original_expression": "return (x * y + (d - 1)) / d;",
+      "replacement_expression": "/* return (x * y + (d - 1)) / d; */",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "wTaylorCompounded",
+      "mutant_id": "m000500",
+      "operator": "RSD",
+      "original_expression": "return firstTerm + secondTerm + thirdTerm;",
+      "replacement_expression": "/* return firstTerm + secondTerm + thirdTerm; */",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1314,
+      "function": "toSharesDown",
+      "mutant_id": "m000501",
+      "operator": "RSD",
+      "original_expression": "return assets.mulDivDown(totalShares + VIRTUAL_SHARES, totalAssets + VIRTUAL_ASSETS);",
+      "replacement_expression": "assets.mulDivDown(totalShares + VIRTUAL_SHARES, totalAssets + VIRTUAL_ASSETS);",
+      "start_line": 1314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1319,
+      "function": "toAssetsDown",
+      "mutant_id": "m000502",
+      "operator": "RSD",
+      "original_expression": "return shares.mulDivDown(totalAssets + VIRTUAL_ASSETS, totalShares + VIRTUAL_SHARES);",
+      "replacement_expression": "shares.mulDivDown(totalAssets + VIRTUAL_ASSETS, totalShares + VIRTUAL_SHARES);",
+      "start_line": 1319
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1324,
+      "function": "toSharesUp",
+      "mutant_id": "m000503",
+      "operator": "RSD",
+      "original_expression": "return assets.mulDivUp(totalShares + VIRTUAL_SHARES, totalAssets + VIRTUAL_ASSETS);",
+      "replacement_expression": "assets.mulDivUp(totalShares + VIRTUAL_SHARES, totalAssets + VIRTUAL_ASSETS);",
+      "start_line": 1324
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1329,
+      "function": "toAssetsUp",
+      "mutant_id": "m000504",
+      "operator": "RSD",
+      "original_expression": "return shares.mulDivUp(totalAssets + VIRTUAL_ASSETS, totalShares + VIRTUAL_SHARES);",
+      "replacement_expression": "shares.mulDivUp(totalAssets + VIRTUAL_ASSETS, totalShares + VIRTUAL_SHARES);",
+      "start_line": 1329
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1358,
+      "function": "toUint128",
+      "mutant_id": "m000505",
+      "operator": "RSD",
+      "original_expression": "return uint128(x);",
+      "replacement_expression": "uint128(x);",
+      "start_line": 1358
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "supply",
+      "mutant_id": "m000506",
+      "operator": "RVS",
+      "original_expression": "uint256 assetsSupplied, uint256 sharesSupplied",
+      "replacement_expression": "uint256 sharesSupplied, uint256 assetsSupplied",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "withdraw",
+      "mutant_id": "m000507",
+      "operator": "RVS",
+      "original_expression": "uint256 assetsWithdrawn, uint256 sharesWithdrawn",
+      "replacement_expression": "uint256 sharesWithdrawn, uint256 assetsWithdrawn",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "borrow",
+      "mutant_id": "m000508",
+      "operator": "RVS",
+      "original_expression": "uint256 assetsBorrowed, uint256 sharesBorrowed",
+      "replacement_expression": "uint256 sharesBorrowed, uint256 assetsBorrowed",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "repay",
+      "mutant_id": "m000509",
+      "operator": "RVS",
+      "original_expression": "uint256 assetsRepaid, uint256 sharesRepaid",
+      "replacement_expression": "uint256 sharesRepaid, uint256 assetsRepaid",
+      "start_line": 174
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 260,
+      "function": "position",
+      "mutant_id": "m000510",
+      "operator": "RVS",
+      "original_expression": "uint256 supplyShares, uint128 borrowShares, uint128 collateral",
+      "replacement_expression": "uint128 collateral, uint256 supplyShares, uint128 borrowShares",
+      "start_line": 260
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 276,
+      "function": "market",
+      "mutant_id": "m000511",
+      "operator": "RVS",
+      "original_expression": "uint128 totalSupplyAssets,\n            uint128 totalSupplyShares,\n            uint128 totalBorrowAssets,\n            uint128 totalBorrowShares,\n            uint128 lastUpdate,\n            uint128 fee",
+      "replacement_expression": "uint128 fee,\n            uint128 totalSupplyAssets,\n            uint128 totalSupplyShares,\n            uint128 totalBorrowAssets,\n            uint128 totalBorrowShares,\n            uint128 lastUpdate",
+      "start_line": 271
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 285,
+      "function": "idToMarketParams",
+      "mutant_id": "m000512",
+      "operator": "RVS",
+      "original_expression": "address loanToken, address collateralToken, address oracle, address irm, uint256 lltv",
+      "replacement_expression": "address irm, address loanToken, address collateralToken, address oracle, uint256 lltv",
+      "start_line": 285
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 452,
+      "function": "supply",
+      "mutant_id": "m000513",
+      "operator": "RVS",
+      "original_expression": "assets, shares",
+      "replacement_expression": "shares, assets",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 485,
+      "function": "withdraw",
+      "mutant_id": "m000514",
+      "operator": "RVS",
+      "original_expression": "assets, shares",
+      "replacement_expression": "shares, assets",
+      "start_line": 485
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 521,
+      "function": "borrow",
+      "mutant_id": "m000515",
+      "operator": "RVS",
+      "original_expression": "assets, shares",
+      "replacement_expression": "shares, assets",
+      "start_line": 521
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 553,
+      "function": "repay",
+      "mutant_id": "m000516",
+      "operator": "RVS",
+      "original_expression": "assets, shares",
+      "replacement_expression": "shares, assets",
+      "start_line": 553
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 671,
+      "function": "liquidate",
+      "mutant_id": "m000517",
+      "operator": "RVS",
+      "original_expression": "seizedAssets, repaidAssets",
+      "replacement_expression": "repaidAssets, seizedAssets",
+      "start_line": 671
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 843,
+      "function": "stateVariable",
+      "mutant_id": "m000518",
+      "operator": "SLR",
+      "original_expression": "\"not owner\"",
+      "replacement_expression": "\"\"",
+      "start_line": 843
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 846,
+      "function": "stateVariable",
+      "mutant_id": "m000519",
+      "operator": "SLR",
+      "original_expression": "\"max LLTV exceeded\"",
+      "replacement_expression": "\"\"",
+      "start_line": 846
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 849,
+      "function": "stateVariable",
+      "mutant_id": "m000520",
+      "operator": "SLR",
+      "original_expression": "\"max fee exceeded\"",
+      "replacement_expression": "\"\"",
+      "start_line": 849
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 852,
+      "function": "stateVariable",
+      "mutant_id": "m000521",
+      "operator": "SLR",
+      "original_expression": "\"already set\"",
+      "replacement_expression": "\"\"",
+      "start_line": 852
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 855,
+      "function": "stateVariable",
+      "mutant_id": "m000522",
+      "operator": "SLR",
+      "original_expression": "\"IRM not enabled\"",
+      "replacement_expression": "\"\"",
+      "start_line": 855
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 858,
+      "function": "stateVariable",
+      "mutant_id": "m000523",
+      "operator": "SLR",
+      "original_expression": "\"LLTV not enabled\"",
+      "replacement_expression": "\"\"",
+      "start_line": 858
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 861,
+      "function": "stateVariable",
+      "mutant_id": "m000524",
+      "operator": "SLR",
+      "original_expression": "\"market already created\"",
+      "replacement_expression": "\"\"",
+      "start_line": 861
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 864,
+      "function": "stateVariable",
+      "mutant_id": "m000525",
+      "operator": "SLR",
+      "original_expression": "\"no code\"",
+      "replacement_expression": "\"\"",
+      "start_line": 864
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 867,
+      "function": "stateVariable",
+      "mutant_id": "m000526",
+      "operator": "SLR",
+      "original_expression": "\"market not created\"",
+      "replacement_expression": "\"\"",
+      "start_line": 867
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 870,
+      "function": "stateVariable",
+      "mutant_id": "m000527",
+      "operator": "SLR",
+      "original_expression": "\"inconsistent input\"",
+      "replacement_expression": "\"\"",
+      "start_line": 870
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 873,
+      "function": "stateVariable",
+      "mutant_id": "m000528",
+      "operator": "SLR",
+      "original_expression": "\"zero assets\"",
+      "replacement_expression": "\"\"",
+      "start_line": 873
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 876,
+      "function": "stateVariable",
+      "mutant_id": "m000529",
+      "operator": "SLR",
+      "original_expression": "\"zero address\"",
+      "replacement_expression": "\"\"",
+      "start_line": 876
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 879,
+      "function": "stateVariable",
+      "mutant_id": "m000530",
+      "operator": "SLR",
+      "original_expression": "\"unauthorized\"",
+      "replacement_expression": "\"\"",
+      "start_line": 879
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 882,
+      "function": "stateVariable",
+      "mutant_id": "m000531",
+      "operator": "SLR",
+      "original_expression": "\"insufficient collateral\"",
+      "replacement_expression": "\"\"",
+      "start_line": 882
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "stateVariable",
+      "mutant_id": "m000532",
+      "operator": "SLR",
+      "original_expression": "\"insufficient liquidity\"",
+      "replacement_expression": "\"\"",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 888,
+      "function": "stateVariable",
+      "mutant_id": "m000533",
+      "operator": "SLR",
+      "original_expression": "\"position is healthy\"",
+      "replacement_expression": "\"\"",
+      "start_line": 888
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 891,
+      "function": "stateVariable",
+      "mutant_id": "m000534",
+      "operator": "SLR",
+      "original_expression": "\"invalid signature\"",
+      "replacement_expression": "\"\"",
+      "start_line": 891
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 894,
+      "function": "stateVariable",
+      "mutant_id": "m000535",
+      "operator": "SLR",
+      "original_expression": "\"signature expired\"",
+      "replacement_expression": "\"\"",
+      "start_line": 894
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 897,
+      "function": "stateVariable",
+      "mutant_id": "m000536",
+      "operator": "SLR",
+      "original_expression": "\"invalid nonce\"",
+      "replacement_expression": "\"\"",
+      "start_line": 897
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 900,
+      "function": "stateVariable",
+      "mutant_id": "m000537",
+      "operator": "SLR",
+      "original_expression": "\"transfer reverted\"",
+      "replacement_expression": "\"\"",
+      "start_line": 900
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 903,
+      "function": "stateVariable",
+      "mutant_id": "m000538",
+      "operator": "SLR",
+      "original_expression": "\"transfer returned false\"",
+      "replacement_expression": "\"\"",
+      "start_line": 903
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "stateVariable",
+      "mutant_id": "m000539",
+      "operator": "SLR",
+      "original_expression": "\"transferFrom reverted\"",
+      "replacement_expression": "\"\"",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "stateVariable",
+      "mutant_id": "m000540",
+      "operator": "SLR",
+      "original_expression": "\"transferFrom returned false\"",
+      "replacement_expression": "\"\"",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 912,
+      "function": "stateVariable",
+      "mutant_id": "m000541",
+      "operator": "SLR",
+      "original_expression": "\"max uint128 exceeded\"",
+      "replacement_expression": "\"\"",
+      "start_line": 912
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 361,
+      "function": "enableIrm",
+      "mutant_id": "m000542",
+      "operator": "UORD",
+      "original_expression": "!isIrmEnabled[irm]",
+      "replacement_expression": " isIrmEnabled[irm]",
+      "start_line": 361
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 370,
+      "function": "enableLltv",
+      "mutant_id": "m000543",
+      "operator": "UORD",
+      "original_expression": "!isLltvEnabled[lltv]",
+      "replacement_expression": " isLltvEnabled[lltv]",
+      "start_line": 370
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 619,
+      "function": "liquidate",
+      "mutant_id": "m000544",
+      "operator": "UORD",
+      "original_expression": "!_isHealthy(marketParams, id, borrower, collateralPrice)",
+      "replacement_expression": " _isHealthy(marketParams, id, borrower, collateralPrice)",
+      "start_line": 619
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000545",
+      "operator": "UORD",
+      "original_expression": "once[authorization.authorizer]++",
+      "replacement_expression": "once[authorization.authorizer]--",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 704,
+      "function": "setAuthorizationWithSig",
+      "mutant_id": "m000546",
+      "operator": "UORD",
+      "original_expression": "once[authorization.authorizer]++",
+      "replacement_expression": "once[authorization.authorizer] ",
+      "start_line": 704
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "extSloads",
+      "mutant_id": "m000547",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 804
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "extSloads",
+      "mutant_id": "m000548",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 804
+    }
+  ],
+  "subject_id": "morpho-org__morpho-blue__Morpho"
+}

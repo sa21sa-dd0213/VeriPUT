@@ -1,0 +1,111 @@
+{
+  "contract": "DynamicWeightedLPOracleFactory",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 4
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "85d085b6c9c1e0838fff52dcf9e7363bbe8df35cc9868181959e6d71107f90b9",
+  "subject_id": "balancer__balancer-v3-monorepo__DynamicWeightedLPOracleFactory",
+  "targets": [
+    {
+      "declaration_line": 521,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 521,
+        "name": "DynamicWeightedLPOracleFactory._create",
+        "record": "FN"
+      },
+      "length": 649,
+      "line": 527,
+      "name": "_create",
+      "site": "body-entry",
+      "src": "10356:649:0",
+      "start": 10356,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 521,
+      "external_selector": null,
+      "id": "line:521",
+      "kind": "line",
+      "lcov": {
+        "line": 521,
+        "record": "DA"
+      },
+      "length": 649,
+      "line": 527,
+      "site": "body-entry",
+      "src": "10356:649:0",
+      "start": 10356,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:528",
+      "kind": "line",
+      "lcov": {
+        "line": 528,
+        "record": "DA"
+      },
+      "length": 339,
+      "line": 528,
+      "site": "statement-entry",
+      "src": "10366:339:0",
+      "start": 10366,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:538",
+      "kind": "line",
+      "lcov": {
+        "line": 538,
+        "record": "DA"
+      },
+      "length": 47,
+      "line": 538,
+      "site": "statement-entry",
+      "src": "10715:47:0",
+      "start": 10715,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:539",
+      "kind": "line",
+      "lcov": {
+        "line": 539,
+        "record": "DA"
+      },
+      "length": 226,
+      "line": 539,
+      "site": "statement-entry",
+      "src": "10772:226:0",
+      "start": 10772,
+      "statement_type": "EmitStatement",
+      "trap_id": 5
+    }
+  ],
+  "totals": {
+    "all": 5,
+    "branch": 0,
+    "function": 1,
+    "line": 4
+  }
+}

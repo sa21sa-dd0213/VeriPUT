@@ -1,0 +1,230 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "set_state_var",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "balanceCheck",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "set_state_var",
+      "n": 2,
+      "value": 196262472894695109
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "balanceCheck",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "set_state_var",
+      "n": 4,
+      "value": 35838931996619917
+    },
+    {
+      "args": [
+        96888627607016423748421004485216379752971065636077415033086038687305352310225
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "set_state_var",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "balanceCheck",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "balanceCheck",
+      "n": 7,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "balanceCheck",
+      "n": 8,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "balanceCheck",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "set_state_var",
+      "n": 3,
+      "value": 53712431635117147
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "balanceCheck",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "set_state_var",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "balanceCheck",
+      "n": 6,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "set_state_var",
+      "n": 7,
+      "value": 188722076109753769
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "set_state_var",
+      "n": 8,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "balanceCheck",
+      "n": 9,
+      "value": 0
+    },
+    {
+      "args": [
+        5813562358011418451247271027410047828824128993448669178245243341367330917025
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "set_state_var",
+      "n": 10,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "set_state_var",
+      "n": 11,
+      "value": 0
+    },
+    {
+      "args": [
+        1000
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "set_state_var",
+      "n": 12,
+      "value": 59205266950521671
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "balanceCheck",
+      "n": 13,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "set_state_var",
+      "n": 14,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "balanceCheck",
+      "n": 15,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "balanceCheck",
+      "n": 16,
+      "value": 0
+    }
+  ]
+]

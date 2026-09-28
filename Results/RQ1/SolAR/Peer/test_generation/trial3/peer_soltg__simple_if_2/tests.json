@@ -1,0 +1,20 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "simple_if_2",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

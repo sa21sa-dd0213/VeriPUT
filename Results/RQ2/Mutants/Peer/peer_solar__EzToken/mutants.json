@@ -1,0 +1,317 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 29,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "transfer",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "transfer",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 47,
+      "function": "transferFrom",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 47
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "transferFrom",
+      "mutant_id": "m000004",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "transferFrom",
+      "mutant_id": "m000005",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "transfer",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "transfer",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "transfer",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "transfer",
+      "mutant_id": "m000016",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "transferFrom",
+      "mutant_id": "m000017",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "approve",
+      "mutant_id": "m000018",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "constructor",
+      "mutant_id": "m000019",
+      "operator": "CCD",
+      "original_expression": "constructor(\n        uint256 _initialAmount,\n        string memory _tokenName,\n        uint8 _decimalUnits,\n        string memory _tokenSymbol\n    )  {\n        balances[msg.sender] = _initialAmount;\n        totalSupply = _initialAmount;\n        name = _tokenName;\n        decimals = _decimalUnits;\n        symbol = _tokenSymbol;\n    }",
+      "replacement_expression": "",
+      "start_line": 23
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "constructor",
+      "mutant_id": "m000020",
+      "operator": "DLR",
+      "original_expression": "string memory _tokenName",
+      "replacement_expression": "string storage _tokenName",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 27,
+      "function": "constructor",
+      "mutant_id": "m000021",
+      "operator": "DLR",
+      "original_expression": "string memory _tokenSymbol",
+      "replacement_expression": "string storage _tokenSymbol",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 40,
+      "function": "transfer",
+      "mutant_id": "m000022",
+      "operator": "EED",
+      "original_expression": "emit Transfer(msg.sender, _to, _value);",
+      "replacement_expression": "/* emit Transfer(msg.sender, _to, _value); */",
+      "start_line": 40
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "transferFrom",
+      "mutant_id": "m000023",
+      "operator": "EED",
+      "original_expression": "emit Transfer(_from, _to, _value);",
+      "replacement_expression": "/* emit Transfer(_from, _to, _value); */",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "approve",
+      "mutant_id": "m000024",
+      "operator": "EED",
+      "original_expression": "emit Approval(msg.sender, _spender, _value);",
+      "replacement_expression": "/* emit Approval(msg.sender, _spender, _value); */",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "transfer",
+      "mutant_id": "m000025",
+      "operator": "EHD",
+      "original_expression": "require(balances[msg.sender] >= _value);",
+      "replacement_expression": "/* require(balances[msg.sender] >= _value); */",
+      "start_line": 37
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 46,
+      "function": "transferFrom",
+      "mutant_id": "m000026",
+      "operator": "EHD",
+      "original_expression": "require(balances[_from] >= _value && allowance >= _value);",
+      "replacement_expression": "/* require(balances[_from] >= _value && allowance >= _value); */",
+      "start_line": 46
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 41,
+      "function": "transfer",
+      "mutant_id": "m000027",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 41
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "transferFrom",
+      "mutant_id": "m000028",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "balanceOf",
+      "mutant_id": "m000029",
+      "operator": "RSD",
+      "original_expression": "return balances[_owner];",
+      "replacement_expression": "/* return balances[_owner]; */",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "approve",
+      "mutant_id": "m000030",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "allowance",
+      "mutant_id": "m000031",
+      "operator": "RSD",
+      "original_expression": "return allowed[_owner][_spender];",
+      "replacement_expression": "/* return allowed[_owner][_spender]; */",
+      "start_line": 65
+    }
+  ],
+  "subject_id": "peer_solar__EzToken"
+}

@@ -1,0 +1,46 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        71
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "setProtocolYieldFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00016",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        26723838525133977755523022058946803946309426049651911026081859819014441678611
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setProtocolSwapFeePercentage",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

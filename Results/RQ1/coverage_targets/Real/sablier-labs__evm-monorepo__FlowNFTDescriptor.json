@@ -1,0 +1,111 @@
+{
+  "contract": "FlowNFTDescriptor",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 4
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "c107f4bfc326d76a708988257edc20cd235eedc69a70c871172bc8d9e5837eef",
+  "subject_id": "sablier-labs__evm-monorepo__FlowNFTDescriptor",
+  "targets": [
+    {
+      "declaration_line": 43,
+      "external_selector": "e9dc6375",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 43,
+        "name": "FlowNFTDescriptor.tokenURI",
+        "record": "FN"
+      },
+      "length": 1547,
+      "line": 51,
+      "name": "tokenURI",
+      "site": "body-entry",
+      "src": "429:1547:0",
+      "start": 429,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 43,
+      "external_selector": "e9dc6375",
+      "id": "line:43",
+      "kind": "line",
+      "lcov": {
+        "line": 43,
+        "record": "DA"
+      },
+      "length": 1547,
+      "line": 51,
+      "site": "body-entry",
+      "src": "429:1547:0",
+      "start": 429,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:53",
+      "kind": "line",
+      "lcov": {
+        "line": 53,
+        "record": "DA"
+      },
+      "length": 1086,
+      "line": 53,
+      "site": "statement-entry",
+      "src": "448:1086:0",
+      "start": 448,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:56",
+      "kind": "line",
+      "lcov": {
+        "line": 56,
+        "record": "DA"
+      },
+      "length": 333,
+      "line": 56,
+      "site": "statement-entry",
+      "src": "1545:333:0",
+      "start": 1545,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:65",
+      "kind": "line",
+      "lcov": {
+        "line": 65,
+        "record": "DA"
+      },
+      "length": 80,
+      "line": 65,
+      "site": "statement-entry",
+      "src": "1889:80:0",
+      "start": 1889,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    }
+  ],
+  "totals": {
+    "all": 5,
+    "branch": 0,
+    "function": 1,
+    "line": 4
+  }
+}

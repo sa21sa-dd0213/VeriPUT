@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.862131943s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.905198832s)
+
+echidna: Constructor arguments are required: [("l2Router_",address)]

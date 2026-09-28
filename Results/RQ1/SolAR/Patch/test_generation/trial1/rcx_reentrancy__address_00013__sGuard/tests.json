@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        20343190781528982385631623999756660803386380071955541375151704163111442227115
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "Put",
+      "n": 2,
+      "value": 175013899132861152
+    },
+    {
+      "args": [
+        87363331587313686353610088253969689350938671053270295953436555066361842620726
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "Collect",
+      "n": 3,
+      "value": 172754722392152659
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "Put",
+      "n": 2,
+      "value": 51966142375268461
+    }
+  ]
+]

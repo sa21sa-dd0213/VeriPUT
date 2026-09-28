@@ -1,0 +1,260 @@
+{
+  "contract": "HookTargetSynth",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 1,
+    "FNF": 4,
+    "LF": 8
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "0a05ac4ffaf966762665945c0ce40f46efae06c43a9ce609fb9b4a3869fea4b2",
+  "subject_id": "euler-xyz__euler-vault-kit__HookTargetSynth",
+  "targets": [
+    {
+      "declaration_line": 27,
+      "external_selector": "87439e04",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 27,
+        "name": "HookTargetSynth.isHookTarget",
+        "record": "FN"
+      },
+      "length": 50,
+      "line": 27,
+      "name": "isHookTarget",
+      "site": "body-entry",
+      "src": "320:50:0",
+      "start": 320,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 32,
+      "external_selector": "6e553f65",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 32,
+        "name": "HookTargetSynth.deposit",
+        "record": "FN"
+      },
+      "length": 92,
+      "line": 32,
+      "name": "deposit",
+      "site": "body-entry",
+      "src": "430:92:0",
+      "start": 430,
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 37,
+      "external_selector": null,
+      "function_kind": "fallback",
+      "id": "function:4",
+      "kind": "function",
+      "lcov": {
+        "line": 37,
+        "name": "HookTargetSynth.fallback",
+        "record": "FN"
+      },
+      "length": 45,
+      "line": 37,
+      "name": "fallback",
+      "site": "body-entry",
+      "src": "553:45:0",
+      "start": 553,
+      "trap_id": 3,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 41,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:5",
+      "kind": "function",
+      "lcov": {
+        "line": 41,
+        "name": "HookTargetSynth.caller",
+        "record": "FN"
+      },
+      "length": 106,
+      "line": 41,
+      "name": "caller",
+      "site": "body-entry",
+      "src": "662:106:0",
+      "start": 662,
+      "trap_id": 4,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 27,
+      "external_selector": "87439e04",
+      "id": "line:27",
+      "kind": "line",
+      "lcov": {
+        "line": 27,
+        "record": "DA"
+      },
+      "length": 50,
+      "line": 27,
+      "site": "body-entry",
+      "src": "320:50:0",
+      "start": 320,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 5,
+      "visibility": "external"
+    },
+    {
+      "id": "line:28",
+      "kind": "line",
+      "lcov": {
+        "line": 28,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 28,
+      "site": "statement-entry",
+      "src": "330:33:0",
+      "start": 330,
+      "statement_type": "Return",
+      "trap_id": 6
+    },
+    {
+      "declaration_line": 32,
+      "external_selector": "6e553f65",
+      "id": "line:32",
+      "kind": "line",
+      "lcov": {
+        "line": 32,
+        "record": "DA"
+      },
+      "length": 92,
+      "line": 32,
+      "site": "body-entry",
+      "src": "430:92:0",
+      "start": 430,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 7,
+      "visibility": "external"
+    },
+    {
+      "id": "line:33",
+      "kind": "line",
+      "lcov": {
+        "line": 33,
+        "record": "DA"
+      },
+      "length": 75,
+      "line": 33,
+      "site": "statement-entry",
+      "src": "440:75:0",
+      "start": 440,
+      "statement_type": "IfStatement",
+      "trap_id": 8
+    },
+    {
+      "declaration_line": 37,
+      "external_selector": null,
+      "id": "line:37",
+      "kind": "line",
+      "lcov": {
+        "line": 37,
+        "record": "DA"
+      },
+      "length": 45,
+      "line": 37,
+      "site": "body-entry",
+      "src": "553:45:0",
+      "start": 553,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 9,
+      "visibility": "external"
+    },
+    {
+      "id": "line:38",
+      "kind": "line",
+      "lcov": {
+        "line": 38,
+        "record": "DA"
+      },
+      "length": 28,
+      "line": 38,
+      "site": "statement-entry",
+      "src": "563:28:0",
+      "start": 563,
+      "statement_type": "RevertStatement",
+      "trap_id": 10
+    },
+    {
+      "declaration_line": 41,
+      "external_selector": null,
+      "id": "line:41",
+      "kind": "line",
+      "lcov": {
+        "line": 41,
+        "record": "DA"
+      },
+      "length": 106,
+      "line": 41,
+      "site": "body-entry",
+      "src": "662:106:0",
+      "start": 662,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 11,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:43",
+      "kind": "line",
+      "lcov": {
+        "line": 43,
+        "record": "DA"
+      },
+      "length": 90,
+      "line": 43,
+      "site": "statement-entry",
+      "src": "672:90:0",
+      "start": 672,
+      "statement_type": "InlineAssembly",
+      "trap_id": 12
+    },
+    {
+      "branch_id": "branch:3",
+      "condition_src": "444:39:0",
+      "id": "branch:3:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 33,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 30,
+      "line": 33,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "485:30:0",
+      "start": 485,
+      "trap_id": 13
+    }
+  ],
+  "totals": {
+    "all": 13,
+    "branch": 1,
+    "function": 4,
+    "line": 8
+  }
+}

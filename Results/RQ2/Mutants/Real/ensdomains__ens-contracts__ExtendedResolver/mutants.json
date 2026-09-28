@@ -1,0 +1,87 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 4,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "resolve",
+      "mutant_id": "m000001",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "true",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "resolve",
+      "mutant_id": "m000002",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "false",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "resolve",
+      "mutant_id": "m000003",
+      "operator": "CSC",
+      "original_expression": "else {\n            \n            assembly {\n                revert(add(result, 0x20), mload(result))\n            }\n        }",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 8,
+      "function": "resolve",
+      "mutant_id": "m000004",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 8
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 9,
+      "function": "resolve",
+      "mutant_id": "m000005",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 9
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 10,
+      "function": "resolve",
+      "mutant_id": "m000006",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 10
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 11,
+      "function": "resolve",
+      "mutant_id": "m000007",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "resolve",
+      "mutant_id": "m000008",
+      "operator": "RSD",
+      "original_expression": "return result;",
+      "replacement_expression": "/* return result; */",
+      "start_line": 13
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__ExtendedResolver"
+}

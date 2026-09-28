@@ -1,0 +1,81 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        16766552499126379369744417354885184209141682692097056609661109787449493221558
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "Put",
+      "n": 2,
+      "value": 128461966454133348
+    },
+    {
+      "args": [
+        32010422987054863982440449002772153423323746834491083498521342677506046703977
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "Collect",
+      "n": 3,
+      "value": 174202788599497278
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "_fallback",
+      "n": 4,
+      "value": 68768666986138026
+    },
+    {
+      "args": [
+        75116476682651508717621301668229093769007121587927155867403698724162880362661
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "Put",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "_fallback",
+      "n": 6,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        47847274044015878547050232969319811858294293666974837037661682331013333725603
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "Collect",
+      "n": 2,
+      "value": 1000000000000000000
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "_fallback",
+      "n": 3,
+      "value": 132872542639814931
+    }
+  ]
+]

@@ -1,0 +1,5287 @@
+{
+  "compile_failed": 43,
+  "compile_ok": 485,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 407,
+      "function": "functionCall",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "functionCallWithValue(target, data, 0, errorMessage)",
+      "replacement_expression": "functionCallWithValue(target, data, value)",
+      "start_line": 407
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 422,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "functionCallWithValue(target, data, value)",
+      "replacement_expression": "functionCallWithValue(target, data, 0, errorMessage)",
+      "start_line": 422
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 746,
+      "function": "stateVariable",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 746
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 746,
+      "function": "stateVariable",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 746
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 567,
+      "function": "transferOwnership",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 567
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 567,
+      "function": "transferOwnership",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 567
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 913,
+      "function": "includeInReward",
+      "mutant_id": "m000007",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "continue",
+      "start_line": 913
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 913,
+      "function": "includeInReward",
+      "mutant_id": "m000008",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "",
+      "start_line": 913
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "tryAdd",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "tryAdd",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "trySub",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "trySub",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "tryMul",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "tryMul",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "tryDiv",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "tryDiv",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "tryMod",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "add",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "add",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "sub",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "sub",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "mul",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "mul",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "div",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "div",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "mod",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "sub",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "sub",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "sub",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "sub",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "sub",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "div",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "div",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 274,
+      "function": "div",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 274
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 274,
+      "function": "div",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 274
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "mod",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "mod",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "mod",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 351,
+      "function": "isContract",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 351,
+      "function": "isContract",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "sendValue",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "sendValue",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "sendValue",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 432,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 432
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 432,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 432
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 432,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 432
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 496
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 496
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "transferOwnership",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 751
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 752,
+      "function": "stateVariable",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 752
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 752,
+      "function": "stateVariable",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 752
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 752,
+      "function": "stateVariable",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 752
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " *  ",
+      "replacement_expression": " +  ",
+      "start_line": 772
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " *  ",
+      "replacement_expression": " **  ",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " *  ",
+      "replacement_expression": " +  ",
+      "start_line": 773
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " *  ",
+      "replacement_expression": " **  ",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 879,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 879
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 879,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 879
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 879,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 879
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 890,
+      "function": "tokenFromReflection",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 890
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 890,
+      "function": "tokenFromReflection",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 890
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 890,
+      "function": "tokenFromReflection",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 890
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 898,
+      "function": "excludeFromReward",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 898
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 898,
+      "function": "excludeFromReward",
+      "mutant_id": "m000084",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 898
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000085",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000086",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "includeInReward",
+      "mutant_id": "m000087",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "includeInReward",
+      "mutant_id": "m000088",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "includeInReward",
+      "mutant_id": "m000089",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "includeInReward",
+      "mutant_id": "m000090",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "includeInReward",
+      "mutant_id": "m000091",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 957,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000092",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 957
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000093",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000094",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000095",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000096",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000097",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000098",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000099",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1017,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000100",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 1017
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1017,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000101",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 1017
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1039,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000102",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 1039
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1045,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000103",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 1045
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1051,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000104",
+      "operator": "BOR",
+      "original_expression": "**",
+      "replacement_expression": "*",
+      "start_line": 1051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000105",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000106",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000107",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1078,
+      "function": "_approve",
+      "mutant_id": "m000108",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1078
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1079,
+      "function": "_approve",
+      "mutant_id": "m000109",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1079
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1090,
+      "function": "_transfer",
+      "mutant_id": "m000110",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1090
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1091,
+      "function": "_transfer",
+      "mutant_id": "m000111",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1091
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "_transfer",
+      "mutant_id": "m000112",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "_transfer",
+      "mutant_id": "m000113",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000114",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000115",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000116",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000117",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000118",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000119",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000120",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1094,
+      "function": "_transfer",
+      "mutant_id": "m000121",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 1094
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1094,
+      "function": "_transfer",
+      "mutant_id": "m000122",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 1094
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1094,
+      "function": "_transfer",
+      "mutant_id": "m000123",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 1094
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "_transfer",
+      "mutant_id": "m000124",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "_transfer",
+      "mutant_id": "m000125",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "_transfer",
+      "mutant_id": "m000126",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1107,
+      "function": "_transfer",
+      "mutant_id": "m000127",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 1107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1107,
+      "function": "_transfer",
+      "mutant_id": "m000128",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 1107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1107,
+      "function": "_transfer",
+      "mutant_id": "m000129",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 1107
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1112,
+      "function": "_transfer",
+      "mutant_id": "m000130",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 1111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1111,
+      "function": "_transfer",
+      "mutant_id": "m000131",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 1110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1110,
+      "function": "_transfer",
+      "mutant_id": "m000132",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1111,
+      "function": "_transfer",
+      "mutant_id": "m000133",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1111
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1123,
+      "function": "_transfer",
+      "mutant_id": "m000134",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 1123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1179,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000135",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1181,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000136",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1183,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000137",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1185,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000138",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 1185
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000139",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "tryAdd",
+      "mutant_id": "m000140",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000141",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "trySub",
+      "mutant_id": "m000142",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000143",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000144",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "tryMul",
+      "mutant_id": "m000145",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000146",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "tryDiv",
+      "mutant_id": "m000147",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000148",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "tryMod",
+      "mutant_id": "m000149",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 770,
+      "function": "stateVariable",
+      "mutant_id": "m000150",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 770
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 784,
+      "function": "modifier:lockTheSwap",
+      "mutant_id": "m000151",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 784
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 786,
+      "function": "modifier:lockTheSwap",
+      "mutant_id": "m000152",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 786
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "asdfw",
+      "mutant_id": "m000153",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 804
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 805,
+      "function": "asdfw",
+      "mutant_id": "m000154",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 805
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 833,
+      "function": "transfer",
+      "mutant_id": "m000155",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 833
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 842,
+      "function": "approve",
+      "mutant_id": "m000156",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 842
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 848,
+      "function": "transferFrom",
+      "mutant_id": "m000157",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 848
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 853,
+      "function": "increaseAllowance",
+      "mutant_id": "m000158",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 853
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 858,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000159",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 858
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 901,
+      "function": "excludeFromReward",
+      "mutant_id": "m000160",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 901
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 911,
+      "function": "includeInReward",
+      "mutant_id": "m000161",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 911
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 936,
+      "function": "excludeFromFee",
+      "mutant_id": "m000162",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 936
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 940,
+      "function": "includeInFee",
+      "mutant_id": "m000163",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 940
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1120,
+      "function": "_transfer",
+      "mutant_id": "m000164",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 1120
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1124,
+      "function": "_transfer",
+      "mutant_id": "m000165",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 1124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000166",
+      "operator": "CSC",
+      "original_expression": "c < a",
+      "replacement_expression": "true",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000167",
+      "operator": "CSC",
+      "original_expression": "c < a",
+      "replacement_expression": "false",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000168",
+      "operator": "CSC",
+      "original_expression": "b > a",
+      "replacement_expression": "true",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000169",
+      "operator": "CSC",
+      "original_expression": "b > a",
+      "replacement_expression": "false",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000170",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "true",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000171",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "false",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000172",
+      "operator": "CSC",
+      "original_expression": "c / a != b",
+      "replacement_expression": "true",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000173",
+      "operator": "CSC",
+      "original_expression": "c / a != b",
+      "replacement_expression": "false",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000174",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "true",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000175",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "false",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000176",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "true",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000177",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "false",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 492,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000178",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "true",
+      "start_line": 492
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 492,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000179",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "false",
+      "start_line": 492
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 504,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000180",
+      "operator": "CSC",
+      "original_expression": "else {\n            // Look for revert reason and bubble it up if present\n            if (returndata.length > 0) {\n                // The easiest way to bubble the revert reason is using memory via assembly\n\n                // solhint-disable-next-line no-inline-assembly\n               \n            } else {\n                revert();\n            }\n        }",
+      "replacement_expression": "",
+      "start_line": 494
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000181",
+      "operator": "CSC",
+      "original_expression": "returndata.length > 0",
+      "replacement_expression": "true",
+      "start_line": 496
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000182",
+      "operator": "CSC",
+      "original_expression": "returndata.length > 0",
+      "replacement_expression": "false",
+      "start_line": 496
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 503,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000183",
+      "operator": "CSC",
+      "original_expression": "else {\n                revert();\n            }",
+      "replacement_expression": "",
+      "start_line": 501
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 827,
+      "function": "balanceOf",
+      "mutant_id": "m000184",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[account]",
+      "replacement_expression": "true",
+      "start_line": 827
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 827,
+      "function": "balanceOf",
+      "mutant_id": "m000185",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[account]",
+      "replacement_expression": "false",
+      "start_line": 827
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 880,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000186",
+      "operator": "CSC",
+      "original_expression": "!deductTransferFee",
+      "replacement_expression": "true",
+      "start_line": 880
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 880,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000187",
+      "operator": "CSC",
+      "original_expression": "!deductTransferFee",
+      "replacement_expression": "false",
+      "start_line": 880
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 886,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000188",
+      "operator": "CSC",
+      "original_expression": "else {\n            uint256 rTransferAmount;\n            return rTransferAmount;\n        }",
+      "replacement_expression": "",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 898,
+      "function": "excludeFromReward",
+      "mutant_id": "m000189",
+      "operator": "CSC",
+      "original_expression": "_rOwned[account] > 0",
+      "replacement_expression": "true",
+      "start_line": 898
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 898,
+      "function": "excludeFromReward",
+      "mutant_id": "m000190",
+      "operator": "CSC",
+      "original_expression": "_rOwned[account] > 0",
+      "replacement_expression": "false",
+      "start_line": 898
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "includeInReward",
+      "mutant_id": "m000191",
+      "operator": "CSC",
+      "original_expression": "_excluded[i] == account",
+      "replacement_expression": "true",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 908,
+      "function": "includeInReward",
+      "mutant_id": "m000192",
+      "operator": "CSC",
+      "original_expression": "_excluded[i] == account",
+      "replacement_expression": "false",
+      "start_line": 908
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000193",
+      "operator": "CSC",
+      "original_expression": "_rOwned[_excluded[i]] > rSupply || _tOwned[_excluded[i]] > tSupply",
+      "replacement_expression": "true",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000194",
+      "operator": "CSC",
+      "original_expression": "_rOwned[_excluded[i]] > rSupply || _tOwned[_excluded[i]] > tSupply",
+      "replacement_expression": "false",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1017,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000195",
+      "operator": "CSC",
+      "original_expression": "rSupply < _rTotal.div(_tTotal)",
+      "replacement_expression": "true",
+      "start_line": 1017
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1017,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000196",
+      "operator": "CSC",
+      "original_expression": "rSupply < _rTotal.div(_tTotal)",
+      "replacement_expression": "false",
+      "start_line": 1017
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1025,
+      "function": "_takeLiquidity",
+      "mutant_id": "m000197",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[address(this)]",
+      "replacement_expression": "true",
+      "start_line": 1025
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1025,
+      "function": "_takeLiquidity",
+      "mutant_id": "m000198",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[address(this)]",
+      "replacement_expression": "false",
+      "start_line": 1025
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1033,
+      "function": "_takeCharity",
+      "mutant_id": "m000199",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[_charityWalletAddress]",
+      "replacement_expression": "true",
+      "start_line": 1033
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1033,
+      "function": "_takeCharity",
+      "mutant_id": "m000200",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[_charityWalletAddress]",
+      "replacement_expression": "false",
+      "start_line": 1033
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000201",
+      "operator": "CSC",
+      "original_expression": "_taxFee == 0 && _liquidityFee == 0",
+      "replacement_expression": "true",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000202",
+      "operator": "CSC",
+      "original_expression": "_taxFee == 0 && _liquidityFee == 0",
+      "replacement_expression": "false",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000203",
+      "operator": "CSC",
+      "original_expression": "from != owner() && to != owner()",
+      "replacement_expression": "true",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "_transfer",
+      "mutant_id": "m000204",
+      "operator": "CSC",
+      "original_expression": "from != owner() && to != owner()",
+      "replacement_expression": "false",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "_transfer",
+      "mutant_id": "m000205",
+      "operator": "CSC",
+      "original_expression": "contractTokenBalance >= _maxTxAmount",
+      "replacement_expression": "true",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1102,
+      "function": "_transfer",
+      "mutant_id": "m000206",
+      "operator": "CSC",
+      "original_expression": "contractTokenBalance >= _maxTxAmount",
+      "replacement_expression": "false",
+      "start_line": 1102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1112,
+      "function": "_transfer",
+      "mutant_id": "m000207",
+      "operator": "CSC",
+      "original_expression": "overMinTokenBalance &&\n            !inSwapAndLiquify &&\n            from != uniswapV2Pair &&\n            swapAndLiquifyEnabled",
+      "replacement_expression": "true",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1112,
+      "function": "_transfer",
+      "mutant_id": "m000208",
+      "operator": "CSC",
+      "original_expression": "overMinTokenBalance &&\n            !inSwapAndLiquify &&\n            from != uniswapV2Pair &&\n            swapAndLiquifyEnabled",
+      "replacement_expression": "false",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1123,
+      "function": "_transfer",
+      "mutant_id": "m000209",
+      "operator": "CSC",
+      "original_expression": "_isExcludedFromFee[from] || _isExcludedFromFee[to]",
+      "replacement_expression": "true",
+      "start_line": 1123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1123,
+      "function": "_transfer",
+      "mutant_id": "m000210",
+      "operator": "CSC",
+      "original_expression": "_isExcludedFromFee[from] || _isExcludedFromFee[to]",
+      "replacement_expression": "false",
+      "start_line": 1123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1176,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000211",
+      "operator": "CSC",
+      "original_expression": "!takeFee",
+      "replacement_expression": "true",
+      "start_line": 1176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1176,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000212",
+      "operator": "CSC",
+      "original_expression": "!takeFee",
+      "replacement_expression": "false",
+      "start_line": 1176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1179,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000213",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[sender] && !_isExcluded[recipient]",
+      "replacement_expression": "true",
+      "start_line": 1179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1179,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000214",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[sender] && !_isExcluded[recipient]",
+      "replacement_expression": "false",
+      "start_line": 1179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1181,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000215",
+      "operator": "CSC",
+      "original_expression": "!_isExcluded[sender] && _isExcluded[recipient]",
+      "replacement_expression": "true",
+      "start_line": 1181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1181,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000216",
+      "operator": "CSC",
+      "original_expression": "!_isExcluded[sender] && _isExcluded[recipient]",
+      "replacement_expression": "false",
+      "start_line": 1181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1183,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000217",
+      "operator": "CSC",
+      "original_expression": "!_isExcluded[sender] && !_isExcluded[recipient]",
+      "replacement_expression": "true",
+      "start_line": 1183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1183,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000218",
+      "operator": "CSC",
+      "original_expression": "!_isExcluded[sender] && !_isExcluded[recipient]",
+      "replacement_expression": "false",
+      "start_line": 1183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1185,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000219",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[sender] && _isExcluded[recipient]",
+      "replacement_expression": "true",
+      "start_line": 1185
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1185,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000220",
+      "operator": "CSC",
+      "original_expression": "_isExcluded[sender] && _isExcluded[recipient]",
+      "replacement_expression": "false",
+      "start_line": 1185
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1189,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000221",
+      "operator": "CSC",
+      "original_expression": "else {\n            _transferStandard(sender, recipient, amount);\n        }",
+      "replacement_expression": "",
+      "start_line": 1187
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1191,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000222",
+      "operator": "CSC",
+      "original_expression": "!takeFee",
+      "replacement_expression": "true",
+      "start_line": 1191
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1191,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000223",
+      "operator": "CSC",
+      "original_expression": "!takeFee",
+      "replacement_expression": "false",
+      "start_line": 1191
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "sub",
+      "mutant_id": "m000224",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 271,
+      "function": "div",
+      "mutant_id": "m000225",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 271
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 293,
+      "function": "mod",
+      "mutant_id": "m000226",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 293
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 396,
+      "function": "functionCall",
+      "mutant_id": "m000227",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 396,
+      "function": "functionCall",
+      "mutant_id": "m000228",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 406,
+      "function": "functionCall",
+      "mutant_id": "m000229",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 406
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 406,
+      "function": "functionCall",
+      "mutant_id": "m000230",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 406
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 406,
+      "function": "functionCall",
+      "mutant_id": "m000231",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 406
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000232",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000233",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 421
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 431,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000234",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 431
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 431,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000235",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 431
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 431,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000236",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 431
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 437,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000237",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 437
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 447,
+      "function": "functionStaticCall",
+      "mutant_id": "m000238",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 447
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 447,
+      "function": "functionStaticCall",
+      "mutant_id": "m000239",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 447
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 457,
+      "function": "functionStaticCall",
+      "mutant_id": "m000240",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 457
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 457,
+      "function": "functionStaticCall",
+      "mutant_id": "m000241",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 457
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 457,
+      "function": "functionStaticCall",
+      "mutant_id": "m000242",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 457
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 462,
+      "function": "functionStaticCall",
+      "mutant_id": "m000243",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 462
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000244",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000245",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 482,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000246",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 482
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 482,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000247",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 482
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 482,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000248",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 482
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 487,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000249",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 487
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 491,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000250",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 491
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 491,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000251",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 491
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 491,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000252",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 491
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 661,
+      "function": "swapExactTokensForTokens",
+      "mutant_id": "m000253",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 661
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 668,
+      "function": "swapTokensForExactTokens",
+      "mutant_id": "m000254",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 668
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 672,
+      "function": "swapExactETHForTokens",
+      "mutant_id": "m000255",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 672
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 675,
+      "function": "swapTokensForExactETH",
+      "mutant_id": "m000256",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 675
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 678,
+      "function": "swapExactTokensForETH",
+      "mutant_id": "m000257",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 678
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 682,
+      "function": "swapETHForExactTokens",
+      "mutant_id": "m000258",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 682
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 687,
+      "function": "getAmountsOut",
+      "mutant_id": "m000259",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 687
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 688,
+      "function": "getAmountsIn",
+      "mutant_id": "m000260",
+      "operator": "DLR",
+      "original_expression": "uint[] memory amounts",
+      "replacement_expression": "uint[] storage amounts",
+      "start_line": 688
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 810,
+      "function": "name",
+      "mutant_id": "m000261",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 810
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 814,
+      "function": "symbol",
+      "mutant_id": "m000262",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 814
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1156,
+      "function": "swapTokensForEth",
+      "mutant_id": "m000263",
+      "operator": "DLR",
+      "original_expression": "address[] memory path",
+      "replacement_expression": "address[] storage path",
+      "start_line": 1156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 530,
+      "function": "asd",
+      "mutant_id": "m000264",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(address(0), _owner);",
+      "replacement_expression": "/* emit OwnershipTransferred(address(0), _owner); */",
+      "start_line": 530
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "renounceOwnership",
+      "mutant_id": "m000265",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(_owner, address(0));",
+      "replacement_expression": "/* emit OwnershipTransferred(_owner, address(0)); */",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 566,
+      "function": "transferOwnership",
+      "mutant_id": "m000266",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(_owner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(_owner, newOwner); */",
+      "start_line": 566
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 807,
+      "function": "asdfw",
+      "mutant_id": "m000267",
+      "operator": "EED",
+      "original_expression": "emit Transfer(address(0), owner(), _tTotal);",
+      "replacement_expression": "/* emit Transfer(address(0), owner(), _tTotal); */",
+      "start_line": 807
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 932,
+      "function": "_transferBothExcluded",
+      "mutant_id": "m000268",
+      "operator": "EED",
+      "original_expression": "emit Transfer(sender, recipient, tTransferAmount);",
+      "replacement_expression": "/* emit Transfer(sender, recipient, tTransferAmount); */",
+      "start_line": 932
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 963,
+      "function": "setSwapAndLiquifyEnabled",
+      "mutant_id": "m000269",
+      "operator": "EED",
+      "original_expression": "emit SwapAndLiquifyEnabledUpdated(_enabled);",
+      "replacement_expression": "/* emit SwapAndLiquifyEnabledUpdated(_enabled); */",
+      "start_line": 963
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1082,
+      "function": "_approve",
+      "mutant_id": "m000270",
+      "operator": "EED",
+      "original_expression": "emit Approval(owner, spender, amount);",
+      "replacement_expression": "/* emit Approval(owner, spender, amount); */",
+      "start_line": 1082
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1151,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000271",
+      "operator": "EED",
+      "original_expression": "emit SwapAndLiquify(half, newBalance, otherHalf);",
+      "replacement_expression": "/* emit SwapAndLiquify(half, newBalance, otherHalf); */",
+      "start_line": 1151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1208,
+      "function": "_transferStandard",
+      "mutant_id": "m000272",
+      "operator": "EED",
+      "original_expression": "emit Transfer(sender, recipient, tTransferAmount);",
+      "replacement_expression": "/* emit Transfer(sender, recipient, tTransferAmount); */",
+      "start_line": 1208
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1225,
+      "function": "_transferToExcluded",
+      "mutant_id": "m000273",
+      "operator": "EED",
+      "original_expression": "emit Transfer(sender, recipient, tTransferAmount);",
+      "replacement_expression": "/* emit Transfer(sender, recipient, tTransferAmount); */",
+      "start_line": 1225
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1242,
+      "function": "_transferFromExcluded",
+      "mutant_id": "m000274",
+      "operator": "EED",
+      "original_expression": "emit Transfer(sender, recipient, tTransferAmount);",
+      "replacement_expression": "/* emit Transfer(sender, recipient, tTransferAmount); */",
+      "start_line": 1242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 750,
+      "function": "stateVariable",
+      "mutant_id": "m000275",
+      "operator": "ECS",
+      "original_expression": "uint256(0)",
+      "replacement_expression": "uint248(0)",
+      "start_line": 750
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "sub",
+      "mutant_id": "m000276",
+      "operator": "EHD",
+      "original_expression": "require(b <= a);",
+      "replacement_expression": "/* require(b <= a); */",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "div",
+      "mutant_id": "m000277",
+      "operator": "EHD",
+      "original_expression": "require(b > 0);",
+      "replacement_expression": "/* require(b > 0); */",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "mod",
+      "mutant_id": "m000278",
+      "operator": "EHD",
+      "original_expression": "require(b > 0);",
+      "replacement_expression": "/* require(b > 0); */",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 371,
+      "function": "sendValue",
+      "mutant_id": "m000279",
+      "operator": "EHD",
+      "original_expression": "require(address(this).balance >= amount);",
+      "replacement_expression": "/* require(address(this).balance >= amount); */",
+      "start_line": 371
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 375,
+      "function": "sendValue",
+      "mutant_id": "m000280",
+      "operator": "EHD",
+      "original_expression": "require(success);",
+      "replacement_expression": "/* require(success); */",
+      "start_line": 375
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 432,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000281",
+      "operator": "EHD",
+      "original_expression": "require(address(this).balance >= value);",
+      "replacement_expression": "/* require(address(this).balance >= value); */",
+      "start_line": 432
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 433,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000282",
+      "operator": "EHD",
+      "original_expression": "require(isContract(target));",
+      "replacement_expression": "/* require(isContract(target)); */",
+      "start_line": 433
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 458,
+      "function": "functionStaticCall",
+      "mutant_id": "m000283",
+      "operator": "EHD",
+      "original_expression": "require(isContract(target));",
+      "replacement_expression": "/* require(isContract(target)); */",
+      "start_line": 458
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 483,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000284",
+      "operator": "EHD",
+      "original_expression": "require(isContract(target));",
+      "replacement_expression": "/* require(isContract(target)); */",
+      "start_line": 483
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 502,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000285",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 502
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 544,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000286",
+      "operator": "EHD",
+      "original_expression": "require(owner() == _msgSender());",
+      "replacement_expression": "/* require(owner() == _msgSender()); */",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "transferOwnership",
+      "mutant_id": "m000287",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0));",
+      "replacement_expression": "/* require(newOwner != address(0)); */",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 871,
+      "function": "deliver",
+      "mutant_id": "m000288",
+      "operator": "EHD",
+      "original_expression": "require(!_isExcluded[sender]);",
+      "replacement_expression": "/* require(!_isExcluded[sender]); */",
+      "start_line": 871
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 879,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000289",
+      "operator": "EHD",
+      "original_expression": "require(tAmount <= _tTotal);",
+      "replacement_expression": "/* require(tAmount <= _tTotal); */",
+      "start_line": 879
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 890,
+      "function": "tokenFromReflection",
+      "mutant_id": "m000290",
+      "operator": "EHD",
+      "original_expression": "require(rAmount <= _rTotal);",
+      "replacement_expression": "/* require(rAmount <= _rTotal); */",
+      "start_line": 890
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 897,
+      "function": "excludeFromReward",
+      "mutant_id": "m000291",
+      "operator": "EHD",
+      "original_expression": "require(!_isExcluded[account]);",
+      "replacement_expression": "/* require(!_isExcluded[account]); */",
+      "start_line": 897
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "includeInReward",
+      "mutant_id": "m000292",
+      "operator": "EHD",
+      "original_expression": "require(_isExcluded[account]);",
+      "replacement_expression": "/* require(_isExcluded[account]); */",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1078,
+      "function": "_approve",
+      "mutant_id": "m000293",
+      "operator": "EHD",
+      "original_expression": "require(owner != address(0));",
+      "replacement_expression": "/* require(owner != address(0)); */",
+      "start_line": 1078
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1079,
+      "function": "_approve",
+      "mutant_id": "m000294",
+      "operator": "EHD",
+      "original_expression": "require(spender != address(0));",
+      "replacement_expression": "/* require(spender != address(0)); */",
+      "start_line": 1079
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1090,
+      "function": "_transfer",
+      "mutant_id": "m000295",
+      "operator": "EHD",
+      "original_expression": "require(from != address(0));",
+      "replacement_expression": "/* require(from != address(0)); */",
+      "start_line": 1090
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1091,
+      "function": "_transfer",
+      "mutant_id": "m000296",
+      "operator": "EHD",
+      "original_expression": "require(to != address(0));",
+      "replacement_expression": "/* require(to != address(0)); */",
+      "start_line": 1091
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "_transfer",
+      "mutant_id": "m000297",
+      "operator": "EHD",
+      "original_expression": "require(amount > 0);",
+      "replacement_expression": "/* require(amount > 0); */",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1094,
+      "function": "_transfer",
+      "mutant_id": "m000298",
+      "operator": "EHD",
+      "original_expression": "require(amount <= _maxTxAmount);",
+      "replacement_expression": "/* require(amount <= _maxTxAmount); */",
+      "start_line": 1094
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 433,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000299",
+      "operator": "FCD",
+      "original_expression": "isContract(target))",
+      "replacement_expression": "/*isContract(target))*/",
+      "start_line": 433
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 458,
+      "function": "functionStaticCall",
+      "mutant_id": "m000300",
+      "operator": "FCD",
+      "original_expression": "isContract(target))",
+      "replacement_expression": "/*isContract(target))*/",
+      "start_line": 458
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 483,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000301",
+      "operator": "FCD",
+      "original_expression": "isContract(target))",
+      "replacement_expression": "/*isContract(target))*/",
+      "start_line": 483
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 544,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000302",
+      "operator": "FCD",
+      "original_expression": "_msgSender())",
+      "replacement_expression": "/*_msgSender())*/",
+      "start_line": 544
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 832,
+      "function": "transfer",
+      "mutant_id": "m000303",
+      "operator": "FCD",
+      "original_expression": "_transfer(_msgSender(), recipient, amount);",
+      "replacement_expression": "/*_transfer(_msgSender(), recipient, amount);*/",
+      "start_line": 832
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 841,
+      "function": "approve",
+      "mutant_id": "m000304",
+      "operator": "FCD",
+      "original_expression": "_approve(_msgSender(), spender, amount);",
+      "replacement_expression": "/*_approve(_msgSender(), spender, amount);*/",
+      "start_line": 841
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 846,
+      "function": "transferFrom",
+      "mutant_id": "m000305",
+      "operator": "FCD",
+      "original_expression": "_transfer(sender, recipient, amount);",
+      "replacement_expression": "/*_transfer(sender, recipient, amount);*/",
+      "start_line": 846
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 847,
+      "function": "transferFrom",
+      "mutant_id": "m000306",
+      "operator": "FCD",
+      "original_expression": "_approve(sender, _msgSender(), _allowances[sender][_msgSender()].sub(amount));",
+      "replacement_expression": "/*_approve(sender, _msgSender(), _allowances[sender][_msgSender()].sub(amount));*/",
+      "start_line": 847
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 847,
+      "function": "transferFrom",
+      "mutant_id": "m000307",
+      "operator": "FCD",
+      "original_expression": "_allowances[sender][_msgSender()].sub(amount))",
+      "replacement_expression": "/*_allowances[sender][_msgSender()].sub(amount))*/",
+      "start_line": 847
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 852,
+      "function": "increaseAllowance",
+      "mutant_id": "m000308",
+      "operator": "FCD",
+      "original_expression": "_approve(_msgSender(), spender, _allowances[_msgSender()][spender].add(addedValue));",
+      "replacement_expression": "/*_approve(_msgSender(), spender, _allowances[_msgSender()][spender].add(addedValue));*/",
+      "start_line": 852
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 852,
+      "function": "increaseAllowance",
+      "mutant_id": "m000309",
+      "operator": "FCD",
+      "original_expression": "_allowances[_msgSender()][spender].add(addedValue))",
+      "replacement_expression": "/*_allowances[_msgSender()][spender].add(addedValue))*/",
+      "start_line": 852
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 857,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000310",
+      "operator": "FCD",
+      "original_expression": "_approve(_msgSender(), spender, _allowances[_msgSender()][spender].sub(subtractedValue));",
+      "replacement_expression": "/*_approve(_msgSender(), spender, _allowances[_msgSender()][spender].sub(subtractedValue));*/",
+      "start_line": 857
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 857,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000311",
+      "operator": "FCD",
+      "original_expression": "_allowances[_msgSender()][spender].sub(subtractedValue))",
+      "replacement_expression": "/*_allowances[_msgSender()][spender].sub(subtractedValue))*/",
+      "start_line": 857
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 929,
+      "function": "_transferBothExcluded",
+      "mutant_id": "m000312",
+      "operator": "FCD",
+      "original_expression": "_takeLiquidity(tLiquidity);",
+      "replacement_expression": "/*_takeLiquidity(tLiquidity);*/",
+      "start_line": 929
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 930,
+      "function": "_transferBothExcluded",
+      "mutant_id": "m000313",
+      "operator": "FCD",
+      "original_expression": "_takeCharity(tCharity);",
+      "replacement_expression": "/*_takeCharity(tCharity);*/",
+      "start_line": 930
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 931,
+      "function": "_transferBothExcluded",
+      "mutant_id": "m000314",
+      "operator": "FCD",
+      "original_expression": "_reflectFee(rFee, tFee);",
+      "replacement_expression": "/*_reflectFee(rFee, tFee);*/",
+      "start_line": 931
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1116,
+      "function": "_transfer",
+      "mutant_id": "m000315",
+      "operator": "FCD",
+      "original_expression": "swapAndLiquify(contractTokenBalance);",
+      "replacement_expression": "/*swapAndLiquify(contractTokenBalance);*/",
+      "start_line": 1116
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1128,
+      "function": "_transfer",
+      "mutant_id": "m000316",
+      "operator": "FCD",
+      "original_expression": "_tokenTransfer(from,to,amount,takeFee);",
+      "replacement_expression": "/*_tokenTransfer(from,to,amount,takeFee);*/",
+      "start_line": 1128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1143,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000317",
+      "operator": "FCD",
+      "original_expression": "swapTokensForEth(half);",
+      "replacement_expression": "/*swapTokensForEth(half);*/",
+      "start_line": 1143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1149,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000318",
+      "operator": "FCD",
+      "original_expression": "addLiquidity(otherHalf, newBalance);",
+      "replacement_expression": "/*addLiquidity(otherHalf, newBalance);*/",
+      "start_line": 1149
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1177,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000319",
+      "operator": "FCD",
+      "original_expression": "removeAllFee();",
+      "replacement_expression": "/*removeAllFee();*/",
+      "start_line": 1177
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1180,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000320",
+      "operator": "FCD",
+      "original_expression": "_transferFromExcluded(sender, recipient, amount);",
+      "replacement_expression": "/*_transferFromExcluded(sender, recipient, amount);*/",
+      "start_line": 1180
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1182,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000321",
+      "operator": "FCD",
+      "original_expression": "_transferToExcluded(sender, recipient, amount);",
+      "replacement_expression": "/*_transferToExcluded(sender, recipient, amount);*/",
+      "start_line": 1182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1184,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000322",
+      "operator": "FCD",
+      "original_expression": "_transferStandard(sender, recipient, amount);",
+      "replacement_expression": "/*_transferStandard(sender, recipient, amount);*/",
+      "start_line": 1184
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1186,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000323",
+      "operator": "FCD",
+      "original_expression": "_transferBothExcluded(sender, recipient, amount);",
+      "replacement_expression": "/*_transferBothExcluded(sender, recipient, amount);*/",
+      "start_line": 1186
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1188,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000324",
+      "operator": "FCD",
+      "original_expression": "_transferStandard(sender, recipient, amount);",
+      "replacement_expression": "/*_transferStandard(sender, recipient, amount);*/",
+      "start_line": 1188
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1192,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000325",
+      "operator": "FCD",
+      "original_expression": "restoreAllFee();",
+      "replacement_expression": "/*restoreAllFee();*/",
+      "start_line": 1192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1205,
+      "function": "_transferStandard",
+      "mutant_id": "m000326",
+      "operator": "FCD",
+      "original_expression": "_takeLiquidity(tLiquidity);",
+      "replacement_expression": "/*_takeLiquidity(tLiquidity);*/",
+      "start_line": 1205
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1206,
+      "function": "_transferStandard",
+      "mutant_id": "m000327",
+      "operator": "FCD",
+      "original_expression": "_takeCharity(tCharity);",
+      "replacement_expression": "/*_takeCharity(tCharity);*/",
+      "start_line": 1206
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1207,
+      "function": "_transferStandard",
+      "mutant_id": "m000328",
+      "operator": "FCD",
+      "original_expression": "_reflectFee(rFee, tFee);",
+      "replacement_expression": "/*_reflectFee(rFee, tFee);*/",
+      "start_line": 1207
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1222,
+      "function": "_transferToExcluded",
+      "mutant_id": "m000329",
+      "operator": "FCD",
+      "original_expression": "_takeLiquidity(tLiquidity);",
+      "replacement_expression": "/*_takeLiquidity(tLiquidity);*/",
+      "start_line": 1222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1223,
+      "function": "_transferToExcluded",
+      "mutant_id": "m000330",
+      "operator": "FCD",
+      "original_expression": "_takeCharity(tCharity);",
+      "replacement_expression": "/*_takeCharity(tCharity);*/",
+      "start_line": 1223
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_transferToExcluded",
+      "mutant_id": "m000331",
+      "operator": "FCD",
+      "original_expression": "_reflectFee(rFee, tFee);",
+      "replacement_expression": "/*_reflectFee(rFee, tFee);*/",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1239,
+      "function": "_transferFromExcluded",
+      "mutant_id": "m000332",
+      "operator": "FCD",
+      "original_expression": "_takeLiquidity(tLiquidity);",
+      "replacement_expression": "/*_takeLiquidity(tLiquidity);*/",
+      "start_line": 1239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1240,
+      "function": "_transferFromExcluded",
+      "mutant_id": "m000333",
+      "operator": "FCD",
+      "original_expression": "_takeCharity(tCharity);",
+      "replacement_expression": "/*_takeCharity(tCharity);*/",
+      "start_line": 1240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1241,
+      "function": "_transferFromExcluded",
+      "mutant_id": "m000334",
+      "operator": "FCD",
+      "original_expression": "_reflectFee(rFee, tFee);",
+      "replacement_expression": "/*_reflectFee(rFee, tFee);*/",
+      "start_line": 1241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "tryAdd",
+      "mutant_id": "m000335",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "trySub",
+      "mutant_id": "m000336",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000337",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000338",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "tryMul",
+      "mutant_id": "m000339",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000340",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "tryDiv",
+      "mutant_id": "m000341",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000342",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "tryMod",
+      "mutant_id": "m000343",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 273,
+      "function": "div",
+      "mutant_id": "m000344",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 273
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 295,
+      "function": "mod",
+      "mutant_id": "m000345",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 295
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 351,
+      "function": "isContract",
+      "mutant_id": "m000346",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "functionCall",
+      "mutant_id": "m000347",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 496,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000348",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 496
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 530,
+      "function": "asd",
+      "mutant_id": "m000349",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 530
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 556,
+      "function": "renounceOwnership",
+      "mutant_id": "m000350",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 556
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 557,
+      "function": "renounceOwnership",
+      "mutant_id": "m000351",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 557
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 565,
+      "function": "transferOwnership",
+      "mutant_id": "m000352",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 565
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 750,
+      "function": "stateVariable",
+      "mutant_id": "m000353",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 750
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000354",
+      "operator": "ILR",
+      "original_expression": "1000000000000",
+      "replacement_expression": "999999999999",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000355",
+      "operator": "ILR",
+      "original_expression": "1000000000000",
+      "replacement_expression": "1000000000001",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000356",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000357",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000358",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 751,
+      "function": "stateVariable",
+      "mutant_id": "m000359",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 751
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 757,
+      "function": "stateVariable",
+      "mutant_id": "m000360",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 757
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 757,
+      "function": "stateVariable",
+      "mutant_id": "m000361",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 757
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 759,
+      "function": "stateVariable",
+      "mutant_id": "m000362",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 759
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 759,
+      "function": "stateVariable",
+      "mutant_id": "m000363",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 759
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 762,
+      "function": "stateVariable",
+      "mutant_id": "m000364",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 762
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 764,
+      "function": "stateVariable",
+      "mutant_id": "m000365",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 764
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 764,
+      "function": "stateVariable",
+      "mutant_id": "m000366",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 764
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000367",
+      "operator": "ILR",
+      "original_expression": "5000000",
+      "replacement_expression": "4999999",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000368",
+      "operator": "ILR",
+      "original_expression": "5000000",
+      "replacement_expression": "5000001",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000369",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000370",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000371",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 772,
+      "function": "stateVariable",
+      "mutant_id": "m000372",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 772
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000373",
+      "operator": "ILR",
+      "original_expression": "500000",
+      "replacement_expression": "499999",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000374",
+      "operator": "ILR",
+      "original_expression": "500000",
+      "replacement_expression": "500001",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000375",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000376",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000377",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 773,
+      "function": "stateVariable",
+      "mutant_id": "m000378",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 773
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 807,
+      "function": "asdfw",
+      "mutant_id": "m000379",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 807
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 898,
+      "function": "excludeFromReward",
+      "mutant_id": "m000380",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 898
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000381",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "includeInReward",
+      "mutant_id": "m000382",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "includeInReward",
+      "mutant_id": "m000383",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 910,
+      "function": "includeInReward",
+      "mutant_id": "m000384",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 910
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 957,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000385",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 957
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 957,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000386",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 957
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 957,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000387",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 957
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 957,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000388",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 957
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000389",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1039,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000390",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 1039
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1039,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000391",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 1039
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1039,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000392",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1039
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1039,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000393",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1039
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1045,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000394",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 1045
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1045,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000395",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 1045
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1045,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000396",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1045
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1045,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000397",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1045
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1051,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000398",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 1051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1051,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000399",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 1051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1051,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000400",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1051,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000401",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1051
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000402",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "removeAllFee",
+      "mutant_id": "m000403",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1062,
+      "function": "removeAllFee",
+      "mutant_id": "m000404",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1062
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1063,
+      "function": "removeAllFee",
+      "mutant_id": "m000405",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1063
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1064,
+      "function": "removeAllFee",
+      "mutant_id": "m000406",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1064
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1078,
+      "function": "_approve",
+      "mutant_id": "m000407",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1078
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1079,
+      "function": "_approve",
+      "mutant_id": "m000408",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1079
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1090,
+      "function": "_transfer",
+      "mutant_id": "m000409",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1090
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1091,
+      "function": "_transfer",
+      "mutant_id": "m000410",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1091
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "_transfer",
+      "mutant_id": "m000411",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1133,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000412",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1133,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000413",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1156,
+      "function": "swapTokensForEth",
+      "mutant_id": "m000414",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 1156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1156,
+      "function": "swapTokensForEth",
+      "mutant_id": "m000415",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 1156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1157,
+      "function": "swapTokensForEth",
+      "mutant_id": "m000416",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1157
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000417",
+      "operator": "LSC",
+      "original_expression": "i < _excluded.length",
+      "replacement_expression": "false",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000418",
+      "operator": "LSC",
+      "original_expression": "i < _excluded.length",
+      "replacement_expression": "false",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 555,
+      "function": "renounceOwnership",
+      "mutant_id": "m000419",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public  onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public   ",
+      "start_line": 555
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 564,
+      "function": "transferOwnership",
+      "mutant_id": "m000420",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public  onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public   ",
+      "start_line": 564
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "excludeFromReward",
+      "mutant_id": "m000421",
+      "operator": "MOD",
+      "original_expression": "function excludeFromReward(address account) public onlyOwner() ",
+      "replacement_expression": "function excludeFromReward(address account) public  ",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 905,
+      "function": "includeInReward",
+      "mutant_id": "m000422",
+      "operator": "MOD",
+      "original_expression": "function includeInReward(address account) external onlyOwner() ",
+      "replacement_expression": "function includeInReward(address account) external  ",
+      "start_line": 905
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 935,
+      "function": "excludeFromFee",
+      "mutant_id": "m000423",
+      "operator": "MOD",
+      "original_expression": "function excludeFromFee(address account) public onlyOwner ",
+      "replacement_expression": "function excludeFromFee(address account) public  ",
+      "start_line": 935
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 939,
+      "function": "includeInFee",
+      "mutant_id": "m000424",
+      "operator": "MOD",
+      "original_expression": "function includeInFee(address account) public onlyOwner ",
+      "replacement_expression": "function includeInFee(address account) public  ",
+      "start_line": 939
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 943,
+      "function": "setTaxFeePercent",
+      "mutant_id": "m000425",
+      "operator": "MOD",
+      "original_expression": "function setTaxFeePercent(uint256 taxFee) external onlyOwner() ",
+      "replacement_expression": "function setTaxFeePercent(uint256 taxFee) external  ",
+      "start_line": 943
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 947,
+      "function": "setCharityFeePercent",
+      "mutant_id": "m000426",
+      "operator": "MOD",
+      "original_expression": "function setCharityFeePercent(uint256 charityFee) external onlyOwner() ",
+      "replacement_expression": "function setCharityFeePercent(uint256 charityFee) external  ",
+      "start_line": 947
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 951,
+      "function": "setLiquidityFeePercent",
+      "mutant_id": "m000427",
+      "operator": "MOD",
+      "original_expression": "function setLiquidityFeePercent(uint256 liquidityFee) external onlyOwner() ",
+      "replacement_expression": "function setLiquidityFeePercent(uint256 liquidityFee) external  ",
+      "start_line": 951
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 955,
+      "function": "setMaxTxPercent",
+      "mutant_id": "m000428",
+      "operator": "MOD",
+      "original_expression": "function setMaxTxPercent(uint256 maxTxPercent) external onlyOwner() ",
+      "replacement_expression": "function setMaxTxPercent(uint256 maxTxPercent) external  ",
+      "start_line": 955
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 961,
+      "function": "setSwapAndLiquifyEnabled",
+      "mutant_id": "m000429",
+      "operator": "MOD",
+      "original_expression": "function setSwapAndLiquifyEnabled(bool _enabled) public onlyOwner ",
+      "replacement_expression": "function setSwapAndLiquifyEnabled(bool _enabled) public  ",
+      "start_line": 961
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1131,
+      "function": "swapAndLiquify",
+      "mutant_id": "m000430",
+      "operator": "MOD",
+      "original_expression": "function swapAndLiquify(uint256 contractTokenBalance) private lockTheSwap ",
+      "replacement_expression": "function swapAndLiquify(uint256 contractTokenBalance) private  ",
+      "start_line": 1131
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 189,
+      "function": "sub",
+      "mutant_id": "m000431",
+      "operator": "OLFD",
+      "original_expression": "function sub(uint256 a, uint256 b) internal pure returns (uint256) {\n        return a - b;\n    }",
+      "replacement_expression": "",
+      "start_line": 187
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 217,
+      "function": "div",
+      "mutant_id": "m000432",
+      "operator": "OLFD",
+      "original_expression": "function div(uint256 a, uint256 b) internal pure returns (uint256) {\n        return a / b;\n    }",
+      "replacement_expression": "",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 233,
+      "function": "mod",
+      "mutant_id": "m000433",
+      "operator": "OLFD",
+      "original_expression": "function mod(uint256 a, uint256 b) internal pure returns (uint256) {\n        return a % b;\n    }",
+      "replacement_expression": "",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 253,
+      "function": "sub",
+      "mutant_id": "m000434",
+      "operator": "OLFD",
+      "original_expression": "function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\n         {\n            require(b <= a);\n            return a - b;\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 276,
+      "function": "div",
+      "mutant_id": "m000435",
+      "operator": "OLFD",
+      "original_expression": "function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\n         {\n            require(b > 0);\n            return a / b;\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 271
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 298,
+      "function": "mod",
+      "mutant_id": "m000436",
+      "operator": "OLFD",
+      "original_expression": "function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {\n         {\n            require(b > 0);\n            return a % b;\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 293
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 398,
+      "function": "functionCall",
+      "mutant_id": "m000437",
+      "operator": "OLFD",
+      "original_expression": "function functionCall(address target, bytes memory data) internal returns (bytes memory) {\n      return functionCall(target, data);//Address: low-level call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 396
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "functionCall",
+      "mutant_id": "m000438",
+      "operator": "OLFD",
+      "original_expression": "function functionCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {\n        return functionCallWithValue(target, data, 0, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 406
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 423,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000439",
+      "operator": "OLFD",
+      "original_expression": "function functionCallWithValue(address target, bytes memory data, uint256 value) internal returns (bytes memory) {\n        return functionCallWithValue(target, data, value);//Address: low-level call with value failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 421
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 439,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000440",
+      "operator": "OLFD",
+      "original_expression": "function functionCallWithValue(address target, bytes memory data, uint256 value, string memory errorMessage) internal returns (bytes memory) {\n        require(address(this).balance >= value);//Address: insufficient balance for call\");\n        require(isContract(target));//Address: call to non-contract\");\n\n        // solhint-disable-next-line avoid-low-level-calls\n        bool success;\n         bytes memory returndata;\n        return _verifyCallResult(success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 431
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "functionStaticCall",
+      "mutant_id": "m000441",
+      "operator": "OLFD",
+      "original_expression": "function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\n        return functionStaticCall(target, data);//Address: low-level static call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 447
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 464,
+      "function": "functionStaticCall",
+      "mutant_id": "m000442",
+      "operator": "OLFD",
+      "original_expression": "function functionStaticCall(address target, bytes memory data, string memory errorMessage) internal view returns (bytes memory) {\n        require(isContract(target));//Address: static call to non-contract\");\n\n        // solhint-disable-next-line avoid-low-level-calls\n        bool success;\n         bytes memory returndata;\n        return _verifyCallResult(success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 457
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 474,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000443",
+      "operator": "OLFD",
+      "original_expression": "function functionDelegateCall(address target, bytes memory data) internal returns (bytes memory) {\n        return functionDelegateCall(target, data);//Address: low-level delegate call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 489,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000444",
+      "operator": "OLFD",
+      "original_expression": "function functionDelegateCall(address target, bytes memory data, string memory errorMessage) internal returns (bytes memory) {\n        require(isContract(target));//Address: delegate call to non-contract\");\n\n        // solhint-disable-next-line avoid-low-level-calls\n        bool success;\n         bytes memory returndata;\n        return _verifyCallResult(success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 482
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 610,
+      "function": "addLiquidity",
+      "mutant_id": "m000445",
+      "operator": "OLFD",
+      "original_expression": "function addLiquidity(\n        address tokenA,\n        address tokenB,\n        uint amountADesired,\n        uint amountBDesired,\n        uint amountAMin,\n        uint amountBMin,\n        address to,\n        uint deadline\n    ) external returns (uint amountA, uint amountB, uint liquidity);",
+      "replacement_expression": "",
+      "start_line": 601
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1172,
+      "function": "addLiquidity",
+      "mutant_id": "m000446",
+      "operator": "OLFD",
+      "original_expression": "function addLiquidity(uint256 tokenAmount, uint256 ethAmount) private {\n        // approve token transfer to cover all possible scenarios\n       // _approve(address(this), address(uniswapV2Router), tokenAmount);\n\n        // add the liquidity\n      \n    }",
+      "replacement_expression": "",
+      "start_line": 1166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "tryAdd",
+      "mutant_id": "m000447",
+      "operator": "RSD",
+      "original_expression": "return (true, c);",
+      "replacement_expression": "/* return (true, c); */",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "trySub",
+      "mutant_id": "m000448",
+      "operator": "RSD",
+      "original_expression": "return (true, a - b);",
+      "replacement_expression": "/* return (true, a - b); */",
+      "start_line": 118
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 132,
+      "function": "tryMul",
+      "mutant_id": "m000449",
+      "operator": "RSD",
+      "original_expression": "return (true, 0);",
+      "replacement_expression": "/* return (true, 0); */",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "tryMul",
+      "mutant_id": "m000450",
+      "operator": "RSD",
+      "original_expression": "return (true, c);",
+      "replacement_expression": "/* return (true, c); */",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "tryDiv",
+      "mutant_id": "m000451",
+      "operator": "RSD",
+      "original_expression": "return (true, a / b);",
+      "replacement_expression": "/* return (true, a / b); */",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "tryMod",
+      "mutant_id": "m000452",
+      "operator": "RSD",
+      "original_expression": "return (true, a % b);",
+      "replacement_expression": "/* return (true, a % b); */",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "add",
+      "mutant_id": "m000453",
+      "operator": "RSD",
+      "original_expression": "return a + b;",
+      "replacement_expression": "/* return a + b; */",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "sub",
+      "mutant_id": "m000454",
+      "operator": "RSD",
+      "original_expression": "return a - b;",
+      "replacement_expression": "/* return a - b; */",
+      "start_line": 188
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "mul",
+      "mutant_id": "m000455",
+      "operator": "RSD",
+      "original_expression": "return a * b;",
+      "replacement_expression": "/* return a * b; */",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 216,
+      "function": "div",
+      "mutant_id": "m000456",
+      "operator": "RSD",
+      "original_expression": "return a / b;",
+      "replacement_expression": "/* return a / b; */",
+      "start_line": 216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "mod",
+      "mutant_id": "m000457",
+      "operator": "RSD",
+      "original_expression": "return a % b;",
+      "replacement_expression": "/* return a % b; */",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "sub",
+      "mutant_id": "m000458",
+      "operator": "RSD",
+      "original_expression": "return a - b;",
+      "replacement_expression": "/* return a - b; */",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 274,
+      "function": "div",
+      "mutant_id": "m000459",
+      "operator": "RSD",
+      "original_expression": "return a / b;",
+      "replacement_expression": "/* return a / b; */",
+      "start_line": 274
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "mod",
+      "mutant_id": "m000460",
+      "operator": "RSD",
+      "original_expression": "return a % b;",
+      "replacement_expression": "/* return a % b; */",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 313,
+      "function": "_msgSender",
+      "mutant_id": "m000461",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 313
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 318,
+      "function": "_msgData",
+      "mutant_id": "m000462",
+      "operator": "RSD",
+      "original_expression": "return msg.data;",
+      "replacement_expression": "/* return msg.data; */",
+      "start_line": 318
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 351,
+      "function": "isContract",
+      "mutant_id": "m000463",
+      "operator": "RSD",
+      "original_expression": "return size > 0;",
+      "replacement_expression": "/* return size > 0; */",
+      "start_line": 351
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 397,
+      "function": "functionCall",
+      "mutant_id": "m000464",
+      "operator": "RSD",
+      "original_expression": "return functionCall(target, data);",
+      "replacement_expression": "functionCall(target, data);",
+      "start_line": 397
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "functionCall",
+      "mutant_id": "m000465",
+      "operator": "RSD",
+      "original_expression": "return functionCallWithValue(target, data, 0, errorMessage);",
+      "replacement_expression": "functionCallWithValue(target, data, 0, errorMessage);",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 422,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000466",
+      "operator": "RSD",
+      "original_expression": "return functionCallWithValue(target, data, value);",
+      "replacement_expression": "functionCallWithValue(target, data, value);",
+      "start_line": 422
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 438,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000467",
+      "operator": "RSD",
+      "original_expression": "return _verifyCallResult(success, returndata, errorMessage);",
+      "replacement_expression": "_verifyCallResult(success, returndata, errorMessage);",
+      "start_line": 438
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "functionStaticCall",
+      "mutant_id": "m000468",
+      "operator": "RSD",
+      "original_expression": "return functionStaticCall(target, data);",
+      "replacement_expression": "functionStaticCall(target, data);",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 463,
+      "function": "functionStaticCall",
+      "mutant_id": "m000469",
+      "operator": "RSD",
+      "original_expression": "return _verifyCallResult(success, returndata, errorMessage);",
+      "replacement_expression": "_verifyCallResult(success, returndata, errorMessage);",
+      "start_line": 463
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 473,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000470",
+      "operator": "RSD",
+      "original_expression": "return functionDelegateCall(target, data);",
+      "replacement_expression": "functionDelegateCall(target, data);",
+      "start_line": 473
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 488,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000471",
+      "operator": "RSD",
+      "original_expression": "return _verifyCallResult(success, returndata, errorMessage);",
+      "replacement_expression": "_verifyCallResult(success, returndata, errorMessage);",
+      "start_line": 488
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 493,
+      "function": "_verifyCallResult",
+      "mutant_id": "m000472",
+      "operator": "RSD",
+      "original_expression": "return returndata;",
+      "replacement_expression": "/* return returndata; */",
+      "start_line": 493
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 537,
+      "function": "owner",
+      "mutant_id": "m000473",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 537
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 811,
+      "function": "name",
+      "mutant_id": "m000474",
+      "operator": "RSD",
+      "original_expression": "return _name;",
+      "replacement_expression": "/* return _name; */",
+      "start_line": 811
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 815,
+      "function": "symbol",
+      "mutant_id": "m000475",
+      "operator": "RSD",
+      "original_expression": "return _symbol;",
+      "replacement_expression": "/* return _symbol; */",
+      "start_line": 815
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 819,
+      "function": "decimals",
+      "mutant_id": "m000476",
+      "operator": "RSD",
+      "original_expression": "return _decimals;",
+      "replacement_expression": "/* return _decimals; */",
+      "start_line": 819
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "totalSupply",
+      "mutant_id": "m000477",
+      "operator": "RSD",
+      "original_expression": "return _tTotal;",
+      "replacement_expression": "/* return _tTotal; */",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 827,
+      "function": "balanceOf",
+      "mutant_id": "m000478",
+      "operator": "RSD",
+      "original_expression": "return _tOwned[account];",
+      "replacement_expression": "/* return _tOwned[account]; */",
+      "start_line": 827
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 828,
+      "function": "balanceOf",
+      "mutant_id": "m000479",
+      "operator": "RSD",
+      "original_expression": "return tokenFromReflection(_rOwned[account]);",
+      "replacement_expression": "tokenFromReflection(_rOwned[account]);",
+      "start_line": 828
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 833,
+      "function": "transfer",
+      "mutant_id": "m000480",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 833
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 837,
+      "function": "allowance",
+      "mutant_id": "m000481",
+      "operator": "RSD",
+      "original_expression": "return _allowances[owner][spender];",
+      "replacement_expression": "/* return _allowances[owner][spender]; */",
+      "start_line": 837
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 842,
+      "function": "approve",
+      "mutant_id": "m000482",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 842
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 848,
+      "function": "transferFrom",
+      "mutant_id": "m000483",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 848
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 853,
+      "function": "increaseAllowance",
+      "mutant_id": "m000484",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 853
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 858,
+      "function": "decreaseAllowance",
+      "mutant_id": "m000485",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 858
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 862,
+      "function": "isExcludedFromReward",
+      "mutant_id": "m000486",
+      "operator": "RSD",
+      "original_expression": "return _isExcluded[account];",
+      "replacement_expression": "/* return _isExcluded[account]; */",
+      "start_line": 862
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 866,
+      "function": "totalFees",
+      "mutant_id": "m000487",
+      "operator": "RSD",
+      "original_expression": "return _tFeeTotal;",
+      "replacement_expression": "/* return _tFeeTotal; */",
+      "start_line": 866
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 882,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000488",
+      "operator": "RSD",
+      "original_expression": "return rAmount;",
+      "replacement_expression": "/* return rAmount; */",
+      "start_line": 882
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000489",
+      "operator": "RSD",
+      "original_expression": "return rTransferAmount;",
+      "replacement_expression": "/* return rTransferAmount; */",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 892,
+      "function": "tokenFromReflection",
+      "mutant_id": "m000490",
+      "operator": "RSD",
+      "original_expression": "return rAmount.div(currentRate);",
+      "replacement_expression": "rAmount.div(currentRate);",
+      "start_line": 892
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 983,
+      "function": "_getValues",
+      "mutant_id": "m000491",
+      "operator": "RSD",
+      "original_expression": "return (rAmount, rTransferAmount, rFee, tTransferAmount, tFee, tLiquidity, tCharity);",
+      "replacement_expression": "/* return (rAmount, rTransferAmount, rFee, tTransferAmount, tFee, tLiquidity, tCharity); */",
+      "start_line": 983
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 991,
+      "function": "_getTValues",
+      "mutant_id": "m000492",
+      "operator": "RSD",
+      "original_expression": "return (tTransferAmount, tFee, tLiquidity, tCharity);",
+      "replacement_expression": "/* return (tTransferAmount, tFee, tLiquidity, tCharity); */",
+      "start_line": 991
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1000,
+      "function": "_getRValues",
+      "mutant_id": "m000493",
+      "operator": "RSD",
+      "original_expression": "return (rAmount, rTransferAmount, rFee);",
+      "replacement_expression": "/* return (rAmount, rTransferAmount, rFee); */",
+      "start_line": 1000
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1006,
+      "function": "_getRate",
+      "mutant_id": "m000494",
+      "operator": "RSD",
+      "original_expression": "return rSupply.div(tSupply);",
+      "replacement_expression": "rSupply.div(tSupply);",
+      "start_line": 1006
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1013,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000495",
+      "operator": "RSD",
+      "original_expression": "return (_rTotal, _tTotal);",
+      "replacement_expression": "/* return (_rTotal, _tTotal); */",
+      "start_line": 1013
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1017,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000496",
+      "operator": "RSD",
+      "original_expression": "return (_rTotal, _tTotal);",
+      "replacement_expression": "/* return (_rTotal, _tTotal); */",
+      "start_line": 1017
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1018,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000497",
+      "operator": "RSD",
+      "original_expression": "return (rSupply, tSupply);",
+      "replacement_expression": "/* return (rSupply, tSupply); */",
+      "start_line": 1018
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1040,
+      "function": "calculateTaxFee",
+      "mutant_id": "m000498",
+      "operator": "RSD",
+      "original_expression": "return _amount.mul(_taxFee).div(\n            10**2\n        );",
+      "replacement_expression": "_amount.mul(_taxFee).div(\n            10**2\n        );",
+      "start_line": 1038
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1046,
+      "function": "calculateCharityFee",
+      "mutant_id": "m000499",
+      "operator": "RSD",
+      "original_expression": "return _amount.mul(_charityFee).div(\n            10**2\n        );",
+      "replacement_expression": "_amount.mul(_charityFee).div(\n            10**2\n        );",
+      "start_line": 1044
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1052,
+      "function": "calculateLiquidityFee",
+      "mutant_id": "m000500",
+      "operator": "RSD",
+      "original_expression": "return _amount.mul(_liquidityFee).div(\n            10**2\n        );",
+      "replacement_expression": "_amount.mul(_liquidityFee).div(\n            10**2\n        );",
+      "start_line": 1050
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1074,
+      "function": "isExcludedFromFee",
+      "mutant_id": "m000501",
+      "operator": "RSD",
+      "original_expression": "return _isExcludedFromFee[account];",
+      "replacement_expression": "/* return _isExcludedFromFee[account]; */",
+      "start_line": 1074
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 610,
+      "function": "addLiquidity",
+      "mutant_id": "m000502",
+      "operator": "RVS",
+      "original_expression": "uint amountA, uint amountB, uint liquidity",
+      "replacement_expression": "uint liquidity, uint amountA, uint amountB",
+      "start_line": 610
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 618,
+      "function": "addLiquidityETH",
+      "mutant_id": "m000503",
+      "operator": "RVS",
+      "original_expression": "uint amountToken, uint amountETH, uint liquidity",
+      "replacement_expression": "uint liquidity, uint amountToken, uint amountETH",
+      "start_line": 618
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 627,
+      "function": "removeLiquidity",
+      "mutant_id": "m000504",
+      "operator": "RVS",
+      "original_expression": "uint amountA, uint amountB",
+      "replacement_expression": "uint amountB, uint amountA",
+      "start_line": 627
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 635,
+      "function": "removeLiquidityETH",
+      "mutant_id": "m000505",
+      "operator": "RVS",
+      "original_expression": "uint amountToken, uint amountETH",
+      "replacement_expression": "uint amountETH, uint amountToken",
+      "start_line": 635
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 645,
+      "function": "removeLiquidityWithPermit",
+      "mutant_id": "m000506",
+      "operator": "RVS",
+      "original_expression": "uint amountA, uint amountB",
+      "replacement_expression": "uint amountB, uint amountA",
+      "start_line": 645
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 654,
+      "function": "removeLiquidityETHWithPermit",
+      "mutant_id": "m000507",
+      "operator": "RVS",
+      "original_expression": "uint amountToken, uint amountETH",
+      "replacement_expression": "uint amountETH, uint amountToken",
+      "start_line": 654
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 983,
+      "function": "_getValues",
+      "mutant_id": "m000508",
+      "operator": "RVS",
+      "original_expression": "rAmount, rTransferAmount, rFee, tTransferAmount, tFee, tLiquidity, tCharity",
+      "replacement_expression": "tCharity, rAmount, rTransferAmount, rFee, tTransferAmount, tFee, tLiquidity",
+      "start_line": 983
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 991,
+      "function": "_getTValues",
+      "mutant_id": "m000509",
+      "operator": "RVS",
+      "original_expression": "tTransferAmount, tFee, tLiquidity, tCharity",
+      "replacement_expression": "tCharity, tTransferAmount, tFee, tLiquidity",
+      "start_line": 991
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1000,
+      "function": "_getRValues",
+      "mutant_id": "m000510",
+      "operator": "RVS",
+      "original_expression": "rAmount, rTransferAmount, rFee",
+      "replacement_expression": "rFee, rAmount, rTransferAmount",
+      "start_line": 1000
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1018,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000511",
+      "operator": "RVS",
+      "original_expression": "rSupply, tSupply",
+      "replacement_expression": "tSupply, rSupply",
+      "start_line": 1018
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 755,
+      "function": "stateVariable",
+      "mutant_id": "m000512",
+      "operator": "SLR",
+      "original_expression": "\"Hot Inu Finance\"",
+      "replacement_expression": "\"\"",
+      "start_line": 755
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 756,
+      "function": "stateVariable",
+      "mutant_id": "m000513",
+      "operator": "SLR",
+      "original_expression": "\"Hotinu\"",
+      "replacement_expression": "\"\"",
+      "start_line": 756
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 750,
+      "function": "stateVariable",
+      "mutant_id": "m000514",
+      "operator": "UORD",
+      "original_expression": "~uint256(0)",
+      "replacement_expression": " uint256(0)",
+      "start_line": 750
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 871,
+      "function": "deliver",
+      "mutant_id": "m000515",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[sender]",
+      "replacement_expression": " _isExcluded[sender]",
+      "start_line": 871
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 880,
+      "function": "reflectionFromToken",
+      "mutant_id": "m000516",
+      "operator": "UORD",
+      "original_expression": "!deductTransferFee",
+      "replacement_expression": " deductTransferFee",
+      "start_line": 880
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 897,
+      "function": "excludeFromReward",
+      "mutant_id": "m000517",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[account]",
+      "replacement_expression": " _isExcluded[account]",
+      "start_line": 897
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000518",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 907,
+      "function": "includeInReward",
+      "mutant_id": "m000519",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 907
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000520",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1012,
+      "function": "_getCurrentSupply",
+      "mutant_id": "m000521",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 1012
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1110,
+      "function": "_transfer",
+      "mutant_id": "m000522",
+      "operator": "UORD",
+      "original_expression": "!inSwapAndLiquify",
+      "replacement_expression": " inSwapAndLiquify",
+      "start_line": 1110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1176,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000523",
+      "operator": "UORD",
+      "original_expression": "!takeFee",
+      "replacement_expression": " takeFee",
+      "start_line": 1176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1179,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000524",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[recipient]",
+      "replacement_expression": " _isExcluded[recipient]",
+      "start_line": 1179
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1181,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000525",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[sender]",
+      "replacement_expression": " _isExcluded[sender]",
+      "start_line": 1181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1183,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000526",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[sender]",
+      "replacement_expression": " _isExcluded[sender]",
+      "start_line": 1183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1183,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000527",
+      "operator": "UORD",
+      "original_expression": "!_isExcluded[recipient]",
+      "replacement_expression": " _isExcluded[recipient]",
+      "start_line": 1183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1191,
+      "function": "_tokenTransfer",
+      "mutant_id": "m000528",
+      "operator": "UORD",
+      "original_expression": "!takeFee",
+      "replacement_expression": " takeFee",
+      "start_line": 1191
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__HotinuFinance"
+}

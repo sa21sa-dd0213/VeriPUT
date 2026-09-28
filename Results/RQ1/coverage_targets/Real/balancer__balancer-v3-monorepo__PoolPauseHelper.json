@@ -1,0 +1,156 @@
+{
+  "contract": "PoolPauseHelper",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 7
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "d3d41a149a6098f7949aa51b530c657f1bc2cdc514073d8f55a92d48604aa4d2",
+  "subject_id": "balancer__balancer-v3-monorepo__PoolPauseHelper",
+  "targets": [
+    {
+      "declaration_line": 868,
+      "external_selector": "a20dc529",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 868,
+        "name": "PoolPauseHelper.pausePools",
+        "record": "FN"
+      },
+      "length": 284,
+      "line": 868,
+      "name": "pausePools",
+      "site": "body-entry",
+      "src": "14440:284:0",
+      "start": 14440,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 868,
+      "external_selector": "a20dc529",
+      "id": "line:868",
+      "kind": "line",
+      "lcov": {
+        "line": 868,
+        "record": "DA"
+      },
+      "length": 284,
+      "line": 868,
+      "site": "body-entry",
+      "src": "14440:284:0",
+      "start": 14440,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:870",
+      "kind": "line",
+      "lcov": {
+        "line": 870,
+        "record": "DA"
+      },
+      "length": 40,
+      "line": 870,
+      "site": "statement-entry",
+      "src": "14459:40:0",
+      "start": 14459,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:872",
+      "kind": "line",
+      "lcov": {
+        "line": 872,
+        "record": "DA"
+      },
+      "length": 29,
+      "line": 872,
+      "site": "statement-entry",
+      "src": "14510:29:0",
+      "start": 14510,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:874",
+      "kind": "line",
+      "lcov": {
+        "line": 874,
+        "record": "DA"
+      },
+      "length": 168,
+      "line": 874,
+      "site": "statement-entry",
+      "src": "14550:168:0",
+      "start": 14550,
+      "statement_type": "ForStatement",
+      "trap_id": 5
+    },
+    {
+      "id": "line:875",
+      "kind": "line",
+      "lcov": {
+        "line": 875,
+        "record": "DA"
+      },
+      "length": 23,
+      "line": 875,
+      "site": "statement-entry",
+      "src": "14601:23:0",
+      "start": 14601,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 6
+    },
+    {
+      "id": "line:876",
+      "kind": "line",
+      "lcov": {
+        "line": 876,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 876,
+      "site": "statement-entry",
+      "src": "14638:33:0",
+      "start": 14638,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 7
+    },
+    {
+      "id": "line:878",
+      "kind": "line",
+      "lcov": {
+        "line": 878,
+        "record": "DA"
+      },
+      "length": 21,
+      "line": 878,
+      "site": "statement-entry",
+      "src": "14686:21:0",
+      "start": 14686,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 8
+    }
+  ],
+  "totals": {
+    "all": 8,
+    "branch": 0,
+    "function": 1,
+    "line": 7
+  }
+}

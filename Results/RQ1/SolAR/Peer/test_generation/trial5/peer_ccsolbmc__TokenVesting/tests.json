@@ -1,0 +1,302 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        42,
+        31011608840249474827911890456180282329002424998615230654836320364052578087839
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "move_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        9489,
+        "0x416a71505166616d6e4f547541585a586f424b41616772716948626a414e6d65"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "stake_tokens",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "revoke_issuer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        22057048784101864099715321477780353540263297088069826998951935430490831935487,
+        106151658141311171101422529574321407918083032396435191034653812138429956932832
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "create_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "withdraw_from_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "set_controller",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        48025545,
+        "0x20564f4744777271536543524c714b66424c6b64416a7252584a496d727a6270"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        0,
+        4092052750436963295948324384096365182105969047404375546772446733793723894707
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "issue_into_tranche",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        41021679088090272603173862980872734605469410799500347469939630044805256145996
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "remove_stake",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        58
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        73749992973914662774224066885352743504245726256162162562980684499750382866337,
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "stake_tokens",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        169
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "get_vested_for_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        28312053944904172134066875968489389927633421286147917906283286319570772911861
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "permit_issuer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        64
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "withdraw_from_tranche",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "user_total_all_tranches",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        203
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "get_tranche_balance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "user_total_all_tranches",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        22057048784101864099715321477780353540263297088069826998951935430490831935487,
+        106151658141311171101422529574321407918083032396435191034653812138429956932832
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "create_tranche",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

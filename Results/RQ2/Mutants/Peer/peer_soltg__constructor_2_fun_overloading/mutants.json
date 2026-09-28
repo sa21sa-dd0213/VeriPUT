@@ -1,0 +1,397 @@
+{
+  "compile_failed": 1,
+  "compile_ok": 38,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "f2",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "f2",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "f2",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "f2",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "constructor",
+      "mutant_id": "m000014",
+      "operator": "CCD",
+      "original_expression": "constructor(uint a, uint b) {\n\t\tif (b > a) {\n\t\t\tx = b;\n\t\t\treturn;\n\t\t}\n\t\telse {\n\t\t\tx = a;\n\t\t\treturn;\n\t\t}\n\t}",
+      "replacement_expression": "",
+      "start_line": 5
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000015",
+      "operator": "CSC",
+      "original_expression": "b > a",
+      "replacement_expression": "true",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "constructor",
+      "mutant_id": "m000016",
+      "operator": "CSC",
+      "original_expression": "b > a",
+      "replacement_expression": "false",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "constructor",
+      "mutant_id": "m000017",
+      "operator": "CSC",
+      "original_expression": "\t\telse {\n\t\t\tx = a;\n\t\t\treturn;\n\t\t}",
+      "replacement_expression": "",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000018",
+      "operator": "CSC",
+      "original_expression": "x > 2",
+      "replacement_expression": "true",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000019",
+      "operator": "CSC",
+      "original_expression": "x > 2",
+      "replacement_expression": "false",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "f2",
+      "mutant_id": "m000020",
+      "operator": "CSC",
+      "original_expression": "_x > _y",
+      "replacement_expression": "true",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "f2",
+      "mutant_id": "m000021",
+      "operator": "CSC",
+      "original_expression": "_x > _y",
+      "replacement_expression": "false",
+      "start_line": 26
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 30,
+      "function": "f2",
+      "mutant_id": "m000022",
+      "operator": "CSC",
+      "original_expression": "lse{\n            x = _y;\n        }",
+      "replacement_expression": "",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000023",
+      "operator": "CSC",
+      "original_expression": "x > 100",
+      "replacement_expression": "true",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000024",
+      "operator": "CSC",
+      "original_expression": "x > 100",
+      "replacement_expression": "false",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000025",
+      "operator": "EHD",
+      "original_expression": "assert(a >= 3);",
+      "replacement_expression": "/* assert(a >= 3); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f2",
+      "mutant_id": "m000026",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f2",
+      "mutant_id": "m000027",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000028",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "f2",
+      "mutant_id": "m000029",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "f2",
+      "mutant_id": "m000030",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "4",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "f2",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "5",
+      "replacement_expression": "6",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "f2",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000034",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "f2",
+      "mutant_id": "m000035",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "f2",
+      "mutant_id": "m000036",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "99",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 32,
+      "function": "f2",
+      "mutant_id": "m000037",
+      "operator": "ILR",
+      "original_expression": "100",
+      "replacement_expression": "101",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "f2",
+      "mutant_id": "m000038",
+      "operator": "OLFD",
+      "original_expression": "function f2(uint _x) public {\n        uint a = 3;\n        if (x > 2) {\n            a = 5;\n        }\n        x = _x;\n        assert(a >= 3);\n    }",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "f2",
+      "mutant_id": "m000039",
+      "operator": "OLFD",
+      "original_expression": "function f2(uint _x, uint _y) public {\n        if (_x > _y) {\n            x = _x;\n        }else{\n            x = _y;\n        }\n        if (x > 100){\n            x = x - 100;\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 25
+    }
+  ],
+  "subject_id": "peer_soltg__constructor_2_fun_overloading"
+}

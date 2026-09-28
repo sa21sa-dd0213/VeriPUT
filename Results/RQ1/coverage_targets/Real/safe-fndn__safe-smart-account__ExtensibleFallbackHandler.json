@@ -1,0 +1,171 @@
+{
+  "contract": "ExtensibleFallbackHandler",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 8
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "1680748aed07bd967af0c69b3d3c4ad2d04ff85c1d0179be9f18103943029ef8",
+  "subject_id": "safe-fndn__safe-smart-account__ExtensibleFallbackHandler",
+  "targets": [
+    {
+      "declaration_line": 542,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 542,
+        "name": "ExtensibleFallbackHandler._supportsInterface",
+        "record": "FN"
+      },
+      "length": 412,
+      "line": 542,
+      "name": "_supportsInterface",
+      "site": "body-entry",
+      "src": "11613:412:0",
+      "start": 11613,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 542,
+      "external_selector": null,
+      "id": "line:542",
+      "kind": "line",
+      "lcov": {
+        "line": 542,
+        "record": "DA"
+      },
+      "length": 412,
+      "line": 542,
+      "site": "body-entry",
+      "src": "11613:412:0",
+      "start": 11613,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:543",
+      "kind": "line",
+      "lcov": {
+        "line": 543,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 543,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 3
+    },
+    {
+      "id": "line:544",
+      "kind": "line",
+      "lcov": {
+        "line": 544,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 544,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 4
+    },
+    {
+      "id": "line:545",
+      "kind": "line",
+      "lcov": {
+        "line": 545,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 545,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 5
+    },
+    {
+      "id": "line:546",
+      "kind": "line",
+      "lcov": {
+        "line": 546,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 546,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 6
+    },
+    {
+      "id": "line:547",
+      "kind": "line",
+      "lcov": {
+        "line": 547,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 547,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 7
+    },
+    {
+      "id": "line:548",
+      "kind": "line",
+      "lcov": {
+        "line": 548,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 548,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 8
+    },
+    {
+      "id": "line:549",
+      "kind": "line",
+      "lcov": {
+        "line": 549,
+        "record": "DA"
+      },
+      "length": 395,
+      "line": 549,
+      "site": "statement-entry",
+      "src": "11623:395:0",
+      "start": 11623,
+      "statement_type": "Return",
+      "trap_id": 9
+    }
+  ],
+  "totals": {
+    "all": 9,
+    "branch": 0,
+    "function": 1,
+    "line": 8
+  }
+}

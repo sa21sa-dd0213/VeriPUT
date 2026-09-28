@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.556443949s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.90463666s)
+
+echidna: Constructor arguments are required: [("priceFeedA_",address),("priceFeedB_",address),("decimals_",uint8),("description_",string)]

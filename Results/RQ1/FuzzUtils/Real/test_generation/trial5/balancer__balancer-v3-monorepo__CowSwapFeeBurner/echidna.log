@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.636455727s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.173369939s)
+
+echidna: Constructor arguments are required: [("_protocolFeeSweeper",address),("_composableCow",address),("_cowVaultRelayer",address),("_appData",bytes32),("_initialOwner",address),("_version",string)]

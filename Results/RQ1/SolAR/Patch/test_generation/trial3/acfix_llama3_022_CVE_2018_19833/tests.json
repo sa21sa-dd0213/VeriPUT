@@ -1,0 +1,162 @@
+[
+  [
+    {
+      "args": [
+        10,
+        "TgAABdgxwCdJCmenVzeHS RLPeQfulfczo DvDlgyGjjAWnFUCFRrMQuAUybKLoNkSigOlppBuwdJbPEruztHFa KvZnhMloMQdbSeTGJjYEqde iyKRRpCTHzs LWWdhwQmZa",
+        "MQtVCdHAWFAtRcnoNBBuKjvARG IhXHqlEfzCFGyDWMvcTocrcRsfYAvboxebcWjyjJnDYomsgkLjJtmuMVtNElzHkcAnv"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        87421705704836894949138972525021644134566131267978611591732006900741857453477
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "hMFE",
+        "fCsCcQHd KgVnBTQeriHvQJkYNVurHJtLOCeyzDpaRXnmS PqYwSSnoJJTAFeIOMHYAYIYacsBgHqR"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        88338171847063979986358707814584027007729558085897198078568068391413563480373
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "goayKRqWNhCligEkWXTJMgifKAvA GlRA  kuWAsOxzaFGoiUpyMjNnlYGacRAyqtIRfvfCcANLEYaOScUELGzgLIieYtzWkgGTFTMxCdDyBFZYXKgvWOGanfuYUIDYHiJS frOcGOHECBHNWXCOIMcghwHYdMmEuULEhLPFxGoqUxsgkTUNmFNyVURltQqLPP XEc spiIVnmcfvswXSTvqXAIaNBVwkOea",
+        "EXNoQABizuyukLfXxYxbNUheEYKjxtaMNVQOyVhnMTIfRiWRmayNVhcGnSUU"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        57125071120112998397717991303400039958946779238508669378400501239820855448560
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "RIdNxVuiPTnFQaljBUANEhp geWpwGSchtxweAfnoaxTOkFwfvVAPivPgSJgMNNYYFxSE mYRPPcixkngfxTKwZtkwKlUMaCzUXuXAKfivAqxbZDJrIKZYQAYBZJKCcwafcnkrRWZRWvSbHXBezCjDVyDuOIIhgIjwEtwsPBaToiusyij",
+        "gCGLSXsYVfaGivWvRUBZ CYiPHqO rEleUSNRnybsxFspMwUcjhfqYpaTduLMVUTmYNLvhPbGSBbzWfmCRFMfkbOWZQowtxWobCQlRIOQfGPooGnVybwwnJyckDhnsQLWASbUAcERaTl mSQRuwbqDPtjZwZBYNlVWVZQnnfsuIGOqOIQKgXymPTYemO"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        false
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "vBlrJHLNapVHWGMNgDhbotewhebriXafotLGFOcuJRPQPbfMaggMPfOHcOLYRQMAMCyaVquawcXOUEnDX bfwnEggKpnSXmBDndIbYshZLVKdLKAA zpSRcIlOwZhNzIOZXWszaY",
+        "ueJAuQQBmDuWlWghFEFSqlxajVRKxwmdBiKHULcaU rlaGSyEJkpHsOfhOkCOhIleszhwdEYSELTSQQJALnYqYIJJRpejjtInXroGptwes NBMrgHHhLaVOCOQYlxyXCWLrGHxXiSCbSInHqZgyCHFrWej DuDGBzJgkzBIFCKwHRBVWaJXzUvVBRACluxHcWuCWLqyYx FdhFcAwqUWqTlgJvarCp RDvkpMZXCogNfJwh aMaxKBT ex"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "burn",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        false
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "freezeAccount",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "qNzvDgYKrZU",
+        "OqIYfeCuogYjyAORh cSJbvGdiCohulNicfagdWblXVwcgmkHfxo"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        86032177232231172023113583737089965313730178021040680832611369833989477167935
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,8 @@
+{
+  "contract": "keepMyEther",
+  "dataset": "Patch",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "rc_unchecked_low_level_calls__address_00022__sGuardPlus__address_00022"
+}

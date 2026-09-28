@@ -1,0 +1,187 @@
+{
+  "compile_failed": 2,
+  "compile_ok": 16,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "fallback",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "fallback",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "withdraw",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "withdraw",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "withdraw",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "withdraw",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "withdraw",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 15,
+      "function": "withdraw",
+      "mutant_id": "m000010",
+      "operator": "EHD",
+      "original_expression": "require(balances[msg.sender] >= value);",
+      "replacement_expression": "/* require(balances[msg.sender] >= value); */",
+      "start_line": 15
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "withdraw",
+      "mutant_id": "m000011",
+      "operator": "EHD",
+      "original_expression": "require(value > 0);",
+      "replacement_expression": "/* require(value > 0); */",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "withdraw",
+      "mutant_id": "m000012",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).send",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "withdraw",
+      "mutant_id": "m000013",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).call{value: value}(\"\")",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 20,
+      "function": "withdraw",
+      "mutant_id": "m000014",
+      "operator": "FCD",
+      "original_expression": "payable(msg.sender).",
+      "replacement_expression": "/*payable(msg.sender).*/",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "fallback",
+      "mutant_id": "m000015",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "fallback",
+      "mutant_id": "m000016",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "withdraw",
+      "mutant_id": "m000017",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 16
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 10,
+      "function": "",
+      "mutant_id": "m000018",
+      "operator": "PKD",
+      "original_expression": "fallback() external payable ",
+      "replacement_expression": "fallback() external  ",
+      "start_line": 10
+    }
+  ],
+  "subject_id": "peer_solar__EasyPayAndWithDraw"
+}

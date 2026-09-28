@@ -1,0 +1,2817 @@
+{
+  "compile_failed": 28,
+  "compile_ok": 253,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 155,
+      "function": "compare",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " >>= ",
+      "replacement_expression": " = ",
+      "start_line": 155
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 156,
+      "function": "compare",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " >>= ",
+      "replacement_expression": " = ",
+      "start_line": 156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "includes",
+      "mutant_id": "m000004",
+      "operator": "AOR",
+      "original_expression": " |= ",
+      "replacement_expression": " = ",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "includes",
+      "mutant_id": "m000005",
+      "operator": "AOR",
+      "original_expression": " |= ",
+      "replacement_expression": " = ",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 409,
+      "function": "includes",
+      "mutant_id": "m000006",
+      "operator": "AOR",
+      "original_expression": " |= ",
+      "replacement_expression": " = ",
+      "start_line": 409
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "includes",
+      "mutant_id": "m000007",
+      "operator": "AOR",
+      "original_expression": " |= ",
+      "replacement_expression": " = ",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 411,
+      "function": "includes",
+      "mutant_id": "m000008",
+      "operator": "AOR",
+      "original_expression": " |= ",
+      "replacement_expression": " = ",
+      "start_line": 411
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 412,
+      "function": "includes",
+      "mutant_id": "m000009",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 412
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 413,
+      "function": "includes",
+      "mutant_id": "m000010",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 413
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "includes",
+      "mutant_id": "m000011",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "_checkBound",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "_checkBound",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "keccak",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "keccak",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "compare",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "compare",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "compare",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "compare",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "compare",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "compare",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "compare",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "compare",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "compare",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "compare",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 149,
+      "function": "compare",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 149
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 149,
+      "function": "compare",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 149
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 150,
+      "function": "compare",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 150
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 150,
+      "function": "compare",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 150
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "compare",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "compare",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "compare",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "compare",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "compare",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "compare",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "compare",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 166,
+      "function": "compare",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 166,
+      "function": "compare",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "equals",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "equals",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "equals",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " ==\n                ",
+      "replacement_expression": " <=\n                ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " ==\n                ",
+      "replacement_expression": " >=\n                ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " ==\n                ",
+      "replacement_expression": " !=\n                ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "equals",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "equals",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 203
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 203
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " &&\n            ",
+      "replacement_expression": " ||\n            ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "equals",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "equals",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "equals",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "equals",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "equals",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "readUint8",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "readUint8",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "readUint16",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "readUint16",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "readUint32",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "readUint32",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 283,
+      "function": "readBytes20",
+      "mutant_id": "m000084",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 283
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 283,
+      "function": "readBytes20",
+      "mutant_id": "m000085",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 283
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "readBytes32",
+      "mutant_id": "m000086",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "readBytes32",
+      "mutant_id": "m000087",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000088",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000089",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000090",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 315,
+      "function": "readBytesN",
+      "mutant_id": "m000091",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 315
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 315,
+      "function": "readBytesN",
+      "mutant_id": "m000092",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 315
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "copyBytes",
+      "mutant_id": "m000093",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "copyBytes",
+      "mutant_id": "m000094",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 336,
+      "function": "copyBytes",
+      "mutant_id": "m000095",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 336
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 336,
+      "function": "copyBytes",
+      "mutant_id": "m000096",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 336
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 339,
+      "function": "copyBytes",
+      "mutant_id": "m000097",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 339
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 339,
+      "function": "copyBytes",
+      "mutant_id": "m000098",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 339
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 340,
+      "function": "copyBytes",
+      "mutant_id": "m000099",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 340
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 340,
+      "function": "copyBytes",
+      "mutant_id": "m000100",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 340
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000101",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000102",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000103",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000104",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "find",
+      "mutant_id": "m000105",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "find",
+      "mutant_id": "m000106",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "find",
+      "mutant_id": "m000107",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 388,
+      "function": "hasZeroByte",
+      "mutant_id": "m000108",
+      "operator": "BOR",
+      "original_expression": " !=\n                ",
+      "replacement_expression": " ==\n                ",
+      "start_line": 387
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 387,
+      "function": "hasZeroByte",
+      "mutant_id": "m000109",
+      "operator": "BOR",
+      "original_expression": " &\n                    ",
+      "replacement_expression": " |\n                    ",
+      "start_line": 386
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 387,
+      "function": "hasZeroByte",
+      "mutant_id": "m000110",
+      "operator": "BOR",
+      "original_expression": " &\n                    ",
+      "replacement_expression": " ^\n                    ",
+      "start_line": 386
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "hasZeroByte",
+      "mutant_id": "m000111",
+      "operator": "BOR",
+      "original_expression": " &\n                    ",
+      "replacement_expression": " |\n                    ",
+      "start_line": 384
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "hasZeroByte",
+      "mutant_id": "m000112",
+      "operator": "BOR",
+      "original_expression": " &\n                    ",
+      "replacement_expression": " ^\n                    ",
+      "start_line": 384
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 386,
+      "function": "hasZeroByte",
+      "mutant_id": "m000113",
+      "operator": "BOR",
+      "original_expression": " -\n                        ",
+      "replacement_expression": " +\n                        ",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 386,
+      "function": "hasZeroByte",
+      "mutant_id": "m000114",
+      "operator": "BOR",
+      "original_expression": " -\n                        ",
+      "replacement_expression": " /\n                        ",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 404,
+      "function": "includes",
+      "mutant_id": "m000115",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 404
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 404,
+      "function": "includes",
+      "mutant_id": "m000116",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 404
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "includes",
+      "mutant_id": "m000117",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "includes",
+      "mutant_id": "m000118",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 409,
+      "function": "includes",
+      "mutant_id": "m000119",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 409
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "includes",
+      "mutant_id": "m000120",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 411,
+      "function": "includes",
+      "mutant_id": "m000121",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 411
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 414,
+      "function": "includes",
+      "mutant_id": "m000122",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 414
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 414,
+      "function": "includes",
+      "mutant_id": "m000123",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 414
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 415,
+      "function": "includes",
+      "mutant_id": "m000124",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " & ",
+      "start_line": 415
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 415,
+      "function": "includes",
+      "mutant_id": "m000125",
+      "operator": "BOR",
+      "original_expression": " ^ ",
+      "replacement_expression": " | ",
+      "start_line": 415
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 420,
+      "function": "includes",
+      "mutant_id": "m000126",
+      "operator": "BOR",
+      "original_expression": " ||\n                        ",
+      "replacement_expression": " &&\n                        ",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "includes",
+      "mutant_id": "m000127",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "includes",
+      "mutant_id": "m000128",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "includes",
+      "mutant_id": "m000129",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000130",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " & ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000131",
+      "operator": "BOR",
+      "original_expression": " | ",
+      "replacement_expression": " ^ ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000132",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000133",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000134",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000135",
+      "operator": "BOR",
+      "original_expression": " << ",
+      "replacement_expression": " >> ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000136",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000137",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "_checkBound",
+      "mutant_id": "m000138",
+      "operator": "CSC",
+      "original_expression": "end > v.length",
+      "replacement_expression": "true",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "_checkBound",
+      "mutant_id": "m000139",
+      "operator": "CSC",
+      "original_expression": "end > v.length",
+      "replacement_expression": "false",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "compare",
+      "mutant_id": "m000140",
+      "operator": "CSC",
+      "original_expression": "a != b",
+      "replacement_expression": "true",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "compare",
+      "mutant_id": "m000141",
+      "operator": "CSC",
+      "original_expression": "a != b",
+      "replacement_expression": "false",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000142",
+      "operator": "CSC",
+      "original_expression": "rest < 32",
+      "replacement_expression": "true",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000143",
+      "operator": "CSC",
+      "original_expression": "rest < 32",
+      "replacement_expression": "false",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "compare",
+      "mutant_id": "m000144",
+      "operator": "CSC",
+      "original_expression": "a < b",
+      "replacement_expression": "true",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 158,
+      "function": "compare",
+      "mutant_id": "m000145",
+      "operator": "CSC",
+      "original_expression": "a < b",
+      "replacement_expression": "false",
+      "start_line": 158
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "compare",
+      "mutant_id": "m000146",
+      "operator": "CSC",
+      "original_expression": "a > b",
+      "replacement_expression": "true",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "compare",
+      "mutant_id": "m000147",
+      "operator": "CSC",
+      "original_expression": "a > b",
+      "replacement_expression": "false",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "find",
+      "mutant_id": "m000148",
+      "operator": "CSC",
+      "original_expression": "v[off] == needle",
+      "replacement_expression": "true",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "find",
+      "mutant_id": "m000149",
+      "operator": "CSC",
+      "original_expression": "v[off] == needle",
+      "replacement_expression": "false",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 417,
+      "function": "includes",
+      "mutant_id": "m000150",
+      "operator": "CSC",
+      "original_expression": "hasZeroByte(word)",
+      "replacement_expression": "true",
+      "start_line": 417
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 417,
+      "function": "includes",
+      "mutant_id": "m000151",
+      "operator": "CSC",
+      "original_expression": "hasZeroByte(word)",
+      "replacement_expression": "false",
+      "start_line": 417
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 67,
+      "function": "ptr",
+      "mutant_id": "m000152",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 67
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 93,
+      "function": "_checkBound",
+      "mutant_id": "m000153",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 93
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 105,
+      "function": "keccak",
+      "mutant_id": "m000154",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 105
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 120,
+      "function": "compare",
+      "mutant_id": "m000155",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 120
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 121,
+      "function": "compare",
+      "mutant_id": "m000156",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 121
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 135,
+      "function": "compare",
+      "mutant_id": "m000157",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 135
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 138,
+      "function": "compare",
+      "mutant_id": "m000158",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 177,
+      "function": "equals",
+      "mutant_id": "m000159",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 177
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 179,
+      "function": "equals",
+      "mutant_id": "m000160",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 179
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 193,
+      "function": "equals",
+      "mutant_id": "m000161",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 193
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 195,
+      "function": "equals",
+      "mutant_id": "m000162",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 195
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 213,
+      "function": "equals",
+      "mutant_id": "m000163",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 213
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 215,
+      "function": "equals",
+      "mutant_id": "m000164",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 215
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 227,
+      "function": "equals",
+      "mutant_id": "m000165",
+      "operator": "DLR",
+      "original_expression": "bytes memory vA",
+      "replacement_expression": "bytes storage vA",
+      "start_line": 227
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 228,
+      "function": "equals",
+      "mutant_id": "m000166",
+      "operator": "DLR",
+      "original_expression": "bytes memory vB",
+      "replacement_expression": "bytes storage vB",
+      "start_line": 228
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 238,
+      "function": "readUint8",
+      "mutant_id": "m000167",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 238
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 252,
+      "function": "readUint16",
+      "mutant_id": "m000168",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 252
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 266,
+      "function": "readUint32",
+      "mutant_id": "m000169",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 266
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 280,
+      "function": "readBytes20",
+      "mutant_id": "m000170",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 280
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 294,
+      "function": "readBytes32",
+      "mutant_id": "m000171",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 294
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 310,
+      "function": "readBytesN",
+      "mutant_id": "m000172",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 310
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 329,
+      "function": "copyBytes",
+      "mutant_id": "m000173",
+      "operator": "DLR",
+      "original_expression": "bytes memory vSrc",
+      "replacement_expression": "bytes storage vSrc",
+      "start_line": 329
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 331,
+      "function": "copyBytes",
+      "mutant_id": "m000174",
+      "operator": "DLR",
+      "original_expression": "bytes memory vDst",
+      "replacement_expression": "bytes storage vDst",
+      "start_line": 331
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 352,
+      "function": "substring",
+      "mutant_id": "m000175",
+      "operator": "DLR",
+      "original_expression": "bytes memory vSrc",
+      "replacement_expression": "bytes storage vSrc",
+      "start_line": 352
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 355,
+      "function": "substring",
+      "mutant_id": "m000176",
+      "operator": "DLR",
+      "original_expression": "bytes memory vDst",
+      "replacement_expression": "bytes storage vDst",
+      "start_line": 355
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 367,
+      "function": "find",
+      "mutant_id": "m000177",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 367
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 399,
+      "function": "includes",
+      "mutant_id": "m000178",
+      "operator": "DLR",
+      "original_expression": "bytes memory v",
+      "replacement_expression": "bytes storage v",
+      "start_line": 399
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 166,
+      "function": "compare",
+      "mutant_id": "m000179",
+      "operator": "ECS",
+      "original_expression": "int256(lenA)",
+      "replacement_expression": "int248(lenA)",
+      "start_line": 166
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 166,
+      "function": "compare",
+      "mutant_id": "m000180",
+      "operator": "ECS",
+      "original_expression": "int256(lenB)",
+      "replacement_expression": "int248(lenB)",
+      "start_line": 166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000181",
+      "operator": "EHD",
+      "original_expression": "require(hash.length == 32, \"Invalid sha256 hash length\");",
+      "replacement_expression": "/* require(hash.length == 32, \"Invalid sha256 hash length\"); */",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000182",
+      "operator": "EHD",
+      "original_expression": "assert(len <= 32);",
+      "replacement_expression": "/* assert(len <= 32); */",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "_checkBound",
+      "mutant_id": "m000183",
+      "operator": "EHD",
+      "original_expression": "revert OffsetOutOfBoundsError(end, v.length);",
+      "replacement_expression": "/* revert OffsetOutOfBoundsError(end, v.length); */",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 109,
+      "function": "keccak",
+      "mutant_id": "m000184",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + len);",
+      "replacement_expression": "/*_checkBound(v, off + len);*/",
+      "start_line": 109
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "compare",
+      "mutant_id": "m000185",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vA, offA + lenA);",
+      "replacement_expression": "/*_checkBound(vA, offA + lenA);*/",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "compare",
+      "mutant_id": "m000186",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vB, offB + lenB);",
+      "replacement_expression": "/*_checkBound(vB, offB + lenB);*/",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 198,
+      "function": "equals",
+      "mutant_id": "m000187",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vA, offA);",
+      "replacement_expression": "/*_checkBound(vA, offA);*/",
+      "start_line": 198
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 199,
+      "function": "equals",
+      "mutant_id": "m000188",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vB, offB);",
+      "replacement_expression": "/*_checkBound(vB, offB);*/",
+      "start_line": 199
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "readUint8",
+      "mutant_id": "m000189",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + 1);",
+      "replacement_expression": "/*_checkBound(v, off + 1);*/",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "readUint16",
+      "mutant_id": "m000190",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + 2);",
+      "replacement_expression": "/*_checkBound(v, off + 2);*/",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "readUint32",
+      "mutant_id": "m000191",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + 4);",
+      "replacement_expression": "/*_checkBound(v, off + 4);*/",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 283,
+      "function": "readBytes20",
+      "mutant_id": "m000192",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + 20);",
+      "replacement_expression": "/*_checkBound(v, off + 20);*/",
+      "start_line": 283
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "readBytes32",
+      "mutant_id": "m000193",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + 32);",
+      "replacement_expression": "/*_checkBound(v, off + 32);*/",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 315,
+      "function": "readBytesN",
+      "mutant_id": "m000194",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + len);",
+      "replacement_expression": "/*_checkBound(v, off + len);*/",
+      "start_line": 315
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 335,
+      "function": "copyBytes",
+      "mutant_id": "m000195",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vSrc, offSrc + len);",
+      "replacement_expression": "/*_checkBound(vSrc, offSrc + len);*/",
+      "start_line": 335
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 336,
+      "function": "copyBytes",
+      "mutant_id": "m000196",
+      "operator": "FCD",
+      "original_expression": "_checkBound(vDst, offDst + len);",
+      "replacement_expression": "/*_checkBound(vDst, offDst + len);*/",
+      "start_line": 336
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 342,
+      "function": "copyBytes",
+      "mutant_id": "m000197",
+      "operator": "FCD",
+      "original_expression": "LibMem.copy(\n                LibMem.ptr(vDst) + offDst,\n                LibMem.ptr(vSrc) + offSrc,\n                len\n            );",
+      "replacement_expression": "/*LibMem.copy(\n                LibMem.ptr(vDst) + offDst,\n                LibMem.ptr(vSrc) + offSrc,\n                len\n            );*/",
+      "start_line": 338
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 357,
+      "function": "substring",
+      "mutant_id": "m000198",
+      "operator": "FCD",
+      "original_expression": "copyBytes(vSrc, off, vDst, 0, len);",
+      "replacement_expression": "/*copyBytes(vSrc, off, vDst, 0, len);*/",
+      "start_line": 357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 404,
+      "function": "includes",
+      "mutant_id": "m000199",
+      "operator": "FCD",
+      "original_expression": "_checkBound(v, off + len);",
+      "replacement_expression": "/*_checkBound(v, off + len);*/",
+      "start_line": 404
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000200",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "verify",
+      "mutant_id": "m000201",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000202",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "compare",
+      "mutant_id": "m000203",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "compare",
+      "mutant_id": "m000204",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000205",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000206",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000207",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 153,
+      "function": "compare",
+      "mutant_id": "m000208",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 153
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000209",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000210",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000211",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 154,
+      "function": "compare",
+      "mutant_id": "m000212",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 154
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "compare",
+      "mutant_id": "m000213",
+      "operator": "ILR",
+      "original_expression": "-1",
+      "replacement_expression": "0",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "compare",
+      "mutant_id": "m000214",
+      "operator": "ILR",
+      "original_expression": "-1",
+      "replacement_expression": "-2",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "compare",
+      "mutant_id": "m000215",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "compare",
+      "mutant_id": "m000216",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "readUint8",
+      "mutant_id": "m000217",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "readUint8",
+      "mutant_id": "m000218",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "readUint16",
+      "mutant_id": "m000219",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "readUint16",
+      "mutant_id": "m000220",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "readUint32",
+      "mutant_id": "m000221",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "readUint32",
+      "mutant_id": "m000222",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 283,
+      "function": "readBytes20",
+      "mutant_id": "m000223",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "19",
+      "start_line": 283
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 283,
+      "function": "readBytes20",
+      "mutant_id": "m000224",
+      "operator": "ILR",
+      "original_expression": "20",
+      "replacement_expression": "21",
+      "start_line": 283
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "readBytes32",
+      "mutant_id": "m000225",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 297,
+      "function": "readBytes32",
+      "mutant_id": "m000226",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 297
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000227",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 314,
+      "function": "readBytesN",
+      "mutant_id": "m000228",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 314
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 357,
+      "function": "substring",
+      "mutant_id": "m000229",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 357
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 388,
+      "function": "hasZeroByte",
+      "mutant_id": "m000230",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "includes",
+      "mutant_id": "m000231",
+      "operator": "ILR",
+      "original_expression": "8",
+      "replacement_expression": "7",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 407,
+      "function": "includes",
+      "mutant_id": "m000232",
+      "operator": "ILR",
+      "original_expression": "8",
+      "replacement_expression": "9",
+      "start_line": 407
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "includes",
+      "mutant_id": "m000233",
+      "operator": "ILR",
+      "original_expression": "16",
+      "replacement_expression": "15",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 408,
+      "function": "includes",
+      "mutant_id": "m000234",
+      "operator": "ILR",
+      "original_expression": "16",
+      "replacement_expression": "17",
+      "start_line": 408
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 409,
+      "function": "includes",
+      "mutant_id": "m000235",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 409
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 409,
+      "function": "includes",
+      "mutant_id": "m000236",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 409
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "includes",
+      "mutant_id": "m000237",
+      "operator": "ILR",
+      "original_expression": "64",
+      "replacement_expression": "63",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 410,
+      "function": "includes",
+      "mutant_id": "m000238",
+      "operator": "ILR",
+      "original_expression": "64",
+      "replacement_expression": "65",
+      "start_line": 410
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 411,
+      "function": "includes",
+      "mutant_id": "m000239",
+      "operator": "ILR",
+      "original_expression": "128",
+      "replacement_expression": "127",
+      "start_line": 411
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 411,
+      "function": "includes",
+      "mutant_id": "m000240",
+      "operator": "ILR",
+      "original_expression": "128",
+      "replacement_expression": "129",
+      "start_line": 411
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "includes",
+      "mutant_id": "m000241",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 416,
+      "function": "includes",
+      "mutant_id": "m000242",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 416
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000243",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000244",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000245",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000246",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000247",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "includes",
+      "mutant_id": "m000248",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "compare",
+      "mutant_id": "m000249",
+      "operator": "LSC",
+      "original_expression": "i < shortest",
+      "replacement_expression": "false",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000250",
+      "operator": "LSC",
+      "original_expression": "off < end",
+      "replacement_expression": "false",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 414,
+      "function": "includes",
+      "mutant_id": "m000251",
+      "operator": "LSC",
+      "original_expression": "off < len",
+      "replacement_expression": "false",
+      "start_line": 414
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000252",
+      "operator": "MCR",
+      "original_expression": "sha256",
+      "replacement_expression": "keccak256",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000253",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000254",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000255",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 230
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 15,
+      "function": "verify",
+      "mutant_id": "m000256",
+      "operator": "OLFD",
+      "original_expression": "function verify(\n        bytes calldata data,\n        bytes calldata hash\n    ) external pure virtual returns (bool);",
+      "replacement_expression": "",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "compare",
+      "mutant_id": "m000257",
+      "operator": "OLFD",
+      "original_expression": "function compare(\n        bytes memory vA,\n        bytes memory vB\n    ) internal pure returns (int256) {\n        return compare(vA, 0, vA.length, vB, 0, vB.length);\n    }",
+      "replacement_expression": "",
+      "start_line": 119
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 167,
+      "function": "compare",
+      "mutant_id": "m000258",
+      "operator": "OLFD",
+      "original_expression": "function compare(\n        bytes memory vA,\n        uint256 offA,\n        uint256 lenA,\n        bytes memory vB,\n        uint256 offB,\n        uint256 lenB\n    ) internal pure returns (int256) {\n        _checkBound(vA, offA + lenA);\n        _checkBound(vB, offB + lenB);\n        unchecked {\n            uint256 ptrA = LibMem.ptr(vA) + offA;\n            uint256 ptrB = LibMem.ptr(vB) + offB;\n            uint256 shortest = lenA < lenB ? lenA : lenB;\n            for (uint256 i; i < shortest; i += 32) {\n                uint256 a = LibMem.load(ptrA + i);\n                uint256 b = LibMem.load(ptrB + i);\n                if (a != b) {\n                    uint256 rest = shortest - i;\n                    if (rest < 32) {\n                        rest = (32 - rest) << 3; \n                        a >>= rest; \n                        b >>= rest; \n                    }\n                    if (a < b) {\n                        return -1;\n                    } else if (a > b) {\n                        return 1;\n                    }\n                }\n            }\n        }\n        return int256(lenA) - int256(lenB);\n    }",
+      "replacement_expression": "",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 184,
+      "function": "equals",
+      "mutant_id": "m000259",
+      "operator": "OLFD",
+      "original_expression": "function equals(\n        bytes memory vA,\n        uint256 offA,\n        bytes memory vB,\n        uint256 offB,\n        uint256 len\n    ) internal pure returns (bool) {\n        return keccak(vA, offA, len) == keccak(vB, offB, len);\n    }",
+      "replacement_expression": "",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 205,
+      "function": "equals",
+      "mutant_id": "m000260",
+      "operator": "OLFD",
+      "original_expression": "function equals(\n        bytes memory vA,\n        uint256 offA,\n        bytes memory vB,\n        uint256 offB\n    ) internal pure returns (bool) {\n        _checkBound(vA, offA);\n        _checkBound(vB, offB);\n        unchecked {\n            return\n                keccak(vA, offA, vA.length - offA) ==\n                keccak(vB, offB, vB.length - offB);\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "equals",
+      "mutant_id": "m000261",
+      "operator": "OLFD",
+      "original_expression": "function equals(\n        bytes memory vA,\n        uint256 offA,\n        bytes memory vB\n    ) internal pure returns (bool) {\n        return\n            vA.length == offA + vB.length &&\n            keccak(vA, offA, vB.length) == keccak256(vB);\n    }",
+      "replacement_expression": "",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "equals",
+      "mutant_id": "m000262",
+      "operator": "OLFD",
+      "original_expression": "function equals(\n        bytes memory vA,\n        bytes memory vB\n    ) internal pure returns (bool) {\n        return vA.length == vB.length && keccak256(vA) == keccak256(vB);\n    }",
+      "replacement_expression": "",
+      "start_line": 226
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 30,
+      "function": "verify",
+      "mutant_id": "m000263",
+      "operator": "ORFD",
+      "original_expression": "function verify(\n        bytes calldata data,\n        bytes calldata hash\n    ) external pure override returns (bool) {\n        require(hash.length == 32, \"Invalid sha256 hash length\");\n        return sha256(data) == hash.readBytes32(0);\n    }",
+      "replacement_expression": "",
+      "start_line": 24
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "verify",
+      "mutant_id": "m000264",
+      "operator": "RSD",
+      "original_expression": "return sha256(data) == hash.readBytes32(0);",
+      "replacement_expression": "/* return sha256(data) == hash.readBytes32(0); */",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "compare",
+      "mutant_id": "m000265",
+      "operator": "RSD",
+      "original_expression": "return compare(vA, 0, vA.length, vB, 0, vB.length);",
+      "replacement_expression": "compare(vA, 0, vA.length, vB, 0, vB.length);",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "compare",
+      "mutant_id": "m000266",
+      "operator": "RSD",
+      "original_expression": "return -1;",
+      "replacement_expression": "/* return -1; */",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 161,
+      "function": "compare",
+      "mutant_id": "m000267",
+      "operator": "RSD",
+      "original_expression": "return 1;",
+      "replacement_expression": "/* return 1; */",
+      "start_line": 161
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 166,
+      "function": "compare",
+      "mutant_id": "m000268",
+      "operator": "RSD",
+      "original_expression": "return int256(lenA) - int256(lenB);",
+      "replacement_expression": "/* return int256(lenA) - int256(lenB); */",
+      "start_line": 166
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 183,
+      "function": "equals",
+      "mutant_id": "m000269",
+      "operator": "RSD",
+      "original_expression": "return keccak(vA, offA, len) == keccak(vB, offB, len);",
+      "replacement_expression": "/* return keccak(vA, offA, len) == keccak(vB, offB, len); */",
+      "start_line": 183
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 203,
+      "function": "equals",
+      "mutant_id": "m000270",
+      "operator": "RSD",
+      "original_expression": "return\n                keccak(vA, offA, vA.length - offA) ==\n                keccak(vB, offB, vB.length - offB);",
+      "replacement_expression": "/* return\n                keccak(vA, offA, vA.length - offA) ==\n                keccak(vB, offB, vB.length - offB); */",
+      "start_line": 201
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "equals",
+      "mutant_id": "m000271",
+      "operator": "RSD",
+      "original_expression": "return\n            vA.length == offA + vB.length &&\n            keccak(vA, offA, vB.length) == keccak256(vB);",
+      "replacement_expression": "/* return\n            vA.length == offA + vB.length &&\n            keccak(vA, offA, vB.length) == keccak256(vB); */",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 230,
+      "function": "equals",
+      "mutant_id": "m000272",
+      "operator": "RSD",
+      "original_expression": "return vA.length == vB.length && keccak256(vA) == keccak256(vB);",
+      "replacement_expression": "/* return vA.length == vB.length && keccak256(vA) == keccak256(vB); */",
+      "start_line": 230
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "readUint8",
+      "mutant_id": "m000273",
+      "operator": "RSD",
+      "original_expression": "return uint8(v[off]);",
+      "replacement_expression": "uint8(v[off]);",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 374,
+      "function": "find",
+      "mutant_id": "m000274",
+      "operator": "RSD",
+      "original_expression": "return off;",
+      "replacement_expression": "/* return off; */",
+      "start_line": 374
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 377,
+      "function": "find",
+      "mutant_id": "m000275",
+      "operator": "RSD",
+      "original_expression": "return type(uint256).max;",
+      "replacement_expression": "/* return type(uint256).max; */",
+      "start_line": 377
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 388,
+      "function": "hasZeroByte",
+      "mutant_id": "m000276",
+      "operator": "RSD",
+      "original_expression": "return\n                ((~word &\n                    (word -\n                        0x0101010101010101010101010101010101010101010101010101010101010101)) &\n                    0x8080808080808080808080808080808080808080808080808080808080808080) !=\n                0;",
+      "replacement_expression": "/* return\n                ((~word &\n                    (word -\n                        0x0101010101010101010101010101010101010101010101010101010101010101)) &\n                    0x8080808080808080808080808080808080808080808080808080808080808080) !=\n                0; */",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 422,
+      "function": "includes",
+      "mutant_id": "m000277",
+      "operator": "RSD",
+      "original_expression": "return\n                        off <= len ||\n                        hasZeroByte(\n                            word | ((1 << ((off - len) << 3)) - 1) \n                        );",
+      "replacement_expression": "/* return\n                        off <= len ||\n                        hasZeroByte(\n                            word | ((1 << ((off - len) << 3)) - 1) \n                        ); */",
+      "start_line": 418
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 159,
+      "function": "compare",
+      "mutant_id": "m000278",
+      "operator": "UORD",
+      "original_expression": "-1",
+      "replacement_expression": " 1",
+      "start_line": 159
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000279",
+      "operator": "UORD",
+      "original_expression": "ff++",
+      "replacement_expression": "ff--",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "find",
+      "mutant_id": "m000280",
+      "operator": "UORD",
+      "original_expression": "ff++",
+      "replacement_expression": "ff ",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 384,
+      "function": "hasZeroByte",
+      "mutant_id": "m000281",
+      "operator": "UORD",
+      "original_expression": "~word",
+      "replacement_expression": " word",
+      "start_line": 384
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__SHA256Digest"
+}

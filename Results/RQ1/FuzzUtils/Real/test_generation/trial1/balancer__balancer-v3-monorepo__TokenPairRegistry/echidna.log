@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.889283244s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (1.826905653s)
+
+echidna: Constructor arguments are required: [("vault",address),("initialOwner",address)]

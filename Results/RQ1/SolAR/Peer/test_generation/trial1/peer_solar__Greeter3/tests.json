@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        52,
+        "dumqSMhXr dvlMKSwQhGVAiOqfosOyurRGNCOhMITAjSuEcrlzAYVXjYUCFfBImwrRGwdICdfuAWVzpZc dDmSbgZUPicLKGoNHJeYYYJYgmihxJ OeQHoKrB"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4,
+        "iDrIBiZZViebcMKiPAyFWboIBjikWwMKJjiTDYUDnKywkZEMcvzEPJYzxfrReFWFnBTNtOuTnzyJLoUzQJPSmoswlKkflHAOrrWrtqKJONrAhQsLjqXfcJcyRnPeOAgNDXrMIchioXgfiuOCldPIBMhnwTuAcgYoSWjLBUGTLIKZYMoS"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        53
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

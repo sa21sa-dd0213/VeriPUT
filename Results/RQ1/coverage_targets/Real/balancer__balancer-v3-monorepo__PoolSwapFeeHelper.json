@@ -1,0 +1,169 @@
+{
+  "contract": "PoolSwapFeeHelper",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 1,
+    "FNF": 2,
+    "LF": 5
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "83a18262e76eb233ef12e958fcc1c04c63f86dde4755487fe674f406f47046d5",
+  "subject_id": "balancer__balancer-v3-monorepo__PoolSwapFeeHelper",
+  "targets": [
+    {
+      "declaration_line": 879,
+      "external_selector": "d15126ba",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 879,
+        "name": "PoolSwapFeeHelper.setStaticSwapFeePercentage",
+        "record": "FN"
+      },
+      "length": 74,
+      "line": 879,
+      "name": "setStaticSwapFeePercentage",
+      "site": "body-entry",
+      "src": "14603:74:0",
+      "start": 14603,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 888,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 888,
+        "name": "PoolSwapFeeHelper._validatePool.1",
+        "record": "FN"
+      },
+      "length": 147,
+      "line": 888,
+      "name": "_validatePool",
+      "site": "body-entry",
+      "src": "14756:147:0",
+      "start": 14756,
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 879,
+      "external_selector": "d15126ba",
+      "id": "line:879",
+      "kind": "line",
+      "lcov": {
+        "line": 879,
+        "record": "DA"
+      },
+      "length": 74,
+      "line": 879,
+      "site": "body-entry",
+      "src": "14603:74:0",
+      "start": 14603,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "id": "line:880",
+      "kind": "line",
+      "lcov": {
+        "line": 880,
+        "record": "DA"
+      },
+      "length": 57,
+      "line": 880,
+      "site": "statement-entry",
+      "src": "14613:57:0",
+      "start": 14613,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 4
+    },
+    {
+      "declaration_line": 888,
+      "external_selector": null,
+      "id": "line:888",
+      "kind": "line",
+      "lcov": {
+        "line": 888,
+        "record": "DA"
+      },
+      "length": 147,
+      "line": 888,
+      "site": "body-entry",
+      "src": "14756:147:0",
+      "start": 14756,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 5,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:890",
+      "kind": "line",
+      "lcov": {
+        "line": 890,
+        "record": "DA"
+      },
+      "length": 122,
+      "line": 890,
+      "site": "statement-entry",
+      "src": "14775:122:0",
+      "start": 14775,
+      "statement_type": "IfStatement",
+      "trap_id": 6
+    },
+    {
+      "id": "line:891",
+      "kind": "line",
+      "lcov": {
+        "line": 891,
+        "record": "DA"
+      },
+      "length": 31,
+      "line": 891,
+      "site": "statement-entry",
+      "src": "14855:31:0",
+      "start": 14855,
+      "statement_type": "RevertStatement",
+      "trap_id": 7
+    },
+    {
+      "branch_id": "branch:4",
+      "condition_src": "14779:60:0",
+      "id": "branch:4:true",
+      "kind": "branch",
+      "lcov": {
+        "block": 18,
+        "branch": 0,
+        "line": 890,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 56,
+      "line": 890,
+      "outcome": true,
+      "site": "branch-entry",
+      "src": "14841:56:0",
+      "start": 14841,
+      "trap_id": 8
+    }
+  ],
+  "totals": {
+    "all": 8,
+    "branch": 1,
+    "function": 2,
+    "line": 5
+  }
+}

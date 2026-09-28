@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.24833866s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.251878253s)
+
+echidna: Constructor arguments are required: [("_anchors",bytes)]

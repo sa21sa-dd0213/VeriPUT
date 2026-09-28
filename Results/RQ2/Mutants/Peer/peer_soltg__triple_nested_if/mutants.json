@@ -1,0 +1,217 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 21,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "f",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "f",
+      "mutant_id": "m000009",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "true",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "f",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "a == 0",
+      "replacement_expression": "false",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "true",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000012",
+      "operator": "CSC",
+      "original_expression": "b == 0",
+      "replacement_expression": "false",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000013",
+      "operator": "CSC",
+      "original_expression": "c == 0",
+      "replacement_expression": "true",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000014",
+      "operator": "CSC",
+      "original_expression": "c == 0",
+      "replacement_expression": "false",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000015",
+      "operator": "EHD",
+      "original_expression": "assert(a != 0 || b != 0 || c != 0);",
+      "replacement_expression": "/* assert(a != 0 || b != 0 || c != 0); */",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "f",
+      "mutant_id": "m000016",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "f",
+      "mutant_id": "m000017",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "f",
+      "mutant_id": "m000018",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000019",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000020",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "f",
+      "mutant_id": "m000021",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 17
+    }
+  ],
+  "subject_id": "peer_soltg__triple_nested_if"
+}

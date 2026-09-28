@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.819813982s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.68536895s)
+
+echidna: Constructor arguments are required: [("_stakingToken",address),("_distributor",address)]

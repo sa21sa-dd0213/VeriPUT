@@ -1,0 +1,117 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 11,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "f",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "f",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000006",
+      "operator": "EHD",
+      "original_expression": "require(x > 0);",
+      "replacement_expression": "/* require(x > 0); */",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 9,
+      "function": "f",
+      "mutant_id": "m000007",
+      "operator": "EHD",
+      "original_expression": "assert(y == x);",
+      "replacement_expression": "/* assert(y == x); */",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 6,
+      "function": "f",
+      "mutant_id": "m000008",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 6
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "f",
+      "mutant_id": "m000009",
+      "operator": "LSC",
+      "original_expression": "y < x",
+      "replacement_expression": "false",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000010",
+      "operator": "UORD",
+      "original_expression": "++y",
+      "replacement_expression": "--y",
+      "start_line": 8
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 8,
+      "function": "f",
+      "mutant_id": "m000011",
+      "operator": "UORD",
+      "original_expression": "++y",
+      "replacement_expression": " y",
+      "start_line": 8
+    }
+  ],
+  "subject_id": "peer_soltg__loop_basic"
+}

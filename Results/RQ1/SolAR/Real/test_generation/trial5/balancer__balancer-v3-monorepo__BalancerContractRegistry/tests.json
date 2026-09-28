@@ -1,0 +1,198 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        "pIbeLabZhwgGkhobwXdhVvZyvcQYugXXSDXJsYySwmGXytagKIRjKDwibhLo MEyvzWETRKIoRVyvMQVZbnmrHJND MyRCyTcrIiGURBbQ OegQpZYRLWpcfQChlNaIDQBklOXbiQICURktRmXiXLmagPjhYIrQsOcWbXrYHVLfndrhydtQtPrHiLgyHSAXmrkMoXvfEAXbmwXrodBqYpTuddiOkFPFNyWGt PwXIXxfbVWIiUmtpLeU"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "getBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        35,
+        "GvszvcXrQzpeuIKlMxnmbjThcudbsmkzFrqFFIicQxWouqIrTjTrKjmptEvBUQmvTlkpQuyKWrDHesRmktdtEumIIugoaPFQqIYfHkPYB"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "getBalancerContract",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "deprecateBalancerContract",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "lZ gCLSzyDkYQGpuzYUiQQEZSaSqbAxgjxNOVfnYxhgvHrpxYBTxChtKvTWiaZAJ thpSbEpZJcHREYKt tsHmXhMYJomnihEQQSkakKuleTyFuEbe DWhXnghqWNOeeNngXVJSFRbSdXvOGqVtTZdgUv BNUivBmUYgZABVmfOaVQZLVoyczvm hGvpSFwHXkNUIflfKNqEsegOseSKPiZjm",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "addOrUpdateBalancerContractAlias",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "isTrustedRouter",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "getBalancerContractInfo",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        8,
+        "anonymous_hex_00026"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "isActiveBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "",
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "addOrUpdateBalancerContractAlias",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "xvFAKYUtxMlNdWTbBOrmsmeNjruNRVsjdK JgVobIEqqFKPaFpctIoNQNokHKGjvcIKGwNpPFnaOfbNJkULcHeMeydvIzLawXi rNyPdSHdKSylgMyuPWttOkFqCdQaQNSSGPCZKkcLKhsDvfjpwmMqYWWkhkzyQXkafdPusMcYwREQYjPrOuZ AtKkbQUApN bEh ucP"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "deregisterBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        123,
+        "GcjcwFQxWspKSEwtoWOP",
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "registerBalancerContract",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

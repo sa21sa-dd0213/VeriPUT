@@ -1,0 +1,20 @@
+# Reproducing the released tables and re-running a measurement.
+#
+# `Scripts/audit_release.py`, `Scripts/export_tables.py`,
+# `Scripts/run_with_budget.py` and `Scripts/coverage/` use only the Python
+# standard library, so a stock CPython is enough for every command documented
+# in README.md.
+#
+#   python >= 3.10
+#
+# The external programs those scripts drive are NOT Python packages and are
+# pinned by `Scripts/protocol.json`:
+#
+#   solc    0.8.35
+#   forge   1.7.1        (path coverage uses Tools/Foundry/forge-veriput-path.gz)
+#   esbmc   8.2.0        (Tools/ESBMC/esbmc.gz)
+#   forge-std 1.11.0     (VERIPUT_FORGE_STD)
+#
+# No third-party Python distribution is required.  This file is intentionally
+# empty of requirements so that `pip install -r requirements.txt` succeeds and
+# records that fact.

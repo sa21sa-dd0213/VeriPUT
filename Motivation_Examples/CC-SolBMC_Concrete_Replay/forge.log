@@ -1,0 +1,37 @@
+===== FeeVault (reference) =====  (src/FeeVault.sol = Motivation_Examples/FeeVault.sol; test/CCSolBMC_Derived.t.sol = CC-SolBMC counterexamples transcribed to Foundry)
+$ forge test -vv
+Compiling 3 files with Solc 0.8.34
+Solc 0.8.34 finished in 474.35ms
+Compiler run successful!
+
+Ran 16 tests for test/CCSolBMC_Derived.t.sol:CCSolBMC_Derived
+[PASS] test_TC1() (gas: 12916)
+[PASS] test_TC10() (gas: 78536)
+[PASS] test_TC11() (gas: 105350)
+[PASS] test_TC12() (gas: 98516)
+[PASS] test_TC13() (gas: 124748)
+[PASS] test_TC14() (gas: 124946)
+[PASS] test_TC15() (gas: 98146)
+[PASS] test_TC16() (gas: 98410)
+[PASS] test_TC2() (gas: 12828)
+[PASS] test_TC3() (gas: 13070)
+[FAIL: EvmError: Revert] test_TC4() (gas: 9723)
+[PASS] test_TC5() (gas: 91494)
+[FAIL: EvmError: Revert] test_TC6() (gas: 49365)
+[FAIL: EvmError: Revert] test_TC7() (gas: 49475)
+[FAIL: EvmError: Revert] test_TC8() (gas: 49500)
+[PASS] test_TC9() (gas: 105088)
+Suite result: FAILED. 12 passed; 4 failed; 0 skipped; finished in 1.83ms (1.94ms CPU time)
+
+Ran 1 test suite in 5.43ms (1.83ms CPU time): 12 tests passed, 4 failed, 0 skipped (16 total tests)
+
+Failing tests:
+Encountered 4 failing tests in test/CCSolBMC_Derived.t.sol:CCSolBMC_Derived
+[FAIL: EvmError: Revert] test_TC4() (gas: 9723)
+[FAIL: EvmError: Revert] test_TC6() (gas: 49365)
+[FAIL: EvmError: Revert] test_TC7() (gas: 49475)
+[FAIL: EvmError: Revert] test_TC8() (gas: 49500)
+
+Encountered a total of 4 failing tests, 12 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 4 failed tests

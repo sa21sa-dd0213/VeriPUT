@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 119655794820586535
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00026",
+        10000
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 119655794820586535
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        10
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 119655794820586535
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        55756908518233682542323203233845882687387231087592013698433354543949237656648
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 125357064783520919
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,72 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00027",
+        "attIqTogbwiIeHkuChldGJucjCvnbauT dXEfGLZxncwQwODEWKLrZTSKpXPqRjUHrZxgvblACmNbbwxVZGuQiZSSePNkXsceWEeGe",
+        "Standard String"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        9503816542198195255819873582000761848561049953794037597055843006178089711169
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00026",
+        "\"+\"",
+        "\"\"\""
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        4672670129473245090967414490339184580853147707062732059953449467448165250701
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "anonymous_hex_00022",
+        "EdNkTAgFbwSocHTF",
+        "vKxJHWGQauYvHEXcKzBhxTIf ePtlNFTqJzvVeYOnDmJPHxFJXnqYXjBypQZZWsDXLfqrjtSnfAojbIlZowLlZvuJpMnlqjAVReHHlNOatbiMmlBtWndRgaKSWJUEhprsVHACfeLRzCvBfiVuHnRdUakNrazdLwkByRsMNkVeqGAXKHSkqQ"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        99412725075995849985877561484893177130459369012151755735838212165111070032930
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

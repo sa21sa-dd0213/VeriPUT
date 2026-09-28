@@ -1,0 +1,397 @@
+{
+  "compile_failed": 5,
+  "compile_ok": 34,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "deposit",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "withdraw",
+      "mutant_id": "m000002",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "withdraw",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "withdraw",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "withdraw",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "refund",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "refund",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 11,
+      "function": "constructor",
+      "mutant_id": "m000014",
+      "operator": "CCD",
+      "original_expression": "constructor()  payable{\n      require(msg.value == 10 ether);\n  }",
+      "replacement_expression": "",
+      "start_line": 9
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000015",
+      "operator": "EHD",
+      "original_expression": "require(msg.value == 10 ether);",
+      "replacement_expression": "/* require(msg.value == 10 ether); */",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "withdraw",
+      "mutant_id": "m000016",
+      "operator": "EHD",
+      "original_expression": "require(_amount >= min_withdraw);",
+      "replacement_expression": "/* require(_amount >= min_withdraw); */",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "withdraw",
+      "mutant_id": "m000017",
+      "operator": "EHD",
+      "original_expression": "require(balances[msg.sender] >= _amount);",
+      "replacement_expression": "/* require(balances[msg.sender] >= _amount); */",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "refund",
+      "mutant_id": "m000018",
+      "operator": "EHD",
+      "original_expression": "require(balances[msg.sender] > 0);",
+      "replacement_expression": "/* require(balances[msg.sender] > 0); */",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "withdraw",
+      "mutant_id": "m000019",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).send",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "withdraw",
+      "mutant_id": "m000020",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).call{value: _amount}(\"\")",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "refund",
+      "mutant_id": "m000021",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).send",
+      "start_line": 26
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 26,
+      "function": "refund",
+      "mutant_id": "m000022",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).transfer",
+      "replacement_expression": "payable(msg.sender).call{value: undefined}(\"\")",
+      "start_line": 26
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 21,
+      "function": "withdraw",
+      "mutant_id": "m000023",
+      "operator": "FCD",
+      "original_expression": "payable(msg.sender).",
+      "replacement_expression": "/*payable(msg.sender).*/",
+      "start_line": 21
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 26,
+      "function": "refund",
+      "mutant_id": "m000024",
+      "operator": "FCD",
+      "original_expression": "payable(msg.sender).",
+      "replacement_expression": "/*payable(msg.sender).*/",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000025",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000026",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "deposit",
+      "mutant_id": "m000027",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 14,
+      "function": "deposit",
+      "mutant_id": "m000028",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "stateVariable",
+      "mutant_id": "m000029",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "0 ether",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "stateVariable",
+      "mutant_id": "m000030",
+      "operator": "ILR",
+      "original_expression": "1 ether",
+      "replacement_expression": "2 ether",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "10 ether",
+      "replacement_expression": "9 ether",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "10 ether",
+      "replacement_expression": "11 ether",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "refund",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 9,
+      "function": "",
+      "mutant_id": "m000034",
+      "operator": "PKD",
+      "original_expression": "constructor()  payable",
+      "replacement_expression": "constructor()  ",
+      "start_line": 9
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 13,
+      "function": "deposit",
+      "mutant_id": "m000035",
+      "operator": "PKD",
+      "original_expression": "function deposit() payable public ",
+      "replacement_expression": "function deposit()  public ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "getBalance",
+      "mutant_id": "m000036",
+      "operator": "RSD",
+      "original_expression": "return balances[addr];",
+      "replacement_expression": "/* return balances[addr]; */",
+      "start_line": 29
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "getBankBalance",
+      "mutant_id": "m000037",
+      "operator": "RSD",
+      "original_expression": "return address(this).balance;",
+      "replacement_expression": "/* return address(this).balance; */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 7,
+      "function": "stateVariable",
+      "mutant_id": "m000038",
+      "operator": "VUR",
+      "original_expression": "1 ether",
+      "replacement_expression": "1 gwei",
+      "start_line": 7
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "constructor",
+      "mutant_id": "m000039",
+      "operator": "VUR",
+      "original_expression": "10 ether",
+      "replacement_expression": "10 gwei",
+      "start_line": 10
+    }
+  ],
+  "subject_id": "peer_solar__EtherBank"
+}

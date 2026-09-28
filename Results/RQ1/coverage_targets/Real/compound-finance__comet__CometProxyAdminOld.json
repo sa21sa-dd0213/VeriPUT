@@ -1,0 +1,164 @@
+{
+  "contract": "CometProxyAdminOld",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 2,
+    "LF": 6
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "311ac48def3df774b6ce8d6bb6b21a1b8386d9ac206ad9c01491b7f010e24596",
+  "subject_id": "compound-finance__comet__CometProxyAdminOld",
+  "targets": [
+    {
+      "declaration_line": 225,
+      "external_selector": "9627816f",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 225,
+        "name": "CometProxyAdminOld.deployAndUpgradeTo",
+        "record": "FN"
+      },
+      "length": 128,
+      "line": 225,
+      "name": "deployAndUpgradeTo",
+      "site": "body-entry",
+      "src": "3230:128:0",
+      "start": 3230,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 235,
+      "external_selector": "c7d20733",
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 235,
+        "name": "CometProxyAdminOld.deployUpgradeToAndCall",
+        "record": "FN"
+      },
+      "length": 141,
+      "line": 235,
+      "name": "deployUpgradeToAndCall",
+      "site": "body-entry",
+      "src": "3519:141:0",
+      "start": 3519,
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 225,
+      "external_selector": "9627816f",
+      "id": "line:225",
+      "kind": "line",
+      "lcov": {
+        "line": 225,
+        "record": "DA"
+      },
+      "length": 128,
+      "line": 225,
+      "site": "body-entry",
+      "src": "3230:128:0",
+      "start": 3230,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 3,
+      "visibility": "public"
+    },
+    {
+      "id": "line:226",
+      "kind": "line",
+      "lcov": {
+        "line": 226,
+        "record": "DA"
+      },
+      "length": 68,
+      "line": 226,
+      "site": "statement-entry",
+      "src": "3240:68:0",
+      "start": 3240,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 4
+    },
+    {
+      "id": "line:227",
+      "kind": "line",
+      "lcov": {
+        "line": 227,
+        "record": "DA"
+      },
+      "length": 33,
+      "line": 227,
+      "site": "statement-entry",
+      "src": "3318:33:0",
+      "start": 3318,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    },
+    {
+      "declaration_line": 235,
+      "external_selector": "c7d20733",
+      "id": "line:235",
+      "kind": "line",
+      "lcov": {
+        "line": 235,
+        "record": "DA"
+      },
+      "length": 141,
+      "line": 235,
+      "site": "body-entry",
+      "src": "3519:141:0",
+      "start": 3519,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 6,
+      "visibility": "public"
+    },
+    {
+      "id": "line:236",
+      "kind": "line",
+      "lcov": {
+        "line": 236,
+        "record": "DA"
+      },
+      "length": 68,
+      "line": 236,
+      "site": "statement-entry",
+      "src": "3529:68:0",
+      "start": 3529,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 7
+    },
+    {
+      "id": "line:237",
+      "kind": "line",
+      "lcov": {
+        "line": 237,
+        "record": "DA"
+      },
+      "length": 46,
+      "line": 237,
+      "site": "statement-entry",
+      "src": "3607:46:0",
+      "start": 3607,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 8
+    }
+  ],
+  "totals": {
+    "all": 8,
+    "branch": 0,
+    "function": 2,
+    "line": 6
+  }
+}

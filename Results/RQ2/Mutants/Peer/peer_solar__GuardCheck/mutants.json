@@ -1,0 +1,367 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 32,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "donate",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "donate",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "donate",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "donate",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "donate",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "donate",
+      "mutant_id": "m000013",
+      "operator": "CSC",
+      "original_expression": "addr.balance == 0",
+      "replacement_expression": "true",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "donate",
+      "mutant_id": "m000014",
+      "operator": "CSC",
+      "original_expression": "addr.balance == 0",
+      "replacement_expression": "false",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "donate",
+      "mutant_id": "m000015",
+      "operator": "CSC",
+      "original_expression": "addr.balance < msg.sender.balance",
+      "replacement_expression": "true",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "donate",
+      "mutant_id": "m000016",
+      "operator": "CSC",
+      "original_expression": "addr.balance < msg.sender.balance",
+      "replacement_expression": "false",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "donate",
+      "mutant_id": "m000017",
+      "operator": "CSC",
+      "original_expression": "else {\n            revert();\n        }",
+      "replacement_expression": "",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "donate",
+      "mutant_id": "m000018",
+      "operator": "EHD",
+      "original_expression": "require(addr != address(0));",
+      "replacement_expression": "/* require(addr != address(0)); */",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "donate",
+      "mutant_id": "m000019",
+      "operator": "EHD",
+      "original_expression": "require(msg.value != 0);",
+      "replacement_expression": "/* require(msg.value != 0); */",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "donate",
+      "mutant_id": "m000020",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "donate",
+      "mutant_id": "m000021",
+      "operator": "EHD",
+      "original_expression": "assert(address(this).balance == balanceBeforeTransfer - transferAmount);",
+      "replacement_expression": "/* assert(address(this).balance == balanceBeforeTransfer - transferAmount); */",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "donate",
+      "mutant_id": "m000022",
+      "operator": "ETR",
+      "original_expression": "payable(addr).transfer",
+      "replacement_expression": "payable(addr).send",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 25,
+      "function": "donate",
+      "mutant_id": "m000023",
+      "operator": "ETR",
+      "original_expression": "payable(addr).transfer",
+      "replacement_expression": "payable(addr).call{value: transferAmount}(\"\")",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "donate",
+      "mutant_id": "m000024",
+      "operator": "FCD",
+      "original_expression": "payable(addr).",
+      "replacement_expression": "/*payable(addr).*/",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "donate",
+      "mutant_id": "m000025",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "donate",
+      "mutant_id": "m000026",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "donate",
+      "mutant_id": "m000027",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "donate",
+      "mutant_id": "m000028",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 18
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000029",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000030",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "donate",
+      "mutant_id": "m000031",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 13,
+      "function": "donate",
+      "mutant_id": "m000032",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 13
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 17,
+      "function": "donate",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 17
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000034",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "donate",
+      "mutant_id": "m000035",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 11,
+      "function": "donate",
+      "mutant_id": "m000036",
+      "operator": "PKD",
+      "original_expression": "function donate(address addr) payable public ",
+      "replacement_expression": "function donate(address addr)  public ",
+      "start_line": 11
+    }
+  ],
+  "subject_id": "peer_solar__GuardCheck"
+}

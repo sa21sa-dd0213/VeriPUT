@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        100
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "f",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        57839389380302683981095407389400258921329904535193866719921035386331780706263
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "f",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,72 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "anonymous_hex_00026",
+        "\"",
+        "EOUiUEndWJpwLdNlKTjjVFKiURiQaYkwNWzQSjoxDwsRaSKv KpPmzUUeHMrxlTGPbYpnjtamlHYpiMuFZTERIckQUjbkWdfImLCEwDmcM PWXARBAknA"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        109
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00026",
+        "orJYLiDXztFFZOmbo",
+        "\"\\\\\""
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        58147652772132444463786647340212096600753652281618173843429439568734867171736
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00016",
+        "\"\"\"",
+        "hWERtZZONXHXZcOIRVNBmDQOcYtGSSNSOulaOMDwYRHewfuSTtWdlojdJbQNScjXjwiAJvxKImcAjlgpweqdbbKuRvUaFIfWzmijS"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        24
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "burnFrom",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "args": [
+        "rDOdjadDbhwetzCRjDlBEMBPYZRnqyBzTqSJBsLVjeYFPoCrIZPWxDWOmLbOstsdjISZVSAxaicWYbjOXuw nHgQRR TIAOsrbubeXILxkMwFCj",
+        "ToizIAbcpSCHgCjBFWjFBIuxzFoR WdmgJTSeImponYbBPmzfuMQxfDbKRJXhnWuifUJWFgWwtqiGLvpqUQHoQGDWBNoECxphacDUDeoeYsJXxrYLKZnpCVXIHaAsmrwbFVcLINMgrqpDfgyeTYKcyKVOmuxtpGsTykIfkJU VYPwONAreRdeJNvbANCrByHzjD nRXhqSjvggFYWhMkPLtYDvzSkiLtTNxEavkmuuXqSp",
+        53,
+        "anonymous_hex_00025",
+        400000000000
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        200,
+        "anonymous_hex_00025",
+        24254563127041541841228716012503182936116252045227290620950831946425452756495
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "rDOdjadDbhwetzCRjDlBEMBPYZRnqyBzTqSJBsLVjeYFPoCrIZPWxDWOmLbOstsdjISZVSAxaicWYbjOXuw nHgQRR TIAOsrbubeXILxkMwFCj",
+        "ToizIAbcpSCHgCjBFWjFBIuxzFoR WdmgJTSeImponYbBPmzfuMQxfDbKRJXhnWuifUJWFgWwtqiGLvpqUQHoQGDWBNoECxphacDUDeoeYsJXxrYLKZnpCVXIHaAsmrwbFVcLINMgrqpDfgyeTYKcyKVOmuxtpGsTykIfkJU VYPwONAreRdeJNvbANCrByHzjD nRXhqSjvggFYWhMkPLtYDvzSkiLtTNxEavkmuuXqSp",
+        53,
+        "anonymous_hex_00025",
+        400000000000
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        84334587748692182811023862150943986990702477360228119642911408505729512669172,
+        "anonymous_hex_00025",
+        255
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "mint",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "rDOdjadDbhwetzCRjDlBEMBPYZRnqyBzTqSJBsLVjeYFPoCrIZPWxDWOmLbOstsdjISZVSAxaicWYbjOXuw nHgQRR TIAOsrbubeXILxkMwFCj",
+        "ToizIAbcpSCHgCjBFWjFBIuxzFoR WdmgJTSeImponYbBPmzfuMQxfDbKRJXhnWuifUJWFgWwtqiGLvpqUQHoQGDWBNoECxphacDUDeoeYsJXxrYLKZnpCVXIHaAsmrwbFVcLINMgrqpDfgyeTYKcyKVOmuxtpGsTykIfkJU VYPwONAreRdeJNvbANCrByHzjD nRXhqSjvggFYWhMkPLtYDvzSkiLtTNxEavkmuuXqSp",
+        53,
+        "anonymous_hex_00025",
+        400000000000
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

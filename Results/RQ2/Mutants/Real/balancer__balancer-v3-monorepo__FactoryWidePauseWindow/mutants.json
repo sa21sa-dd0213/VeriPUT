@@ -1,0 +1,187 @@
+{
+  "compile_failed": 18,
+  "compile_ok": 0,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "getNewPoolPauseWindowEndTime",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 72
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "getNewPoolPauseWindowEndTime",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 72
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 43,
+      "function": "constructor",
+      "mutant_id": "m000007",
+      "operator": "CCD",
+      "original_expression": "constructor(uint32 pauseWindowDuration) {\n        uint256 pauseWindowEndTime = block.timestamp + pauseWindowDuration;\n\n        if (pauseWindowEndTime > _MAX_TIMESTAMP) {\n            revert PoolPauseWindowDurationOverflow();\n        }\n\n        _pauseWindowDuration = pauseWindowDuration;\n\n        \n        _poolsPauseWindowEndTime = uint32(pauseWindowEndTime);\n    }",
+      "replacement_expression": "",
+      "start_line": 32
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "CSC",
+      "original_expression": "pauseWindowEndTime > _MAX_TIMESTAMP",
+      "replacement_expression": "true",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "constructor",
+      "mutant_id": "m000009",
+      "operator": "CSC",
+      "original_expression": "pauseWindowEndTime > _MAX_TIMESTAMP",
+      "replacement_expression": "false",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 42,
+      "function": "constructor",
+      "mutant_id": "m000010",
+      "operator": "ECS",
+      "original_expression": "uint32(pauseWindowEndTime)",
+      "replacement_expression": "uint24(pauseWindowEndTime)",
+      "start_line": 42
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 36,
+      "function": "constructor",
+      "mutant_id": "m000011",
+      "operator": "EHD",
+      "original_expression": "revert PoolPauseWindowDurationOverflow();",
+      "replacement_expression": "/* revert PoolPauseWindowDurationOverflow(); */",
+      "start_line": 36
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 22,
+      "function": "stateVariable",
+      "mutant_id": "m000012",
+      "operator": "FCD",
+      "original_expression": "type(uint32).",
+      "replacement_expression": "/*type(uint32).*/",
+      "start_line": 22
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "constructor",
+      "mutant_id": "m000013",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "getNewPoolPauseWindowEndTime",
+      "mutant_id": "m000014",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 72
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "getNewPoolPauseWindowEndTime",
+      "mutant_id": "m000015",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 72
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 50,
+      "function": "getPauseWindowDuration",
+      "mutant_id": "m000016",
+      "operator": "RSD",
+      "original_expression": "return _pauseWindowDuration;",
+      "replacement_expression": "/* return _pauseWindowDuration; */",
+      "start_line": 50
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 58,
+      "function": "getOriginalPauseWindowEndTime",
+      "mutant_id": "m000017",
+      "operator": "RSD",
+      "original_expression": "return _poolsPauseWindowEndTime;",
+      "replacement_expression": "/* return _poolsPauseWindowEndTime; */",
+      "start_line": 58
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 72,
+      "function": "getNewPoolPauseWindowEndTime",
+      "mutant_id": "m000018",
+      "operator": "RSD",
+      "original_expression": "return (block.timestamp < _poolsPauseWindowEndTime) ? _poolsPauseWindowEndTime : 0;",
+      "replacement_expression": "/* return (block.timestamp < _poolsPauseWindowEndTime) ? _poolsPauseWindowEndTime : 0; */",
+      "start_line": 72
+    }
+  ],
+  "subject_id": "balancer__balancer-v3-monorepo__FactoryWidePauseWindow"
+}

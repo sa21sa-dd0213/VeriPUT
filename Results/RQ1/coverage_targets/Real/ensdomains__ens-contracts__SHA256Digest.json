@@ -1,0 +1,144 @@
+{
+  "contract": "SHA256Digest",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 2,
+    "FNF": 1,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "fc900d8b697e53dfde2df7dd8483e061e6702aefd5eff650a094c540a9a9339e",
+  "subject_id": "ensdomains__ens-contracts__SHA256Digest",
+  "targets": [
+    {
+      "declaration_line": 24,
+      "external_selector": "f7e83aee",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 24,
+        "name": "SHA256Digest.verify",
+        "record": "FN"
+      },
+      "length": 125,
+      "line": 27,
+      "name": "verify",
+      "site": "body-entry",
+      "src": "382:125:0",
+      "start": 382,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 24,
+      "external_selector": "f7e83aee",
+      "id": "line:24",
+      "kind": "line",
+      "lcov": {
+        "line": 24,
+        "record": "DA"
+      },
+      "length": 125,
+      "line": 27,
+      "site": "body-entry",
+      "src": "382:125:0",
+      "start": 382,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:28",
+      "kind": "line",
+      "lcov": {
+        "line": 28,
+        "record": "DA"
+      },
+      "length": 56,
+      "line": 28,
+      "site": "statement-entry",
+      "src": "392:56:0",
+      "start": 392,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:29",
+      "kind": "line",
+      "lcov": {
+        "line": 29,
+        "record": "DA"
+      },
+      "length": 42,
+      "line": 29,
+      "site": "statement-entry",
+      "src": "458:42:0",
+      "start": 458,
+      "statement_type": "Return",
+      "trap_id": 4
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "400:17:0",
+      "id": "branch:2:require-fail",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 28,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 56,
+      "line": 28,
+      "outcome": false,
+      "require_arg_srcs": [
+        "400:17:0",
+        "419:28:0"
+      ],
+      "site": "require-branch",
+      "src": "392:56:0",
+      "start": 392,
+      "trap_id": 5
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "400:17:0",
+      "id": "branch:2:require-pass",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 1,
+        "line": 28,
+        "record": "BRDA"
+      },
+      "lcov_branch": 1,
+      "length": 56,
+      "line": 28,
+      "outcome": true,
+      "require_arg_srcs": [
+        "400:17:0",
+        "419:28:0"
+      ],
+      "site": "require-branch",
+      "src": "392:56:0",
+      "start": 392,
+      "trap_id": 6
+    }
+  ],
+  "totals": {
+    "all": 6,
+    "branch": 2,
+    "function": 1,
+    "line": 3
+  }
+}

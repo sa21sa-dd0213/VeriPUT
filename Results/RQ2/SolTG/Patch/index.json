@@ -1,0 +1,12 @@
+{
+  "dataset": "Patch",
+  "kill_statuses": [
+    "killed",
+    "killed-compile",
+    "mutant-compile_error",
+    "mutant-setup-failure",
+    "score-uncompilable-unanchored"
+  ],
+  "tool": "SolTG",
+  "trials": 1
+}

@@ -1,0 +1,92 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        39576994706503500572398301952318910997000681348723545733238918466983690071806
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "f2",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "f5",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        38145939046822249658628263824699601961787013096879616497700350983972853219310
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "f1",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        47650201010700592934408524855502257294965627109418622789350003551735639581597
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "f3",
+      "n": 5,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        47188269385157435867609374408004052198786705544041290161589284416187019126918
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "f4",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        5
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "f3",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "f1",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

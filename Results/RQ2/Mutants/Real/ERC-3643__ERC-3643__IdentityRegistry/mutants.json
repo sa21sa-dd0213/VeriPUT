@@ -1,0 +1,3887 @@
+{
+  "compile_failed": 88,
+  "compile_ok": 300,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 1081,
+      "function": "functionCall",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "functionCallWithValue(target, data, 0, \"Address: low-level call failed\")",
+      "replacement_expression": "functionCallWithValue(target, data, 0, errorMessage)",
+      "start_line": 1081
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1095,
+      "function": "functionCall",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "functionCallWithValue(target, data, 0, errorMessage)",
+      "replacement_expression": "functionCallWithValue(target, data, 0, \"Address: low-level call failed\")",
+      "start_line": 1095
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1110,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000003",
+      "operator": "ACM",
+      "original_expression": "functionCallWithValue(target, data, value, \"Address: low-level call with value failed\")",
+      "replacement_expression": "functionCallWithValue(target, data, 0, \"Address: low-level call failed\")",
+      "start_line": 1110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "_transferOwnership",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(this)",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 286,
+      "function": "_transferOwnership",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "_owner",
+      "replacement_expression": "address(0)",
+      "start_line": 286
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 287,
+      "function": "_transferOwnership",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 287
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 287,
+      "function": "_transferOwnership",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 287
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "_disableInitializers",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "_disableInitializers",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "_disableInitializers",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_checkOwner",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_checkOwner",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_checkOwner",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "transferOwnership",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 277
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 377,
+      "function": "addAgent",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 377
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "removeAgent",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "init",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": "\n            && ",
+      "replacement_expression": "\n            || ",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "init",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": "\n            && ",
+      "replacement_expression": "\n            || ",
+      "start_line": 802
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 802,
+      "function": "init",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 802
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "init",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "init",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 804
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "isVerified",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 899,
+      "function": "isVerified",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 899
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "isVerified",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "isVerified",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "isVerified",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 966,
+      "function": "contains",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 966
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1036,
+      "function": "isContract",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1036
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1036,
+      "function": "isContract",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1036
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "sendValue",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "sendValue",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "sendValue",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1125,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 1125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1125,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 1125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1125,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 1125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1193,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 1193
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_revert",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_revert",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1642,
+      "function": "has",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 1642
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "modifier:initializer",
+      "mutant_id": "m000076",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 95,
+      "function": "modifier:initializer",
+      "mutant_id": "m000077",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 95
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 121,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000078",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 121
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000079",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000080",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 886,
+      "function": "isVerified",
+      "mutant_id": "m000081",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 886
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 899,
+      "function": "isVerified",
+      "mutant_id": "m000082",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 899
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 919,
+      "function": "isVerified",
+      "mutant_id": "m000083",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 919
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 923,
+      "function": "isVerified",
+      "mutant_id": "m000084",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 923
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 927,
+      "function": "isVerified",
+      "mutant_id": "m000085",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 927
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 931,
+      "function": "isVerified",
+      "mutant_id": "m000086",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 931
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 967,
+      "function": "contains",
+      "mutant_id": "m000087",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 967
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 969,
+      "function": "contains",
+      "mutant_id": "m000088",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 969
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1626,
+      "function": "add",
+      "mutant_id": "m000089",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 1626
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1634,
+      "function": "remove",
+      "mutant_id": "m000090",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 1634
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "modifier:initializer",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "isTopLevelCall",
+      "replacement_expression": "true",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "modifier:initializer",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "isTopLevelCall",
+      "replacement_expression": "false",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "modifier:initializer",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "isTopLevelCall",
+      "replacement_expression": "true",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "modifier:initializer",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "isTopLevelCall",
+      "replacement_expression": "false",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "_disableInitializers",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "_initialized != type(uint8).max",
+      "replacement_expression": "true",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 146,
+      "function": "_disableInitializers",
+      "mutant_id": "m000096",
+      "operator": "CSC",
+      "original_expression": "_initialized != type(uint8).max",
+      "replacement_expression": "false",
+      "start_line": 146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000097",
+      "operator": "CSC",
+      "original_expression": "address(identity(_userAddress)) == address(0)",
+      "replacement_expression": "true",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000098",
+      "operator": "CSC",
+      "original_expression": "address(identity(_userAddress)) == address(0)",
+      "replacement_expression": "false",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "isVerified",
+      "mutant_id": "m000099",
+      "operator": "CSC",
+      "original_expression": "requiredClaimTopics.length == 0",
+      "replacement_expression": "true",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "isVerified",
+      "mutant_id": "m000100",
+      "operator": "CSC",
+      "original_expression": "requiredClaimTopics.length == 0",
+      "replacement_expression": "false",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 899,
+      "function": "isVerified",
+      "mutant_id": "m000101",
+      "operator": "CSC",
+      "original_expression": "trustedIssuers.length == 0",
+      "replacement_expression": "true",
+      "start_line": 899
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 899,
+      "function": "isVerified",
+      "mutant_id": "m000102",
+      "operator": "CSC",
+      "original_expression": "trustedIssuers.length == 0",
+      "replacement_expression": "false",
+      "start_line": 899
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "isVerified",
+      "mutant_id": "m000103",
+      "operator": "CSC",
+      "original_expression": "foundClaimTopic == requiredClaimTopics[claimTopic]",
+      "replacement_expression": "true",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 909,
+      "function": "isVerified",
+      "mutant_id": "m000104",
+      "operator": "CSC",
+      "original_expression": "foundClaimTopic == requiredClaimTopics[claimTopic]",
+      "replacement_expression": "false",
+      "start_line": 909
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 914,
+      "function": "isVerified",
+      "mutant_id": "m000105",
+      "operator": "CSC",
+      "original_expression": "_validity",
+      "replacement_expression": "true",
+      "start_line": 914
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 914,
+      "function": "isVerified",
+      "mutant_id": "m000106",
+      "operator": "CSC",
+      "original_expression": "_validity",
+      "replacement_expression": "false",
+      "start_line": 914
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000107",
+      "operator": "CSC",
+      "original_expression": "!_validity && j == (claimIds.length - 1)",
+      "replacement_expression": "true",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000108",
+      "operator": "CSC",
+      "original_expression": "!_validity && j == (claimIds.length - 1)",
+      "replacement_expression": "false",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000109",
+      "operator": "CSC",
+      "original_expression": "j == (claimIds.length - 1)",
+      "replacement_expression": "true",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000110",
+      "operator": "CSC",
+      "original_expression": "j == (claimIds.length - 1)",
+      "replacement_expression": "false",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000111",
+      "operator": "CSC",
+      "original_expression": "j == (claimIds.length - 1)",
+      "replacement_expression": "true",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000112",
+      "operator": "CSC",
+      "original_expression": "j == (claimIds.length - 1)",
+      "replacement_expression": "false",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 966,
+      "function": "contains",
+      "mutant_id": "m000113",
+      "operator": "CSC",
+      "original_expression": "address(identity(_userAddress)) == address(0)",
+      "replacement_expression": "true",
+      "start_line": 966
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 966,
+      "function": "contains",
+      "mutant_id": "m000114",
+      "operator": "CSC",
+      "original_expression": "address(identity(_userAddress)) == address(0)",
+      "replacement_expression": "false",
+      "start_line": 966
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1192,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000115",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "true",
+      "start_line": 1192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1192,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000116",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "false",
+      "start_line": 1192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1201,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000117",
+      "operator": "CSC",
+      "original_expression": "else {\n            _revert(returndata, errorMessage);\n        }",
+      "replacement_expression": "",
+      "start_line": 1199
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1193,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000118",
+      "operator": "CSC",
+      "original_expression": "returndata.length == 0",
+      "replacement_expression": "true",
+      "start_line": 1193
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1193,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000119",
+      "operator": "CSC",
+      "original_expression": "returndata.length == 0",
+      "replacement_expression": "false",
+      "start_line": 1193
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1215,
+      "function": "verifyCallResult",
+      "mutant_id": "m000120",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "true",
+      "start_line": 1215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1215,
+      "function": "verifyCallResult",
+      "mutant_id": "m000121",
+      "operator": "CSC",
+      "original_expression": "success",
+      "replacement_expression": "false",
+      "start_line": 1215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1219,
+      "function": "verifyCallResult",
+      "mutant_id": "m000122",
+      "operator": "CSC",
+      "original_expression": "else {\n            _revert(returndata, errorMessage);\n        }",
+      "replacement_expression": "",
+      "start_line": 1217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_revert",
+      "mutant_id": "m000123",
+      "operator": "CSC",
+      "original_expression": "returndata.length > 0",
+      "replacement_expression": "true",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_revert",
+      "mutant_id": "m000124",
+      "operator": "CSC",
+      "original_expression": "returndata.length > 0",
+      "replacement_expression": "false",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1233,
+      "function": "_revert",
+      "mutant_id": "m000125",
+      "operator": "CSC",
+      "original_expression": "else {\n            revert(errorMessage);\n        }",
+      "replacement_expression": "",
+      "start_line": 1231
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 884,
+      "function": "isVerified",
+      "mutant_id": "m000126",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory requiredClaimTopics",
+      "replacement_expression": "uint256[] storage requiredClaimTopics",
+      "start_line": 884
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 892,
+      "function": "isVerified",
+      "mutant_id": "m000127",
+      "operator": "DLR",
+      "original_expression": "bytes memory sig",
+      "replacement_expression": "bytes storage sig",
+      "start_line": 892
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 893,
+      "function": "isVerified",
+      "mutant_id": "m000128",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 893
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 896,
+      "function": "isVerified",
+      "mutant_id": "m000129",
+      "operator": "DLR",
+      "original_expression": "IClaimIssuer[] memory trustedIssuers",
+      "replacement_expression": "IClaimIssuer[] storage trustedIssuers",
+      "start_line": 896
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 901,
+      "function": "isVerified",
+      "mutant_id": "m000130",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory claimIds",
+      "replacement_expression": "bytes32[] storage claimIds",
+      "start_line": 901
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1080,
+      "function": "functionCall",
+      "mutant_id": "m000131",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1080
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1080,
+      "function": "functionCall",
+      "mutant_id": "m000132",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1080
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1092,
+      "function": "functionCall",
+      "mutant_id": "m000133",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1092
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1093,
+      "function": "functionCall",
+      "mutant_id": "m000134",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1093
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1094,
+      "function": "functionCall",
+      "mutant_id": "m000135",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1094
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1109,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000136",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1109,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000137",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1121,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000138",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1121
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1123,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000139",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1123
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1124,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000140",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1124
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1126,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000141",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1126
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1136,
+      "function": "functionStaticCall",
+      "mutant_id": "m000142",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1136
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1136,
+      "function": "functionStaticCall",
+      "mutant_id": "m000143",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1136
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1148,
+      "function": "functionStaticCall",
+      "mutant_id": "m000144",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1148
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1149,
+      "function": "functionStaticCall",
+      "mutant_id": "m000145",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1149
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1150,
+      "function": "functionStaticCall",
+      "mutant_id": "m000146",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1150
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1151,
+      "function": "functionStaticCall",
+      "mutant_id": "m000147",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1161,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000148",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1161
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1161,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000149",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1161
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1173,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000150",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1173
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1174,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000151",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1174
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1175,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000152",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1175
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1176,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000153",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1176
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1189,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000154",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1189
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1190,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000155",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1190
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1191,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000156",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1191
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1212,
+      "function": "verifyCallResult",
+      "mutant_id": "m000157",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1213,
+      "function": "verifyCallResult",
+      "mutant_id": "m000158",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1213
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1214,
+      "function": "verifyCallResult",
+      "mutant_id": "m000159",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 1214
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1222,
+      "function": "_revert",
+      "mutant_id": "m000160",
+      "operator": "DLR",
+      "original_expression": "bytes memory returndata",
+      "replacement_expression": "bytes storage returndata",
+      "start_line": 1222
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1222,
+      "function": "_revert",
+      "mutant_id": "m000161",
+      "operator": "DLR",
+      "original_expression": "string memory errorMessage",
+      "replacement_expression": "string storage errorMessage",
+      "start_line": 1222
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1336,
+      "function": "getClaimTopics",
+      "mutant_id": "m000162",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory",
+      "replacement_expression": "uint256[] storage",
+      "start_line": 1336
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1432,
+      "function": "getKey",
+      "mutant_id": "m000163",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory purposes",
+      "replacement_expression": "uint256[] storage purposes",
+      "start_line": 1432
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1437,
+      "function": "getKeyPurposes",
+      "mutant_id": "m000164",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory _purposes",
+      "replacement_expression": "uint256[] storage _purposes",
+      "start_line": 1437
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1442,
+      "function": "getKeysByPurpose",
+      "mutant_id": "m000165",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory keys",
+      "replacement_expression": "bytes32[] storage keys",
+      "start_line": 1442
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1538,
+      "function": "getClaim",
+      "mutant_id": "m000166",
+      "operator": "DLR",
+      "original_expression": "bytes memory signature",
+      "replacement_expression": "bytes storage signature",
+      "start_line": 1538
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1539,
+      "function": "getClaim",
+      "mutant_id": "m000167",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 1539
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1540,
+      "function": "getClaim",
+      "mutant_id": "m000168",
+      "operator": "DLR",
+      "original_expression": "string memory uri",
+      "replacement_expression": "string storage uri",
+      "start_line": 1540
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1545,
+      "function": "getClaimIdsByTopic",
+      "mutant_id": "m000169",
+      "operator": "DLR",
+      "original_expression": "bytes32[] memory claimIds",
+      "replacement_expression": "bytes32[] storage claimIds",
+      "start_line": 1545
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1624,
+      "function": "add",
+      "mutant_id": "m000170",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1624
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1632,
+      "function": "remove",
+      "mutant_id": "m000171",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1632
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1641,
+      "function": "has",
+      "mutant_id": "m000172",
+      "operator": "DLR",
+      "original_expression": "Role storage role",
+      "replacement_expression": "Role memory role",
+      "start_line": 1641
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1896,
+      "function": "linkedIdentityRegistries",
+      "mutant_id": "m000173",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 1896
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2037,
+      "function": "getTrustedIssuers",
+      "mutant_id": "m000174",
+      "operator": "DLR",
+      "original_expression": "IClaimIssuer[] memory",
+      "replacement_expression": "IClaimIssuer[] storage",
+      "start_line": 2037
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2044,
+      "function": "getTrustedIssuersForClaimTopic",
+      "mutant_id": "m000175",
+      "operator": "DLR",
+      "original_expression": "IClaimIssuer[] memory",
+      "replacement_expression": "IClaimIssuer[] storage",
+      "start_line": 2044
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 2059,
+      "function": "getTrustedIssuerClaimTopics",
+      "mutant_id": "m000176",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory",
+      "replacement_expression": "uint256[] storage",
+      "start_line": 2059
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "modifier:initializer",
+      "mutant_id": "m000177",
+      "operator": "EED",
+      "original_expression": "emit Initialized(1);",
+      "replacement_expression": "/* emit Initialized(1); */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000178",
+      "operator": "EED",
+      "original_expression": "emit Initialized(version);",
+      "replacement_expression": "/* emit Initialized(version); */",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 148,
+      "function": "_disableInitializers",
+      "mutant_id": "m000179",
+      "operator": "EED",
+      "original_expression": "emit Initialized(type(uint8).max);",
+      "replacement_expression": "/* emit Initialized(type(uint8).max); */",
+      "start_line": 148
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 288,
+      "function": "_transferOwnership",
+      "mutant_id": "m000180",
+      "operator": "EED",
+      "original_expression": "emit OwnershipTransferred(oldOwner, newOwner);",
+      "replacement_expression": "/* emit OwnershipTransferred(oldOwner, newOwner); */",
+      "start_line": 288
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 379,
+      "function": "addAgent",
+      "mutant_id": "m000181",
+      "operator": "EED",
+      "original_expression": "emit AgentAdded(_agent);",
+      "replacement_expression": "/* emit AgentAdded(_agent); */",
+      "start_line": 379
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "removeAgent",
+      "mutant_id": "m000182",
+      "operator": "EED",
+      "original_expression": "emit AgentRemoved(_agent);",
+      "replacement_expression": "/* emit AgentRemoved(_agent); */",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 809,
+      "function": "init",
+      "mutant_id": "m000183",
+      "operator": "EED",
+      "original_expression": "emit ClaimTopicsRegistrySet(_claimTopicsRegistry);",
+      "replacement_expression": "/* emit ClaimTopicsRegistrySet(_claimTopicsRegistry); */",
+      "start_line": 809
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 810,
+      "function": "init",
+      "mutant_id": "m000184",
+      "operator": "EED",
+      "original_expression": "emit TrustedIssuersRegistrySet(_trustedIssuersRegistry);",
+      "replacement_expression": "/* emit TrustedIssuersRegistrySet(_trustedIssuersRegistry); */",
+      "start_line": 810
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 811,
+      "function": "init",
+      "mutant_id": "m000185",
+      "operator": "EED",
+      "original_expression": "emit IdentityStorageSet(_identityStorage);",
+      "replacement_expression": "/* emit IdentityStorageSet(_identityStorage); */",
+      "start_line": 811
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 834,
+      "function": "updateIdentity",
+      "mutant_id": "m000186",
+      "operator": "EED",
+      "original_expression": "emit IdentityUpdated(oldIdentity, _identity);",
+      "replacement_expression": "/* emit IdentityUpdated(oldIdentity, _identity); */",
+      "start_line": 834
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 842,
+      "function": "updateCountry",
+      "mutant_id": "m000187",
+      "operator": "EED",
+      "original_expression": "emit CountryUpdated(_userAddress, _country);",
+      "replacement_expression": "/* emit CountryUpdated(_userAddress, _country); */",
+      "start_line": 842
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 851,
+      "function": "deleteIdentity",
+      "mutant_id": "m000188",
+      "operator": "EED",
+      "original_expression": "emit IdentityRemoved(_userAddress, oldIdentity);",
+      "replacement_expression": "/* emit IdentityRemoved(_userAddress, oldIdentity); */",
+      "start_line": 851
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 859,
+      "function": "setIdentityRegistryStorage",
+      "mutant_id": "m000189",
+      "operator": "EED",
+      "original_expression": "emit IdentityStorageSet(_identityRegistryStorage);",
+      "replacement_expression": "/* emit IdentityStorageSet(_identityRegistryStorage); */",
+      "start_line": 859
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 867,
+      "function": "setClaimTopicsRegistry",
+      "mutant_id": "m000190",
+      "operator": "EED",
+      "original_expression": "emit ClaimTopicsRegistrySet(_claimTopicsRegistry);",
+      "replacement_expression": "/* emit ClaimTopicsRegistrySet(_claimTopicsRegistry); */",
+      "start_line": 867
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 875,
+      "function": "setTrustedIssuersRegistry",
+      "mutant_id": "m000191",
+      "operator": "EED",
+      "original_expression": "emit TrustedIssuersRegistrySet(_trustedIssuersRegistry);",
+      "replacement_expression": "/* emit TrustedIssuersRegistrySet(_trustedIssuersRegistry); */",
+      "start_line": 875
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 981,
+      "function": "registerIdentity",
+      "mutant_id": "m000192",
+      "operator": "EED",
+      "original_expression": "emit IdentityRegistered(_userAddress, _identity);",
+      "replacement_expression": "/* emit IdentityRegistered(_userAddress, _identity); */",
+      "start_line": 981
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "modifier:initializer",
+      "mutant_id": "m000193",
+      "operator": "EHD",
+      "original_expression": "require(\n            (isTopLevelCall && _initialized < 1) || (!AddressUpgradeable.isContract(address(this)) && _initialized == 1),\n            \"Initializable: contract is already initialized\"\n        );",
+      "replacement_expression": "/* require(\n            (isTopLevelCall && _initialized < 1) || (!AddressUpgradeable.isContract(address(this)) && _initialized == 1),\n            \"Initializable: contract is already initialized\"\n        ); */",
+      "start_line": 85
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000194",
+      "operator": "EHD",
+      "original_expression": "require(!_initializing && _initialized < version, \"Initializable: contract is already initialized\");",
+      "replacement_expression": "/* require(!_initializing && _initialized < version, \"Initializable: contract is already initialized\"); */",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 132,
+      "function": "modifier:onlyInitializing",
+      "mutant_id": "m000195",
+      "operator": "EHD",
+      "original_expression": "require(_initializing, \"Initializable: contract is not initializing\");",
+      "replacement_expression": "/* require(_initializing, \"Initializable: contract is not initializing\"); */",
+      "start_line": 132
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "_disableInitializers",
+      "mutant_id": "m000196",
+      "operator": "EHD",
+      "original_expression": "require(!_initializing, \"Initializable: contract is initializing\");",
+      "replacement_expression": "/* require(!_initializing, \"Initializable: contract is initializing\"); */",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 258,
+      "function": "_checkOwner",
+      "mutant_id": "m000197",
+      "operator": "EHD",
+      "original_expression": "require(owner() == _msgSender(), \"Ownable: caller is not the owner\");",
+      "replacement_expression": "/* require(owner() == _msgSender(), \"Ownable: caller is not the owner\"); */",
+      "start_line": 258
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "transferOwnership",
+      "mutant_id": "m000198",
+      "operator": "EHD",
+      "original_expression": "require(newOwner != address(0), \"Ownable: new owner is the zero address\");",
+      "replacement_expression": "/* require(newOwner != address(0), \"Ownable: new owner is the zero address\"); */",
+      "start_line": 277
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 372,
+      "function": "modifier:onlyAgent",
+      "mutant_id": "m000199",
+      "operator": "EHD",
+      "original_expression": "require(isAgent(msg.sender), \"AgentRole: caller does not have the Agent role\");",
+      "replacement_expression": "/* require(isAgent(msg.sender), \"AgentRole: caller does not have the Agent role\"); */",
+      "start_line": 372
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 377,
+      "function": "addAgent",
+      "mutant_id": "m000200",
+      "operator": "EHD",
+      "original_expression": "require(_agent != address(0), \"invalid argument - zero address\");",
+      "replacement_expression": "/* require(_agent != address(0), \"invalid argument - zero address\"); */",
+      "start_line": 377
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "removeAgent",
+      "mutant_id": "m000201",
+      "operator": "EHD",
+      "original_expression": "require(_agent != address(0), \"invalid argument - zero address\");",
+      "replacement_expression": "/* require(_agent != address(0), \"invalid argument - zero address\"); */",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 805,
+      "function": "init",
+      "mutant_id": "m000202",
+      "operator": "EHD",
+      "original_expression": "require(\n            _trustedIssuersRegistry != address(0)\n            && _claimTopicsRegistry != address(0)\n            && _identityStorage != address(0)\n        , \"invalid argument - zero address\");",
+      "replacement_expression": "/* require(\n            _trustedIssuersRegistry != address(0)\n            && _claimTopicsRegistry != address(0)\n            && _identityStorage != address(0)\n        , \"invalid argument - zero address\"); */",
+      "start_line": 801
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1056,
+      "function": "sendValue",
+      "mutant_id": "m000203",
+      "operator": "EHD",
+      "original_expression": "require(address(this).balance >= amount, \"Address: insufficient balance\");",
+      "replacement_expression": "/* require(address(this).balance >= amount, \"Address: insufficient balance\"); */",
+      "start_line": 1056
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1059,
+      "function": "sendValue",
+      "mutant_id": "m000204",
+      "operator": "EHD",
+      "original_expression": "require(success, \"Address: unable to send value, recipient may have reverted\");",
+      "replacement_expression": "/* require(success, \"Address: unable to send value, recipient may have reverted\"); */",
+      "start_line": 1059
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1125,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000205",
+      "operator": "EHD",
+      "original_expression": "require(address(this).balance >= value, \"Address: insufficient balance for call\");",
+      "replacement_expression": "/* require(address(this).balance >= value, \"Address: insufficient balance for call\"); */",
+      "start_line": 1125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1196,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000206",
+      "operator": "EHD",
+      "original_expression": "require(isContract(target), \"Address: call to non-contract\");",
+      "replacement_expression": "/* require(isContract(target), \"Address: call to non-contract\"); */",
+      "start_line": 1196
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1232,
+      "function": "_revert",
+      "mutant_id": "m000207",
+      "operator": "EHD",
+      "original_expression": "revert(errorMessage);",
+      "replacement_expression": "/* revert(errorMessage); */",
+      "start_line": 1232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1625,
+      "function": "add",
+      "mutant_id": "m000208",
+      "operator": "EHD",
+      "original_expression": "require(!has(role, account), \"Roles: account already has role\");",
+      "replacement_expression": "/* require(!has(role, account), \"Roles: account already has role\"); */",
+      "start_line": 1625
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1633,
+      "function": "remove",
+      "mutant_id": "m000209",
+      "operator": "EHD",
+      "original_expression": "require(has(role, account), \"Roles: account does not have role\");",
+      "replacement_expression": "/* require(has(role, account), \"Roles: account does not have role\"); */",
+      "start_line": 1633
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1642,
+      "function": "has",
+      "mutant_id": "m000210",
+      "operator": "EHD",
+      "original_expression": "require(account != address(0), \"Roles: account is the zero address\");",
+      "replacement_expression": "/* require(account != address(0), \"Roles: account is the zero address\"); */",
+      "start_line": 1642
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1058,
+      "function": "sendValue",
+      "mutant_id": "m000211",
+      "operator": "ETR",
+      "original_expression": "recipient.call{value: amount}(\"\")",
+      "replacement_expression": "recipient.delegatecall(\"\")",
+      "start_line": 1058
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1058,
+      "function": "sendValue",
+      "mutant_id": "m000212",
+      "operator": "ETR",
+      "original_expression": "recipient.call{value: amount}(\"\")",
+      "replacement_expression": "recipient.staticcall(\"\")",
+      "start_line": 1058
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1126,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000213",
+      "operator": "ETR",
+      "original_expression": "target.call{value: value}(data)",
+      "replacement_expression": "target.delegatecall(data)",
+      "start_line": 1126
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1126,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000214",
+      "operator": "ETR",
+      "original_expression": "target.call{value: value}(data)",
+      "replacement_expression": "target.staticcall(data)",
+      "start_line": 1126
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "__Ownable_init",
+      "mutant_id": "m000215",
+      "operator": "FCD",
+      "original_expression": "__Ownable_init_unchained();",
+      "replacement_expression": "/*__Ownable_init_unchained();*/",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 236,
+      "function": "__Ownable_init_unchained",
+      "mutant_id": "m000216",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(_msgSender());",
+      "replacement_expression": "/*_transferOwnership(_msgSender());*/",
+      "start_line": 236
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 236,
+      "function": "__Ownable_init_unchained",
+      "mutant_id": "m000217",
+      "operator": "FCD",
+      "original_expression": "_msgSender())",
+      "replacement_expression": "/*_msgSender())*/",
+      "start_line": 236
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "modifier:onlyOwner",
+      "mutant_id": "m000218",
+      "operator": "FCD",
+      "original_expression": "_checkOwner();",
+      "replacement_expression": "/*_checkOwner();*/",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "renounceOwnership",
+      "mutant_id": "m000219",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(address(0));",
+      "replacement_expression": "/*_transferOwnership(address(0));*/",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 278,
+      "function": "transferOwnership",
+      "mutant_id": "m000220",
+      "operator": "FCD",
+      "original_expression": "_transferOwnership(newOwner);",
+      "replacement_expression": "/*_transferOwnership(newOwner);*/",
+      "start_line": 278
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 378,
+      "function": "addAgent",
+      "mutant_id": "m000221",
+      "operator": "FCD",
+      "original_expression": "_agents.add(_agent);",
+      "replacement_expression": "/*_agents.add(_agent);*/",
+      "start_line": 378
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 384,
+      "function": "removeAgent",
+      "mutant_id": "m000222",
+      "operator": "FCD",
+      "original_expression": "_agents.remove(_agent);",
+      "replacement_expression": "/*_agents.remove(_agent);*/",
+      "start_line": 384
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 812,
+      "function": "init",
+      "mutant_id": "m000223",
+      "operator": "FCD",
+      "original_expression": "__Ownable_init();",
+      "replacement_expression": "/*__Ownable_init();*/",
+      "start_line": 812
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 824,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000224",
+      "operator": "FCD",
+      "original_expression": "registerIdentity(_userAddresses[i], _identities[i], _countries[i]);",
+      "replacement_expression": "/*registerIdentity(_userAddresses[i], _identities[i], _countries[i]);*/",
+      "start_line": 824
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 833,
+      "function": "updateIdentity",
+      "mutant_id": "m000225",
+      "operator": "FCD",
+      "original_expression": "_tokenIdentityStorage.modifyStoredIdentity(_userAddress, _identity);",
+      "replacement_expression": "/*_tokenIdentityStorage.modifyStoredIdentity(_userAddress, _identity);*/",
+      "start_line": 833
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 841,
+      "function": "updateCountry",
+      "mutant_id": "m000226",
+      "operator": "FCD",
+      "original_expression": "_tokenIdentityStorage.modifyStoredInvestorCountry(_userAddress, _country);",
+      "replacement_expression": "/*_tokenIdentityStorage.modifyStoredInvestorCountry(_userAddress, _country);*/",
+      "start_line": 841
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 850,
+      "function": "deleteIdentity",
+      "mutant_id": "m000227",
+      "operator": "FCD",
+      "original_expression": "_tokenIdentityStorage.removeIdentityFromStorage(_userAddress);",
+      "replacement_expression": "/*_tokenIdentityStorage.removeIdentityFromStorage(_userAddress);*/",
+      "start_line": 850
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 911,
+      "function": "isVerified",
+      "mutant_id": "m000228",
+      "operator": "FCD",
+      "original_expression": "IClaimIssuer(issuer).isClaimValid(identity(_userAddress), requiredClaimTopics[claimTopic], sig,\n                        data) ",
+      "replacement_expression": "/*IClaimIssuer(issuer).isClaimValid(identity(_userAddress), requiredClaimTopics[claimTopic], sig,\n                        data) */",
+      "start_line": 910
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 910,
+      "function": "isVerified",
+      "mutant_id": "m000229",
+      "operator": "FCD",
+      "original_expression": "IClaimIssuer(issuer).",
+      "replacement_expression": "/*IClaimIssuer(issuer).*/",
+      "start_line": 910
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 980,
+      "function": "registerIdentity",
+      "mutant_id": "m000230",
+      "operator": "FCD",
+      "original_expression": "_tokenIdentityStorage.addIdentityToStorage(_userAddress, _identity, _country);",
+      "replacement_expression": "/*_tokenIdentityStorage.addIdentityToStorage(_userAddress, _identity, _country);*/",
+      "start_line": 980
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1200,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000231",
+      "operator": "FCD",
+      "original_expression": "_revert(returndata, errorMessage);",
+      "replacement_expression": "/*_revert(returndata, errorMessage);*/",
+      "start_line": 1200
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1218,
+      "function": "verifyCallResult",
+      "mutant_id": "m000232",
+      "operator": "FCD",
+      "original_expression": "_revert(returndata, errorMessage);",
+      "replacement_expression": "/*_revert(returndata, errorMessage);*/",
+      "start_line": 1218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000233",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000234",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000235",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000236",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "modifier:initializer",
+      "mutant_id": "m000237",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "modifier:initializer",
+      "mutant_id": "m000238",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "modifier:initializer",
+      "mutant_id": "m000239",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "modifier:initializer",
+      "mutant_id": "m000240",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 196,
+      "function": "_contextSuffixLength",
+      "mutant_id": "m000241",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 196
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "stateVariable",
+      "mutant_id": "m000242",
+      "operator": "ILR",
+      "original_expression": "50",
+      "replacement_expression": "49",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 204,
+      "function": "stateVariable",
+      "mutant_id": "m000243",
+      "operator": "ILR",
+      "original_expression": "50",
+      "replacement_expression": "51",
+      "start_line": 204
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "renounceOwnership",
+      "mutant_id": "m000244",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 277,
+      "function": "transferOwnership",
+      "mutant_id": "m000245",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 277
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "stateVariable",
+      "mutant_id": "m000246",
+      "operator": "ILR",
+      "original_expression": "49",
+      "replacement_expression": "48",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 296,
+      "function": "stateVariable",
+      "mutant_id": "m000247",
+      "operator": "ILR",
+      "original_expression": "49",
+      "replacement_expression": "50",
+      "start_line": 296
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 377,
+      "function": "addAgent",
+      "mutant_id": "m000248",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 377
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 383,
+      "function": "removeAgent",
+      "mutant_id": "m000249",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 383
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 719,
+      "function": "stateVariable",
+      "mutant_id": "m000250",
+      "operator": "ILR",
+      "original_expression": "49",
+      "replacement_expression": "48",
+      "start_line": 719
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 719,
+      "function": "stateVariable",
+      "mutant_id": "m000251",
+      "operator": "ILR",
+      "original_expression": "49",
+      "replacement_expression": "50",
+      "start_line": 719
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 802,
+      "function": "init",
+      "mutant_id": "m000252",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 802
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 803,
+      "function": "init",
+      "mutant_id": "m000253",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 803
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 804,
+      "function": "init",
+      "mutant_id": "m000254",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 804
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000255",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000256",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 883
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 885,
+      "function": "isVerified",
+      "mutant_id": "m000257",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 885
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000258",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 899,
+      "function": "isVerified",
+      "mutant_id": "m000259",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 899
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000260",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000261",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000262",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000263",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000264",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 922,
+      "function": "isVerified",
+      "mutant_id": "m000265",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 922
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000266",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 926,
+      "function": "isVerified",
+      "mutant_id": "m000267",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 926
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 966,
+      "function": "contains",
+      "mutant_id": "m000268",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 966
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1036,
+      "function": "isContract",
+      "mutant_id": "m000269",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1036
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1081,
+      "function": "functionCall",
+      "mutant_id": "m000270",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1081
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1095,
+      "function": "functionCall",
+      "mutant_id": "m000271",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1095
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1193,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000272",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1193
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1224,
+      "function": "_revert",
+      "mutant_id": "m000273",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1224
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1642,
+      "function": "has",
+      "mutant_id": "m000274",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 1642
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000275",
+      "operator": "LSC",
+      "original_expression": "i < _userAddresses.length",
+      "replacement_expression": "false",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000276",
+      "operator": "LSC",
+      "original_expression": "claimTopic < requiredClaimTopics.length",
+      "replacement_expression": "false",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000277",
+      "operator": "LSC",
+      "original_expression": "i < trustedIssuers.length",
+      "replacement_expression": "false",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000278",
+      "operator": "LSC",
+      "original_expression": "j < claimIds.length",
+      "replacement_expression": "false",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 903,
+      "function": "isVerified",
+      "mutant_id": "m000279",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 903
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 182,
+      "function": "__Context_init",
+      "mutant_id": "m000280",
+      "operator": "MOD",
+      "original_expression": "function __Context_init() internal onlyInitializing ",
+      "replacement_expression": "function __Context_init() internal  ",
+      "start_line": 182
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 185,
+      "function": "__Context_init_unchained",
+      "mutant_id": "m000281",
+      "operator": "MOD",
+      "original_expression": "function __Context_init_unchained() internal onlyInitializing ",
+      "replacement_expression": "function __Context_init_unchained() internal  ",
+      "start_line": 185
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "__Ownable_init",
+      "mutant_id": "m000282",
+      "operator": "MOD",
+      "original_expression": "function __Ownable_init() internal onlyInitializing ",
+      "replacement_expression": "function __Ownable_init() internal  ",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 235,
+      "function": "__Ownable_init_unchained",
+      "mutant_id": "m000283",
+      "operator": "MOD",
+      "original_expression": "function __Ownable_init_unchained() internal onlyInitializing ",
+      "replacement_expression": "function __Ownable_init_unchained() internal  ",
+      "start_line": 235
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 268,
+      "function": "renounceOwnership",
+      "mutant_id": "m000284",
+      "operator": "MOD",
+      "original_expression": "function renounceOwnership() public virtual onlyOwner ",
+      "replacement_expression": "function renounceOwnership() public virtual  ",
+      "start_line": 268
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 276,
+      "function": "transferOwnership",
+      "mutant_id": "m000285",
+      "operator": "MOD",
+      "original_expression": "function transferOwnership(address newOwner) public virtual onlyOwner ",
+      "replacement_expression": "function transferOwnership(address newOwner) public virtual  ",
+      "start_line": 276
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 376,
+      "function": "addAgent",
+      "mutant_id": "m000286",
+      "operator": "MOD",
+      "original_expression": "function addAgent(address _agent) public onlyOwner ",
+      "replacement_expression": "function addAgent(address _agent) public  ",
+      "start_line": 376
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 382,
+      "function": "removeAgent",
+      "mutant_id": "m000287",
+      "operator": "MOD",
+      "original_expression": "function removeAgent(address _agent) public onlyOwner ",
+      "replacement_expression": "function removeAgent(address _agent) public  ",
+      "start_line": 382
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 800,
+      "function": "init",
+      "mutant_id": "m000288",
+      "operator": "MOD",
+      "original_expression": "function init(\n        address _trustedIssuersRegistry,\n        address _claimTopicsRegistry,\n        address _identityStorage\n    ) external initializer ",
+      "replacement_expression": "function init(\n        address _trustedIssuersRegistry,\n        address _claimTopicsRegistry,\n        address _identityStorage\n    ) external  ",
+      "start_line": 796
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 831,
+      "function": "updateIdentity",
+      "mutant_id": "m000289",
+      "operator": "MOD",
+      "original_expression": "function updateIdentity(address _userAddress, IIdentity _identity) external override onlyAgent ",
+      "replacement_expression": "function updateIdentity(address _userAddress, IIdentity _identity) external override  ",
+      "start_line": 831
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 840,
+      "function": "updateCountry",
+      "mutant_id": "m000290",
+      "operator": "MOD",
+      "original_expression": "function updateCountry(address _userAddress, uint16 _country) external override onlyAgent ",
+      "replacement_expression": "function updateCountry(address _userAddress, uint16 _country) external override  ",
+      "start_line": 840
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 848,
+      "function": "deleteIdentity",
+      "mutant_id": "m000291",
+      "operator": "MOD",
+      "original_expression": "function deleteIdentity(address _userAddress) external override onlyAgent ",
+      "replacement_expression": "function deleteIdentity(address _userAddress) external override  ",
+      "start_line": 848
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 857,
+      "function": "setIdentityRegistryStorage",
+      "mutant_id": "m000292",
+      "operator": "MOD",
+      "original_expression": "function setIdentityRegistryStorage(address _identityRegistryStorage) external override onlyOwner ",
+      "replacement_expression": "function setIdentityRegistryStorage(address _identityRegistryStorage) external override  ",
+      "start_line": 857
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 865,
+      "function": "setClaimTopicsRegistry",
+      "mutant_id": "m000293",
+      "operator": "MOD",
+      "original_expression": "function setClaimTopicsRegistry(address _claimTopicsRegistry) external override onlyOwner ",
+      "replacement_expression": "function setClaimTopicsRegistry(address _claimTopicsRegistry) external override  ",
+      "start_line": 865
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 873,
+      "function": "setTrustedIssuersRegistry",
+      "mutant_id": "m000294",
+      "operator": "MOD",
+      "original_expression": "function setTrustedIssuersRegistry(address _trustedIssuersRegistry) external override onlyOwner ",
+      "replacement_expression": "function setTrustedIssuersRegistry(address _trustedIssuersRegistry) external override  ",
+      "start_line": 873
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 979,
+      "function": "registerIdentity",
+      "mutant_id": "m000295",
+      "operator": "MOD",
+      "original_expression": "function registerIdentity(\n        address _userAddress,\n        IIdentity _identity,\n        uint16 _country\n    ) public override onlyAgent ",
+      "replacement_expression": "function registerIdentity(\n        address _userAddress,\n        IIdentity _identity,\n        uint16 _country\n    ) public override  ",
+      "start_line": 975
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 523,
+      "function": "registerIdentity",
+      "mutant_id": "m000296",
+      "operator": "OLFD",
+      "original_expression": "function registerIdentity(\n        address _userAddress,\n        IIdentity _identity,\n        uint16 _country\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 519
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 532,
+      "function": "deleteIdentity",
+      "mutant_id": "m000297",
+      "operator": "OLFD",
+      "original_expression": "function deleteIdentity(address _userAddress) external;",
+      "replacement_expression": "",
+      "start_line": 532
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 540,
+      "function": "setIdentityRegistryStorage",
+      "mutant_id": "m000298",
+      "operator": "OLFD",
+      "original_expression": "function setIdentityRegistryStorage(address _identityRegistryStorage) external;",
+      "replacement_expression": "",
+      "start_line": 540
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 548,
+      "function": "setClaimTopicsRegistry",
+      "mutant_id": "m000299",
+      "operator": "OLFD",
+      "original_expression": "function setClaimTopicsRegistry(address _claimTopicsRegistry) external;",
+      "replacement_expression": "",
+      "start_line": 548
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 556,
+      "function": "setTrustedIssuersRegistry",
+      "mutant_id": "m000300",
+      "operator": "OLFD",
+      "original_expression": "function setTrustedIssuersRegistry(address _trustedIssuersRegistry) external;",
+      "replacement_expression": "",
+      "start_line": 556
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 566,
+      "function": "updateCountry",
+      "mutant_id": "m000301",
+      "operator": "OLFD",
+      "original_expression": "function updateCountry(address _userAddress, uint16 _country) external;",
+      "replacement_expression": "",
+      "start_line": 566
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 577,
+      "function": "updateIdentity",
+      "mutant_id": "m000302",
+      "operator": "OLFD",
+      "original_expression": "function updateIdentity(address _userAddress, IIdentity _identity) external;",
+      "replacement_expression": "",
+      "start_line": 577
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 594,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000303",
+      "operator": "OLFD",
+      "original_expression": "function batchRegisterIdentity(\n        address[] calldata _userAddresses,\n        IIdentity[] calldata _identities,\n        uint16[] calldata _countries\n    ) external;",
+      "replacement_expression": "",
+      "start_line": 590
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 602,
+      "function": "contains",
+      "mutant_id": "m000304",
+      "operator": "OLFD",
+      "original_expression": "function contains(address _userAddress) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 602
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 611,
+      "function": "isVerified",
+      "mutant_id": "m000305",
+      "operator": "OLFD",
+      "original_expression": "function isVerified(address _userAddress) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 611
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 617,
+      "function": "identity",
+      "mutant_id": "m000306",
+      "operator": "OLFD",
+      "original_expression": "function identity(address _userAddress) external view returns (IIdentity);",
+      "replacement_expression": "",
+      "start_line": 617
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 623,
+      "function": "investorCountry",
+      "mutant_id": "m000307",
+      "operator": "OLFD",
+      "original_expression": "function investorCountry(address _userAddress) external view returns (uint16);",
+      "replacement_expression": "",
+      "start_line": 623
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 628,
+      "function": "identityStorage",
+      "mutant_id": "m000308",
+      "operator": "OLFD",
+      "original_expression": "function identityStorage() external view returns (IIdentityRegistryStorage);",
+      "replacement_expression": "",
+      "start_line": 628
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 633,
+      "function": "issuersRegistry",
+      "mutant_id": "m000309",
+      "operator": "OLFD",
+      "original_expression": "function issuersRegistry() external view returns (ITrustedIssuersRegistry);",
+      "replacement_expression": "",
+      "start_line": 633
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 638,
+      "function": "topicsRegistry",
+      "mutant_id": "m000310",
+      "operator": "OLFD",
+      "original_expression": "function topicsRegistry() external view returns (IClaimTopicsRegistry);",
+      "replacement_expression": "",
+      "start_line": 638
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1082,
+      "function": "functionCall",
+      "mutant_id": "m000311",
+      "operator": "OLFD",
+      "original_expression": "function functionCall(address target, bytes memory data) internal returns (bytes memory) {\n        return functionCallWithValue(target, data, 0, \"Address: low-level call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 1080
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1096,
+      "function": "functionCall",
+      "mutant_id": "m000312",
+      "operator": "OLFD",
+      "original_expression": "function functionCall(\n        address target,\n        bytes memory data,\n        string memory errorMessage\n    ) internal returns (bytes memory) {\n        return functionCallWithValue(target, data, 0, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 1090
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1111,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000313",
+      "operator": "OLFD",
+      "original_expression": "function functionCallWithValue(address target, bytes memory data, uint256 value) internal returns (bytes memory) {\n        return functionCallWithValue(target, data, value, \"Address: low-level call with value failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 1109
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1128,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000314",
+      "operator": "OLFD",
+      "original_expression": "function functionCallWithValue(\n        address target,\n        bytes memory data,\n        uint256 value,\n        string memory errorMessage\n    ) internal returns (bytes memory) {\n        require(address(this).balance >= value, \"Address: insufficient balance for call\");\n        (bool success, bytes memory returndata) = target.call{value: value}(data);\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 1119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1138,
+      "function": "functionStaticCall",
+      "mutant_id": "m000315",
+      "operator": "OLFD",
+      "original_expression": "function functionStaticCall(address target, bytes memory data) internal view returns (bytes memory) {\n        return functionStaticCall(target, data, \"Address: low-level static call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 1136
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1153,
+      "function": "functionStaticCall",
+      "mutant_id": "m000316",
+      "operator": "OLFD",
+      "original_expression": "function functionStaticCall(\n        address target,\n        bytes memory data,\n        string memory errorMessage\n    ) internal view returns (bytes memory) {\n        (bool success, bytes memory returndata) = target.staticcall(data);\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 1146
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1163,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000317",
+      "operator": "OLFD",
+      "original_expression": "function functionDelegateCall(address target, bytes memory data) internal returns (bytes memory) {\n        return functionDelegateCall(target, data, \"Address: low-level delegate call failed\");\n    }",
+      "replacement_expression": "",
+      "start_line": 1161
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 1178,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000318",
+      "operator": "OLFD",
+      "original_expression": "function functionDelegateCall(\n        address target,\n        bytes memory data,\n        string memory errorMessage\n    ) internal returns (bytes memory) {\n        (bool success, bytes memory returndata) = target.delegatecall(data);\n        return verifyCallResultFromTarget(target, success, returndata, errorMessage);\n    }",
+      "replacement_expression": "",
+      "start_line": 1171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1664,
+      "function": "isClaimValid",
+      "mutant_id": "m000319",
+      "operator": "OLFD",
+      "original_expression": "function isClaimValid(\n        IIdentity _identity,\n        uint256 claimTopic,\n        bytes calldata sig,\n        bytes calldata data)\n    external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 1659
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1713,
+      "function": "isClaimValid",
+      "mutant_id": "m000320",
+      "operator": "OLFD",
+      "original_expression": "function isClaimValid(\n        IIdentity _identity,\n        uint256 claimTopic,\n        bytes calldata sig,\n        bytes calldata data)\n    external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 1708
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 826,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000321",
+      "operator": "ORFD",
+      "original_expression": "function batchRegisterIdentity(\n        address[] calldata _userAddresses,\n        IIdentity[] calldata _identities,\n        uint16[] calldata _countries\n    ) external override {\n        for (uint256 i = 0; i < _userAddresses.length; i++) {\n            registerIdentity(_userAddresses[i], _identities[i], _countries[i]);\n        }\n    }",
+      "replacement_expression": "",
+      "start_line": 818
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 835,
+      "function": "updateIdentity",
+      "mutant_id": "m000322",
+      "operator": "ORFD",
+      "original_expression": "function updateIdentity(address _userAddress, IIdentity _identity) external override onlyAgent {\n        IIdentity oldIdentity = identity(_userAddress);\n        _tokenIdentityStorage.modifyStoredIdentity(_userAddress, _identity);\n        emit IdentityUpdated(oldIdentity, _identity);\n    }",
+      "replacement_expression": "",
+      "start_line": 831
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 843,
+      "function": "updateCountry",
+      "mutant_id": "m000323",
+      "operator": "ORFD",
+      "original_expression": "function updateCountry(address _userAddress, uint16 _country) external override onlyAgent {\n        _tokenIdentityStorage.modifyStoredInvestorCountry(_userAddress, _country);\n        emit CountryUpdated(_userAddress, _country);\n    }",
+      "replacement_expression": "",
+      "start_line": 840
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 852,
+      "function": "deleteIdentity",
+      "mutant_id": "m000324",
+      "operator": "ORFD",
+      "original_expression": "function deleteIdentity(address _userAddress) external override onlyAgent {\n        IIdentity oldIdentity = identity(_userAddress);\n        _tokenIdentityStorage.removeIdentityFromStorage(_userAddress);\n        emit IdentityRemoved(_userAddress, oldIdentity);\n    }",
+      "replacement_expression": "",
+      "start_line": 848
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 860,
+      "function": "setIdentityRegistryStorage",
+      "mutant_id": "m000325",
+      "operator": "ORFD",
+      "original_expression": "function setIdentityRegistryStorage(address _identityRegistryStorage) external override onlyOwner {\n        _tokenIdentityStorage = IIdentityRegistryStorage(_identityRegistryStorage);\n        emit IdentityStorageSet(_identityRegistryStorage);\n    }",
+      "replacement_expression": "",
+      "start_line": 857
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 868,
+      "function": "setClaimTopicsRegistry",
+      "mutant_id": "m000326",
+      "operator": "ORFD",
+      "original_expression": "function setClaimTopicsRegistry(address _claimTopicsRegistry) external override onlyOwner {\n        _tokenTopicsRegistry = IClaimTopicsRegistry(_claimTopicsRegistry);\n        emit ClaimTopicsRegistrySet(_claimTopicsRegistry);\n    }",
+      "replacement_expression": "",
+      "start_line": 865
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 876,
+      "function": "setTrustedIssuersRegistry",
+      "mutant_id": "m000327",
+      "operator": "ORFD",
+      "original_expression": "function setTrustedIssuersRegistry(address _trustedIssuersRegistry) external override onlyOwner {\n        _tokenIssuersRegistry = ITrustedIssuersRegistry(_trustedIssuersRegistry);\n        emit TrustedIssuersRegistrySet(_trustedIssuersRegistry);\n    }",
+      "replacement_expression": "",
+      "start_line": 873
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 932,
+      "function": "isVerified",
+      "mutant_id": "m000328",
+      "operator": "ORFD",
+      "original_expression": "function isVerified(address _userAddress) external view override returns (bool) {\n        if (address(identity(_userAddress)) == address(0)) {return false;}\n        uint256[] memory requiredClaimTopics = _tokenTopicsRegistry.getClaimTopics();\n        if (requiredClaimTopics.length == 0) {\n            return true;\n        }\n\n        uint256 foundClaimTopic;\n        uint256 scheme;\n        address issuer;\n        bytes memory sig;\n        bytes memory data;\n        uint256 claimTopic;\n        for (claimTopic = 0; claimTopic < requiredClaimTopics.length; claimTopic++) {\n            IClaimIssuer[] memory trustedIssuers =\n            _tokenIssuersRegistry.getTrustedIssuersForClaimTopic(requiredClaimTopics[claimTopic]);\n\n            if (trustedIssuers.length == 0) {return false;}\n\n            bytes32[] memory claimIds = new bytes32[](trustedIssuers.length);\n            for (uint256 i = 0; i < trustedIssuers.length; i++) {\n                claimIds[i] = keccak256(abi.encode(trustedIssuers[i], requiredClaimTopics[claimTopic]));\n            }\n\n            for (uint256 j = 0; j < claimIds.length; j++) {\n                (foundClaimTopic, scheme, issuer, sig, data, ) = identity(_userAddress).getClaim(claimIds[j]);\n\n                if (foundClaimTopic == requiredClaimTopics[claimTopic]) {\n                    try IClaimIssuer(issuer).isClaimValid(identity(_userAddress), requiredClaimTopics[claimTopic], sig,\n                        data) returns(bool _validity) {\n\n                        if (\n                            _validity\n                        ) {\n                            j = claimIds.length;\n                        }\n                        if (!_validity && j == (claimIds.length - 1)) {\n                            return false;\n                        }\n                    } catch {\n                        if (j == (claimIds.length - 1)) {\n                            return false;\n                        }\n                    }\n                } else if (j == (claimIds.length - 1)) {\n                    return false;\n                }\n            }\n        }\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 882
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 939,
+      "function": "investorCountry",
+      "mutant_id": "m000329",
+      "operator": "ORFD",
+      "original_expression": "function investorCountry(address _userAddress) external view override returns (uint16) {\n        return _tokenIdentityStorage.storedInvestorCountry(_userAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 937
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 946,
+      "function": "issuersRegistry",
+      "mutant_id": "m000330",
+      "operator": "ORFD",
+      "original_expression": "function issuersRegistry() external view override returns (ITrustedIssuersRegistry) {\n        return _tokenIssuersRegistry;\n    }",
+      "replacement_expression": "",
+      "start_line": 944
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 953,
+      "function": "topicsRegistry",
+      "mutant_id": "m000331",
+      "operator": "ORFD",
+      "original_expression": "function topicsRegistry() external view override returns (IClaimTopicsRegistry) {\n        return _tokenTopicsRegistry;\n    }",
+      "replacement_expression": "",
+      "start_line": 951
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 960,
+      "function": "identityStorage",
+      "mutant_id": "m000332",
+      "operator": "ORFD",
+      "original_expression": "function identityStorage() external view override returns (IIdentityRegistryStorage) {\n        return _tokenIdentityStorage;\n    }",
+      "replacement_expression": "",
+      "start_line": 958
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 970,
+      "function": "contains",
+      "mutant_id": "m000333",
+      "operator": "ORFD",
+      "original_expression": "function contains(address _userAddress) external view override returns (bool) {\n        if (address(identity(_userAddress)) == address(0)) {\n            return false;\n        }\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 965
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 982,
+      "function": "registerIdentity",
+      "mutant_id": "m000334",
+      "operator": "ORFD",
+      "original_expression": "function registerIdentity(\n        address _userAddress,\n        IIdentity _identity,\n        uint16 _country\n    ) public override onlyAgent {\n        _tokenIdentityStorage.addIdentityToStorage(_userAddress, _identity, _country);\n        emit IdentityRegistered(_userAddress, _identity);\n    }",
+      "replacement_expression": "",
+      "start_line": 975
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 989,
+      "function": "identity",
+      "mutant_id": "m000335",
+      "operator": "ORFD",
+      "original_expression": "function identity(address _userAddress) public view override returns (IIdentity) {\n        return _tokenIdentityStorage.storedIdentity(_userAddress);\n    }",
+      "replacement_expression": "",
+      "start_line": 987
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1427,
+      "function": "execute",
+      "mutant_id": "m000336",
+      "operator": "PKD",
+      "original_expression": "function execute(address _to, uint256 _value, bytes calldata _data) external payable returns (uint256 executionId)",
+      "replacement_expression": "function execute(address _to, uint256 _value, bytes calldata _data) external  returns (uint256 executionId)",
+      "start_line": 1427
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 156,
+      "function": "_getInitializedVersion",
+      "mutant_id": "m000337",
+      "operator": "RSD",
+      "original_expression": "return _initialized;",
+      "replacement_expression": "/* return _initialized; */",
+      "start_line": 156
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 163,
+      "function": "_isInitializing",
+      "mutant_id": "m000338",
+      "operator": "RSD",
+      "original_expression": "return _initializing;",
+      "replacement_expression": "/* return _initializing; */",
+      "start_line": 163
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 188,
+      "function": "_msgSender",
+      "mutant_id": "m000339",
+      "operator": "RSD",
+      "original_expression": "return msg.sender;",
+      "replacement_expression": "/* return msg.sender; */",
+      "start_line": 188
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 192,
+      "function": "_msgData",
+      "mutant_id": "m000340",
+      "operator": "RSD",
+      "original_expression": "return msg.data;",
+      "replacement_expression": "/* return msg.data; */",
+      "start_line": 192
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "owner",
+      "mutant_id": "m000341",
+      "operator": "RSD",
+      "original_expression": "return _owner;",
+      "replacement_expression": "/* return _owner; */",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 389,
+      "function": "isAgent",
+      "mutant_id": "m000342",
+      "operator": "RSD",
+      "original_expression": "return _agents.has(_agent);",
+      "replacement_expression": "_agents.has(_agent);",
+      "start_line": 389
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 886,
+      "function": "isVerified",
+      "mutant_id": "m000343",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 886
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 931,
+      "function": "isVerified",
+      "mutant_id": "m000344",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 931
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 938,
+      "function": "investorCountry",
+      "mutant_id": "m000345",
+      "operator": "RSD",
+      "original_expression": "return _tokenIdentityStorage.storedInvestorCountry(_userAddress);",
+      "replacement_expression": "_tokenIdentityStorage.storedInvestorCountry(_userAddress);",
+      "start_line": 938
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 945,
+      "function": "issuersRegistry",
+      "mutant_id": "m000346",
+      "operator": "RSD",
+      "original_expression": "return _tokenIssuersRegistry;",
+      "replacement_expression": "/* return _tokenIssuersRegistry; */",
+      "start_line": 945
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 952,
+      "function": "topicsRegistry",
+      "mutant_id": "m000347",
+      "operator": "RSD",
+      "original_expression": "return _tokenTopicsRegistry;",
+      "replacement_expression": "/* return _tokenTopicsRegistry; */",
+      "start_line": 952
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 959,
+      "function": "identityStorage",
+      "mutant_id": "m000348",
+      "operator": "RSD",
+      "original_expression": "return _tokenIdentityStorage;",
+      "replacement_expression": "/* return _tokenIdentityStorage; */",
+      "start_line": 959
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 969,
+      "function": "contains",
+      "mutant_id": "m000349",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 969
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 988,
+      "function": "identity",
+      "mutant_id": "m000350",
+      "operator": "RSD",
+      "original_expression": "return _tokenIdentityStorage.storedIdentity(_userAddress);",
+      "replacement_expression": "_tokenIdentityStorage.storedIdentity(_userAddress);",
+      "start_line": 988
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1036,
+      "function": "isContract",
+      "mutant_id": "m000351",
+      "operator": "RSD",
+      "original_expression": "return account.code.length > 0;",
+      "replacement_expression": "/* return account.code.length > 0; */",
+      "start_line": 1036
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1081,
+      "function": "functionCall",
+      "mutant_id": "m000352",
+      "operator": "RSD",
+      "original_expression": "return functionCallWithValue(target, data, 0, \"Address: low-level call failed\");",
+      "replacement_expression": "functionCallWithValue(target, data, 0, \"Address: low-level call failed\");",
+      "start_line": 1081
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1095,
+      "function": "functionCall",
+      "mutant_id": "m000353",
+      "operator": "RSD",
+      "original_expression": "return functionCallWithValue(target, data, 0, errorMessage);",
+      "replacement_expression": "functionCallWithValue(target, data, 0, errorMessage);",
+      "start_line": 1095
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1110,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000354",
+      "operator": "RSD",
+      "original_expression": "return functionCallWithValue(target, data, value, \"Address: low-level call with value failed\");",
+      "replacement_expression": "functionCallWithValue(target, data, value, \"Address: low-level call with value failed\");",
+      "start_line": 1110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1127,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000355",
+      "operator": "RSD",
+      "original_expression": "return verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "replacement_expression": "verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "start_line": 1127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1137,
+      "function": "functionStaticCall",
+      "mutant_id": "m000356",
+      "operator": "RSD",
+      "original_expression": "return functionStaticCall(target, data, \"Address: low-level static call failed\");",
+      "replacement_expression": "functionStaticCall(target, data, \"Address: low-level static call failed\");",
+      "start_line": 1137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1152,
+      "function": "functionStaticCall",
+      "mutant_id": "m000357",
+      "operator": "RSD",
+      "original_expression": "return verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "replacement_expression": "verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "start_line": 1152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1162,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000358",
+      "operator": "RSD",
+      "original_expression": "return functionDelegateCall(target, data, \"Address: low-level delegate call failed\");",
+      "replacement_expression": "functionDelegateCall(target, data, \"Address: low-level delegate call failed\");",
+      "start_line": 1162
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1177,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000359",
+      "operator": "RSD",
+      "original_expression": "return verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "replacement_expression": "verifyCallResultFromTarget(target, success, returndata, errorMessage);",
+      "start_line": 1177
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1198,
+      "function": "verifyCallResultFromTarget",
+      "mutant_id": "m000360",
+      "operator": "RSD",
+      "original_expression": "return returndata;",
+      "replacement_expression": "/* return returndata; */",
+      "start_line": 1198
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1216,
+      "function": "verifyCallResult",
+      "mutant_id": "m000361",
+      "operator": "RSD",
+      "original_expression": "return returndata;",
+      "replacement_expression": "/* return returndata; */",
+      "start_line": 1216
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1643,
+      "function": "has",
+      "mutant_id": "m000362",
+      "operator": "RSD",
+      "original_expression": "return role.bearer[account];",
+      "replacement_expression": "/* return role.bearer[account]; */",
+      "start_line": 1643
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1540,
+      "function": "getClaim",
+      "mutant_id": "m000363",
+      "operator": "RVS",
+      "original_expression": "uint256 topic,\n        uint256 scheme,\n        address issuer,\n        bytes memory signature,\n        bytes memory data,\n        string memory uri",
+      "replacement_expression": "uint256 scheme,\n        uint256 topic,\n        address issuer,\n        bytes memory data,\n        bytes memory signature,\n        string memory uri",
+      "start_line": 1535
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 824,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000364",
+      "operator": "SKID",
+      "original_expression": "registerIdentity",
+      "replacement_expression": "super.registerIdentity",
+      "start_line": 824
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 832,
+      "function": "updateIdentity",
+      "mutant_id": "m000365",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 832
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 849,
+      "function": "deleteIdentity",
+      "mutant_id": "m000366",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 849
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 883,
+      "function": "isVerified",
+      "mutant_id": "m000367",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 883
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 907,
+      "function": "isVerified",
+      "mutant_id": "m000368",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 907
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 910,
+      "function": "isVerified",
+      "mutant_id": "m000369",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 910
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 966,
+      "function": "contains",
+      "mutant_id": "m000370",
+      "operator": "SKID",
+      "original_expression": "identity",
+      "replacement_expression": "super.identity",
+      "start_line": 966
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1081,
+      "function": "functionCall",
+      "mutant_id": "m000371",
+      "operator": "SLR",
+      "original_expression": "\"Address: low-level call failed\"",
+      "replacement_expression": "\"\"",
+      "start_line": 1081
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1110,
+      "function": "functionCallWithValue",
+      "mutant_id": "m000372",
+      "operator": "SLR",
+      "original_expression": "\"Address: low-level call with value failed\"",
+      "replacement_expression": "\"\"",
+      "start_line": 1110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1137,
+      "function": "functionStaticCall",
+      "mutant_id": "m000373",
+      "operator": "SLR",
+      "original_expression": "\"Address: low-level static call failed\"",
+      "replacement_expression": "\"\"",
+      "start_line": 1137
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1162,
+      "function": "functionDelegateCall",
+      "mutant_id": "m000374",
+      "operator": "SLR",
+      "original_expression": "\"Address: low-level delegate call failed\"",
+      "replacement_expression": "\"\"",
+      "start_line": 1162
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "modifier:initializer",
+      "mutant_id": "m000375",
+      "operator": "UORD",
+      "original_expression": "!_initializing",
+      "replacement_expression": " _initializing",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "modifier:initializer",
+      "mutant_id": "m000376",
+      "operator": "UORD",
+      "original_expression": "!AddressUpgradeable.isContract(address(this))",
+      "replacement_expression": " AddressUpgradeable.isContract(address(this))",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "modifier:reinitializer",
+      "mutant_id": "m000377",
+      "operator": "UORD",
+      "original_expression": "!_initializing",
+      "replacement_expression": " _initializing",
+      "start_line": 119
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 145,
+      "function": "_disableInitializers",
+      "mutant_id": "m000378",
+      "operator": "UORD",
+      "original_expression": "!_initializing",
+      "replacement_expression": " _initializing",
+      "start_line": 145
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000379",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 823,
+      "function": "batchRegisterIdentity",
+      "mutant_id": "m000380",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 823
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000381",
+      "operator": "UORD",
+      "original_expression": "laimTopic++",
+      "replacement_expression": "laimTopic--",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 895,
+      "function": "isVerified",
+      "mutant_id": "m000382",
+      "operator": "UORD",
+      "original_expression": "laimTopic++",
+      "replacement_expression": "laimTopic ",
+      "start_line": 895
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000383",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 902,
+      "function": "isVerified",
+      "mutant_id": "m000384",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 902
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000385",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 906,
+      "function": "isVerified",
+      "mutant_id": "m000386",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 906
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 918,
+      "function": "isVerified",
+      "mutant_id": "m000387",
+      "operator": "UORD",
+      "original_expression": "!_validity",
+      "replacement_expression": " _validity",
+      "start_line": 918
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 1625,
+      "function": "add",
+      "mutant_id": "m000388",
+      "operator": "UORD",
+      "original_expression": "!has(role, account)",
+      "replacement_expression": " has(role, account)",
+      "start_line": 1625
+    }
+  ],
+  "subject_id": "ERC-3643__ERC-3643__IdentityRegistry"
+}

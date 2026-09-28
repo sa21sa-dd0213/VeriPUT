@@ -1,0 +1,2547 @@
+{
+  "compile_failed": 22,
+  "compile_ok": 232,
+  "mutants": [
+    {
+      "compile_status": "failed",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000001",
+      "operator": "ACM",
+      "original_expression": "substring(url, index + 1)",
+      "replacement_expression": "substring(str, startIndex, bytes(str).length)",
+      "start_line": 218
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 222,
+      "function": "substring",
+      "mutant_id": "m000002",
+      "operator": "ACM",
+      "original_expression": "substring(str, startIndex, bytes(str).length)",
+      "replacement_expression": "substring(url, index + 1)",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000003",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 240,
+      "function": "parseAddr",
+      "mutant_id": "m000004",
+      "operator": "AOR",
+      "original_expression": " *= ",
+      "replacement_expression": " = ",
+      "start_line": 240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "parseAddr",
+      "mutant_id": "m000005",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 246,
+      "function": "parseAddr",
+      "mutant_id": "m000006",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 246
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "parseAddr",
+      "mutant_id": "m000007",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "parseAddr",
+      "mutant_id": "m000008",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 253,
+      "function": "parseAddr",
+      "mutant_id": "m000009",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 253
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "parseAddr",
+      "mutant_id": "m000010",
+      "operator": "AOR",
+      "original_expression": " -= ",
+      "replacement_expression": " = ",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000011",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 214,
+      "function": "extractAddress",
+      "mutant_id": "m000012",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "continue",
+      "start_line": 214
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 214,
+      "function": "extractAddress",
+      "mutant_id": "m000013",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "",
+      "start_line": 214
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "newChainRequest",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "newChainRequest",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 172,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "extractAddress",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "extractAddress",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "extractAddress",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "extractAddress",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "extractAddress",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "extractAddress",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "extractAddress",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "extractAddress",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "substring",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 227,
+      "function": "substring",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 227
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 228,
+      "function": "substring",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 228
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 228,
+      "function": "substring",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 228
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "substring",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "+",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 229,
+      "function": "substring",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": "-",
+      "replacement_expression": "/",
+      "start_line": 229
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 239
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "-",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": "+",
+      "replacement_expression": "*",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "+",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": "*",
+      "replacement_expression": "**",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "parseAddr",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "parseAddr",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000082",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000083",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000084",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000085",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000086",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000087",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000088",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000089",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000090",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000091",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000092",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000093",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000094",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000095",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000096",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000097",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": "  < ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000098",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " >= ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000099",
+      "operator": "BOR",
+      "original_expression": " <= ",
+      "replacement_expression": " == ",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000100",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000101",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000102",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000103",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "newChainRequest",
+      "mutant_id": "m000104",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 176,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000105",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 176
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000106",
+      "operator": "CSC",
+      "original_expression": "trackRequest.resolved",
+      "replacement_expression": "true",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000107",
+      "operator": "CSC",
+      "original_expression": "trackRequest.resolved",
+      "replacement_expression": "false",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000108",
+      "operator": "CSC",
+      "original_expression": "trackRequest.nest[msg.sender] == 1",
+      "replacement_expression": "true",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000109",
+      "operator": "CSC",
+      "original_expression": "trackRequest.nest[msg.sender] == 1",
+      "replacement_expression": "false",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 172,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000110",
+      "operator": "CSC",
+      "original_expression": "a == b",
+      "replacement_expression": "true",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 172,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000111",
+      "operator": "CSC",
+      "original_expression": "a == b",
+      "replacement_expression": "false",
+      "start_line": 172
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000112",
+      "operator": "CSC",
+      "original_expression": "currentConsensusCount >= minConsensus",
+      "replacement_expression": "true",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 174,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000113",
+      "operator": "CSC",
+      "original_expression": "currentConsensusCount >= minConsensus",
+      "replacement_expression": "false",
+      "start_line": 174
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000114",
+      "operator": "CSC",
+      "original_expression": "strBytes[index] == \"/\" || strBytes[index] == \"\\\\\"",
+      "replacement_expression": "true",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000115",
+      "operator": "CSC",
+      "original_expression": "strBytes[index] == \"/\" || strBytes[index] == \"\\\\\"",
+      "replacement_expression": "false",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000116",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 97) && (b1 <= 102)",
+      "replacement_expression": "true",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000117",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 97) && (b1 <= 102)",
+      "replacement_expression": "false",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000118",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 65) && (b1 <= 70)",
+      "replacement_expression": "true",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000119",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 65) && (b1 <= 70)",
+      "replacement_expression": "false",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000120",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 48) && (b1 <= 57)",
+      "replacement_expression": "true",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000121",
+      "operator": "CSC",
+      "original_expression": "(b1 >= 48) && (b1 <= 57)",
+      "replacement_expression": "false",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000122",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 97) && (b2 <= 102)",
+      "replacement_expression": "true",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000123",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 97) && (b2 <= 102)",
+      "replacement_expression": "false",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000124",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 65) && (b2 <= 70)",
+      "replacement_expression": "true",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000125",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 65) && (b2 <= 70)",
+      "replacement_expression": "false",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000126",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 48) && (b2 <= 57)",
+      "replacement_expression": "true",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000127",
+      "operator": "CSC",
+      "original_expression": "(b2 >= 48) && (b2 <= 57)",
+      "replacement_expression": "false",
+      "start_line": 254
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 73,
+      "function": "newChainRequest",
+      "mutant_id": "m000128",
+      "operator": "DLR",
+      "original_expression": "string memory _url",
+      "replacement_expression": "string storage _url",
+      "start_line": 73
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 74,
+      "function": "newChainRequest",
+      "mutant_id": "m000129",
+      "operator": "DLR",
+      "original_expression": "string memory _key",
+      "replacement_expression": "string storage _key",
+      "start_line": 74
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 84,
+      "function": "newChainRequest",
+      "mutant_id": "m000130",
+      "operator": "DLR",
+      "original_expression": "BirdRequest storage r",
+      "replacement_expression": "BirdRequest memory r",
+      "start_line": 84
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 112,
+      "function": "newChainRequest",
+      "mutant_id": "m000131",
+      "operator": "DLR",
+      "original_expression": "string memory addrStr",
+      "replacement_expression": "string storage addrStr",
+      "start_line": 112
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 139,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000132",
+      "operator": "DLR",
+      "original_expression": "BirdRequest storage trackRequest",
+      "replacement_expression": "BirdRequest memory trackRequest",
+      "start_line": 139
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 201,
+      "function": "getRatingByAddressString",
+      "mutant_id": "m000133",
+      "operator": "DLR",
+      "original_expression": "string memory _str",
+      "replacement_expression": "string storage _str",
+      "start_line": 201
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 209,
+      "function": "extractAddress",
+      "mutant_id": "m000134",
+      "operator": "DLR",
+      "original_expression": "string memory url",
+      "replacement_expression": "string storage url",
+      "start_line": 209
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 209,
+      "function": "extractAddress",
+      "mutant_id": "m000135",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 209
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 210,
+      "function": "extractAddress",
+      "mutant_id": "m000136",
+      "operator": "DLR",
+      "original_expression": "bytes memory strBytes",
+      "replacement_expression": "bytes storage strBytes",
+      "start_line": 210
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 221,
+      "function": "substring",
+      "mutant_id": "m000137",
+      "operator": "DLR",
+      "original_expression": "string memory str",
+      "replacement_expression": "string storage str",
+      "start_line": 221
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 221,
+      "function": "substring",
+      "mutant_id": "m000138",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 221
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 225,
+      "function": "substring",
+      "mutant_id": "m000139",
+      "operator": "DLR",
+      "original_expression": "string memory str",
+      "replacement_expression": "string storage str",
+      "start_line": 225
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 225,
+      "function": "substring",
+      "mutant_id": "m000140",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 225
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 226,
+      "function": "substring",
+      "mutant_id": "m000141",
+      "operator": "DLR",
+      "original_expression": "bytes memory strBytes",
+      "replacement_expression": "bytes storage strBytes",
+      "start_line": 226
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 227,
+      "function": "substring",
+      "mutant_id": "m000142",
+      "operator": "DLR",
+      "original_expression": "bytes memory result",
+      "replacement_expression": "bytes storage result",
+      "start_line": 227
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 234,
+      "function": "parseAddr",
+      "mutant_id": "m000143",
+      "operator": "DLR",
+      "original_expression": "string memory str",
+      "replacement_expression": "string storage str",
+      "start_line": 234
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 235,
+      "function": "parseAddr",
+      "mutant_id": "m000144",
+      "operator": "DLR",
+      "original_expression": "bytes memory strBytes",
+      "replacement_expression": "bytes storage strBytes",
+      "start_line": 235
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 122,
+      "function": "newChainRequest",
+      "mutant_id": "m000145",
+      "operator": "EED",
+      "original_expression": "emit OffChainRequest (\n            trackId,\n            _url,\n            _key\n        );",
+      "replacement_expression": "/* emit OffChainRequest (\n            trackId,\n            _url,\n            _key\n        ); */",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 186,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000146",
+      "operator": "EED",
+      "original_expression": "emit UpdatedRequest (\n                            trackRequest.id,\n                            trackRequest.url,\n                            trackRequest.key,\n                            trackRequest.value\n                        );",
+      "replacement_expression": "/* emit UpdatedRequest (\n                            trackRequest.id,\n                            trackRequest.url,\n                            trackRequest.key,\n                            trackRequest.value\n                        ); */",
+      "start_line": 181
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 241,
+      "function": "parseAddr",
+      "mutant_id": "m000147",
+      "operator": "ECS",
+      "original_expression": "uint160(uint8(strBytes[i]))",
+      "replacement_expression": "uint152(uint8(strBytes[i]))",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "parseAddr",
+      "mutant_id": "m000148",
+      "operator": "ECS",
+      "original_expression": "uint160(uint8(strBytes[i + 1]))",
+      "replacement_expression": "uint152(uint8(strBytes[i + 1]))",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "extractAddress",
+      "mutant_id": "m000149",
+      "operator": "EHD",
+      "original_expression": "require(index >= 0, \"No address found.\");",
+      "replacement_expression": "/* require(index >= 0, \"No address found.\"); */",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "stateVariable",
+      "mutant_id": "m000150",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 20,
+      "function": "stateVariable",
+      "mutant_id": "m000151",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 20
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "stateVariable",
+      "mutant_id": "m000152",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 21,
+      "function": "stateVariable",
+      "mutant_id": "m000153",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 21
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "stateVariable",
+      "mutant_id": "m000154",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "newChainRequest",
+      "mutant_id": "m000155",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 84,
+      "function": "newChainRequest",
+      "mutant_id": "m000156",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 84
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "newChainRequest",
+      "mutant_id": "m000157",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "newChainRequest",
+      "mutant_id": "m000158",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "newChainRequest",
+      "mutant_id": "m000159",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "newChainRequest",
+      "mutant_id": "m000160",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "newChainRequest",
+      "mutant_id": "m000161",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "newChainRequest",
+      "mutant_id": "m000162",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "newChainRequest",
+      "mutant_id": "m000163",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "newChainRequest",
+      "mutant_id": "m000164",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "newChainRequest",
+      "mutant_id": "m000165",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000166",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000167",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000168",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000169",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000170",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 160,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000171",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 160
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 162,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000172",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 162
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 162,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000173",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 162
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000174",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "extractAddress",
+      "mutant_id": "m000175",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 211,
+      "function": "extractAddress",
+      "mutant_id": "m000176",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 211
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "extractAddress",
+      "mutant_id": "m000177",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 212
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 217,
+      "function": "extractAddress",
+      "mutant_id": "m000178",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 217
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000179",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000180",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 236,
+      "function": "parseAddr",
+      "mutant_id": "m000181",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 236
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000182",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000183",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000184",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000185",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000186",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000187",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 240,
+      "function": "parseAddr",
+      "mutant_id": "m000188",
+      "operator": "ILR",
+      "original_expression": "256",
+      "replacement_expression": "255",
+      "start_line": 240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 240,
+      "function": "parseAddr",
+      "mutant_id": "m000189",
+      "operator": "ILR",
+      "original_expression": "256",
+      "replacement_expression": "257",
+      "start_line": 240
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "parseAddr",
+      "mutant_id": "m000190",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 242,
+      "function": "parseAddr",
+      "mutant_id": "m000191",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 242
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000192",
+      "operator": "ILR",
+      "original_expression": "97",
+      "replacement_expression": "96",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000193",
+      "operator": "ILR",
+      "original_expression": "97",
+      "replacement_expression": "98",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000194",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "101",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 243,
+      "function": "parseAddr",
+      "mutant_id": "m000195",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "103",
+      "start_line": 243
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "parseAddr",
+      "mutant_id": "m000196",
+      "operator": "ILR",
+      "original_expression": "87",
+      "replacement_expression": "86",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "parseAddr",
+      "mutant_id": "m000197",
+      "operator": "ILR",
+      "original_expression": "87",
+      "replacement_expression": "88",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000198",
+      "operator": "ILR",
+      "original_expression": "65",
+      "replacement_expression": "64",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000199",
+      "operator": "ILR",
+      "original_expression": "65",
+      "replacement_expression": "66",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000200",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "69",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 245,
+      "function": "parseAddr",
+      "mutant_id": "m000201",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "71",
+      "start_line": 245
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 246,
+      "function": "parseAddr",
+      "mutant_id": "m000202",
+      "operator": "ILR",
+      "original_expression": "55",
+      "replacement_expression": "54",
+      "start_line": 246
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 246,
+      "function": "parseAddr",
+      "mutant_id": "m000203",
+      "operator": "ILR",
+      "original_expression": "55",
+      "replacement_expression": "56",
+      "start_line": 246
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000204",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "47",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000205",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "49",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000206",
+      "operator": "ILR",
+      "original_expression": "57",
+      "replacement_expression": "56",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "parseAddr",
+      "mutant_id": "m000207",
+      "operator": "ILR",
+      "original_expression": "57",
+      "replacement_expression": "58",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "parseAddr",
+      "mutant_id": "m000208",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "47",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "parseAddr",
+      "mutant_id": "m000209",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "49",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000210",
+      "operator": "ILR",
+      "original_expression": "97",
+      "replacement_expression": "96",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000211",
+      "operator": "ILR",
+      "original_expression": "97",
+      "replacement_expression": "98",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000212",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "101",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 250,
+      "function": "parseAddr",
+      "mutant_id": "m000213",
+      "operator": "ILR",
+      "original_expression": "102",
+      "replacement_expression": "103",
+      "start_line": 250
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "parseAddr",
+      "mutant_id": "m000214",
+      "operator": "ILR",
+      "original_expression": "87",
+      "replacement_expression": "86",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 251,
+      "function": "parseAddr",
+      "mutant_id": "m000215",
+      "operator": "ILR",
+      "original_expression": "87",
+      "replacement_expression": "88",
+      "start_line": 251
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000216",
+      "operator": "ILR",
+      "original_expression": "65",
+      "replacement_expression": "64",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000217",
+      "operator": "ILR",
+      "original_expression": "65",
+      "replacement_expression": "66",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000218",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "69",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 252,
+      "function": "parseAddr",
+      "mutant_id": "m000219",
+      "operator": "ILR",
+      "original_expression": "70",
+      "replacement_expression": "71",
+      "start_line": 252
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 253,
+      "function": "parseAddr",
+      "mutant_id": "m000220",
+      "operator": "ILR",
+      "original_expression": "55",
+      "replacement_expression": "54",
+      "start_line": 253
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 253,
+      "function": "parseAddr",
+      "mutant_id": "m000221",
+      "operator": "ILR",
+      "original_expression": "55",
+      "replacement_expression": "56",
+      "start_line": 253
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000222",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "47",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000223",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "49",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000224",
+      "operator": "ILR",
+      "original_expression": "57",
+      "replacement_expression": "56",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 254,
+      "function": "parseAddr",
+      "mutant_id": "m000225",
+      "operator": "ILR",
+      "original_expression": "57",
+      "replacement_expression": "58",
+      "start_line": 254
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "parseAddr",
+      "mutant_id": "m000226",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "47",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 255,
+      "function": "parseAddr",
+      "mutant_id": "m000227",
+      "operator": "ILR",
+      "original_expression": "48",
+      "replacement_expression": "49",
+      "start_line": 255
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000228",
+      "operator": "ILR",
+      "original_expression": "16",
+      "replacement_expression": "15",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "parseAddr",
+      "mutant_id": "m000229",
+      "operator": "ILR",
+      "original_expression": "16",
+      "replacement_expression": "17",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000230",
+      "operator": "LSC",
+      "original_expression": "i < tmpI",
+      "replacement_expression": "false",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 228,
+      "function": "substring",
+      "mutant_id": "m000231",
+      "operator": "LSC",
+      "original_expression": "i < endIndex",
+      "replacement_expression": "false",
+      "start_line": 228
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 239,
+      "function": "parseAddr",
+      "mutant_id": "m000232",
+      "operator": "LSC",
+      "original_expression": "i < 2+2*20",
+      "replacement_expression": "false",
+      "start_line": 239
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 212,
+      "function": "extractAddress",
+      "mutant_id": "m000233",
+      "operator": "LSC",
+      "original_expression": "index >= 0",
+      "replacement_expression": "false",
+      "start_line": 212
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 223,
+      "function": "substring",
+      "mutant_id": "m000234",
+      "operator": "OLFD",
+      "original_expression": "function substring(string memory str, uint startIndex) public pure returns (string memory) {\n        return substring(str, startIndex, bytes(str).length);\n    }",
+      "replacement_expression": "",
+      "start_line": 221
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 232,
+      "function": "substring",
+      "mutant_id": "m000235",
+      "operator": "OLFD",
+      "original_expression": "function substring(string memory str, uint startIndex, uint endIndex) public pure returns (string memory) {\n        bytes memory strBytes = bytes(str);\n        bytes memory result = new bytes(endIndex - startIndex);\n        for(uint i = startIndex; i < endIndex; i++) {\n            result[i-startIndex] = strBytes[i];\n        }\n        return string(result);\n    }",
+      "replacement_expression": "",
+      "start_line": 225
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 198,
+      "function": "getRatingByAddress",
+      "mutant_id": "m000236",
+      "operator": "RSD",
+      "original_expression": "return ratings[_addr];",
+      "replacement_expression": "/* return ratings[_addr]; */",
+      "start_line": 198
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 202,
+      "function": "getRatingByAddressString",
+      "mutant_id": "m000237",
+      "operator": "RSD",
+      "original_expression": "return ratings[parseAddr(_str)];",
+      "replacement_expression": "/* return ratings[parseAddr(_str)]; */",
+      "start_line": 202
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 206,
+      "function": "getRating",
+      "mutant_id": "m000238",
+      "operator": "RSD",
+      "original_expression": "return ratings[msg.sender];",
+      "replacement_expression": "/* return ratings[msg.sender]; */",
+      "start_line": 206
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 218,
+      "function": "extractAddress",
+      "mutant_id": "m000239",
+      "operator": "RSD",
+      "original_expression": "return substring(url, index + 1);",
+      "replacement_expression": "substring(url, index + 1);",
+      "start_line": 218
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 222,
+      "function": "substring",
+      "mutant_id": "m000240",
+      "operator": "RSD",
+      "original_expression": "return substring(str, startIndex, bytes(str).length);",
+      "replacement_expression": "substring(str, startIndex, bytes(str).length);",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 231,
+      "function": "substring",
+      "mutant_id": "m000241",
+      "operator": "RSD",
+      "original_expression": "return string(result);",
+      "replacement_expression": "string(result);",
+      "start_line": 231
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 259,
+      "function": "parseAddr",
+      "mutant_id": "m000242",
+      "operator": "RSD",
+      "original_expression": "return address(iaddr);",
+      "replacement_expression": "address(iaddr);",
+      "start_line": 259
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000243",
+      "operator": "SLR",
+      "original_expression": "\"/\"",
+      "replacement_expression": "\"\"",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "extractAddress",
+      "mutant_id": "m000244",
+      "operator": "SLR",
+      "original_expression": "\"\\\\\"",
+      "replacement_expression": "\"\"",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "newChainRequest",
+      "mutant_id": "m000245",
+      "operator": "UORD",
+      "original_expression": "rackId++",
+      "replacement_expression": "rackId--",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "newChainRequest",
+      "mutant_id": "m000246",
+      "operator": "UORD",
+      "original_expression": "rackId++",
+      "replacement_expression": "rackId ",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000247",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 168,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000248",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 168
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 173,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000249",
+      "operator": "UORD",
+      "original_expression": "urrentConsensusCount++",
+      "replacement_expression": "urrentConsensusCount--",
+      "start_line": 173
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 173,
+      "function": "updatedChainRequest",
+      "mutant_id": "m000250",
+      "operator": "UORD",
+      "original_expression": "urrentConsensusCount++",
+      "replacement_expression": "urrentConsensusCount ",
+      "start_line": 173
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "extractAddress",
+      "mutant_id": "m000251",
+      "operator": "UORD",
+      "original_expression": "ndex--",
+      "replacement_expression": "ndex++",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 215,
+      "function": "extractAddress",
+      "mutant_id": "m000252",
+      "operator": "UORD",
+      "original_expression": "ndex--",
+      "replacement_expression": "ndex ",
+      "start_line": 215
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 228,
+      "function": "substring",
+      "mutant_id": "m000253",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 228
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 228,
+      "function": "substring",
+      "mutant_id": "m000254",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 228
+    }
+  ],
+  "subject_id": "peer_syntest__BirdOracle"
+}

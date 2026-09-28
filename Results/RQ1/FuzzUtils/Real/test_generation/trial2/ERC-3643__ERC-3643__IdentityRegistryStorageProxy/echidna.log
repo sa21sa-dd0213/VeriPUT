@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.645357342s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.762555114s)
+
+echidna: Constructor arguments are required: [("implementationAuthority",address)]
