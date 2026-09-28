@@ -1,0 +1,86 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        234,
+        "TXaXSXiqLQWQyvDaeqxALeoTaytXEBeImcJVibpXkJUbZvYJgpgIKWoqtrRzKUUFGUVGonIafr"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeHello",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        236,
+        ""
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        234,
+        "TXaXSXiqLQWQyvDaeqxALeoTaytXEBeImcJVibpXkJUbZvYJgpgIKWoqtrRzKUUFGUVGonIafr"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        232
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

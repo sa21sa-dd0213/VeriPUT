@@ -1,0 +1,136 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "0x54497864714d616c6355634f794d4c2066576350554e4e41694e485853694343"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "entryInformation",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "userEntries",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "deleteEntry",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "registeredUsers",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x574551644746566541534a505a7353506a49507a726145694a69656e6a515470"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "addEntry",
+      "n": 2,
+      "value": 133691213262504867
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "registeredUsers",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "0x54497864714d616c6355634f794d4c2066576350554e4e41694e485853694343"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "entryInformation",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x74736871547951694e57674a744271645a6b52695746634355735a4d6f4d6971"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "addEntry",
+      "n": 2,
+      "value": 98787343485645464
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "0x54497864714d616c6355634f794d4c2066576350554e4e41694e485853694343"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "entryInformation",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

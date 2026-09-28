@@ -1,0 +1,8 @@
+{
+  "contract": "Cfb3",
+  "dataset": "Peer",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "peer_soltg__for_1_continue"
+}

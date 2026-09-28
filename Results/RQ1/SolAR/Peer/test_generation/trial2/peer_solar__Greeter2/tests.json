@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        83,
+        "VBSBP DPp OMwGSDNKKbZGBMxjLypOggNrePPSW qcRUkpdvVRnlBKugijkSvfxXjaFPcJwGcQMjlJpMjNQRFbdUFyEFhksWvOhkVkDabYkzdFAilW EorTp YNdEQdAVAxMLQw McFX qJl QANBGerzJiUpVxQZEVNyxtXWwxsMGlQSSDXEBAt"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2,
+        "\"\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "sayGoodbye",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        225
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "sayHello",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

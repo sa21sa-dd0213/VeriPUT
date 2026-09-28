@@ -1,0 +1,81 @@
+{
+  "contract": "DynamicWeightedLPOracle",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "32c59966f73220ca07d47d1dc24989fdd3d3e2391b0e696a2422558a22e1e7ff",
+  "subject_id": "balancer__balancer-v3-monorepo__DynamicWeightedLPOracle",
+  "targets": [
+    {
+      "declaration_line": 707,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 707,
+        "name": "DynamicWeightedLPOracle._getWeights.1",
+        "record": "FN"
+      },
+      "length": 75,
+      "line": 707,
+      "name": "_getWeights",
+      "site": "body-entry",
+      "src": "17153:75:0",
+      "start": 17153,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 707,
+      "external_selector": null,
+      "id": "line:707",
+      "kind": "line",
+      "lcov": {
+        "line": 707,
+        "record": "DA"
+      },
+      "length": 75,
+      "line": 707,
+      "site": "body-entry",
+      "src": "17153:75:0",
+      "start": 17153,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:708",
+      "kind": "line",
+      "lcov": {
+        "line": 708,
+        "record": "DA"
+      },
+      "length": 58,
+      "line": 708,
+      "site": "statement-entry",
+      "src": "17163:58:0",
+      "start": 17163,
+      "statement_type": "Return",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

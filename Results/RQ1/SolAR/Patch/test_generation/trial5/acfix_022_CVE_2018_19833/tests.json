@@ -1,0 +1,189 @@
+[
+  [
+    {
+      "args": [
+        0,
+        "eSUbPwCTDfbiGyQDlSwNKIiiIAlXRIwEzcsbbQyWoKYyCMwkyQmsgRPZTiluPR zhIuiJxiAzYMtxtafVjHbnDjcUkQHChAeCwKuEmqzPmsVXkdorRK UclCphKRKgH",
+        "XUwLhsos dFmlHLBQjkOaUuagPxIHZxTRrJzloAgfPgIyrEkKHpMbNHlxBhORvhH"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        62478678144263703468661224966246774925952485173895785056006689609149774392873
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "elHZeGaogERomZMmNzalrFOjQmTxCFPpnBkMuCawjOkcJtDBUwYSpysQuLpyzeMxSRgyXbYPUsIl FXLUsqQpaLDE wNtxwJRMmKVpHZuxrRTiukwaIZnegLRREbnrpqZgClyaAwwHxYQkSugNkfVNjwyttuWDtwgwtMEJtdndfTxgulSFTbDHmvHnwPZzMmqmGuQHIMpfHeKSgBoYvOmLrATPAwDgmPotablDlVlXSYdQjWzSzQsdsmHvk",
+        "AwxARQHeRAdmfmxENjmcglyEjWLUSuYjdxQyBUGCgaDTlDvUjxGpWga GaavoAQwrPIuAjEOULcFssDPHJKhWhCgKCve YqsOsaOljcFYMJNgnkNgdfYKdAadkrLPfJVRKmKwbgrjzldXAzUIPvNMnQpJeXMkTMgyFsYIbxkwxkLTvIvKxlLFEnPmG bng"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        53675606954944289870789696168469676092635901834304686186334903630077411994578
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        62478678144263703468661224966246774925952485173895785056006689609149774392873
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "burn",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "eSUbPwCTDfbiGyQDlSwNKIiiIAlXRIwEzcsbbQyWoKYyCMwkyQmsgRPZTiluPR zhIuiJxiAzYMtxtafVjHbnDjcUkQHChAeCwKuEmqzPmsVXkdorRK UclCphKRKgH",
+        "XUwLhsos dFmlHLBQjkOaUuagPxIHZxTRrJzloAgfPgIyrEkKHpMbNHlxBhORvhH"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        true
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "eSUbPwCTDfbiGyQDlSwNKIiiIAlXRIwEzcsbbQyWoKYyCMwkyQmsgRPZTiluPR zhIuiJxiAzYMtxtafVjHbnDjcUkQHChAeCwKuEmqzPmsVXkdorRK UclCphKRKgH",
+        "XUwLhsos dFmlHLBQjkOaUuagPxIHZxTRrJzloAgfPgIyrEkKHpMbNHlxBhORvhH"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        70998265192971809042593965269497233669704625970909327723110958580947414421452
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        false
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "freezeAccount",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "owned",
+      "n": 4,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        104342203031404644623870641453230660810903299845154578851303592092613354950189
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transfer",
+      "n": 5,
+      "value": 0
+    },
+    {
+      "args": [
+        13191514231803112867840402761456974219811485931431431527778888890239353317251
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "burn",
+      "n": 6,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        54577303271396638011466507077961222316995939745349719036613519460557179158666,
+        "BBXghuqKAVsgxUtgYrqBkmileDYjlGjdQatskaVaZhzMQM UjlbHfHMvffOCMnSlQYsCQSjuQQSxqnfCpgoZ XOntsbbIbPuDDishekyumHJTsqUAJxDFczKfkYyJEWZEimbIlutZhYZECTffLYwnJdekrVbQRXLXcChSxvr J ",
+        "zoVPegGBxcA gGjpGNgzTLfrUwGLeJCiabKugEVZf ZQOdASYUGNzhSIbrantZpk YLqEpW MZAbPFHbDeRidpiUwqFnYVWxcvKTNbQRESSDvdDiIprWPGy talkMssUwdfpWTJMzUdpqbQhrXyldQMFTnLYAtIFVQEzX LlIpGdOcWFIvyOXHlMrvTfrnxFWNfrwsaWVIBr yQzlabCbodjJJMrrpEcTJgYbylkJQvJgjbSQaNNOsz"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        73542202100288789437934774314022812101654038906371003580774007734783759076843,
+        "OtwnRJCmCPagBJQqCPZrqa NbroFjGOQSNihEJBNgltMFb NqpMNPjAhAeKcudGoErRXhWRQMVyONXGTmYsJPWdPdYfYbnYpDzSJjaJq tpacAlQkcILHpxVYdIcmTTg",
+        " cbNZaBdkvtYWuyieIgbYiFzKBCcsGOSfcosPAjYRZDKKnrYBoTMGScWLrpJbRYLCXueVFjCZNDgdObyPAeoHUoHFcPqPBNwIdjYWMniqagmZfEctKEpi HOsLDNqxJEHBFbmHvJBgDSzparc"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        35871511126581301214939307889391593594421874655851463503590061260641940572720
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        13191514231803112867840402761456974219811485931431431527778888890239353317251
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "burn",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

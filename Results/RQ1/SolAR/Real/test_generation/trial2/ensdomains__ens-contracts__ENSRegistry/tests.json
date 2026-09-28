@@ -1,0 +1,299 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        false
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setApprovalForAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x415755534b4a6751726b6a6a716842596e614c6143434d676b644920677a5420",
+        "anonymous_hex_00021"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "setSubnodeOwner",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5046746b57494b614642555377767549705075584e6f75436d4d72764e675761"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "recordExists",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "isApprovedForAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4169796571676749695847777861207047744956634270724c7151527469504a",
+        "0x4a747653736745727a506158654678456e6367416f774c525a6f4a656a43534c",
+        "anonymous_hex_00027",
+        "anonymous_hex_00017",
+        1898752681709353082
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setSubnodeRecord",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x654a6e587a43474d784a6e6d466c4b745771677869757554434a48676e794a5a",
+        "anonymous_hex_00028",
+        "anonymous_hex_00028",
+        35
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "setRecord",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4169796571676749695847777861207047744956634270724c7151527469504a",
+        "0x4a747653736745727a506158654678456e6367416f774c525a6f4a656a43534c",
+        "anonymous_hex_00027",
+        "anonymous_hex_00017",
+        1898752681709353082
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setSubnodeRecord",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4169796571676749695847777861207047744956634270724c7151527469504a",
+        "0x4a747653736745727a506158654678456e6367416f774c525a6f4a656a43534c",
+        "anonymous_hex_00027",
+        "anonymous_hex_00017",
+        1898752681709353082
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "setSubnodeRecord",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x6b72702069547a626b6e68657a46526d71476862776f6c6e627950455a627a73",
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x42656e6345476d4471684a56676f446c4e70784d4c68664e484c447a6b754b49"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "resolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x7a512067694348594e6c56447656474f2058556d576b5363536a696e65575856"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "owner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        0
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setTTL",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x466d63425a4f6d76754848596e6a6c574d6b62646c58636b52444c6a54687044",
+        "0x4d206b55626d6778796b6552474a564f5442207176554245704c69724c707358",
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "setSubnodeOwner",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5570515520784563424275536e577a424e6e504d4e465173697341667a684b7a",
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "setOwner",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x5954504679504b77717376664e44796d6e4e5547775242564664765a2051596b",
+        "anonymous_hex_00028"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "setResolver",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        true
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "setApprovalForAll",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x417349704b4a51757770744961637a782067445a794966617a68445943597461"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "ttl",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        0
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "setTTL",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

@@ -1,0 +1,257 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x4b45544169524e4e434651517557414f576e655555637958574f75485774704d"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        105871522974281049092136098919519205447442760712092259504931865767978355861358,
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "reclaim",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00025",
+        "0x547066556f52646466526b4f465871495a57515773706c4b6641507241726853"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4c464145"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "supportsInterface",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x4b45544169524e4e434651517557414f576e655555637958574f75485774704d"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "setResolver",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x534d204368416d667545687178696a454277554a5076544f51514a5071475359"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        67932050048693445396838026731441692694289475621480591543321080444820092888898
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "ownerOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x68536f4146496f557846746e597573646f48466952635a6b504753724a476977"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1,
+        10946290483278534627650910136731716767488885780484328405799310894185487179197
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "renew",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x4b45544169524e4e434651517557414f576e655555637958574f75485774704d"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "addController",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x534d204368416d667545687178696a454277554a5076544f51514a5071475359"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        20
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "available",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x534d204368416d667545687178696a454277554a5076544f51514a5071475359"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        10
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "nameExpires",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00026",
+        "0x534d204368416d667545687178696a454277554a5076544f51514a5071475359"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        32,
+        "anonymous_hex_00026",
+        10
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "registerOnly",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "0x556277634444554d5475586156546a78704669516f64446d566b727862435a73"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        22337994614514567471754415644348316897435142032989881676748936274175979110104,
+        "anonymous_hex_00027",
+        32
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "register",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "0x4c464145"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "supportsInterface",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        16
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "nameExpires",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "removeController",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

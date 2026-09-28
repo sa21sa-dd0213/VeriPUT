@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (0.677757648s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.999025488s)
+
+echidna: Constructor arguments are required: [("_fxChild",address)]

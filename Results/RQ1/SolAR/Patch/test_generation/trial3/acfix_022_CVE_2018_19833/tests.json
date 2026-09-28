@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "args": [
+        12811548665287588944785167182456775411917574500451146714505246479529293924678,
+        "QUEuOGfGGIirqvgIftZIZRzTVoCkUtyQqp",
+        "uxfzINUFvTKlUinHtSElcNpIiGUhxLgRpSQtJAymnPKLwLfLIkyKTzOvgLfQtBdqqFlAfrStVXqcqSqHeAQVttjiIYiCubZR XanLJVCfmSEEsGiIuLFjMLgZGnmpdoNSjjnZUUoztTR iBqyaaRAAQ FKjQdzIGLlUBllAd jqBYjEXsikC"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        10
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        10,
+        "RbqZXfqqdRuGLGyhQRsniqkOesyFo rIhKbIdFuvqMEW",
+        "xlVSMHKuczuuM RszVqPOOqRgfKbqHHArsGsplbmreybbkDzVOtztKIaeYlnBwkayHkQxnVhKBZua"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        58854438658889180813073181653070477202381849184826636190464821307528939067181
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        12811548665287588944785167182456775411917574500451146714505246479529293924678,
+        "QUEuOGfGGIirqvgIftZIZRzTVoCkUtyQqp",
+        "uxfzINUFvTKlUinHtSElcNpIiGUhxLgRpSQtJAymnPKLwLfLIkyKTzOvgLfQtBdqqFlAfrStVXqcqSqHeAQVttjiIYiCubZR XanLJVCfmSEEsGiIuLFjMLgZGnmpdoNSjjnZUUoztTR iBqyaaRAAQ FKjQdzIGLlUBllAd jqBYjEXsikC"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016",
+        0
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        12811548665287588944785167182456775411917574500451146714505246479529293924678,
+        "QUEuOGfGGIirqvgIftZIZRzTVoCkUtyQqp",
+        "uxfzINUFvTKlUinHtSElcNpIiGUhxLgRpSQtJAymnPKLwLfLIkyKTzOvgLfQtBdqqFlAfrStVXqcqSqHeAQVttjiIYiCubZR XanLJVCfmSEEsGiIuLFjMLgZGnmpdoNSjjnZUUoztTR iBqyaaRAAQ FKjQdzIGLlUBllAd jqBYjEXsikC"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025",
+        false
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "owned",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        12811548665287588944785167182456775411917574500451146714505246479529293924678,
+        "QUEuOGfGGIirqvgIftZIZRzTVoCkUtyQqp",
+        "uxfzINUFvTKlUinHtSElcNpIiGUhxLgRpSQtJAymnPKLwLfLIkyKTzOvgLfQtBdqqFlAfrStVXqcqSqHeAQVttjiIYiCubZR XanLJVCfmSEEsGiIuLFjMLgZGnmpdoNSjjnZUUoztTR iBqyaaRAAQ FKjQdzIGLlUBllAd jqBYjEXsikC"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "dpCrGwqYswhcxULjjtIiihQuhfhHHCGIbnNYAtedSPRRAqBFrFwTiENmrw Ge",
+        "HsNbpJuAhyyOOJEdIpCBdbgyScJYGlXXldNEoYQuoIgsonJDkHLDQ OKBublpbNkJhCFRKFLOEmgHcBeYvukYTKGyRhaSGYOuyUx dNPAb QRahO qtyfhqMGmlTCKzhAsImJTihoebfubtBiDpcojBLLE SbEPksOWbyTsfpOwdcZBm MUMqIrOZBBsaHoZqobVKxyPTkEkxGjZNCXkALaoqcncBcZjkeqmLsEMshqnxmgVKHKwDFvoaZ"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00028",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

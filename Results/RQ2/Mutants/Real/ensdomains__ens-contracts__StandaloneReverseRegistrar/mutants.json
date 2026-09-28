@@ -1,0 +1,187 @@
+{
+  "compile_failed": 4,
+  "compile_ok": 14,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "supportsInterface",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "supportsInterface",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "supportsInterface",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "supportsInterface",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " ||\n            ",
+      "replacement_expression": " &&\n            ",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "supportsInterface",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "supportsInterface",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "supportsInterface",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 102
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 43,
+      "function": "nameForAddr",
+      "mutant_id": "m000008",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 43
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 82,
+      "function": "nameForAddr",
+      "mutant_id": "m000009",
+      "operator": "DLR",
+      "original_expression": "string memory name",
+      "replacement_expression": "string storage name",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "_setName",
+      "mutant_id": "m000010",
+      "operator": "EED",
+      "original_expression": "emit NameForAddrChanged(addr, name);",
+      "replacement_expression": "/* emit NameForAddrChanged(addr, name); */",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "supportsInterface",
+      "mutant_id": "m000011",
+      "operator": "OLFD",
+      "original_expression": "function supportsInterface(bytes4 interfaceId) external view returns (bool);",
+      "replacement_expression": "",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "nameForAddr",
+      "mutant_id": "m000012",
+      "operator": "OLFD",
+      "original_expression": "function nameForAddr(address addr) external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 43
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 68,
+      "function": "supportsInterface",
+      "mutant_id": "m000013",
+      "operator": "OLFD",
+      "original_expression": "function supportsInterface(bytes4 interfaceId) public view virtual returns (bool) {\n        return interfaceId == type(IERC165).interfaceId;\n    }",
+      "replacement_expression": "",
+      "start_line": 66
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 84,
+      "function": "nameForAddr",
+      "mutant_id": "m000014",
+      "operator": "OLFD",
+      "original_expression": "function nameForAddr(\n        address addr\n    ) external view returns (string memory name) {\n        name = _names[addr];\n    }",
+      "replacement_expression": "",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "supportsInterface",
+      "mutant_id": "m000015",
+      "operator": "ORFD",
+      "original_expression": "function supportsInterface(\n        bytes4 interfaceID\n    ) public view virtual override(ERC165) returns (bool) {\n        return\n            interfaceID == type(IStandaloneReverseRegistrar).interfaceId ||\n            super.supportsInterface(interfaceID);\n    }",
+      "replacement_expression": "",
+      "start_line": 98
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "supportsInterface",
+      "mutant_id": "m000016",
+      "operator": "RSD",
+      "original_expression": "return interfaceId == type(IERC165).interfaceId;",
+      "replacement_expression": "/* return interfaceId == type(IERC165).interfaceId; */",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "supportsInterface",
+      "mutant_id": "m000017",
+      "operator": "RSD",
+      "original_expression": "return\n            interfaceID == type(IStandaloneReverseRegistrar).interfaceId ||\n            super.supportsInterface(interfaceID);",
+      "replacement_expression": "/* return\n            interfaceID == type(IStandaloneReverseRegistrar).interfaceId ||\n            super.supportsInterface(interfaceID); */",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "supportsInterface",
+      "mutant_id": "m000018",
+      "operator": "SKID",
+      "original_expression": "super.",
+      "replacement_expression": "",
+      "start_line": 103
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__StandaloneReverseRegistrar"
+}

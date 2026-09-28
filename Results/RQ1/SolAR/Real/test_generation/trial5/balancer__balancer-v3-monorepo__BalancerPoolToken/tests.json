@@ -1,0 +1,426 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "getVault",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "totalSupply",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "symbol",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        60
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "transfer",
+      "n": 3,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 4,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        27041290275060991775161664745454338290275522278685197262078904568934733876925
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00001",
+        255
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "dezGFZOqPndBRQhecLlAKEALHIipkSMByvU",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00021",
+      "method": "getRate",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_0W1\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "incrementNonce",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "\"\\x19Ethereum Signed Message:\\n32\"",
+        "FzLcBxXyWzclxKcSwaUElagtWtTlaipzqKrRf TZdNIkGSgnnrenQxfZIWFGqmUZBbIFsmZUrrRGPwSsxXrdUKxcO qaOEKglupKCxAok edQpSeiRxhkTjkIqluBvgyCtrKXSVt"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "getRate",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "totalSupply",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "nonces",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00017",
+        "\"r\"",
+        "\"\\x19Ethereum Signed Message:\\n32\""
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00020",
+        "dezGFZOqPndBRQhecLlAKEALHIipkSMByvU",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "MggBDWQVtXIUnKKNVZbtrOfOyaFdYBpUaP",
+        "xISSaTqvUWLKui yHAUaWpEQVCTGjNKzx aOYZYWdHSqjNSnRNavKnyxiHUviWYTeOIucDRvsBhrzHRunhZglmxMJHqtATqHwpFPfUFkyLqfYtJmLNmyvULdJxcMFPOeeGRkZMhH"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        255
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00028",
+        "\"19_01\"",
+        "\"f\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "\"\\x19Ethereum Signed Message:\\n32\"",
+        "FzLcBxXyWzclxKcSwaUElagtWtTlaipzqKrRf TZdNIkGSgnnrenQxfZIWFGqmUZBbIFsmZUrrRGPwSsxXrdUKxcO qaOEKglupKCxAok edQpSeiRxhkTjkIqluBvgyCtrKXSVt"
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "totalSupply",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "jDQLBUepMfdAYjkpsfJeOWfymEmxSiwRKWAdeASMCshjg",
+        "OHEzMxnBIshboBZmkvBHPjEOyTYofvCMqsUFfg iFTemUdTWtnmQUZkrEOQUnOW qqYIAqpDRRngtnPEkDABXXNYslvSycliUcpnFSoYSDRpiMTdzamGrqKBJpIIixIcVvZgYlFVNHmGGdMVKnsKDtxRUZvSldYsHAsgRL"
+      ],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00016",
+      "method": "decimals",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00016"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "balanceOf",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "cQLqfTHNciCferOaDcWTZcEu  ORB",
+        "\"0x\""
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00022",
+        "anonymous_hex_00017",
+        6
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "emitTransfer",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        58502865215827894875153321198693018603257719267628794360142340635287508794185
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "approve",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

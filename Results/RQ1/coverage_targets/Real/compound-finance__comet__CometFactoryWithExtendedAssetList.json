@@ -1,0 +1,81 @@
+{
+  "contract": "CometFactoryWithExtendedAssetList",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "1a64157ff8e905a87c1d04b5df02d16b1aed303c0b349a2b5906b73f98324051",
+  "subject_id": "compound-finance__comet__CometFactoryWithExtendedAssetList",
+  "targets": [
+    {
+      "declaration_line": 56,
+      "external_selector": "2d526439",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 56,
+        "name": "CometFactoryWithExtendedAssetList.clone",
+        "record": "FN"
+      },
+      "length": 71,
+      "line": 56,
+      "name": "clone",
+      "site": "body-entry",
+      "src": "1372:71:0",
+      "start": 1372,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 56,
+      "external_selector": "2d526439",
+      "id": "line:56",
+      "kind": "line",
+      "lcov": {
+        "line": 56,
+        "record": "DA"
+      },
+      "length": 71,
+      "line": 56,
+      "site": "body-entry",
+      "src": "1372:71:0",
+      "start": 1372,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:57",
+      "kind": "line",
+      "lcov": {
+        "line": 57,
+        "record": "DA"
+      },
+      "length": 54,
+      "line": 57,
+      "site": "statement-entry",
+      "src": "1382:54:0",
+      "start": 1382,
+      "statement_type": "Return",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

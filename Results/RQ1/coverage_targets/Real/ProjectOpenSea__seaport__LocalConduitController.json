@@ -1,0 +1,27 @@
+{
+  "contract": "LocalConduitController",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 0,
+    "LF": 0
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "311cf93431613d140857ce070d850de40ac946c9baab6371e3051cfdf725db6d",
+  "subject_id": "ProjectOpenSea__seaport__LocalConduitController",
+  "targets": [],
+  "totals": {
+    "all": 0,
+    "branch": 0,
+    "function": 0,
+    "line": 0
+  }
+}

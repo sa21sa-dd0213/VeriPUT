@@ -1,0 +1,720 @@
+ESBMC version 8.2.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+--path-cov-arith-resolve: a witnessed path whose counterexample violates an enabled arithmetic check will be re-solved ONCE with that check's own condition assumed. A non-wrapping witness replaces the wrapping one; if none exists the path is reachable only through a checked-arithmetic revert, which is counted in its own cell and NOT folded into U. The cost -- claims re-solved and seconds spent -- is printed at the end of the run rather than left to be inferred.
+Solidity: auto-selecting 'bitwuzla' as SMT backend (Z3 is much slower on 256-bit bit-vector arithmetic). Override with --z3 / --cvc5 / --bitwuzla / --boolector or --default-solver.
+Parsing <workspace>
+Converting
+WARNING: Solidity harness: transaction sequence bounded to 1 tx (default). A VERIFICATION SUCCESSFUL result is bounded -- it means no violation within 1 transaction(s), NOT an unbounded proof; bugs requiring more transactions are not explored. Use --solidity-precise (or --solidity-max-tx 0) for an unbounded proof.
+Generating GOTO Program
+GOTO program creation time: 0.237s
+--solidity-path-coverage: k-induction proof query; leaving symex unwind unset so --max-k-step controls the proof strategy. Path enumeration retains its own structural loop cap of 4
+Adding Solidity complete-path coverage assertions...
+--path-cov-certify: CERTIFICATION QUERY for unit 'sol:@C@FeeVault@F@withdraw#193' path enc=115 depth=6 over 19 bounded input(s) and 3 entry relation(s). The per-path identity asserts are NOT emitted in this mode and NO [Coverage] block is printed — a certified box makes these claims HOLD, which the coverage counters would report as uncovered. THE RESULT OF THIS RUN IS THE `RESULT:` LINE, not the VERIFICATION SUCCESSFUL / FAILED verdict: a non-vacuity witness is emitted at this path's own exit and is REFUTED on every run that certifies, so a CERTIFIED box prints VERIFICATION FAILED. RESULT is one of CERTIFIED (every input in the box walks this path), REFUTED (the counterexample is an input inside the box that leaves it), VACUOUS (the box admits no execution that walks this path at all, so the run establishes nothing), UNDECIDED (nothing was refuted but the solver could not answer) or UNDECIDED-TRUNCATED (a loop was cut at the unwind bound while unwinding assertions were disabled, so the executions that would have witnessed this path may simply have been assumed away -- VACUOUS is then not a statement this run is entitled to make). THIS LIST IS THE COMPLETE SET and a driver must branch on all of it: an unrecognised token is a tool that knows something the driver does not, and reading it as "no verdict line" silently falls back to the VERIFICATION SUCCESSFUL / FAILED line this very message says not to use
+--solidity-path-coverage with --cov-report-json: exempting 52 symbol(s) from slicing so each path's counterexample values survive into the report (1 contract object(s), 18 contract-scope store(s), 18 function parameter(s), 15 environment); slicing stays enabled for everything else
+--solidity-path-coverage: EXPANDING AN EMIT: sol:@C@FeeVault@F@Deposited#29 at file <workspace> line 14 function deposit
+--solidity-path-coverage: EXPANDING AN EMIT: sol:@C@FeeVault@F@Withdrawn#37 at file <workspace> line 41 function withdraw
+--solidity-path-coverage: expanded 2 internal call(s) into their calling unit (call depth bound = 4), so a callee's decisions are part of its caller's path identity
+--solidity-path-coverage: unit 'sol:@C@FeeVault@F@deposit#56' emits 1 event(s), in program order: sol:@C@FeeVault@F@Deposited#29
+--solidity-path-coverage: path enc=1 depth=0 emits 1 event(s): sol:@C@FeeVault@F@Deposited#29
+--solidity-path-coverage: unit 'sol:@C@FeeVault@F@withdraw#193' emits 1 event(s), in program order: sol:@C@FeeVault@F@Withdrawn#37
+--path-cov-certify: unit 'sol:@C@FeeVault@F@withdraw#193' — established 0 relation-backed entry assignment(s), FREED 3 entry-state coordinate(s), assumed 0 materialized path guard(s) and 19 input bound(s) (0 hole(s) punched) at entry and asserted `tr == 115 && cnt == 6` at ALL 6 exit(s) of the unit. Asserting at every exit is what makes the query non-vacuous: an input inside the box that walks a DIFFERENT path leaves through a different exit, and would never be checked if the assert sat only on this path's own exit
+--solidity-path-coverage: instrumented 6 complete path(s) across 3 unit(s) (loop bound = 4 iterations)
+--solidity-path-coverage: path distribution — 3 unit(s), 7 path(s) total, max 14 in 'sol:@C@FeeVault@F@withdraw#193', mean 2.3; before internal-call expansion the same units had 16 path(s), so expansion multiplied them by 0.44x
+--solidity-path-coverage: 2 in-scope function(s) are internal/private and are therefore not units; they have no path set of their own and appear inside the paths of the units that call them
+GOTO program processing time: 0.010s
+Checking base case, k = 1
+Starting Bounded Model Checking
+Symex completed in: 0.003s (376 assignments)
+Slicing time: 0.000s (removed 170 assignments)
+Generated 15 VCC(s), 15 remaining after simplification (206 assignments)
+Slicing time: 0.000s (removed 6 assignments)
+Solving claim 'withdraw:path:115#exit0 at file <workspace> line 22 function withdraw' with solver Bitwuzla 0.9.0
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.007s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.001s
+✓ PASSED: 'withdraw:path:115#exit0 at file <workspace> line 22 function withdraw'
+Slicing time: 0.000s (removed 0 assignments)
+Solving claim 'withdraw:path:115#nonvacuous at file <workspace> line 22 function withdraw' with solver Bitwuzla 0.9.0
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.004s
+✗ FAILED: 'withdraw:path:115#nonvacuous at file <workspace> line 22 function withdraw'
+Slicing time: 0.000s (removed 0 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.006s
+--path-cov-arith-resolve: 'withdraw:path:115#nonvacuous' is reachable ONLY by violating a checked arithmetic operation -- the re-solve under 11 condition(s) is UNSAT, which PROVES it. On chain this path is reached through a Panic revert, so its witness is kept but the path must not be emitted as a normal-exit test
+--solidity-path-coverage: CE journal cov-ce-journal.json updated after first witness for claim 2 of 15: 1 witnessed path(s) on disk, 1 with non-empty inputs (complete=false)
+--solidity-path-coverage: CE journal cov-ce-journal.json updated after claim 2 of 15: 1 witnessed path(s) on disk, 1 with non-empty inputs (complete=false)
+
+[Counterexample]
+
+
+State 1 file <workspace> line 67 column 1 thread 0
+----------------------------------------------------
+  block_chainid = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 2 file <workspace> line 68 column 1 thread 0
+----------------------------------------------------
+  block_coinbase = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 3 file <workspace> line 30 column 1 thread 0
+----------------------------------------------------
+  msg_sig = 0 (00000000 00000000 00000000 00000000)
+
+State 4 file <workspace> line 65 column 1 thread 0
+----------------------------------------------------
+  block_basefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 5 file <workspace> line 70 column 1 thread 0
+----------------------------------------------------
+  block_gaslimit = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 6 file <workspace> line 62 column 1 thread 0
+----------------------------------------------------
+  tx_origin = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 7 file <workspace> line 66 column 1 thread 0
+----------------------------------------------------
+  block_blobbasefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 8 file <workspace> line 61 column 1 thread 0
+----------------------------------------------------
+  tx_gasprice = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 9 file <workspace> line 69 column 1 thread 0
+----------------------------------------------------
+  block_difficulty = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 10 file <workspace> line 72 column 1 thread 0
+----------------------------------------------------
+  block_prevrandao = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 11 file <workspace> line 28 column 1 thread 0
+----------------------------------------------------
+  msg_data = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 12 file <workspace> line 73 column 1 thread 0
+----------------------------------------------------
+  block_timestamp = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 13 file <workspace> line 71 column 1 thread 0
+----------------------------------------------------
+  block_number = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 14  thread 0
+----------------------------------------------------
+  $FeeVault_bind_cname_list = { 0 }
+
+State 15 file <workspace> line 7 thread 0
+----------------------------------------------------
+  deposits = { 0 }
+
+State 16 file <workspace> line 8 thread 0
+----------------------------------------------------
+  discountBps = { 0 }
+
+State 17  thread 0
+----------------------------------------------------
+  return_value$_nondet_bool$1 = 1
+
+State 18  thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$2 = 0 (00000000 00000000 00000000 00000000)
+
+State 19  thread 0
+----------------------------------------------------
+  tuple_instance$23 = { .x=(unsigned int)main::$tmp::return_value$_nondet_bool$1?1!0&0#1, .y=main::$tmp::return_value$_nondet_uint$2?1!0&0#1 }
+
+State 20 file <workspace> thread 0
+----------------------------------------------------
+  this = &_ESBMC_Object_FeeVault
+
+State 21 file <workspace> line 122 column 14 function initialize thread 0
+----------------------------------------------------
+  msg_data = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 22 file <workspace> line 123 column 27 function initialize thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$1 = 0 (00000000 00000000 00000000 00000000)
+
+State 23 file <workspace> line 123 column 3 function initialize thread 0
+----------------------------------------------------
+  msg_sender = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 24 file <workspace> line 124 column 13 function initialize thread 0
+----------------------------------------------------
+  msg_sig = 0 (00000000 00000000 00000000 00000000)
+
+State 25 file <workspace> line 125 column 15 function initialize thread 0
+----------------------------------------------------
+  msg_value = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 26 file <workspace> line 134 column 17 function initialize thread 0
+----------------------------------------------------
+  tx_gasprice = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 27 file <workspace> line 136 column 26 function initialize thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$2 = 0 (00000000 00000000 00000000 00000000)
+
+State 28 file <workspace> line 136 column 3 function initialize thread 0
+----------------------------------------------------
+  tx_origin = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 29 file <workspace> line 138 column 19 function initialize thread 0
+----------------------------------------------------
+  block_basefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 30 file <workspace> line 139 column 23 function initialize thread 0
+----------------------------------------------------
+  block_blobbasefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 31 file <workspace> line 140 column 19 function initialize thread 0
+----------------------------------------------------
+  block_chainid = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 32 file <workspace> line 141 column 31 function initialize thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$3 = 0 (00000000 00000000 00000000 00000000)
+
+State 33 file <workspace> line 141 column 3 function initialize thread 0
+----------------------------------------------------
+  block_coinbase = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 34 file <workspace> line 142 column 22 function initialize thread 0
+----------------------------------------------------
+  block_difficulty = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 35 file <workspace> line 143 column 20 function initialize thread 0
+----------------------------------------------------
+  block_gaslimit = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 36 file <workspace> line 144 column 18 function initialize thread 0
+----------------------------------------------------
+  block_number = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 37 file <workspace> line 145 column 22 function initialize thread 0
+----------------------------------------------------
+  block_prevrandao = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 38 file <workspace> line 146 column 21 function initialize thread 0
+----------------------------------------------------
+  block_timestamp = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 39  thread 0
+----------------------------------------------------
+  $FeeVault_bind_cname_list[0] = &"FeeVault"[0]
+
+State 40 file <workspace> line 95 column 32 function _ESBMC_get_unique_address thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$1 = 4294967295 (11111111 11111111 11111111 11111111)
+
+State 41 file <workspace> line 95 column 5 function _ESBMC_get_unique_address thread 0
+----------------------------------------------------
+  tmp = 4294967295 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111)
+
+State 43 file <workspace> line 114 column 5 function _ESBMC_get_unique_address thread 0
+----------------------------------------------------
+  _ESBMC_Object_FeeVault.$address = { .owner=nil, .feeReceiver=nil, .feeBps=nil, .anon_pad$3=nil,
+    .maxFee=nil, .anon_pad$5=nil, .$address=tmp,
+    .anon_pad$7=nil, .$codehash=nil, .$balance=nil,
+    .$code=nil, .$dynamic_pool=nil, ._ESBMC_bind_cname=nil,
+    .anon_pad$13=nil }
+
+State 44  thread 0
+----------------------------------------------------
+  this->$codehash = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$13=0 }
+
+State 45 file <workspace> line 44 column 17 function _ESBMC_nondet_init_balance thread 0
+----------------------------------------------------
+  return_value$_nondet_uint256$1 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 46 file <workspace> line 44 column 3 function _ESBMC_nondet_init_balance thread 0
+----------------------------------------------------
+  b = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 48 file <workspace> line 46 column 3 function _ESBMC_nondet_init_balance thread 0
+----------------------------------------------------
+  _ESBMC_Object_FeeVault.$balance = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$13=0 }
+
+State 49  thread 0
+----------------------------------------------------
+  this->$code = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=nil, .pool_cursor=nil }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$13=0 }
+
+State 50 file <workspace> line 672 column 3 function bytes_pool_init thread 0
+----------------------------------------------------
+  _ESBMC_Object_FeeVault.$dynamic_pool = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname={ .pointer_object=nil, .pointer_offset=nil },
+    .anon_pad$13=0 }
+
+State 51  thread 0
+----------------------------------------------------
+  this->_ESBMC_bind_cname = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 52  thread 0
+----------------------------------------------------
+  this->owner = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 53  thread 0
+----------------------------------------------------
+  this->feeReceiver = { .owner=0, .feeReceiver=0, .feeBps=0, .anon_pad$3=0, .maxFee=0,
+    .anon_pad$5=0, .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 54  thread 0
+----------------------------------------------------
+  this->feeBps = { .owner=0, .feeReceiver=0, .feeBps=250, .anon_pad$3=0,
+    .maxFee=0, .anon_pad$5=0, .$address=4294967295,
+    .anon_pad$7=0, .$codehash=0,
+    .$balance=0, .$code=0, .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 },
+    ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 55  thread 0
+----------------------------------------------------
+  this->maxFee = { .owner=0, .feeReceiver=0, .feeBps=250, .anon_pad$3=0,
+    .maxFee=100000000000000000, .anon_pad$5=0,
+    .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 56 file <workspace> line 169 column 14 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  msg_data = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 57 file <workspace> line 170 column 27 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$1 = 4294967295 (11111111 11111111 11111111 11111111)
+
+State 58 file <workspace> line 170 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  msg_sender = 4294967295 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111)
+
+State 59 file <workspace> line 171 column 15 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  msg_value = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 60 file <workspace> line 172 column 26 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$2 = 0 (00000000 00000000 00000000 00000000)
+
+State 61 file <workspace> line 172 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  tx_origin = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 62 file <workspace> line 173 column 17 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  tx_gasprice = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 63 file <workspace> line 192 column 23 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  return_value$_nondet_uint256$3 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 64 file <workspace> line 192 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  _new_bn = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 66 file <workspace> line 194 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_number = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 67 file <workspace> line 196 column 23 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  return_value$_nondet_uint256$4 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 68 file <workspace> line 196 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  _new_ts = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 70 file <workspace> line 198 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_timestamp = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 71 file <workspace> line 200 column 19 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_basefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 72 file <workspace> line 201 column 23 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_blobbasefee = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 73 file <workspace> line 202 column 31 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  return_value$_nondet_uint$5 = 0 (00000000 00000000 00000000 00000000)
+
+State 74 file <workspace> line 202 column 3 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_coinbase = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 75 file <workspace> line 203 column 22 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_difficulty = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 76 file <workspace> line 204 column 20 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_gaslimit = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 77 file <workspace> line 205 column 22 function _sol_per_tx_reseed thread 0
+----------------------------------------------------
+  block_prevrandao = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 78  thread 0
+----------------------------------------------------
+  return_value$_nondet_bool$1 = 0
+
+State 80  thread 0
+----------------------------------------------------
+  return_value$_nondet_bool$2 = 0
+
+State 81 file <workspace> line 17 function setDiscount thread 0
+----------------------------------------------------
+  goto_symex::guard = 0
+
+State 82 file <workspace> line 17 function setDiscount thread 0
+----------------------------------------------------
+  goto_symex::guard = 1
+
+State 86  thread 0
+----------------------------------------------------
+  return_value$_nondet_bool$3 = 1
+
+State 87  thread 0
+----------------------------------------------------
+  this = &_ESBMC_Object_FeeVault
+
+State 88  thread 0
+----------------------------------------------------
+  amount = 0x8000000000000000000000000000000000000000000000000000000000000001 (10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 89 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  deposits[4294967295] = 0x8000000000000000000000000000000000000000000000000000000000000001 (10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 90 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  discountBps[4294967295] = 127 (00000000 01111111)
+
+State 91 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  _ESBMC_Object_FeeVault.feeReceiver = { .owner=0, .feeReceiver=4294967295, .feeBps=250, .anon_pad$3=0,
+    .maxFee=100000000000000000, .anon_pad$5=0,
+    .$address=4294967295, .anon_pad$7=0,
+    .$codehash=0, .$balance=0, .$code=0,
+    .$dynamic_pool={ .pool=&$FeeVault_pool#[0], .pool_cursor=0 }, ._ESBMC_bind_cname=&"FeeVault"[0],
+    .anon_pad$13=0 }
+
+State 92 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_entry_mark$8 = 1
+
+State 93 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$9 = 0x8000000000000000000000000000000000000000000000000000000000000001 (10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 95 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$10 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 97 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$11 = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF (11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111)
+
+State 99 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$12 = 4294967295 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111)
+
+State 101 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$13 = 0x8000000000000000000000000000000000000000000000000000000000000001 (10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 103 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$14 = 127 (00000000 01111111)
+
+State 105 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$15 = 4294967295 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111)
+
+State 107 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$16 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 109 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$17 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 111 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$18 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 113 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$19 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 115 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$20 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 117 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$21 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 119 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$24 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 121 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$25 = 250 (00000000 11111010)
+
+State 123 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$26 = 100000000000000000 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001 01100011 01000101 01111000 01011101 10001010 00000000 00000000)
+
+State 125 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  certify_coord$27 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 127 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  path_ret$6 = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 128 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  path_retset$7 = 0
+
+State 129 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 3 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000011)
+
+State 130 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  goto_symex::guard = 0
+
+State 131 file <workspace> line 23 function withdraw thread 0
+----------------------------------------------------
+  d = 0x8000000000000000000000000000000000000000000000000000000000000001 (10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001)
+
+State 132 file <workspace> line 24 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 7 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000111)
+
+State 133 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  goto_symex::guard = 0
+
+State 136 file <workspace> line 25 function withdraw thread 0
+----------------------------------------------------
+  rate = 250 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111010)
+
+State 137 file <workspace> line 26 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 14 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001110)
+
+State 139 file <workspace> line 27 function withdraw thread 0
+----------------------------------------------------
+  rate = 123 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 01111011)
+
+State 141 file <workspace> line 31 function withdraw thread 0
+----------------------------------------------------
+  fee = 0x346DC5D63886594AF4F0D844D013A92A305532617C1BDA5119CE075F6FD22 (00000000 00000011 01000110 11011100 01011101 01100011 10001000 01100101 10010100 10101111 01001111 00001101 10000100 01001101 00000001 00111010 10010010 10100011 00000101 01010011 00100110 00010111 11000001 10111101 10100101 00010001 10011100 11100000 01110101 11110110 11111101 00100010)
+
+State 142 file <workspace> line 32 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 28 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00011100)
+
+State 143 file <workspace> line 33 function withdraw thread 0
+----------------------------------------------------
+  goto_symex::guard = 1
+
+State 144 file <workspace> line 33 function withdraw thread 0
+----------------------------------------------------
+  fee = 100000000000000000 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001 01100011 01000101 01111000 01011101 10001010 00000000 00000000)
+
+State 146 file <workspace> line 35 function withdraw thread 0
+----------------------------------------------------
+  net = 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE9CBA87A2760001 (01111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111110 10011100 10111010 10000111 10100010 01110110 00000000 00000001)
+
+State 147 file <workspace> line 36 function withdraw thread 0
+----------------------------------------------------
+  deposits[4294967295] = 0 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000)
+
+State 148  thread 0
+----------------------------------------------------
+  ok1 = 1
+
+State 150  thread 0
+----------------------------------------------------
+  certify_coord$22 = 1
+
+State 151 file <workspace> line 38 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 57 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00111001)
+
+State 152  thread 0
+----------------------------------------------------
+  ok2 = 1
+
+State 154  thread 0
+----------------------------------------------------
+  certify_coord$23 = 1
+
+State 155 file <workspace> line 40 function withdraw thread 0
+----------------------------------------------------
+  path_tr$4 = 115 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 01110011)
+
+State 156 file <workspace> line 11 function Withdrawn thread 0
+----------------------------------------------------
+  u = 4294967295 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111 11111111 11111111 11111111)
+
+State 157 file <workspace> line 11 function Withdrawn thread 0
+----------------------------------------------------
+  net = 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE9CBA87A2760001 (01111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111110 10011100 10111010 10000111 10100010 01110110 00000000 00000001)
+
+State 158 file <workspace> line 11 function Withdrawn thread 0
+----------------------------------------------------
+  fee = 100000000000000000 (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001 01100011 01000101 01111000 01011101 10001010 00000000 00000000)
+
+State 159 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  path_ret$6 = 0x7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE9CBA87A2760001 (01111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111110 10011100 10111010 10000111 10100010 01110110 00000000 00000001)
+
+State 160 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+  path_retset$7 = 1
+
+State 161 file <workspace> line 22 function withdraw thread 0
+----------------------------------------------------
+Violated property:
+  file <workspace> line 22 function withdraw
+  sol:@C@FeeVault@F@withdraw#193:path:115#nonvacuous
+  path_tr$4 != 115 || path_cnt$5 != 6
+
+Slicing time: 0.000s (removed 0 assignments)
+Solving claim 'withdraw:path:115#exit3 at file <workspace> line 22 function withdraw' with solver Bitwuzla 0.9.0
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.001s
+✓ PASSED: 'withdraw:path:115#exit3 at file <workspace> line 22 function withdraw'
+Slicing time: 0.000s (removed 6 assignments)
+Solving claim 'withdraw:path:115#exit5 at' with solver Bitwuzla 0.9.0
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.001s
+✓ PASSED: 'withdraw:path:115#exit5 at'
+Slicing time: 0.001s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.008s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.002s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.007s
+--path-cov-certify: witness minimisation for 'arithmetic overflow on mul': 23 assume step(s), 19 box-bound step(s), 0 sliced, 0 of unexpected shape, 0 not in x_pi, 0 without a model value, 17 already at x_pi, 17 re-solve(s)
+--solidity-path-coverage: CE journal cov-ce-journal.json updated after first witness for claim 7 of 15: 2 witnessed path(s) on disk, 2 with non-empty inputs (complete=false)
+--solidity-path-coverage: CE journal cov-ce-journal.json updated after claim 7 of 15: 2 witnessed path(s) on disk, 2 with non-empty inputs (complete=false)
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.000s
+Slicing time: 0.001s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.001s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.002s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.000s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.000s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.001s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.000s
+Slicing time: 0.000s (removed 6 assignments)
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Bitwuzla 0.9.0
+Runtime decision procedure: 0.000s
+Properties: 15 verified ✓ 13 passed, ✗ 2 failed
+Solver: Bitwuzla 0.9.0 • Decision procedure total time: 0.047s • Avg: 0.003s/property
+
+VERIFICATION FAILED
+
+Bug found (k = 1)
+Checking forward condition, k = 1
+Starting Bounded Model Checking
+Symex completed in: 0.004s (361 assignments)
+Slicing time: 0.000s (removed 176 assignments)
+Generated 0 VCC(s), 0 remaining after simplification (185 assignments)
+BMC program time: 0.004s
+
+Solution found by the forward condition; all states are reachable (k = 1)
+--solidity-path-coverage: 4 of 7 instrumented path claim(s) reached the solver across 1 unit(s)
+--path-cov-certify: SHRINK SUGGESTION for 'arithmetic overflow on mul' — the witness lies outside the path on coordinate 'state.feeReceiver', and the path's own counterexample lies on the other side of it, so retry with state.feeReceiver in [1, 4294967295] (everything else unchanged). The cut lands ON the witness rather than halving the interval: the refutation already says where the boundary is not
+--path-cov-certify: no [Coverage] block is printed in certification mode — the claims here are `assume(box); assert(tr == pi)`, so a CERTIFIED box makes them hold and would be counted as uncovered
+--path-cov-certify: RESULT: UNSAFE — 1 checked arithmetic/division assertion(s) were refuted under the certification box, so an input the box admits can panic before a normal unit exit. This is a genuine region refutation for normal-exit PUT generation; use the SHRINK / PUNCH suggestion above to cut the unsafe input
+--path-cov-certify: the run's VERIFICATION SUCCESSFUL / FAILED line is NOT the result of this mode. The non-vacuity witness is REFUTED on every run that certifies, so a certified box prints VERIFICATION FAILED. Read the RESULT line above
+--solidity-path-coverage: CE PAYLOADS published for 1 witness(es) across 1 witnessed path(s); 0 path(s) carry more than one (--all-witnesses is off). Every witness of a path is a further point in that path's input domain, which is what a sibling span needs and what one counterexample cannot give
+--solidity-path-coverage: DECISION SEQUENCES published for 1 of 1 witnessed path(s) (6 step(s), 0 unrecorded, 1 synthesised ABI value gate). A path with no sequence cannot be projected onto decisions, and the synthesised gate has no branch-coverage counterpart, so both are named rather than folded in
+--solidity-path-coverage: EVENT SEQUENCES published for 1 of 1 witnessed path(s), 1 of them non-empty (1 emit(s) total). An EMPTY array is a measurement ("this path emits nothing recordable") and a MISSING field is not, so the two are counted apart; and `recordable` excludes the qualified spelling `emit L.E(x)`, which the front end drops
+Coverage report written to cov-report.json
+--solidity-path-coverage: CE journal cov-ce-journal.json updated at run end: 2 witnessed path(s) on disk, 2 with non-empty inputs (complete=true)
+
+[run] CMD <workspace> <workspace> --sol <workspace> --contract FeeVault --solidity-path-coverage --solidity-max-tx 1 --memlimit 12g --focus-function deposit,setDiscount,withdraw --path-cov-certify <workspace> --cov-report-json --extcall-nondet --k-induction --enable-forward-condition --max-k-step 30 --overflow-check --div-by-zero-check --path-cov-arith-resolve
+[run] EXIT 0

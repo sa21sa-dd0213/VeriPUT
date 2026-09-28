@@ -1,0 +1,81 @@
+{
+  "contract": "eMuppy",
+  "dataset": "Peer",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "73b1c50ea373ca61c0a88b8bbe112ef1a9491dcadcb67b5e37eb25e86708ff36",
+  "subject_id": "peer_ccsolbmc__eMuppy",
+  "targets": [
+    {
+      "declaration_line": 634,
+      "external_selector": "9f095e88",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 634,
+        "name": "eMuppy.asdf",
+        "record": "FN"
+      },
+      "length": 41,
+      "line": 634,
+      "name": "asdf",
+      "site": "body-entry",
+      "src": "20974:41:0",
+      "start": 20974,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 634,
+      "external_selector": "9f095e88",
+      "id": "line:634",
+      "kind": "line",
+      "lcov": {
+        "line": 634,
+        "record": "DA"
+      },
+      "length": 41,
+      "line": 634,
+      "site": "body-entry",
+      "src": "20974:41:0",
+      "start": 20974,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:635",
+      "kind": "line",
+      "lcov": {
+        "line": 635,
+        "record": "DA"
+      },
+      "length": 24,
+      "line": 635,
+      "site": "statement-entry",
+      "src": "20984:24:0",
+      "start": 20984,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

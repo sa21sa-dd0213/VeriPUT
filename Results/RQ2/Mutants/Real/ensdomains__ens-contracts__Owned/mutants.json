@@ -1,0 +1,67 @@
+{
+  "compile_failed": 0,
+  "compile_ok": 6,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "setOwner",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(this)",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 19,
+      "function": "setOwner",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "newOwner",
+      "replacement_expression": "address(0)",
+      "start_line": 19
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "modifier:owner_only",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "CCD",
+      "original_expression": "constructor() public {\n        owner = msg.sender;\n    }",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 10,
+      "function": "modifier:owner_only",
+      "mutant_id": "m000005",
+      "operator": "EHD",
+      "original_expression": "require(msg.sender == owner);",
+      "replacement_expression": "/* require(msg.sender == owner); */",
+      "start_line": 10
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "setOwner",
+      "mutant_id": "m000006",
+      "operator": "MOD",
+      "original_expression": "function setOwner(address newOwner) public owner_only ",
+      "replacement_expression": "function setOwner(address newOwner) public  ",
+      "start_line": 18
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__Owned"
+}

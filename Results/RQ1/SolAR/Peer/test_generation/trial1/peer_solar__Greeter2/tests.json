@@ -1,0 +1,95 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        "\"\""
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "changeHello",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00022",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        "\"\""
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "changeGoodbye",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        1
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "sayGoodbye",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        30
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "sayGoodbye",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00025",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        2
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "sayHello",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0,
+        "\"\""
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "changeGoodbye",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

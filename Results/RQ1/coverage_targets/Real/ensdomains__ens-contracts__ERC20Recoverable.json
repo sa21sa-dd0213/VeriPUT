@@ -1,0 +1,81 @@
+{
+  "contract": "ERC20Recoverable",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 2
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "0bb2be14f515fbc1d42dac03511723f85ac70c3f5191bf20d83bcdb133d2eed3",
+  "subject_id": "ensdomains__ens-contracts__ERC20Recoverable",
+  "targets": [
+    {
+      "declaration_line": 119,
+      "external_selector": "5d3590d5",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 119,
+        "name": "ERC20Recoverable.recoverFunds",
+        "record": "FN"
+      },
+      "length": 54,
+      "line": 123,
+      "name": "recoverFunds",
+      "site": "body-entry",
+      "src": "1566:54:0",
+      "start": 1566,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 119,
+      "external_selector": "5d3590d5",
+      "id": "line:119",
+      "kind": "line",
+      "lcov": {
+        "line": 119,
+        "record": "DA"
+      },
+      "length": 54,
+      "line": 123,
+      "site": "body-entry",
+      "src": "1566:54:0",
+      "start": 1566,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:124",
+      "kind": "line",
+      "lcov": {
+        "line": 124,
+        "record": "DA"
+      },
+      "length": 37,
+      "line": 124,
+      "site": "statement-entry",
+      "src": "1576:37:0",
+      "start": 1576,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    }
+  ],
+  "totals": {
+    "all": 3,
+    "branch": 0,
+    "function": 1,
+    "line": 2
+  }
+}

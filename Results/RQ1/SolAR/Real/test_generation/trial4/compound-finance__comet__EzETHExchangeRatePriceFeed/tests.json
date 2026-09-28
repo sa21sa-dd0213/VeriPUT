@@ -1,0 +1,42 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        18,
+        "fXCqdgRAYdYwHrJncYJyBhMRFSxYtkhnZGAUwkXuLBvyTqankwppKXycnpMfYpOckaqPpFsCaqrSthRAHkuMspF MxNtWOoKakDZYJnqlpbu"
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "latestRoundData",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00021",
+        1,
+        "QmZbKqyDUTUdLVEsiuaMTWXfpUKCoEeUMcujhAavrkoeyRDWboXYdyewqqgq"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00027",
+      "method": "version",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

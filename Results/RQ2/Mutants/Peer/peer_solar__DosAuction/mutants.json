@@ -1,0 +1,347 @@
+{
+  "compile_failed": 5,
+  "compile_ok": 29,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 39,
+      "function": "bid",
+      "mutant_id": "m000001",
+      "operator": "AOR",
+      "original_expression": " += ",
+      "replacement_expression": " = ",
+      "start_line": 39
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "bid",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "bid",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "bid",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000008",
+      "operator": "CSC",
+      "original_expression": "currentFrontrunner != address(0)",
+      "replacement_expression": "true",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000009",
+      "operator": "CSC",
+      "original_expression": "currentFrontrunner != address(0)",
+      "replacement_expression": "false",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "bid",
+      "mutant_id": "m000010",
+      "operator": "CSC",
+      "original_expression": "currentFrontrunner != address(0)",
+      "replacement_expression": "true",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "bid",
+      "mutant_id": "m000011",
+      "operator": "CSC",
+      "original_expression": "currentFrontrunner != address(0)",
+      "replacement_expression": "false",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000012",
+      "operator": "EHD",
+      "original_expression": "require(msg.value > currentBid);",
+      "replacement_expression": "/* require(msg.value > currentBid); */",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 18,
+      "function": "bid",
+      "mutant_id": "m000013",
+      "operator": "EHD",
+      "original_expression": "require(payable(currentFrontrunner).send(currentBid));",
+      "replacement_expression": "/* require(payable(currentFrontrunner).send(currentBid)); */",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "bid",
+      "mutant_id": "m000014",
+      "operator": "EHD",
+      "original_expression": "require(msg.value > currentBid);",
+      "replacement_expression": "/* require(msg.value > currentBid); */",
+      "start_line": 36
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 18,
+      "function": "bid",
+      "mutant_id": "m000015",
+      "operator": "ETR",
+      "original_expression": "payable(currentFrontrunner).send",
+      "replacement_expression": "payable(currentFrontrunner).transfer",
+      "start_line": 18
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 18,
+      "function": "bid",
+      "mutant_id": "m000016",
+      "operator": "ETR",
+      "original_expression": "payable(currentFrontrunner).send",
+      "replacement_expression": "payable(currentFrontrunner).call{value: currentBid}(\"\")",
+      "start_line": 18
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "withdraw",
+      "mutant_id": "m000017",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).send",
+      "replacement_expression": "payable(msg.sender).transfer",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 53,
+      "function": "withdraw",
+      "mutant_id": "m000018",
+      "operator": "ETR",
+      "original_expression": "payable(msg.sender).send",
+      "replacement_expression": "payable(msg.sender).call{value: refund}(\"\")",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 53,
+      "function": "withdraw",
+      "mutant_id": "m000019",
+      "operator": "FCD",
+      "original_expression": "payable(msg.sender).",
+      "replacement_expression": "/*payable(msg.sender).*/",
+      "start_line": 53
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000020",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 12,
+      "function": "bid",
+      "mutant_id": "m000021",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 12
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "bid",
+      "mutant_id": "m000022",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "bid",
+      "mutant_id": "m000023",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 22
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "bid",
+      "mutant_id": "m000024",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "bid",
+      "mutant_id": "m000025",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "bid",
+      "mutant_id": "m000026",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value+1",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "bid",
+      "mutant_id": "m000027",
+      "operator": "GVR",
+      "original_expression": "msg.value",
+      "replacement_expression": "msg.value-1",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 16,
+      "function": "bid",
+      "mutant_id": "m000028",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "bid",
+      "mutant_id": "m000029",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 51,
+      "function": "withdraw",
+      "mutant_id": "m000030",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 51
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 23,
+      "function": "bid",
+      "mutant_id": "m000031",
+      "operator": "OLFD",
+      "original_expression": "function bid() public payable {\n    require(msg.value > currentBid);\n\n    //If the refund fails, the entire transaction reverts.\n    //Therefore a frontrunner who always fails will win\n    if (currentFrontrunner != address(0)) {\n      //E.g. if recipients fallback function is just revert()\n      require(payable(currentFrontrunner).send(currentBid));\n    }\n\n    currentFrontrunner = msg.sender;\n    currentBid         = msg.value;\n  }",
+      "replacement_expression": "",
+      "start_line": 11
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 44,
+      "function": "bid",
+      "mutant_id": "m000032",
+      "operator": "OLFD",
+      "original_expression": "function bid() payable external {\n    require(msg.value > currentBid);\n\n    if (currentFrontrunner != address(0)) {\n      refunds[currentFrontrunner] += currentBid;\n    }\n\n    currentFrontrunner = msg.sender;\n    currentBid         = msg.value;\n  }",
+      "replacement_expression": "",
+      "start_line": 35
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 11,
+      "function": "bid",
+      "mutant_id": "m000033",
+      "operator": "PKD",
+      "original_expression": "function bid() public payable ",
+      "replacement_expression": "function bid() public  ",
+      "start_line": 11
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 35,
+      "function": "bid",
+      "mutant_id": "m000034",
+      "operator": "PKD",
+      "original_expression": "function bid() payable external ",
+      "replacement_expression": "function bid()  external ",
+      "start_line": 35
+    }
+  ],
+  "subject_id": "peer_solar__DosAuction"
+}

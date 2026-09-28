@@ -1,0 +1,96 @@
+{
+  "contract": "StableLPOracleFactory",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "d8f27b445882e743c6fb5738d07a1d23dbaf8e3dd0fc103a66f77ede55435422",
+  "subject_id": "balancer__balancer-v3-monorepo__StableLPOracleFactory",
+  "targets": [
+    {
+      "declaration_line": 516,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 516,
+        "name": "StableLPOracleFactory._create",
+        "record": "FN"
+      },
+      "length": 536,
+      "line": 522,
+      "name": "_create",
+      "site": "body-entry",
+      "src": "10327:536:0",
+      "start": 10327,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 516,
+      "external_selector": null,
+      "id": "line:516",
+      "kind": "line",
+      "lcov": {
+        "line": 516,
+        "record": "DA"
+      },
+      "length": 536,
+      "line": 522,
+      "site": "body-entry",
+      "src": "10327:536:0",
+      "start": 10327,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "internal"
+    },
+    {
+      "id": "line:523",
+      "kind": "line",
+      "lcov": {
+        "line": 523,
+        "record": "DA"
+      },
+      "length": 302,
+      "line": 523,
+      "site": "statement-entry",
+      "src": "10337:302:0",
+      "start": 10337,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:533",
+      "kind": "line",
+      "lcov": {
+        "line": 533,
+        "record": "DA"
+      },
+      "length": 207,
+      "line": 533,
+      "site": "statement-entry",
+      "src": "10649:207:0",
+      "start": 10649,
+      "statement_type": "EmitStatement",
+      "trap_id": 4
+    }
+  ],
+  "totals": {
+    "all": 4,
+    "branch": 0,
+    "function": 1,
+    "line": 3
+  }
+}

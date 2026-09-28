@@ -1,0 +1,21 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00026",
+        true
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "setController",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

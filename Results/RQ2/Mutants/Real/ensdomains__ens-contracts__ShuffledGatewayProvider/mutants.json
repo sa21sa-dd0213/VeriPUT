@@ -1,0 +1,307 @@
+{
+  "compile_failed": 7,
+  "compile_ok": 23,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "shuffledGateways",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " % ",
+      "replacement_expression": " / ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "shuffledGateways",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "shuffledGateways",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 22,
+      "function": "constructor",
+      "mutant_id": "m000008",
+      "operator": "CCD",
+      "original_expression": "constructor(IGatewayProvider _provider) {\n        provider = _provider;\n    }",
+      "replacement_expression": "",
+      "start_line": 20
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 11,
+      "function": "gateways",
+      "mutant_id": "m000009",
+      "operator": "DLR",
+      "original_expression": "string[] memory",
+      "replacement_expression": "string[] storage",
+      "start_line": 11
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 25,
+      "function": "gateways",
+      "mutant_id": "m000010",
+      "operator": "DLR",
+      "original_expression": "string[] memory urls",
+      "replacement_expression": "string[] storage urls",
+      "start_line": 25
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 45,
+      "function": "shuffledGateways",
+      "mutant_id": "m000011",
+      "operator": "DLR",
+      "original_expression": "string[] memory urls",
+      "replacement_expression": "string[] storage urls",
+      "start_line": 45
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 36,
+      "function": "gateways",
+      "mutant_id": "m000012",
+      "operator": "ECS",
+      "original_expression": "uint256(\n                    keccak256(\n                        abi.encodePacked(\n                            blockhash(block.number - 1),\n                            msg.sender,\n                            block.timestamp\n                        )\n                    )\n                )",
+      "replacement_expression": "uint248(\n                    keccak256(\n                        abi.encodePacked(\n                            blockhash(block.number - 1),\n                            msg.sender,\n                            block.timestamp\n                        )\n                    )\n                )",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000013",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number+1",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000014",
+      "operator": "GVR",
+      "original_expression": "block.number",
+      "replacement_expression": "block.number-1",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "gateways",
+      "mutant_id": "m000015",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000016",
+      "operator": "GVR",
+      "original_expression": "blockhash(block.number - 1)",
+      "replacement_expression": "0",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000017",
+      "operator": "GVR",
+      "original_expression": "blockhash(block.number - 1)",
+      "replacement_expression": "blockhash(block.prevrandao)",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000018",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 31,
+      "function": "gateways",
+      "mutant_id": "m000019",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 31
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000020",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000021",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "shuffledGateways",
+      "mutant_id": "m000022",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 49,
+      "function": "shuffledGateways",
+      "mutant_id": "m000023",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 49
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000024",
+      "operator": "LSC",
+      "original_expression": "i < n",
+      "replacement_expression": "false",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 29,
+      "function": "gateways",
+      "mutant_id": "m000025",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 29
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 11,
+      "function": "gateways",
+      "mutant_id": "m000026",
+      "operator": "OLFD",
+      "original_expression": "function gateways() external view returns (string[] memory);",
+      "replacement_expression": "",
+      "start_line": 11
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 38,
+      "function": "gateways",
+      "mutant_id": "m000027",
+      "operator": "ORFD",
+      "original_expression": "function gateways() external view override returns (string[] memory urls) {\n        return\n            shuffledGateways(\n                uint256(\n                    keccak256(\n                        abi.encodePacked(\n                            blockhash(block.number - 1),\n                            msg.sender,\n                            block.timestamp\n                        )\n                    )\n                )\n            );\n    }",
+      "replacement_expression": "",
+      "start_line": 25
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 37,
+      "function": "gateways",
+      "mutant_id": "m000028",
+      "operator": "RSD",
+      "original_expression": "return\n            shuffledGateways(\n                uint256(\n                    keccak256(\n                        abi.encodePacked(\n                            blockhash(block.number - 1),\n                            msg.sender,\n                            block.timestamp\n                        )\n                    )\n                )\n            );",
+      "replacement_expression": "shuffledGateways(\n                uint256(\n                    keccak256(\n                        abi.encodePacked(\n                            blockhash(block.number - 1),\n                            msg.sender,\n                            block.timestamp\n                        )\n                    )\n                )\n            );",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000029",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": "--i",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "shuffledGateways",
+      "mutant_id": "m000030",
+      "operator": "UORD",
+      "original_expression": "++i",
+      "replacement_expression": " i",
+      "start_line": 48
+    }
+  ],
+  "subject_id": "ensdomains__ens-contracts__ShuffledGatewayProvider"
+}

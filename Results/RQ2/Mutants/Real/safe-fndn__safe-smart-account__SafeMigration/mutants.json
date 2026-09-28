@@ -1,0 +1,447 @@
+{
+  "compile_failed": 13,
+  "compile_ok": 31,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 116,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "safeSingleton",
+      "replacement_expression": "address(this)",
+      "start_line": 116
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 116,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "safeSingleton",
+      "replacement_expression": "address(0)",
+      "start_line": 116
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "constructor",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "safeL2Singleton",
+      "replacement_expression": "address(this)",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "constructor",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "safeL2Singleton",
+      "replacement_expression": "address(0)",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "constructor",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "fallbackHandler",
+      "replacement_expression": "address(this)",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 118,
+      "function": "constructor",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "fallbackHandler",
+      "replacement_expression": "address(0)",
+      "start_line": 118
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "migrateSingleton",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "SAFE_SINGLETON",
+      "replacement_expression": "address(this)",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "migrateSingleton",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "SAFE_SINGLETON",
+      "replacement_expression": "address(0)",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "migrateL2Singleton",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "SAFE_L2_SINGLETON",
+      "replacement_expression": "address(this)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "migrateL2Singleton",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "SAFE_L2_SINGLETON",
+      "replacement_expression": "address(0)",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "hasCode",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "hasCode",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 119,
+      "function": "constructor",
+      "mutant_id": "m000014",
+      "operator": "CCD",
+      "original_expression": "constructor(address safeSingleton, address safeL2Singleton, address fallbackHandler) {\n        MIGRATION_SINGLETON = address(this);\n\n        require(hasCode(safeSingleton), \"Safe Singleton is not deployed\");\n        require(hasCode(safeL2Singleton), \"Safe Singleton (L2) is not deployed\");\n        require(hasCode(fallbackHandler), \"fallback handler is not deployed\");\n\n        SAFE_SINGLETON = safeSingleton;\n        SAFE_L2_SINGLETON = safeL2Singleton;\n        SAFE_FALLBACK_HANDLER = fallbackHandler;\n    }",
+      "replacement_expression": "",
+      "start_line": 109
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 385,
+      "function": "getOwners",
+      "mutant_id": "m000015",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 385
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 401,
+      "function": "getStorageAt",
+      "mutant_id": "m000016",
+      "operator": "DLR",
+      "original_expression": "bytes memory",
+      "replacement_expression": "bytes storage",
+      "start_line": 401
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 412,
+      "function": "simulateAndRevert",
+      "mutant_id": "m000017",
+      "operator": "DLR",
+      "original_expression": "bytes memory calldataPayload",
+      "replacement_expression": "bytes storage calldataPayload",
+      "start_line": 412
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 504,
+      "function": "execTransactionFromModule",
+      "mutant_id": "m000018",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 504
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 520,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000019",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 520
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 522,
+      "function": "execTransactionFromModuleReturnData",
+      "mutant_id": "m000020",
+      "operator": "DLR",
+      "original_expression": "bytes memory returnData",
+      "replacement_expression": "bytes storage returnData",
+      "start_line": 522
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 539,
+      "function": "getModulesPaginated",
+      "mutant_id": "m000021",
+      "operator": "DLR",
+      "original_expression": "address[] memory array",
+      "replacement_expression": "address[] storage array",
+      "start_line": 539
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 660,
+      "function": "execTransaction",
+      "mutant_id": "m000022",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 660
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 672,
+      "function": "checkSignatures",
+      "mutant_id": "m000023",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 672
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 685,
+      "function": "checkNSignatures",
+      "mutant_id": "m000024",
+      "operator": "DLR",
+      "original_expression": "bytes memory signatures",
+      "replacement_expression": "bytes storage signatures",
+      "start_line": 685
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 733,
+      "function": "VERSION",
+      "mutant_id": "m000025",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 733
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 126,
+      "function": "migrateSingleton",
+      "mutant_id": "m000026",
+      "operator": "EED",
+      "original_expression": "emit ChangedMasterCopy(SAFE_SINGLETON);",
+      "replacement_expression": "/* emit ChangedMasterCopy(SAFE_SINGLETON); */",
+      "start_line": 126
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 143,
+      "function": "migrateL2Singleton",
+      "mutant_id": "m000027",
+      "operator": "EED",
+      "original_expression": "emit ChangedMasterCopy(SAFE_L2_SINGLETON);",
+      "replacement_expression": "/* emit ChangedMasterCopy(SAFE_L2_SINGLETON); */",
+      "start_line": 143
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "modifier:onlyDelegateCall",
+      "mutant_id": "m000028",
+      "operator": "EHD",
+      "original_expression": "require(address(this) != MIGRATION_SINGLETON, \"Migration should only be called via delegatecall\");",
+      "replacement_expression": "/* require(address(this) != MIGRATION_SINGLETON, \"Migration should only be called via delegatecall\"); */",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "constructor",
+      "mutant_id": "m000029",
+      "operator": "EHD",
+      "original_expression": "require(hasCode(safeSingleton), \"Safe Singleton is not deployed\");",
+      "replacement_expression": "/* require(hasCode(safeSingleton), \"Safe Singleton is not deployed\"); */",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 113,
+      "function": "constructor",
+      "mutant_id": "m000030",
+      "operator": "EHD",
+      "original_expression": "require(hasCode(safeL2Singleton), \"Safe Singleton (L2) is not deployed\");",
+      "replacement_expression": "/* require(hasCode(safeL2Singleton), \"Safe Singleton (L2) is not deployed\"); */",
+      "start_line": 113
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 114,
+      "function": "constructor",
+      "mutant_id": "m000031",
+      "operator": "EHD",
+      "original_expression": "require(hasCode(fallbackHandler), \"fallback handler is not deployed\");",
+      "replacement_expression": "/* require(hasCode(fallbackHandler), \"fallback handler is not deployed\"); */",
+      "start_line": 114
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 134,
+      "function": "migrateWithFallbackHandler",
+      "mutant_id": "m000032",
+      "operator": "FCD",
+      "original_expression": "migrateSingleton();",
+      "replacement_expression": "/*migrateSingleton();*/",
+      "start_line": 134
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 135,
+      "function": "migrateWithFallbackHandler",
+      "mutant_id": "m000033",
+      "operator": "FCD",
+      "original_expression": "ISafe(payable(address(this))).setFallbackHandler(SAFE_FALLBACK_HANDLER);",
+      "replacement_expression": "/*ISafe(payable(address(this))).setFallbackHandler(SAFE_FALLBACK_HANDLER);*/",
+      "start_line": 135
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 135,
+      "function": "migrateWithFallbackHandler",
+      "mutant_id": "m000034",
+      "operator": "FCD",
+      "original_expression": "ISafe(payable(address(this))).",
+      "replacement_expression": "/*ISafe(payable(address(this))).*/",
+      "start_line": 135
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "migrateL2WithFallbackHandler",
+      "mutant_id": "m000035",
+      "operator": "FCD",
+      "original_expression": "migrateL2Singleton();",
+      "replacement_expression": "/*migrateL2Singleton();*/",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "migrateL2WithFallbackHandler",
+      "mutant_id": "m000036",
+      "operator": "FCD",
+      "original_expression": "ISafe(payable(address(this))).setFallbackHandler(SAFE_FALLBACK_HANDLER);",
+      "replacement_expression": "/*ISafe(payable(address(this))).setFallbackHandler(SAFE_FALLBACK_HANDLER);*/",
+      "start_line": 152
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 152,
+      "function": "migrateL2WithFallbackHandler",
+      "mutant_id": "m000037",
+      "operator": "FCD",
+      "original_expression": "ISafe(payable(address(this))).",
+      "replacement_expression": "/*ISafe(payable(address(this))).*/",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "hasCode",
+      "mutant_id": "m000038",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 171
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 124,
+      "function": "migrateSingleton",
+      "mutant_id": "m000039",
+      "operator": "MOD",
+      "original_expression": "function migrateSingleton() public onlyDelegateCall ",
+      "replacement_expression": "function migrateSingleton() public  ",
+      "start_line": 124
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 133,
+      "function": "migrateWithFallbackHandler",
+      "mutant_id": "m000040",
+      "operator": "MOD",
+      "original_expression": "function migrateWithFallbackHandler() external onlyDelegateCall ",
+      "replacement_expression": "function migrateWithFallbackHandler() external  ",
+      "start_line": 133
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "migrateL2Singleton",
+      "mutant_id": "m000041",
+      "operator": "MOD",
+      "original_expression": "function migrateL2Singleton() public onlyDelegateCall ",
+      "replacement_expression": "function migrateL2Singleton() public  ",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 150,
+      "function": "migrateL2WithFallbackHandler",
+      "mutant_id": "m000042",
+      "operator": "MOD",
+      "original_expression": "function migrateL2WithFallbackHandler() external onlyDelegateCall ",
+      "replacement_expression": "function migrateL2WithFallbackHandler() external  ",
+      "start_line": 150
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 661,
+      "function": "execTransaction",
+      "mutant_id": "m000043",
+      "operator": "PKD",
+      "original_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external payable returns (bool success)",
+      "replacement_expression": "function execTransaction(\n        address to,\n        uint256 value,\n        bytes calldata data,\n        Enum.Operation operation,\n        uint256 safeTxGas,\n        uint256 baseGas,\n        uint256 gasPrice,\n        address gasToken,\n        address payable refundReceiver,\n        bytes memory signatures\n    ) external  returns (bool success)",
+      "start_line": 650
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 171,
+      "function": "hasCode",
+      "mutant_id": "m000044",
+      "operator": "RSD",
+      "original_expression": "return size > 0;",
+      "replacement_expression": "/* return size > 0; */",
+      "start_line": 171
+    }
+  ],
+  "subject_id": "safe-fndn__safe-smart-account__SafeMigration"
+}

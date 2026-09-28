@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "args": [
+        85243287201242524962005193044650445379142964363581750933229392627681749957229,
+        "LitXPylldaWUDRtMJgjmPBBfXSVIaO",
+        0,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        2019
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "approve",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        255,
+        "hAnxQmBjvLJjIjJxrIJuEWBqNoEfcUQR",
+        8,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        "anonymous_hex_00021",
+        0
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "transferFrom",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "JAe tdAQQYfRgrqyUarEWVSOTDyaLPHwfTfpBgbdWcAWaNlhcD",
+        0,
+        "onXMAzhHkHxQduRKvsIzeeGwhwxiXeWhboyNmRZPnGhRQVsICZtpBBgQYoUZBQGkcO"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00025"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "balanceOf",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        85243287201242524962005193044650445379142964363581750933229392627681749957229,
+        "LitXPylldaWUDRtMJgjmPBBfXSVIaO",
+        0,
+        "bBjgLhYsQuEsZfgdzMzemAgazBkySUtDazDRPiSMVbPGvLoFWXxUIkJCqrrXnRl"
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00019",
+        "anonymous_hex_00027"
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "allowance",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        2019,
+        "HNzfqPCHMwanFzLnjUYTNtUmPTFpDAPuCiZovOqb UJubqlQYEcLqNFAfSURvUmkgLejSnILeKFLBWksZxvYKNHFdtomCzgtsUQdvhpkxQRvWqQRzRmehViLVWgbEYpjUWWtWOqtWdLYUJOfish UoMrWcFQOuCcguIsJSmWnHk MdHyHuNWOpGPZvgfyr KAyB ahFGkVxOgmigHpvluUutcDHgENAArFKDbRdP",
+        0,
+        "NSvHWbjbaYKhZVqGCLbwkspUPZNxZhZhsamnJtgFk EplwgiObB bCyHFqrMHOUQVFJsadEpmMfVRQorbdiSKZxvmAykupUrMRTrygrwRQpfFySiqGGtOORhFTJdzVohwCHwwcVatcRLhfYOqeitYgtJnJifZgEWvoLdFveDmUwNKQeGYxgsu tSUkAbbAGGeRWagcOsc"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00021",
+        47260918607657618856787059062084147417618649193173958205239494705168289206140
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

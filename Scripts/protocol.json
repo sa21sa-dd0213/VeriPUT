@@ -1,0 +1,8 @@
+{
+  "coverage_fuzz_runs": 10000,
+  "esbmc": "8.2.0",
+  "foundry": "1.7.1",
+  "output_grace_seconds": 60,
+  "solc": "0.8.35",
+  "synthesis_seconds": 600
+}

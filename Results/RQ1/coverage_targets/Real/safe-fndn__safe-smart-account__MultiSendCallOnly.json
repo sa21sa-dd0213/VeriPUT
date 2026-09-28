@@ -1,0 +1,386 @@
+{
+  "contract": "MultiSendCallOnly",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 1,
+    "FNF": 1,
+    "LF": 21
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "6ef0c95093925a1531eff1811f175e10f1c0df9c421f4fced5cce9732507c7ae",
+  "subject_id": "safe-fndn__safe-smart-account__MultiSendCallOnly",
+  "targets": [
+    {
+      "declaration_line": 28,
+      "external_selector": "8d80ff0a",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 28,
+        "name": "MultiSendCallOnly.multiSend",
+        "record": "FN"
+      },
+      "length": 1363,
+      "line": 28,
+      "name": "multiSend",
+      "site": "body-entry",
+      "src": "148:1363:0",
+      "start": 148,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 28,
+      "external_selector": "8d80ff0a",
+      "id": "line:28",
+      "kind": "line",
+      "lcov": {
+        "line": 28,
+        "record": "DA"
+      },
+      "length": 1363,
+      "line": 28,
+      "site": "body-entry",
+      "src": "148:1363:0",
+      "start": 148,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "public"
+    },
+    {
+      "id": "line:32",
+      "kind": "line",
+      "lcov": {
+        "line": 32,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 32,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 3
+    },
+    {
+      "id": "line:33",
+      "kind": "line",
+      "lcov": {
+        "line": 33,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 33,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 4
+    },
+    {
+      "id": "line:36",
+      "kind": "line",
+      "lcov": {
+        "line": 36,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 36,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 5
+    },
+    {
+      "id": "line:38",
+      "kind": "line",
+      "lcov": {
+        "line": 38,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 38,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 6
+    },
+    {
+      "id": "line:42",
+      "kind": "line",
+      "lcov": {
+        "line": 42,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 42,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 7
+    },
+    {
+      "id": "line:45",
+      "kind": "line",
+      "lcov": {
+        "line": 45,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 45,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 8
+    },
+    {
+      "id": "line:47",
+      "kind": "line",
+      "lcov": {
+        "line": 47,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 47,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 9
+    },
+    {
+      "id": "line:49",
+      "kind": "line",
+      "lcov": {
+        "line": 49,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 49,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 10
+    },
+    {
+      "id": "line:51",
+      "kind": "line",
+      "lcov": {
+        "line": 51,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 51,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 11
+    },
+    {
+      "id": "line:53",
+      "kind": "line",
+      "lcov": {
+        "line": 53,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 53,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 12
+    },
+    {
+      "id": "line:54",
+      "kind": "line",
+      "lcov": {
+        "line": 54,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 54,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 13
+    },
+    {
+      "id": "line:56",
+      "kind": "line",
+      "lcov": {
+        "line": 56,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 56,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 14
+    },
+    {
+      "id": "line:57",
+      "kind": "line",
+      "lcov": {
+        "line": 57,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 57,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 15
+    },
+    {
+      "id": "line:60",
+      "kind": "line",
+      "lcov": {
+        "line": 60,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 60,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 16
+    },
+    {
+      "id": "line:61",
+      "kind": "line",
+      "lcov": {
+        "line": 61,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 61,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 17
+    },
+    {
+      "id": "line:63",
+      "kind": "line",
+      "lcov": {
+        "line": 63,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 63,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 18
+    },
+    {
+      "id": "line:64",
+      "kind": "line",
+      "lcov": {
+        "line": 64,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 64,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 19
+    },
+    {
+      "id": "line:65",
+      "kind": "line",
+      "lcov": {
+        "line": 65,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 65,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 20
+    },
+    {
+      "id": "line:66",
+      "kind": "line",
+      "lcov": {
+        "line": 66,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 66,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 21
+    },
+    {
+      "id": "line:69",
+      "kind": "line",
+      "lcov": {
+        "line": 69,
+        "record": "DA"
+      },
+      "length": 1320,
+      "line": 69,
+      "site": "statement-entry",
+      "src": "176:1320:0",
+      "start": 176,
+      "statement_type": "InlineAssembly",
+      "trap_id": 22
+    },
+    {
+      "branch_id": "branch:2",
+      "condition_src": "1212:0:0",
+      "id": "branch:2:assembly-if",
+      "kind": "branch",
+      "lcov": {
+        "block": 0,
+        "branch": 0,
+        "line": 63,
+        "record": "BRDA"
+      },
+      "lcov_branch": 0,
+      "length": 0,
+      "line": 63,
+      "outcome": true,
+      "site": "assembly-line",
+      "src": "1212:0:0",
+      "start": 1212,
+      "trap_id": 23
+    }
+  ],
+  "totals": {
+    "all": 23,
+    "branch": 1,
+    "function": 1,
+    "line": 21
+  }
+}

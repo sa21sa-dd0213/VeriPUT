@@ -1,0 +1,12 @@
+{
+  "dataset": "Peer",
+  "kill_statuses": [
+    "killed",
+    "killed-compile",
+    "mutant-compile_error",
+    "mutant-setup-failure",
+    "score-uncompilable-unanchored"
+  ],
+  "tool": "SynTest",
+  "trials": 5
+}

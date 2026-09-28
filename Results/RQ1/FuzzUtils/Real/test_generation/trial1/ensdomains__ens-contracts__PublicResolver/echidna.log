@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (4.448612644s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (3.478076614s)
+
+echidna: Constructor arguments are required: [("_ens",address),("wrapperAddress",address),("_trustedETHController",address),("_trustedReverseRegistrar",address)]

@@ -1,0 +1,8 @@
+{
+  "contract": "HookTargetSynth",
+  "dataset": "Real",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "euler-xyz__euler-vault-kit__HookTargetSynth"
+}

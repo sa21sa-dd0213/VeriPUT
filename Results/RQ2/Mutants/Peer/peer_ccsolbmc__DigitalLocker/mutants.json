@@ -1,0 +1,1277 @@
+{
+  "compile_failed": 7,
+  "compile_ok": 120,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "initialize",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "bankAgent",
+      "replacement_expression": "address(this)",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "initialize",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "bankAgent",
+      "replacement_expression": "address(0)",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000003",
+      "operator": "AVR",
+      "original_expression": "thirdPartyRequestor",
+      "replacement_expression": "address(this)",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000004",
+      "operator": "AVR",
+      "original_expression": "thirdPartyRequestor",
+      "replacement_expression": "address(0)",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000005",
+      "operator": "AVR",
+      "original_expression": "ThirdPartyRequestor",
+      "replacement_expression": "address(this)",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 78,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000006",
+      "operator": "AVR",
+      "original_expression": "ThirdPartyRequestor",
+      "replacement_expression": "address(0)",
+      "start_line": 78
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000007",
+      "operator": "AVR",
+      "original_expression": "ThirdPartyRequestor",
+      "replacement_expression": "address(this)",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 93,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000008",
+      "operator": "AVR",
+      "original_expression": "ThirdPartyRequestor",
+      "replacement_expression": "address(0)",
+      "start_line": 93
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000009",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 104,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000010",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 104
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000011",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 128,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000012",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 128
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000013",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 129,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000014",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 129
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000015",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 141,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000016",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 141
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "Terminate",
+      "mutant_id": "m000017",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(this)",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 151,
+      "function": "Terminate",
+      "mutant_id": "m000018",
+      "operator": "AVR",
+      "original_expression": "0x0000000000000000000000000000000000000000",
+      "replacement_expression": "address(0)",
+      "start_line": 151
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "RejectApplication",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "UploadDocuments",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "Terminate",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000029",
+      "operator": "CSC",
+      "original_expression": "Owner == msg.sender",
+      "replacement_expression": "true",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 36,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000030",
+      "operator": "CSC",
+      "original_expression": "Owner == msg.sender",
+      "replacement_expression": "false",
+      "start_line": 36
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "RejectApplication",
+      "mutant_id": "m000031",
+      "operator": "CSC",
+      "original_expression": "BankAgent != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 48,
+      "function": "RejectApplication",
+      "mutant_id": "m000032",
+      "operator": "CSC",
+      "original_expression": "BankAgent != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 48
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "UploadDocuments",
+      "mutant_id": "m000033",
+      "operator": "CSC",
+      "original_expression": "BankAgent != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "UploadDocuments",
+      "mutant_id": "m000034",
+      "operator": "CSC",
+      "original_expression": "BankAgent != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000035",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000036",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000037",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 88,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000038",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000039",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 99,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000040",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 99
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000041",
+      "operator": "CSC",
+      "original_expression": "Owner == msg.sender",
+      "replacement_expression": "true",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000042",
+      "operator": "CSC",
+      "original_expression": "Owner == msg.sender",
+      "replacement_expression": "false",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000043",
+      "operator": "CSC",
+      "original_expression": "CurrentAuthorizedUser != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000044",
+      "operator": "CSC",
+      "original_expression": "CurrentAuthorizedUser != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000045",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 136,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000046",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 136
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "Terminate",
+      "mutant_id": "m000047",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "true",
+      "start_line": 147
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 147,
+      "function": "Terminate",
+      "mutant_id": "m000048",
+      "operator": "CSC",
+      "original_expression": "Owner != msg.sender",
+      "replacement_expression": "false",
+      "start_line": 147
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 21,
+      "function": "initialize",
+      "mutant_id": "m000049",
+      "operator": "DLR",
+      "original_expression": "string memory lockerFriendlyName",
+      "replacement_expression": "string storage lockerFriendlyName",
+      "start_line": 21
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 46,
+      "function": "RejectApplication",
+      "mutant_id": "m000050",
+      "operator": "DLR",
+      "original_expression": "string memory rejectionReason",
+      "replacement_expression": "string storage rejectionReason",
+      "start_line": 46
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 58,
+      "function": "UploadDocuments",
+      "mutant_id": "m000051",
+      "operator": "DLR",
+      "original_expression": "string memory lockerIdentifier",
+      "replacement_expression": "string storage lockerIdentifier",
+      "start_line": 58
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 58,
+      "function": "UploadDocuments",
+      "mutant_id": "m000052",
+      "operator": "DLR",
+      "original_expression": "string memory image",
+      "replacement_expression": "string storage image",
+      "start_line": 58
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 70,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000053",
+      "operator": "DLR",
+      "original_expression": "string memory expirationDate",
+      "replacement_expression": "string storage expirationDate",
+      "start_line": 70
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 70,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000054",
+      "operator": "DLR",
+      "original_expression": "string memory intendedPurpose",
+      "replacement_expression": "string storage intendedPurpose",
+      "start_line": 70
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 108,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000055",
+      "operator": "DLR",
+      "original_expression": "string memory intendedPurpose",
+      "replacement_expression": "string storage intendedPurpose",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000056",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 38
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 50,
+      "function": "RejectApplication",
+      "mutant_id": "m000057",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 50
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 62,
+      "function": "UploadDocuments",
+      "mutant_id": "m000058",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 62
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 74,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000059",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 74
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 90,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000060",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 90
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000061",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 112,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000062",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 112
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 125,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000063",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 125
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 138,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000064",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 138
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 149,
+      "function": "Terminate",
+      "mutant_id": "m000065",
+      "operator": "EHD",
+      "original_expression": "revert();",
+      "replacement_expression": "/* revert(); */",
+      "start_line": 149
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "initialize",
+      "mutant_id": "m000066",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "initialize",
+      "mutant_id": "m000067",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "initialize",
+      "mutant_id": "m000068",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "initialize",
+      "mutant_id": "m000069",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 26,
+      "function": "initialize",
+      "mutant_id": "m000070",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 26
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000071",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000072",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000073",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000074",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 43,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000075",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "RejectApplication",
+      "mutant_id": "m000076",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "RejectApplication",
+      "mutant_id": "m000077",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "RejectApplication",
+      "mutant_id": "m000078",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "RejectApplication",
+      "mutant_id": "m000079",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 55,
+      "function": "RejectApplication",
+      "mutant_id": "m000080",
+      "operator": "ER",
+      "original_expression": "StateType.DocumentReview",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 55
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "UploadDocuments",
+      "mutant_id": "m000081",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "UploadDocuments",
+      "mutant_id": "m000082",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "UploadDocuments",
+      "mutant_id": "m000083",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "UploadDocuments",
+      "mutant_id": "m000084",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 67,
+      "function": "UploadDocuments",
+      "mutant_id": "m000085",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 67
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000086",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000087",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000088",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000089",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000090",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 83
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000091",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000092",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000093",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000094",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 94,
+      "function": "AcceptSharingRequest",
+      "mutant_id": "m000095",
+      "operator": "ER",
+      "original_expression": "StateType.SharingWithThirdParty",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 94
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000096",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000097",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000098",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000099",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 105,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000100",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 105
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000101",
+      "operator": "ER",
+      "original_expression": "StateType.SharingRequestPending",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000102",
+      "operator": "ER",
+      "original_expression": "StateType.SharingRequestPending",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000103",
+      "operator": "ER",
+      "original_expression": "StateType.SharingRequestPending",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000104",
+      "operator": "ER",
+      "original_expression": "StateType.SharingRequestPending",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 117,
+      "function": "RequestLockerAccess",
+      "mutant_id": "m000105",
+      "operator": "ER",
+      "original_expression": "StateType.SharingRequestPending",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 117
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000106",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000107",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000108",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000109",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 131,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000110",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 131
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000111",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000112",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000113",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000114",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 142,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000115",
+      "operator": "ER",
+      "original_expression": "StateType.AvailableToShare",
+      "replacement_expression": "StateType.Terminated",
+      "start_line": 142
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "Terminate",
+      "mutant_id": "m000116",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.Requested",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "Terminate",
+      "mutant_id": "m000117",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.DocumentReview",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "Terminate",
+      "mutant_id": "m000118",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.AvailableToShare",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "Terminate",
+      "mutant_id": "m000119",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.SharingRequestPending",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 152,
+      "function": "Terminate",
+      "mutant_id": "m000120",
+      "operator": "ER",
+      "original_expression": "StateType.Terminated",
+      "replacement_expression": "StateType.SharingWithThirdParty",
+      "start_line": 152
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 42,
+      "function": "BeginReviewProcess",
+      "mutant_id": "m000121",
+      "operator": "SLR",
+      "original_expression": "\"Pending\"",
+      "replacement_expression": "\"\"",
+      "start_line": 42
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "RejectApplication",
+      "mutant_id": "m000122",
+      "operator": "SLR",
+      "original_expression": "\"Rejected\"",
+      "replacement_expression": "\"\"",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 64,
+      "function": "UploadDocuments",
+      "mutant_id": "m000123",
+      "operator": "SLR",
+      "original_expression": "\"Approved\"",
+      "replacement_expression": "\"\"",
+      "start_line": 64
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "ShareWithThirdParty",
+      "mutant_id": "m000124",
+      "operator": "SLR",
+      "original_expression": "\"Shared\"",
+      "replacement_expression": "\"\"",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 103,
+      "function": "RejectSharingRequest",
+      "mutant_id": "m000125",
+      "operator": "SLR",
+      "original_expression": "\"Available\"",
+      "replacement_expression": "\"\"",
+      "start_line": 103
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 127,
+      "function": "ReleaseLockerAccess",
+      "mutant_id": "m000126",
+      "operator": "SLR",
+      "original_expression": "\"Available\"",
+      "replacement_expression": "\"\"",
+      "start_line": 127
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 140,
+      "function": "RevokeAccessFromThirdParty",
+      "mutant_id": "m000127",
+      "operator": "SLR",
+      "original_expression": "\"Available\"",
+      "replacement_expression": "\"\"",
+      "start_line": 140
+    }
+  ],
+  "subject_id": "peer_ccsolbmc__DigitalLocker"
+}

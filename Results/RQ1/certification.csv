@@ -1,0 +1,13 @@
+dataset,certification_source,units,share_of_units_pct,units_carrying_r1_or_r2
+Peer,esbmc-certify,657,36.419068736,546
+Peer,none,15,0.831485588,0
+Peer,structural-abi-gate-no-coordinate,758,42.017738359,657
+Peer,structural-simple-decision,374,20.731707317,335
+Real,esbmc-certify,180,31.088082902,141
+Real,none,25,4.317789292,0
+Real,structural-abi-gate-no-coordinate,294,50.777202073,221
+Real,structural-simple-decision,80,13.816925734,71
+Patch,esbmc-certify,301,38.888888889,262
+Patch,none,42,5.426356589,0
+Patch,structural-abi-gate-no-coordinate,315,40.697674419,272
+Patch,structural-simple-decision,116,14.987080103,108

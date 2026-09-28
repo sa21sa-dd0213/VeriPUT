@@ -1,0 +1,187 @@
+{
+  "contract": "GatewayProvider",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 3,
+    "LF": 6
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "267c495f839113c907e1b7c947654ee80e964a38de3ba1c25aa90433c63202da",
+  "subject_id": "ensdomains__ens-contracts__GatewayProvider",
+  "targets": [
+    {
+      "declaration_line": 145,
+      "external_selector": null,
+      "function_kind": "constructor",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 145,
+        "name": "GatewayProvider.constructor.1",
+        "record": "FN"
+      },
+      "length": 29,
+      "line": 145,
+      "name": "constructor",
+      "site": "body-entry",
+      "src": "2028:29:0",
+      "start": 2028,
+      "trap_id": 1,
+      "visibility": "public"
+    },
+    {
+      "declaration_line": 150,
+      "external_selector": "093a86d3",
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 150,
+        "name": "GatewayProvider.gateways",
+        "record": "FN"
+      },
+      "length": 29,
+      "line": 150,
+      "name": "gateways",
+      "site": "body-entry",
+      "src": "2128:29:0",
+      "start": 2128,
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 156,
+      "external_selector": "27922074",
+      "function_kind": "function",
+      "id": "function:3",
+      "kind": "function",
+      "lcov": {
+        "line": 156,
+        "name": "GatewayProvider.setGateways",
+        "record": "FN"
+      },
+      "length": 29,
+      "line": 156,
+      "name": "setGateways",
+      "site": "body-entry",
+      "src": "2235:29:0",
+      "start": 2235,
+      "trap_id": 3,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 145,
+      "external_selector": null,
+      "id": "line:145",
+      "kind": "line",
+      "lcov": {
+        "line": 145,
+        "record": "DA"
+      },
+      "length": 29,
+      "line": 145,
+      "site": "body-entry",
+      "src": "2028:29:0",
+      "start": 2028,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 4,
+      "visibility": "public"
+    },
+    {
+      "id": "line:146",
+      "kind": "line",
+      "lcov": {
+        "line": 146,
+        "record": "DA"
+      },
+      "length": 12,
+      "line": 146,
+      "site": "statement-entry",
+      "src": "2038:12:0",
+      "start": 2038,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 5
+    },
+    {
+      "declaration_line": 150,
+      "external_selector": "093a86d3",
+      "id": "line:150",
+      "kind": "line",
+      "lcov": {
+        "line": 150,
+        "record": "DA"
+      },
+      "length": 29,
+      "line": 150,
+      "site": "body-entry",
+      "src": "2128:29:0",
+      "start": 2128,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 6,
+      "visibility": "external"
+    },
+    {
+      "id": "line:151",
+      "kind": "line",
+      "lcov": {
+        "line": 151,
+        "record": "DA"
+      },
+      "length": 12,
+      "line": 151,
+      "site": "statement-entry",
+      "src": "2138:12:0",
+      "start": 2138,
+      "statement_type": "Return",
+      "trap_id": 7
+    },
+    {
+      "declaration_line": 156,
+      "external_selector": "27922074",
+      "id": "line:156",
+      "kind": "line",
+      "lcov": {
+        "line": 156,
+        "record": "DA"
+      },
+      "length": 29,
+      "line": 156,
+      "site": "body-entry",
+      "src": "2235:29:0",
+      "start": 2235,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 8,
+      "visibility": "external"
+    },
+    {
+      "id": "line:157",
+      "kind": "line",
+      "lcov": {
+        "line": 157,
+        "record": "DA"
+      },
+      "length": 12,
+      "line": 157,
+      "site": "statement-entry",
+      "src": "2245:12:0",
+      "start": 2245,
+      "statement_type": "ExpressionStatement",
+      "trap_id": 9
+    }
+  ],
+  "totals": {
+    "all": 9,
+    "branch": 0,
+    "function": 3,
+    "line": 6
+  }
+}

@@ -1,0 +1,7 @@
+Compiling `src/flat.sol`... Done! (8.080391071s)
+
+echidna: Failed to parse combined JSON file crytic-export/combined_solc.json
+unable to parse CombinedJSON project JSON: crytic-export/combined_solc.json Contract: "combined_solc"
+Error: Unlinked libraries detected in bytecode of contract <workspace>
+CallStack (from HasCallStack):
+  error, called at lib/Echidna/Solidity.hs:66:9 in echidna-2.3.1-6CyCHfnN6ufCSvmIpLcvnj:Echidna.Solidity

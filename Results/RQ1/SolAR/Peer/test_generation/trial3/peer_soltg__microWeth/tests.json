@@ -1,0 +1,29 @@
+[
+  [
+    {
+      "args": [],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        9
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "withdraw",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "withdraw",
+      "n": 3,
+      "value": 0
+    }
+  ]
+]

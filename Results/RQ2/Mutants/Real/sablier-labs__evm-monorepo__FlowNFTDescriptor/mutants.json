@@ -1,0 +1,567 @@
+{
+  "compile_failed": 16,
+  "compile_ok": 40,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "_encode",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000004",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000005",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000006",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "encode",
+      "mutant_id": "m000014",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "encodeURL",
+      "mutant_id": "m000015",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "_encode",
+      "mutant_id": "m000016",
+      "operator": "CSC",
+      "original_expression": "data.length == 0",
+      "replacement_expression": "true",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "_encode",
+      "mutant_id": "m000017",
+      "operator": "CSC",
+      "original_expression": "data.length == 0",
+      "replacement_expression": "false",
+      "start_line": 108
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 16,
+      "function": "tokenURI",
+      "mutant_id": "m000018",
+      "operator": "DLR",
+      "original_expression": "string memory uri",
+      "replacement_expression": "string storage uri",
+      "start_line": 16
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 50,
+      "function": "tokenURI",
+      "mutant_id": "m000019",
+      "operator": "DLR",
+      "original_expression": "string memory uri",
+      "replacement_expression": "string storage uri",
+      "start_line": 50
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 53,
+      "function": "tokenURI",
+      "mutant_id": "m000020",
+      "operator": "DLR",
+      "original_expression": "string memory svg",
+      "replacement_expression": "string storage svg",
+      "start_line": 53
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 56,
+      "function": "tokenURI",
+      "mutant_id": "m000021",
+      "operator": "DLR",
+      "original_expression": "string memory json",
+      "replacement_expression": "string storage json",
+      "start_line": 56
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 88,
+      "function": "encode",
+      "mutant_id": "m000022",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 88
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 88,
+      "function": "encode",
+      "mutant_id": "m000023",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 88
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "encodeURL",
+      "mutant_id": "m000024",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 96
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 96,
+      "function": "encodeURL",
+      "mutant_id": "m000025",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 96
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 103,
+      "function": "_encode",
+      "mutant_id": "m000026",
+      "operator": "DLR",
+      "original_expression": "bytes memory data",
+      "replacement_expression": "bytes storage data",
+      "start_line": 103
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 103,
+      "function": "_encode",
+      "mutant_id": "m000027",
+      "operator": "DLR",
+      "original_expression": "string memory table",
+      "replacement_expression": "string storage table",
+      "start_line": 103
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 103,
+      "function": "_encode",
+      "mutant_id": "m000028",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 103
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 125,
+      "function": "_encode",
+      "mutant_id": "m000029",
+      "operator": "DLR",
+      "original_expression": "string memory result",
+      "replacement_expression": "string storage result",
+      "start_line": 125
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 363,
+      "function": "name",
+      "mutant_id": "m000030",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 363
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 368,
+      "function": "symbol",
+      "mutant_id": "m000031",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 368
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 373,
+      "function": "tokenURI",
+      "mutant_id": "m000032",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 373
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 108,
+      "function": "_encode",
+      "mutant_id": "m000033",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 108
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000034",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000035",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000036",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000037",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000038",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 123
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 123,
+      "function": "_encode",
+      "mutant_id": "m000039",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 123
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 16,
+      "function": "tokenURI",
+      "mutant_id": "m000040",
+      "operator": "OLFD",
+      "original_expression": "function tokenURI(IERC721Metadata sablierFlow, uint256 streamId) external view returns (string memory uri);",
+      "replacement_expression": "",
+      "start_line": 16
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 269,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000041",
+      "operator": "OLFD",
+      "original_expression": "function safeTransferFrom(address from, address to, uint256 tokenId, bytes calldata data) external;",
+      "replacement_expression": "",
+      "start_line": 269
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 287,
+      "function": "safeTransferFrom",
+      "mutant_id": "m000042",
+      "operator": "OLFD",
+      "original_expression": "function safeTransferFrom(address from, address to, uint256 tokenId) external;",
+      "replacement_expression": "",
+      "start_line": 287
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 373,
+      "function": "tokenURI",
+      "mutant_id": "m000043",
+      "operator": "OLFD",
+      "original_expression": "function tokenURI(uint256 tokenId) external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 373
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 66,
+      "function": "tokenURI",
+      "mutant_id": "m000044",
+      "operator": "ORFD",
+      "original_expression": "function tokenURI(\n        IERC721Metadata, \n        uint256 \n    )\n        external\n        pure\n        override\n        returns (string memory uri)\n    {\n        \n        string memory svg =\n            '<svg width=\"500\" height=\"500\" style=\"background-color: #14161F;\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"20 -400 200 1000\"><path id=\"Logo\" fill=\"#fff\" fill-opacity=\"1\" d=\"m133.559,124.034c-.013,2.412-1.059,4.848-2.923,6.402-2.558,1.819-5.168,3.439-7.888,4.996-14.44,8.262-31.047,12.565-47.674,12.569-8.858.036-17.838-1.272-26.328-3.663-9.806-2.766-19.087-7.113-27.562-12.778-13.842-8.025,9.468-28.606,16.153-35.265h0c2.035-1.838,4.252-3.546,6.463-5.224h0c6.429-5.655,16.218-2.835,20.358,4.17,4.143,5.057,8.816,9.649,13.92,13.734h.037c5.736,6.461,15.357-2.253,9.38-8.48,0,0-3.515-3.515-3.515-3.515-11.49-11.478-52.656-52.664-64.837-64.837l.049-.037c-1.725-1.606-2.719-3.847-2.751-6.204h0c-.046-2.375,1.062-4.582,2.726-6.229h0l.185-.148h0c.099-.062,.222-.148,.37-.259h0c2.06-1.362,3.951-2.621,6.044-3.842C57.763-3.473,97.76-2.341,128.637,18.332c16.671,9.946-26.344,54.813-38.651,40.199-6.299-6.096-18.063-17.743-19.668-18.811-6.016-4.047-13.061,4.776-7.752,9.751l68.254,68.371c1.724,1.601,2.714,3.84,2.738,6.192Z\" transform=\"scale(1.5, 1.5)\" /></svg>';\n\n        string memory json = string.concat(\n            '{\"description\": \"This NFT represents a payment stream in Sablier Flow\",',\n            '\"external_url\": \"https://sablier.com\",',\n            '\"name\": \"Sablier Flow\",',\n            '\"image\": \"data:image/svg+xml;base64,',\n            Base64.encode(bytes(svg)),\n            '\"}'\n        );\n\n        uri = string.concat(\"data:application/json;base64,\", Base64.encode(bytes(json)));\n    }",
+      "replacement_expression": "",
+      "start_line": 43
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 89,
+      "function": "encode",
+      "mutant_id": "m000045",
+      "operator": "RSD",
+      "original_expression": "return _encode(data, _TABLE, true);",
+      "replacement_expression": "_encode(data, _TABLE, true);",
+      "start_line": 89
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "encodeURL",
+      "mutant_id": "m000046",
+      "operator": "RSD",
+      "original_expression": "return _encode(data, _TABLE_URL, false);",
+      "replacement_expression": "_encode(data, _TABLE_URL, false);",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 189,
+      "function": "_encode",
+      "mutant_id": "m000047",
+      "operator": "RSD",
+      "original_expression": "return result;",
+      "replacement_expression": "/* return result; */",
+      "start_line": 189
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 54,
+      "function": "tokenURI",
+      "mutant_id": "m000048",
+      "operator": "SLR",
+      "original_expression": "'<svg width=\"500\" height=\"500\" style=\"background-color: #14161F;\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"20 -400 200 1000\"><path id=\"Logo\" fill=\"#fff\" fill-opacity=\"1\" d=\"m133.559,124.034c-.013,2.412-1.059,4.848-2.923,6.402-2.558,1.819-5.168,3.439-7.888,4.996-14.44,8.262-31.047,12.565-47.674,12.569-8.858.036-17.838-1.272-26.328-3.663-9.806-2.766-19.087-7.113-27.562-12.778-13.842-8.025,9.468-28.606,16.153-35.265h0c2.035-1.838,4.252-3.546,6.463-5.224h0c6.429-5.655,16.218-2.835,20.358,4.17,4.143,5.057,8.816,9.649,13.92,13.734h.037c5.736,6.461,15.357-2.253,9.38-8.48,0,0-3.515-3.515-3.515-3.515-11.49-11.478-52.656-52.664-64.837-64.837l.049-.037c-1.725-1.606-2.719-3.847-2.751-6.204h0c-.046-2.375,1.062-4.582,2.726-6.229h0l.185-.148h0c.099-.062,.222-.148,.37-.259h0c2.06-1.362,3.951-2.621,6.044-3.842C57.763-3.473,97.76-2.341,128.637,18.332c16.671,9.946-26.344,54.813-38.651,40.199-6.299-6.096-18.063-17.743-19.668-18.811-6.016-4.047-13.061,4.776-7.752,9.751l68.254,68.371c1.724,1.601,2.714,3.84,2.738,6.192Z\" transform=\"scale(1.5, 1.5)\" /></svg>'",
+      "replacement_expression": "\"\"",
+      "start_line": 54
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 57,
+      "function": "tokenURI",
+      "mutant_id": "m000049",
+      "operator": "SLR",
+      "original_expression": "'{\"description\": \"This NFT represents a payment stream in Sablier Flow\",'",
+      "replacement_expression": "\"\"",
+      "start_line": 57
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 58,
+      "function": "tokenURI",
+      "mutant_id": "m000050",
+      "operator": "SLR",
+      "original_expression": "'\"external_url\": \"https://sablier.com\",'",
+      "replacement_expression": "\"\"",
+      "start_line": 58
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 59,
+      "function": "tokenURI",
+      "mutant_id": "m000051",
+      "operator": "SLR",
+      "original_expression": "'\"name\": \"Sablier Flow\",'",
+      "replacement_expression": "\"\"",
+      "start_line": 59
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 60,
+      "function": "tokenURI",
+      "mutant_id": "m000052",
+      "operator": "SLR",
+      "original_expression": "'\"image\": \"data:image/svg+xml;base64,'",
+      "replacement_expression": "\"\"",
+      "start_line": 60
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 62,
+      "function": "tokenURI",
+      "mutant_id": "m000053",
+      "operator": "SLR",
+      "original_expression": "'\"}'",
+      "replacement_expression": "\"\"",
+      "start_line": 62
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 65,
+      "function": "tokenURI",
+      "mutant_id": "m000054",
+      "operator": "SLR",
+      "original_expression": "\"data:application/json;base64,\"",
+      "replacement_expression": "\"\"",
+      "start_line": 65
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "stateVariable",
+      "mutant_id": "m000055",
+      "operator": "SLR",
+      "original_expression": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\"",
+      "replacement_expression": "\"\"",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 83,
+      "function": "stateVariable",
+      "mutant_id": "m000056",
+      "operator": "SLR",
+      "original_expression": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_\"",
+      "replacement_expression": "\"\"",
+      "start_line": 83
+    }
+  ],
+  "subject_id": "sablier-labs__evm-monorepo__FlowNFTDescriptor"
+}

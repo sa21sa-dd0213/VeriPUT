@@ -1,0 +1,96 @@
+{
+  "contract": "TLDPublicSuffixList",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 3
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "5487536680d4a79600e98fac56c6edf755909eac62150286c62964067f6197df",
+  "subject_id": "ensdomains__ens-contracts__TLDPublicSuffixList",
+  "targets": [
+    {
+      "declaration_line": 15,
+      "external_selector": "4f89059e",
+      "function_kind": "function",
+      "id": "function:1",
+      "kind": "function",
+      "lcov": {
+        "line": 15,
+        "name": "TLDPublicSuffixList.isPublicSuffix",
+        "record": "FN"
+      },
+      "length": 119,
+      "line": 17,
+      "name": "isPublicSuffix",
+      "site": "body-entry",
+      "src": "303:119:0",
+      "start": 303,
+      "trap_id": 1,
+      "visibility": "external"
+    },
+    {
+      "declaration_line": 15,
+      "external_selector": "4f89059e",
+      "id": "line:15",
+      "kind": "line",
+      "lcov": {
+        "line": 15,
+        "record": "DA"
+      },
+      "length": 119,
+      "line": 17,
+      "site": "body-entry",
+      "src": "303:119:0",
+      "start": 303,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "external"
+    },
+    {
+      "id": "line:18",
+      "kind": "line",
+      "lcov": {
+        "line": 18,
+        "record": "DA"
+      },
+      "length": 36,
+      "line": 18,
+      "site": "statement-entry",
+      "src": "313:36:0",
+      "start": 313,
+      "statement_type": "VariableDeclarationStatement",
+      "trap_id": 3
+    },
+    {
+      "id": "line:19",
+      "kind": "line",
+      "lcov": {
+        "line": 19,
+        "record": "DA"
+      },
+      "length": 56,
+      "line": 19,
+      "site": "statement-entry",
+      "src": "359:56:0",
+      "start": 359,
+      "statement_type": "Return",
+      "trap_id": 4
+    }
+  ],
+  "totals": {
+    "all": 4,
+    "branch": 0,
+    "function": 1,
+    "line": 3
+  }
+}

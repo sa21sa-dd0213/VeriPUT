@@ -1,0 +1,287 @@
+{
+  "compile_failed": 8,
+  "compile_ok": 20,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000001",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000002",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000003",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000004",
+      "operator": "CSC",
+      "original_expression": "IEVault(msg.sender).asset() != caller()",
+      "replacement_expression": "true",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000005",
+      "operator": "CSC",
+      "original_expression": "IEVault(msg.sender).asset() != caller()",
+      "replacement_expression": "false",
+      "start_line": 33
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 100,
+      "function": "name",
+      "mutant_id": "m000006",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 100
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 104,
+      "function": "symbol",
+      "mutant_id": "m000007",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 104
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 401,
+      "function": "accountLiquidityFull",
+      "mutant_id": "m000008",
+      "operator": "DLR",
+      "original_expression": "address[] memory collaterals",
+      "replacement_expression": "address[] storage collaterals",
+      "start_line": 401
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 401,
+      "function": "accountLiquidityFull",
+      "mutant_id": "m000009",
+      "operator": "DLR",
+      "original_expression": "uint256[] memory collateralValues",
+      "replacement_expression": "uint256[] storage collateralValues",
+      "start_line": 401
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 513,
+      "function": "LTVList",
+      "mutant_id": "m000010",
+      "operator": "DLR",
+      "original_expression": "address[] memory",
+      "replacement_expression": "address[] storage",
+      "start_line": 513
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 33,
+      "function": "deposit",
+      "mutant_id": "m000011",
+      "operator": "EHD",
+      "original_expression": "revert E_OnlyAssetCanDeposit();",
+      "replacement_expression": "/* revert E_OnlyAssetCanDeposit(); */",
+      "start_line": 33
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 38,
+      "function": "fallback",
+      "mutant_id": "m000012",
+      "operator": "EHD",
+      "original_expression": "revert E_OperationDisabled();",
+      "replacement_expression": "/* revert E_OperationDisabled(); */",
+      "start_line": 38
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 14,
+      "function": "isHookTarget",
+      "mutant_id": "m000013",
+      "operator": "OLFD",
+      "original_expression": "function isHookTarget() external view returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 14
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 34,
+      "function": "deposit",
+      "mutant_id": "m000014",
+      "operator": "OLFD",
+      "original_expression": "function deposit(uint256, address) external view {\n        if (IEVault(msg.sender).asset() != caller()) revert E_OnlyAssetCanDeposit();\n    }",
+      "replacement_expression": "",
+      "start_line": 32
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 61,
+      "function": "disableController",
+      "mutant_id": "m000015",
+      "operator": "OLFD",
+      "original_expression": "function disableController() external;",
+      "replacement_expression": "",
+      "start_line": 61
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 73,
+      "function": "checkAccountStatus",
+      "mutant_id": "m000016",
+      "operator": "OLFD",
+      "original_expression": "function checkAccountStatus(\n        address account,\n        address[] calldata collaterals\n    ) external view returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 70
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 80,
+      "function": "checkVaultStatus",
+      "mutant_id": "m000017",
+      "operator": "OLFD",
+      "original_expression": "function checkVaultStatus() external returns (bytes4 magicValue);",
+      "replacement_expression": "",
+      "start_line": 80
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 222,
+      "function": "deposit",
+      "mutant_id": "m000018",
+      "operator": "OLFD",
+      "original_expression": "function deposit(uint256 amount, address receiver) external returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 404,
+      "function": "disableController",
+      "mutant_id": "m000019",
+      "operator": "OLFD",
+      "original_expression": "function disableController() external;",
+      "replacement_expression": "",
+      "start_line": 404
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 411,
+      "function": "checkAccountStatus",
+      "mutant_id": "m000020",
+      "operator": "OLFD",
+      "original_expression": "function checkAccountStatus(address account, address[] calldata collaterals) external view returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 411
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 417,
+      "function": "checkVaultStatus",
+      "mutant_id": "m000021",
+      "operator": "OLFD",
+      "original_expression": "function checkVaultStatus() external returns (bytes4);",
+      "replacement_expression": "",
+      "start_line": 417
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 29,
+      "function": "isHookTarget",
+      "mutant_id": "m000022",
+      "operator": "ORFD",
+      "original_expression": "function isHookTarget() external pure override returns (bytes4) {\n        return this.isHookTarget.selector;\n    }",
+      "replacement_expression": "",
+      "start_line": 27
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 28,
+      "function": "isHookTarget",
+      "mutant_id": "m000023",
+      "operator": "RSD",
+      "original_expression": "return this.isHookTarget.selector;",
+      "replacement_expression": "/* return this.isHookTarget.selector; */",
+      "start_line": 28
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 328,
+      "function": "repayWithShares",
+      "mutant_id": "m000024",
+      "operator": "RVS",
+      "original_expression": "uint256 shares, uint256 debt",
+      "replacement_expression": "uint256 debt, uint256 shares",
+      "start_line": 328
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 362,
+      "function": "checkLiquidation",
+      "mutant_id": "m000025",
+      "operator": "RVS",
+      "original_expression": "uint256 maxRepay, uint256 maxYield",
+      "replacement_expression": "uint256 maxYield, uint256 maxRepay",
+      "start_line": 362
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 388,
+      "function": "accountLiquidity",
+      "mutant_id": "m000026",
+      "operator": "RVS",
+      "original_expression": "uint256 collateralValue, uint256 liabilityValue",
+      "replacement_expression": "uint256 liabilityValue, uint256 collateralValue",
+      "start_line": 388
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 477,
+      "function": "caps",
+      "mutant_id": "m000027",
+      "operator": "RVS",
+      "original_expression": "uint16 supplyCap, uint16 borrowCap",
+      "replacement_expression": "uint16 borrowCap, uint16 supplyCap",
+      "start_line": 477
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 507,
+      "function": "LTVFull",
+      "mutant_id": "m000028",
+      "operator": "RVS",
+      "original_expression": "uint16 borrowLTV,\n            uint16 liquidationLTV,\n            uint16 initialLiquidationLTV,\n            uint48 targetTimestamp,\n            uint32 rampDuration",
+      "replacement_expression": "uint32 rampDuration,\n            uint16 borrowLTV,\n            uint16 liquidationLTV,\n            uint16 initialLiquidationLTV,\n            uint48 targetTimestamp",
+      "start_line": 503
+    }
+  ],
+  "subject_id": "euler-xyz__euler-vault-kit__HookTargetSynth"
+}

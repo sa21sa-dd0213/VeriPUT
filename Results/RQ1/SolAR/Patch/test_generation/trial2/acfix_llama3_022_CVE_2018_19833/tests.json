@@ -1,0 +1,163 @@
+[
+  [
+    {
+      "args": [
+        0,
+        "RDwnKz UcOuViyTGNRzgTofkOqXPxNJiQnSAfK fE tFsrYDNPFAhzsHroSqJvEEtLGlkdOPHlLzVrHPECHWlhWeZIwnbYCHykBNai",
+        "ZAjheVQSkWavhoat LuqLZfmeGlGzxwE fGvdTRuTcXZrppOyxTbMafiUKKq"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00028",
+        10
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "transfer",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        49081622329491490127670886963242383532313593787663796725509987991646251120505,
+        "qcGquiXdme AJflAsmAtrZrczOr WWrobaQcGpnVOhhGkmPvGrAMyXt BIdi",
+        "cPTncskgRQbDl "
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00020",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        10
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "mintToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        103688881465579919448330028358320846695483062752755791206713065454576155428424,
+        "mKEqKIKUaYQlDdxlnztXTQZJtkncKZiVbiCcZtIBysRESUvkAvXTOWRCzPPotzMjViV",
+        "WeMfDrn"
+      ],
+      "frm": "anonymous_hex_00026",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "owned",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        10
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "mintToken",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "cmhgavHajUPXKOKxfmaGtyjPSAkjWZtgVhdtbQtaSXSQYKzyLHFVhxQgukFgTdSsrYACvjFfOUDmytrX dhmPriMCmqAhk tD hodJlAvmvmJSKlIxDWfdeqfYOJBtCmanASEQLD ryWXxgCQpCCgxyrukmcHDNxSPXJbNJLwWNmOhDPvGfhxBYjRdHLHlIKetO XiVVEbcVKKexDb dTJaolWmXpNds",
+        "fQnMgWNaydZjeFFqUtZMtViwjVVFTBSNTmtx"
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00027",
+        true
+      ],
+      "frm": "anonymous_hex_00027",
+      "method": "freezeAccount",
+      "n": 2,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00020",
+        true
+      ],
+      "frm": "anonymous_hex_00028",
+      "method": "freezeAccount",
+      "n": 3,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "RDwnKz UcOuViyTGNRzgTofkOqXPxNJiQnSAfK fE tFsrYDNPFAhzsHroSqJvEEtLGlkdOPHlLzVrHPECHWlhWeZIwnbYCHykBNai",
+        "ZAjheVQSkWavhoat LuqLZfmeGlGzxwE fGvdTRuTcXZrppOyxTbMafiUKKq"
+      ],
+      "frm": "anonymous_hex_00017",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        0
+      ],
+      "frm": "anonymous_hex_00025",
+      "method": "burn",
+      "n": 2,
+      "value": 0
+    }
+  ],
+  [
+    {
+      "args": [
+        0,
+        "WKztUqEbT HrqZSkDoRSug EHBqSEGDnrqVcpdmtczDpHnzBTRQZotroVAgdfHkQQOtFUetjjYPuxxTKQxoVOT ZyRzjbaqTWrtCdoRscoTSnKTADDSrjpaDWMYkMv yIzUBsAsULVsSNrCESePvCzJmMqfjeskGqAJMXxSPqdSProjnVqgkRqojSmIIJvZyCUBjeupZUzwhxEeKYPUTwyRlDnuSdAJzmseSjhE",
+        "ZljrMQeoLyaRbLWRTaubNOyCpzVgIVbplSkWgFHINyCtZxQfIYo mlBJfitkfmaWzjwZYxJvHwjTwjHSwbBwlrMfirkCkxTCrlHsrXelQM FExySZ"
+      ],
+      "frm": "anonymous_hex_00021",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        "anonymous_hex_00017",
+        10
+      ],
+      "frm": "anonymous_hex_00020",
+      "method": "mintToken",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

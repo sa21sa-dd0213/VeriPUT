@@ -1,0 +1,66 @@
+{
+  "contract": "ConfiguratorProxy",
+  "dataset": "Real",
+  "definition": {
+    "branch": "Foundry LCOV BRDA row mapped to a target-contract branch trap",
+    "function": "Foundry LCOV FN row mapped to a target-contract callable body",
+    "line": "Foundry LCOV DA row mapped to a target-contract executable statement",
+    "oracle": "pinned forge coverage --report lcov --exclude-tests"
+  },
+  "denominator_source": "foundry-lcov",
+  "foundry_lcov_target_totals": {
+    "BRF": 0,
+    "FNF": 1,
+    "LF": 1
+  },
+  "offset_encoding": "utf-8-byte-v1",
+  "schema": "veriput-eval/coverage-targets/v8",
+  "source_sha256": "9a262f4a7c3d39abb43b197838fab0fd007fcf1ddbe290302a2d581ea0140455",
+  "subject_id": "compound-finance__comet__ConfiguratorProxy",
+  "targets": [
+    {
+      "declaration_line": 437,
+      "external_selector": null,
+      "function_kind": "function",
+      "id": "function:2",
+      "kind": "function",
+      "lcov": {
+        "line": 437,
+        "name": "ConfiguratorProxy._beforeFallback.2",
+        "record": "FN"
+      },
+      "length": 2,
+      "line": 437,
+      "name": "_beforeFallback",
+      "site": "body-entry",
+      "src": "7003:2:0",
+      "start": 7003,
+      "trap_id": 1,
+      "visibility": "internal"
+    },
+    {
+      "declaration_line": 437,
+      "external_selector": null,
+      "id": "line:437",
+      "kind": "line",
+      "lcov": {
+        "line": 437,
+        "record": "DA"
+      },
+      "length": 2,
+      "line": 437,
+      "site": "body-entry",
+      "src": "7003:2:0",
+      "start": 7003,
+      "statement_type": "FunctionDefinition",
+      "trap_id": 2,
+      "visibility": "internal"
+    }
+  ],
+  "totals": {
+    "all": 2,
+    "branch": 0,
+    "function": 1,
+    "line": 1
+  }
+}

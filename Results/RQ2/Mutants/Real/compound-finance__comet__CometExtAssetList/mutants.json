@@ -1,0 +1,3217 @@
+{
+  "compile_failed": 59,
+  "compile_ok": 262,
+  "mutants": [
+    {
+      "compile_status": "ok",
+      "end_line": 598,
+      "function": "constructor",
+      "mutant_id": "m000001",
+      "operator": "AVR",
+      "original_expression": "assetListFactoryAddress",
+      "replacement_expression": "address(this)",
+      "start_line": 598
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 598,
+      "function": "constructor",
+      "mutant_id": "m000002",
+      "operator": "AVR",
+      "original_expression": "assetListFactoryAddress",
+      "replacement_expression": "address(0)",
+      "start_line": 598
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 450,
+      "function": "name",
+      "mutant_id": "m000003",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "continue",
+      "start_line": 450
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 450,
+      "function": "name",
+      "mutant_id": "m000004",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "",
+      "start_line": 450
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 470,
+      "function": "symbol",
+      "mutant_id": "m000005",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "continue",
+      "start_line": 470
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 470,
+      "function": "symbol",
+      "mutant_id": "m000006",
+      "operator": "BCRD",
+      "original_expression": "break",
+      "replacement_expression": "",
+      "start_line": 470
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "safe64",
+      "mutant_id": "m000007",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "safe64",
+      "mutant_id": "m000008",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "safe104",
+      "mutant_id": "m000009",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "safe104",
+      "mutant_id": "m000010",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "safe128",
+      "mutant_id": "m000011",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "safe128",
+      "mutant_id": "m000012",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000013",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000014",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000015",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000016",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000017",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000018",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000019",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000020",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "toBool",
+      "mutant_id": "m000021",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 238,
+      "function": "stateVariable",
+      "mutant_id": "m000022",
+      "operator": "BOR",
+      "original_expression": " ** ",
+      "replacement_expression": " * ",
+      "start_line": 238
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "hasPermission",
+      "mutant_id": "m000023",
+      "operator": "BOR",
+      "original_expression": " || ",
+      "replacement_expression": " && ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "hasPermission",
+      "mutant_id": "m000024",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000025",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000026",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000027",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000028",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000029",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000030",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000031",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000032",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 282
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000033",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 282
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000034",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 282
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000035",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 282
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000036",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000037",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000038",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 301,
+      "function": "principalValueSupply",
+      "mutant_id": "m000039",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 301
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 301,
+      "function": "principalValueSupply",
+      "mutant_id": "m000040",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 301
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 301,
+      "function": "principalValueSupply",
+      "mutant_id": "m000041",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 301
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 301,
+      "function": "principalValueSupply",
+      "mutant_id": "m000042",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 301
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000043",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " + ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000044",
+      "operator": "BOR",
+      "original_expression": " / ",
+      "replacement_expression": " - ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000045",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " + ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000046",
+      "operator": "BOR",
+      "original_expression": " - ",
+      "replacement_expression": " / ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000047",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " - ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000048",
+      "operator": "BOR",
+      "original_expression": " + ",
+      "replacement_expression": " * ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000049",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " + ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000050",
+      "operator": "BOR",
+      "original_expression": " * ",
+      "replacement_expression": " ** ",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000051",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000052",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "name",
+      "mutant_id": "m000053",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "name",
+      "mutant_id": "m000054",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "name",
+      "mutant_id": "m000055",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000056",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000057",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 469,
+      "function": "symbol",
+      "mutant_id": "m000058",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 469
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "symbol",
+      "mutant_id": "m000059",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " > ",
+      "start_line": 475
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "symbol",
+      "mutant_id": "m000060",
+      "operator": "BOR",
+      "original_expression": " < ",
+      "replacement_expression": " <= ",
+      "start_line": 475
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "approve",
+      "mutant_id": "m000061",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " <= ",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "approve",
+      "mutant_id": "m000062",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " >= ",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "approve",
+      "mutant_id": "m000063",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "approve",
+      "mutant_id": "m000064",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000065",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " < ",
+      "start_line": 570
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000066",
+      "operator": "BOR",
+      "original_expression": " > ",
+      "replacement_expression": " >=  ",
+      "start_line": 570
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000067",
+      "operator": "BOR",
+      "original_expression": " && ",
+      "replacement_expression": " || ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000068",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000069",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000070",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000071",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000072",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000073",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 577,
+      "function": "allowBySig",
+      "mutant_id": "m000074",
+      "operator": "BOR",
+      "original_expression": " == ",
+      "replacement_expression": " != ",
+      "start_line": 577
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 578,
+      "function": "allowBySig",
+      "mutant_id": "m000075",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 578
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000076",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " <= ",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000077",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " >= ",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000078",
+      "operator": "BOR",
+      "original_expression": " != ",
+      "replacement_expression": " == ",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000079",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": "  > ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000080",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " <= ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000081",
+      "operator": "BOR",
+      "original_expression": " >= ",
+      "replacement_expression": " == ",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 511,
+      "function": "approve",
+      "mutant_id": "m000082",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 511
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 513,
+      "function": "approve",
+      "mutant_id": "m000083",
+      "operator": "BLR",
+      "original_expression": "false",
+      "replacement_expression": "true",
+      "start_line": 513
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "approve",
+      "mutant_id": "m000084",
+      "operator": "BLR",
+      "original_expression": "true",
+      "replacement_expression": "false",
+      "start_line": 517
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 414,
+      "function": "constructor",
+      "mutant_id": "m000085",
+      "operator": "CCD",
+      "original_expression": "constructor(ExtConfiguration memory config) {\n        name32 = config.name32;\n        symbol32 = config.symbol32;\n    }",
+      "replacement_expression": "",
+      "start_line": 411
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 599,
+      "function": "constructor",
+      "mutant_id": "m000086",
+      "operator": "CCD",
+      "original_expression": "constructor(ExtConfiguration memory config, address assetListFactoryAddress) CometExt(config) {\n        assetListFactory = assetListFactoryAddress;\n    }",
+      "replacement_expression": "",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "safe64",
+      "mutant_id": "m000087",
+      "operator": "CSC",
+      "original_expression": "n > type(uint64).max",
+      "replacement_expression": "true",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "safe64",
+      "mutant_id": "m000088",
+      "operator": "CSC",
+      "original_expression": "n > type(uint64).max",
+      "replacement_expression": "false",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "safe104",
+      "mutant_id": "m000089",
+      "operator": "CSC",
+      "original_expression": "n > type(uint104).max",
+      "replacement_expression": "true",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "safe104",
+      "mutant_id": "m000090",
+      "operator": "CSC",
+      "original_expression": "n > type(uint104).max",
+      "replacement_expression": "false",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "safe128",
+      "mutant_id": "m000091",
+      "operator": "CSC",
+      "original_expression": "n > type(uint128).max",
+      "replacement_expression": "true",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "safe128",
+      "mutant_id": "m000092",
+      "operator": "CSC",
+      "original_expression": "n > type(uint128).max",
+      "replacement_expression": "false",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000093",
+      "operator": "CSC",
+      "original_expression": "n > uint104(type(int104).max)",
+      "replacement_expression": "true",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000094",
+      "operator": "CSC",
+      "original_expression": "n > uint104(type(int104).max)",
+      "replacement_expression": "false",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000095",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "true",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000096",
+      "operator": "CSC",
+      "original_expression": "n > uint256(type(int256).max)",
+      "replacement_expression": "false",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000097",
+      "operator": "CSC",
+      "original_expression": "n < 0",
+      "replacement_expression": "true",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000098",
+      "operator": "CSC",
+      "original_expression": "n < 0",
+      "replacement_expression": "false",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000099",
+      "operator": "CSC",
+      "original_expression": "n < 0",
+      "replacement_expression": "true",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000100",
+      "operator": "CSC",
+      "original_expression": "n < 0",
+      "replacement_expression": "false",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000101",
+      "operator": "CSC",
+      "original_expression": "principalValue_ >= 0",
+      "replacement_expression": "true",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000102",
+      "operator": "CSC",
+      "original_expression": "principalValue_ >= 0",
+      "replacement_expression": "false",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 268,
+      "function": "presentValue",
+      "mutant_id": "m000103",
+      "operator": "CSC",
+      "original_expression": "else {\n            return -signed256(presentValueBorrow(baseBorrowIndex, uint104(-principalValue_)));\n        }",
+      "replacement_expression": "",
+      "start_line": 266
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000104",
+      "operator": "CSC",
+      "original_expression": "presentValue_ >= 0",
+      "replacement_expression": "true",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000105",
+      "operator": "CSC",
+      "original_expression": "presentValue_ >= 0",
+      "replacement_expression": "false",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 293,
+      "function": "principalValue",
+      "mutant_id": "m000106",
+      "operator": "CSC",
+      "original_expression": "else {\n            return -signed104(principalValueBorrow(baseBorrowIndex, uint256(-presentValue_)));\n        }",
+      "replacement_expression": "",
+      "start_line": 291
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "name",
+      "mutant_id": "m000107",
+      "operator": "CSC",
+      "original_expression": "name32[i] == 0",
+      "replacement_expression": "true",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 449,
+      "function": "name",
+      "mutant_id": "m000108",
+      "operator": "CSC",
+      "original_expression": "name32[i] == 0",
+      "replacement_expression": "false",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 469,
+      "function": "symbol",
+      "mutant_id": "m000109",
+      "operator": "CSC",
+      "original_expression": "symbol32[i] == 0",
+      "replacement_expression": "true",
+      "start_line": 469
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 469,
+      "function": "symbol",
+      "mutant_id": "m000110",
+      "operator": "CSC",
+      "original_expression": "symbol32[i] == 0",
+      "replacement_expression": "false",
+      "start_line": 469
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "approve",
+      "mutant_id": "m000111",
+      "operator": "CSC",
+      "original_expression": "amount == type(uint256).max",
+      "replacement_expression": "true",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 510,
+      "function": "approve",
+      "mutant_id": "m000112",
+      "operator": "CSC",
+      "original_expression": "amount == type(uint256).max",
+      "replacement_expression": "false",
+      "start_line": 510
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "approve",
+      "mutant_id": "m000113",
+      "operator": "CSC",
+      "original_expression": "amount == 0",
+      "replacement_expression": "true",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "approve",
+      "mutant_id": "m000114",
+      "operator": "CSC",
+      "original_expression": "amount == 0",
+      "replacement_expression": "false",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 516,
+      "function": "approve",
+      "mutant_id": "m000115",
+      "operator": "CSC",
+      "original_expression": "else {\n            revert BadAmount();\n        }",
+      "replacement_expression": "",
+      "start_line": 514
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000116",
+      "operator": "CSC",
+      "original_expression": "uint256(s) > MAX_VALID_ECDSA_S",
+      "replacement_expression": "true",
+      "start_line": 570
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000117",
+      "operator": "CSC",
+      "original_expression": "uint256(s) > MAX_VALID_ECDSA_S",
+      "replacement_expression": "false",
+      "start_line": 570
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000118",
+      "operator": "CSC",
+      "original_expression": "v != 27 && v != 28",
+      "replacement_expression": "true",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000119",
+      "operator": "CSC",
+      "original_expression": "v != 27 && v != 28",
+      "replacement_expression": "false",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 577,
+      "function": "allowBySig",
+      "mutant_id": "m000120",
+      "operator": "CSC",
+      "original_expression": "signatory == address(0)",
+      "replacement_expression": "true",
+      "start_line": 577
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 577,
+      "function": "allowBySig",
+      "mutant_id": "m000121",
+      "operator": "CSC",
+      "original_expression": "signatory == address(0)",
+      "replacement_expression": "false",
+      "start_line": 577
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 578,
+      "function": "allowBySig",
+      "mutant_id": "m000122",
+      "operator": "CSC",
+      "original_expression": "owner != signatory",
+      "replacement_expression": "true",
+      "start_line": 578
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 578,
+      "function": "allowBySig",
+      "mutant_id": "m000123",
+      "operator": "CSC",
+      "original_expression": "owner != signatory",
+      "replacement_expression": "false",
+      "start_line": 578
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000124",
+      "operator": "CSC",
+      "original_expression": "nonce != userNonce[signatory]++",
+      "replacement_expression": "true",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000125",
+      "operator": "CSC",
+      "original_expression": "nonce != userNonce[signatory]++",
+      "replacement_expression": "false",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000126",
+      "operator": "CSC",
+      "original_expression": "block.timestamp >= expiry",
+      "replacement_expression": "true",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000127",
+      "operator": "CSC",
+      "original_expression": "block.timestamp >= expiry",
+      "replacement_expression": "false",
+      "start_line": 580
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 341,
+      "function": "totalsBasic",
+      "mutant_id": "m000128",
+      "operator": "DLR",
+      "original_expression": "TotalsBasic memory",
+      "replacement_expression": "TotalsBasic storage",
+      "start_line": 341
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 343,
+      "function": "version",
+      "mutant_id": "m000129",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 343
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 355,
+      "function": "name",
+      "mutant_id": "m000130",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 355
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 356,
+      "function": "symbol",
+      "mutant_id": "m000131",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 356
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 411,
+      "function": "constructor",
+      "mutant_id": "m000132",
+      "operator": "DLR",
+      "original_expression": "ExtConfiguration memory config",
+      "replacement_expression": "ExtConfiguration storage config",
+      "start_line": 411
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 427,
+      "function": "totalsBasic",
+      "mutant_id": "m000133",
+      "operator": "DLR",
+      "original_expression": "TotalsBasic memory",
+      "replacement_expression": "TotalsBasic storage",
+      "start_line": 427
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 446,
+      "function": "name",
+      "mutant_id": "m000134",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 446
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 454,
+      "function": "name",
+      "mutant_id": "m000135",
+      "operator": "DLR",
+      "original_expression": "bytes memory name_",
+      "replacement_expression": "bytes storage name_",
+      "start_line": 454
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 466,
+      "function": "symbol",
+      "mutant_id": "m000136",
+      "operator": "DLR",
+      "original_expression": "string memory",
+      "replacement_expression": "string storage",
+      "start_line": 466
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 474,
+      "function": "symbol",
+      "mutant_id": "m000137",
+      "operator": "DLR",
+      "original_expression": "bytes memory symbol_",
+      "replacement_expression": "bytes storage symbol_",
+      "start_line": 474
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 597,
+      "function": "constructor",
+      "mutant_id": "m000138",
+      "operator": "DLR",
+      "original_expression": "ExtConfiguration memory config",
+      "replacement_expression": "ExtConfiguration storage config",
+      "start_line": 597
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "allowInternal",
+      "mutant_id": "m000139",
+      "operator": "EED",
+      "original_expression": "emit Approval(owner, manager, isAllowed_ ? type(uint256).max : 0);",
+      "replacement_expression": "/* emit Approval(owner, manager, isAllowed_ ? type(uint256).max : 0); */",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "safe64",
+      "mutant_id": "m000140",
+      "operator": "ECS",
+      "original_expression": "uint64(n)",
+      "replacement_expression": "uint56(n)",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "safe104",
+      "mutant_id": "m000141",
+      "operator": "ECS",
+      "original_expression": "uint104(n)",
+      "replacement_expression": "uint96(n)",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "safe128",
+      "mutant_id": "m000142",
+      "operator": "ECS",
+      "original_expression": "uint128(n)",
+      "replacement_expression": "uint120(n)",
+      "start_line": 82
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000143",
+      "operator": "ECS",
+      "original_expression": "uint104(type(int104).max)",
+      "replacement_expression": "uint96(type(int104).max)",
+      "start_line": 86
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 87,
+      "function": "signed104",
+      "mutant_id": "m000144",
+      "operator": "ECS",
+      "original_expression": "int104(n)",
+      "replacement_expression": "int96(n)",
+      "start_line": 87
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000145",
+      "operator": "ECS",
+      "original_expression": "uint256(type(int256).max)",
+      "replacement_expression": "uint248(type(int256).max)",
+      "start_line": 91
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 92,
+      "function": "signed256",
+      "mutant_id": "m000146",
+      "operator": "ECS",
+      "original_expression": "int256(n)",
+      "replacement_expression": "int248(n)",
+      "start_line": 92
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 97,
+      "function": "unsigned104",
+      "mutant_id": "m000147",
+      "operator": "ECS",
+      "original_expression": "uint104(n)",
+      "replacement_expression": "uint96(n)",
+      "start_line": 97
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 102,
+      "function": "unsigned256",
+      "mutant_id": "m000148",
+      "operator": "ECS",
+      "original_expression": "uint256(n)",
+      "replacement_expression": "uint248(n)",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 238,
+      "function": "stateVariable",
+      "mutant_id": "m000149",
+      "operator": "ECS",
+      "original_expression": "uint64(10 ** PRICE_FEED_DECIMALS)",
+      "replacement_expression": "uint56(10 ** PRICE_FEED_DECIMALS)",
+      "start_line": 238
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "stateVariable",
+      "mutant_id": "m000150",
+      "operator": "ECS",
+      "original_expression": "bytes32(keccak256(\"comet.reentrancy.guard\"))",
+      "replacement_expression": "bytes31(keccak256(\"comet.reentrancy.guard\"))",
+      "start_line": 244
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 265,
+      "function": "presentValue",
+      "mutant_id": "m000151",
+      "operator": "ECS",
+      "original_expression": "uint104(principalValue_)",
+      "replacement_expression": "uint96(principalValue_)",
+      "start_line": 265
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 267,
+      "function": "presentValue",
+      "mutant_id": "m000152",
+      "operator": "ECS",
+      "original_expression": "uint104(-principalValue_)",
+      "replacement_expression": "uint96(-principalValue_)",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000153",
+      "operator": "ECS",
+      "original_expression": "uint256(principalValue_)",
+      "replacement_expression": "uint248(principalValue_)",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000154",
+      "operator": "ECS",
+      "original_expression": "uint256(principalValue_)",
+      "replacement_expression": "uint248(principalValue_)",
+      "start_line": 282
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 290,
+      "function": "principalValue",
+      "mutant_id": "m000155",
+      "operator": "ECS",
+      "original_expression": "uint256(presentValue_)",
+      "replacement_expression": "uint248(presentValue_)",
+      "start_line": 290
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 292,
+      "function": "principalValue",
+      "mutant_id": "m000156",
+      "operator": "ECS",
+      "original_expression": "uint256(-presentValue_)",
+      "replacement_expression": "uint248(-presentValue_)",
+      "start_line": 292
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000157",
+      "operator": "ECS",
+      "original_expression": "uint256(s)",
+      "replacement_expression": "uint248(s)",
+      "start_line": 570
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 71,
+      "function": "safe64",
+      "mutant_id": "m000158",
+      "operator": "EHD",
+      "original_expression": "revert InvalidUInt64();",
+      "replacement_expression": "/* revert InvalidUInt64(); */",
+      "start_line": 71
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 76,
+      "function": "safe104",
+      "mutant_id": "m000159",
+      "operator": "EHD",
+      "original_expression": "revert InvalidUInt104();",
+      "replacement_expression": "/* revert InvalidUInt104(); */",
+      "start_line": 76
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 81,
+      "function": "safe128",
+      "mutant_id": "m000160",
+      "operator": "EHD",
+      "original_expression": "revert InvalidUInt128();",
+      "replacement_expression": "/* revert InvalidUInt128(); */",
+      "start_line": 81
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 86,
+      "function": "signed104",
+      "mutant_id": "m000161",
+      "operator": "EHD",
+      "original_expression": "revert InvalidInt104();",
+      "replacement_expression": "/* revert InvalidInt104(); */",
+      "start_line": 86
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 91,
+      "function": "signed256",
+      "mutant_id": "m000162",
+      "operator": "EHD",
+      "original_expression": "revert InvalidInt256();",
+      "replacement_expression": "/* revert InvalidInt256(); */",
+      "start_line": 91
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000163",
+      "operator": "EHD",
+      "original_expression": "revert NegativeNumber();",
+      "replacement_expression": "/* revert NegativeNumber(); */",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000164",
+      "operator": "EHD",
+      "original_expression": "revert NegativeNumber();",
+      "replacement_expression": "/* revert NegativeNumber(); */",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 515,
+      "function": "approve",
+      "mutant_id": "m000165",
+      "operator": "EHD",
+      "original_expression": "revert BadAmount();",
+      "replacement_expression": "/* revert BadAmount(); */",
+      "start_line": 515
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 570,
+      "function": "allowBySig",
+      "mutant_id": "m000166",
+      "operator": "EHD",
+      "original_expression": "revert InvalidValueS();",
+      "replacement_expression": "/* revert InvalidValueS(); */",
+      "start_line": 570
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000167",
+      "operator": "EHD",
+      "original_expression": "revert InvalidValueV();",
+      "replacement_expression": "/* revert InvalidValueV(); */",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 577,
+      "function": "allowBySig",
+      "mutant_id": "m000168",
+      "operator": "EHD",
+      "original_expression": "revert BadSignatory();",
+      "replacement_expression": "/* revert BadSignatory(); */",
+      "start_line": 577
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 578,
+      "function": "allowBySig",
+      "mutant_id": "m000169",
+      "operator": "EHD",
+      "original_expression": "revert BadSignatory();",
+      "replacement_expression": "/* revert BadSignatory(); */",
+      "start_line": 578
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000170",
+      "operator": "EHD",
+      "original_expression": "revert BadNonce();",
+      "replacement_expression": "/* revert BadNonce(); */",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000171",
+      "operator": "EHD",
+      "original_expression": "revert SignatureExpired();",
+      "replacement_expression": "/* revert SignatureExpired(); */",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 511,
+      "function": "approve",
+      "mutant_id": "m000172",
+      "operator": "FCD",
+      "original_expression": "allowInternal(msg.sender, spender, true);",
+      "replacement_expression": "/*allowInternal(msg.sender, spender, true);*/",
+      "start_line": 511
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 513,
+      "function": "approve",
+      "mutant_id": "m000173",
+      "operator": "FCD",
+      "original_expression": "allowInternal(msg.sender, spender, false);",
+      "replacement_expression": "/*allowInternal(msg.sender, spender, false);*/",
+      "start_line": 513
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 538,
+      "function": "allow",
+      "mutant_id": "m000174",
+      "operator": "FCD",
+      "original_expression": "allowInternal(msg.sender, manager, isAllowed_);",
+      "replacement_expression": "/*allowInternal(msg.sender, manager, isAllowed_);*/",
+      "start_line": 538
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 581,
+      "function": "allowBySig",
+      "mutant_id": "m000175",
+      "operator": "FCD",
+      "original_expression": "allowInternal(signatory, manager, isAllowed_);",
+      "replacement_expression": "/*allowInternal(signatory, manager, isAllowed_);*/",
+      "start_line": 581
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "allowBySig",
+      "mutant_id": "m000176",
+      "operator": "GVR",
+      "original_expression": "block.chainid",
+      "replacement_expression": "block.chainid-1",
+      "start_line": 573
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 580,
+      "function": "allowBySig",
+      "mutant_id": "m000177",
+      "operator": "GVR",
+      "original_expression": "block.timestamp",
+      "replacement_expression": "block.prevrandao",
+      "start_line": 580
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 96,
+      "function": "unsigned104",
+      "mutant_id": "m000178",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 96
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 101,
+      "function": "unsigned256",
+      "mutant_id": "m000179",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 101
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "toUInt8",
+      "mutant_id": "m000180",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "toUInt8",
+      "mutant_id": "m000181",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "toUInt8",
+      "mutant_id": "m000182",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "toBool",
+      "mutant_id": "m000183",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "stateVariable",
+      "mutant_id": "m000184",
+      "operator": "ILR",
+      "original_expression": "15",
+      "replacement_expression": "14",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 209,
+      "function": "stateVariable",
+      "mutant_id": "m000185",
+      "operator": "ILR",
+      "original_expression": "15",
+      "replacement_expression": "16",
+      "start_line": 209
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "stateVariable",
+      "mutant_id": "m000186",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "17",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 213,
+      "function": "stateVariable",
+      "mutant_id": "m000187",
+      "operator": "ILR",
+      "original_expression": "18",
+      "replacement_expression": "19",
+      "start_line": 213
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 219,
+      "function": "stateVariable",
+      "mutant_id": "m000188",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 219
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "stateVariable",
+      "mutant_id": "m000189",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 220
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 220,
+      "function": "stateVariable",
+      "mutant_id": "m000190",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 220
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 221,
+      "function": "stateVariable",
+      "mutant_id": "m000191",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "1",
+      "start_line": 221
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 221,
+      "function": "stateVariable",
+      "mutant_id": "m000192",
+      "operator": "ILR",
+      "original_expression": "2",
+      "replacement_expression": "3",
+      "start_line": 221
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 222,
+      "function": "stateVariable",
+      "mutant_id": "m000193",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "2",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 222,
+      "function": "stateVariable",
+      "mutant_id": "m000194",
+      "operator": "ILR",
+      "original_expression": "3",
+      "replacement_expression": "4",
+      "start_line": 222
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 223,
+      "function": "stateVariable",
+      "mutant_id": "m000195",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "3",
+      "start_line": 223
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 223,
+      "function": "stateVariable",
+      "mutant_id": "m000196",
+      "operator": "ILR",
+      "original_expression": "4",
+      "replacement_expression": "5",
+      "start_line": 223
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 226,
+      "function": "stateVariable",
+      "mutant_id": "m000197",
+      "operator": "ILR",
+      "original_expression": "8",
+      "replacement_expression": "7",
+      "start_line": 226
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 226,
+      "function": "stateVariable",
+      "mutant_id": "m000198",
+      "operator": "ILR",
+      "original_expression": "8",
+      "replacement_expression": "9",
+      "start_line": 226
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "stateVariable",
+      "mutant_id": "m000199",
+      "operator": "ILR",
+      "original_expression": "1e6",
+      "replacement_expression": "999999",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 232,
+      "function": "stateVariable",
+      "mutant_id": "m000200",
+      "operator": "ILR",
+      "original_expression": "1e6",
+      "replacement_expression": "1000001",
+      "start_line": 232
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 235,
+      "function": "stateVariable",
+      "mutant_id": "m000201",
+      "operator": "ILR",
+      "original_expression": "1e15",
+      "replacement_expression": "999999999999999",
+      "start_line": 235
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 235,
+      "function": "stateVariable",
+      "mutant_id": "m000202",
+      "operator": "ILR",
+      "original_expression": "1e15",
+      "replacement_expression": "1000000000000001",
+      "start_line": 235
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 238,
+      "function": "stateVariable",
+      "mutant_id": "m000203",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "9",
+      "start_line": 238
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 238,
+      "function": "stateVariable",
+      "mutant_id": "m000204",
+      "operator": "ILR",
+      "original_expression": "10",
+      "replacement_expression": "11",
+      "start_line": 238
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 241,
+      "function": "stateVariable",
+      "mutant_id": "m000205",
+      "operator": "ILR",
+      "original_expression": "1e18",
+      "replacement_expression": "undefined",
+      "start_line": 241
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 247,
+      "function": "stateVariable",
+      "mutant_id": "m000206",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 247
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "stateVariable",
+      "mutant_id": "m000207",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 248,
+      "function": "stateVariable",
+      "mutant_id": "m000208",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 248
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 264,
+      "function": "presentValue",
+      "mutant_id": "m000209",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 264
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 289,
+      "function": "principalValue",
+      "mutant_id": "m000210",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 289
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000211",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "0",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000212",
+      "operator": "ILR",
+      "original_expression": "1",
+      "replacement_expression": "2",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000213",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000214",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000215",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 448
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 449,
+      "function": "name",
+      "mutant_id": "m000216",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 449
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "name",
+      "mutant_id": "m000217",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000218",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000219",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "31",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000220",
+      "operator": "ILR",
+      "original_expression": "32",
+      "replacement_expression": "33",
+      "start_line": 468
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 469,
+      "function": "symbol",
+      "mutant_id": "m000221",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 469
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "symbol",
+      "mutant_id": "m000222",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 475
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 512,
+      "function": "approve",
+      "mutant_id": "m000223",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 512
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 529,
+      "function": "allowance",
+      "mutant_id": "m000224",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 529
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 546,
+      "function": "allowInternal",
+      "mutant_id": "m000225",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 546
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000226",
+      "operator": "ILR",
+      "original_expression": "27",
+      "replacement_expression": "26",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000227",
+      "operator": "ILR",
+      "original_expression": "27",
+      "replacement_expression": "28",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000228",
+      "operator": "ILR",
+      "original_expression": "28",
+      "replacement_expression": "27",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 572,
+      "function": "allowBySig",
+      "mutant_id": "m000229",
+      "operator": "ILR",
+      "original_expression": "28",
+      "replacement_expression": "29",
+      "start_line": 572
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 577,
+      "function": "allowBySig",
+      "mutant_id": "m000230",
+      "operator": "ILR",
+      "original_expression": "0",
+      "replacement_expression": "1",
+      "start_line": 577
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 601,
+      "function": "stateVariable",
+      "mutant_id": "m000231",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "23",
+      "start_line": 601
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 601,
+      "function": "stateVariable",
+      "mutant_id": "m000232",
+      "operator": "ILR",
+      "original_expression": "24",
+      "replacement_expression": "25",
+      "start_line": 601
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 448,
+      "function": "name",
+      "mutant_id": "m000233",
+      "operator": "LSC",
+      "original_expression": "i < 32",
+      "replacement_expression": "false",
+      "start_line": 448
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 455,
+      "function": "name",
+      "mutant_id": "m000234",
+      "operator": "LSC",
+      "original_expression": "j < i",
+      "replacement_expression": "false",
+      "start_line": 455
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 468,
+      "function": "symbol",
+      "mutant_id": "m000235",
+      "operator": "LSC",
+      "original_expression": "i < 32",
+      "replacement_expression": "false",
+      "start_line": 468
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 475,
+      "function": "symbol",
+      "mutant_id": "m000236",
+      "operator": "LSC",
+      "original_expression": "j < i",
+      "replacement_expression": "false",
+      "start_line": 475
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 244,
+      "function": "stateVariable",
+      "mutant_id": "m000237",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 244
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 390,
+      "function": "stateVariable",
+      "mutant_id": "m000238",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 390
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 393,
+      "function": "stateVariable",
+      "mutant_id": "m000239",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 393
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "allowBySig",
+      "mutant_id": "m000240",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "allowBySig",
+      "mutant_id": "m000241",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 573,
+      "function": "allowBySig",
+      "mutant_id": "m000242",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 574,
+      "function": "allowBySig",
+      "mutant_id": "m000243",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 574
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 575,
+      "function": "allowBySig",
+      "mutant_id": "m000244",
+      "operator": "MCR",
+      "original_expression": "keccak256",
+      "replacement_expression": "sha256",
+      "start_line": 575
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 597,
+      "function": "constructor",
+      "mutant_id": "m000245",
+      "operator": "MOD",
+      "original_expression": "constructor(ExtConfiguration memory config, address assetListFactoryAddress) CometExt(config) ",
+      "replacement_expression": "constructor(ExtConfiguration memory config, address assetListFactoryAddress)  ",
+      "start_line": 597
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 328,
+      "function": "allow",
+      "mutant_id": "m000246",
+      "operator": "OLFD",
+      "original_expression": "function allow(address manager, bool isAllowed) virtual external;",
+      "replacement_expression": "",
+      "start_line": 328
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 329,
+      "function": "allowBySig",
+      "mutant_id": "m000247",
+      "operator": "OLFD",
+      "original_expression": "function allowBySig(address owner, address manager, bool isAllowed, uint256 nonce, uint256 expiry, uint8 v, bytes32 r, bytes32 s) virtual external;",
+      "replacement_expression": "",
+      "start_line": 329
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 331,
+      "function": "collateralBalanceOf",
+      "mutant_id": "m000248",
+      "operator": "OLFD",
+      "original_expression": "function collateralBalanceOf(address account, address asset) virtual external view returns (uint128);",
+      "replacement_expression": "",
+      "start_line": 331
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 332,
+      "function": "baseTrackingAccrued",
+      "mutant_id": "m000249",
+      "operator": "OLFD",
+      "original_expression": "function baseTrackingAccrued(address account) virtual external view returns (uint64);",
+      "replacement_expression": "",
+      "start_line": 332
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 334,
+      "function": "baseAccrualScale",
+      "mutant_id": "m000250",
+      "operator": "OLFD",
+      "original_expression": "function baseAccrualScale() virtual external view returns (uint64);",
+      "replacement_expression": "",
+      "start_line": 334
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 335,
+      "function": "baseIndexScale",
+      "mutant_id": "m000251",
+      "operator": "OLFD",
+      "original_expression": "function baseIndexScale() virtual external view returns (uint64);",
+      "replacement_expression": "",
+      "start_line": 335
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 336,
+      "function": "factorScale",
+      "mutant_id": "m000252",
+      "operator": "OLFD",
+      "original_expression": "function factorScale() virtual external view returns (uint64);",
+      "replacement_expression": "",
+      "start_line": 336
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 337,
+      "function": "priceScale",
+      "mutant_id": "m000253",
+      "operator": "OLFD",
+      "original_expression": "function priceScale() virtual external view returns (uint64);",
+      "replacement_expression": "",
+      "start_line": 337
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 339,
+      "function": "maxAssets",
+      "mutant_id": "m000254",
+      "operator": "OLFD",
+      "original_expression": "function maxAssets() virtual external view returns (uint8);",
+      "replacement_expression": "",
+      "start_line": 339
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 341,
+      "function": "totalsBasic",
+      "mutant_id": "m000255",
+      "operator": "OLFD",
+      "original_expression": "function totalsBasic() virtual external view returns (TotalsBasic memory);",
+      "replacement_expression": "",
+      "start_line": 341
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 355,
+      "function": "name",
+      "mutant_id": "m000256",
+      "operator": "OLFD",
+      "original_expression": "function name() virtual external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 355
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 356,
+      "function": "symbol",
+      "mutant_id": "m000257",
+      "operator": "OLFD",
+      "original_expression": "function symbol() virtual external view returns (string memory);",
+      "replacement_expression": "",
+      "start_line": 356
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 366,
+      "function": "approve",
+      "mutant_id": "m000258",
+      "operator": "OLFD",
+      "original_expression": "function approve(address spender, uint256 amount) virtual external returns (bool);",
+      "replacement_expression": "",
+      "start_line": 366
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 374,
+      "function": "allowance",
+      "mutant_id": "m000259",
+      "operator": "OLFD",
+      "original_expression": "function allowance(address owner, address spender) virtual external view returns (uint256);",
+      "replacement_expression": "",
+      "start_line": 374
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 418,
+      "function": "baseAccrualScale",
+      "mutant_id": "m000260",
+      "operator": "ORFD",
+      "original_expression": "function baseAccrualScale() override external pure returns (uint64) { return BASE_ACCRUAL_SCALE; }",
+      "replacement_expression": "",
+      "start_line": 418
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 419,
+      "function": "baseIndexScale",
+      "mutant_id": "m000261",
+      "operator": "ORFD",
+      "original_expression": "function baseIndexScale() override external pure returns (uint64) { return BASE_INDEX_SCALE; }",
+      "replacement_expression": "",
+      "start_line": 419
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 420,
+      "function": "factorScale",
+      "mutant_id": "m000262",
+      "operator": "ORFD",
+      "original_expression": "function factorScale() override external pure returns (uint64) { return FACTOR_SCALE; }",
+      "replacement_expression": "",
+      "start_line": 420
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 421,
+      "function": "priceScale",
+      "mutant_id": "m000263",
+      "operator": "ORFD",
+      "original_expression": "function priceScale() override external pure returns (uint64) { return PRICE_SCALE; }",
+      "replacement_expression": "",
+      "start_line": 421
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 422,
+      "function": "maxAssets",
+      "mutant_id": "m000264",
+      "operator": "ORFD",
+      "original_expression": "function maxAssets() override virtual external pure returns (uint8) { return MAX_ASSETS; }",
+      "replacement_expression": "",
+      "start_line": 422
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 438,
+      "function": "totalsBasic",
+      "mutant_id": "m000265",
+      "operator": "ORFD",
+      "original_expression": "function totalsBasic() public override view returns (TotalsBasic memory) {\n        return TotalsBasic({\n            baseSupplyIndex: baseSupplyIndex,\n            baseBorrowIndex: baseBorrowIndex,\n            trackingSupplyIndex: trackingSupplyIndex,\n            trackingBorrowIndex: trackingBorrowIndex,\n            totalSupplyBase: totalSupplyBase,\n            totalBorrowBase: totalBorrowBase,\n            lastAccrualTime: lastAccrualTime,\n            pauseFlags: pauseFlags\n        });\n    }",
+      "replacement_expression": "",
+      "start_line": 427
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 460,
+      "function": "name",
+      "mutant_id": "m000266",
+      "operator": "ORFD",
+      "original_expression": "function name() override public view returns (string memory) {\n        uint8 i;\n        for (i = 0; i < 32; ) {\n            if (name32[i] == 0) {\n                break;\n            }\n            unchecked { i++; }\n        }\n        bytes memory name_ = new bytes(i);\n        for (uint8 j = 0; j < i; ) {\n            name_[j] = name32[j];\n            unchecked { j++; }\n        }\n        return string(name_);\n    }",
+      "replacement_expression": "",
+      "start_line": 446
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 480,
+      "function": "symbol",
+      "mutant_id": "m000267",
+      "operator": "ORFD",
+      "original_expression": "function symbol() override external view returns (string memory) {\n        uint8 i;\n        for (i = 0; i < 32; ) {\n            if (symbol32[i] == 0) {\n                break;\n            }\n            unchecked { i++; }\n        }\n        bytes memory symbol_ = new bytes(i);\n        for (uint8 j = 0; j < i; ) {\n            symbol_[j] = symbol32[j];\n            unchecked { j++; }\n        }\n        return string(symbol_);\n    }",
+      "replacement_expression": "",
+      "start_line": 466
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 490,
+      "function": "collateralBalanceOf",
+      "mutant_id": "m000268",
+      "operator": "ORFD",
+      "original_expression": "function collateralBalanceOf(address account, address asset) override external view returns (uint128) {\n        return userCollateral[account][asset].balance;\n    }",
+      "replacement_expression": "",
+      "start_line": 488
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 499,
+      "function": "baseTrackingAccrued",
+      "mutant_id": "m000269",
+      "operator": "ORFD",
+      "original_expression": "function baseTrackingAccrued(address account) override external view returns (uint64) {\n        return userBasic[account].baseTrackingAccrued;\n    }",
+      "replacement_expression": "",
+      "start_line": 497
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 518,
+      "function": "approve",
+      "mutant_id": "m000270",
+      "operator": "ORFD",
+      "original_expression": "function approve(address spender, uint256 amount) override external returns (bool) {\n        if (amount == type(uint256).max) {\n            allowInternal(msg.sender, spender, true);\n        } else if (amount == 0) {\n            allowInternal(msg.sender, spender, false);\n        } else {\n            revert BadAmount();\n        }\n        return true;\n    }",
+      "replacement_expression": "",
+      "start_line": 509
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 530,
+      "function": "allowance",
+      "mutant_id": "m000271",
+      "operator": "ORFD",
+      "original_expression": "function allowance(address owner, address spender) override external view returns (uint256) {\n        return hasPermission(owner, spender) ? type(uint256).max : 0;\n    }",
+      "replacement_expression": "",
+      "start_line": 528
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 539,
+      "function": "allow",
+      "mutant_id": "m000272",
+      "operator": "ORFD",
+      "original_expression": "function allow(address manager, bool isAllowed_) override external {\n        allowInternal(msg.sender, manager, isAllowed_);\n    }",
+      "replacement_expression": "",
+      "start_line": 537
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 582,
+      "function": "allowBySig",
+      "mutant_id": "m000273",
+      "operator": "ORFD",
+      "original_expression": "function allowBySig(\n        address owner,\n        address manager,\n        bool isAllowed_,\n        uint256 nonce,\n        uint256 expiry,\n        uint8 v,\n        bytes32 r,\n        bytes32 s\n    ) override external {\n        if (uint256(s) > MAX_VALID_ECDSA_S) revert InvalidValueS();\n        \n        if (v != 27 && v != 28) revert InvalidValueV();\n        bytes32 domainSeparator = keccak256(abi.encode(DOMAIN_TYPEHASH, keccak256(bytes(name())), keccak256(bytes(version)), block.chainid, address(this)));\n        bytes32 structHash = keccak256(abi.encode(AUTHORIZATION_TYPEHASH, owner, manager, isAllowed_, nonce, expiry));\n        bytes32 digest = keccak256(abi.encodePacked(\"\\x19\\x01\", domainSeparator, structHash));\n        address signatory = ecrecover(digest, v, r, s);\n        if (signatory == address(0)) revert BadSignatory();\n        if (owner != signatory) revert BadSignatory();\n        if (nonce != userNonce[signatory]++) revert BadNonce();\n        if (block.timestamp >= expiry) revert SignatureExpired();\n        allowInternal(signatory, manager, isAllowed_);\n    }",
+      "replacement_expression": "",
+      "start_line": 560
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "maxAssets",
+      "mutant_id": "m000274",
+      "operator": "ORFD",
+      "original_expression": "function maxAssets() override external pure returns (uint8) { return MAX_ASSETS_FOR_ASSET_LIST; }",
+      "replacement_expression": "",
+      "start_line": 603
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 72,
+      "function": "safe64",
+      "mutant_id": "m000275",
+      "operator": "RSD",
+      "original_expression": "return uint64(n);",
+      "replacement_expression": "uint64(n);",
+      "start_line": 72
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 77,
+      "function": "safe104",
+      "mutant_id": "m000276",
+      "operator": "RSD",
+      "original_expression": "return uint104(n);",
+      "replacement_expression": "uint104(n);",
+      "start_line": 77
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 82,
+      "function": "safe128",
+      "mutant_id": "m000277",
+      "operator": "RSD",
+      "original_expression": "return uint128(n);",
+      "replacement_expression": "uint128(n);",
+      "start_line": 82
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 87,
+      "function": "signed104",
+      "mutant_id": "m000278",
+      "operator": "RSD",
+      "original_expression": "return int104(n);",
+      "replacement_expression": "int104(n);",
+      "start_line": 87
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 92,
+      "function": "signed256",
+      "mutant_id": "m000279",
+      "operator": "RSD",
+      "original_expression": "return int256(n);",
+      "replacement_expression": "int256(n);",
+      "start_line": 92
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 97,
+      "function": "unsigned104",
+      "mutant_id": "m000280",
+      "operator": "RSD",
+      "original_expression": "return uint104(n);",
+      "replacement_expression": "uint104(n);",
+      "start_line": 97
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 102,
+      "function": "unsigned256",
+      "mutant_id": "m000281",
+      "operator": "RSD",
+      "original_expression": "return uint256(n);",
+      "replacement_expression": "uint256(n);",
+      "start_line": 102
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 106,
+      "function": "toUInt8",
+      "mutant_id": "m000282",
+      "operator": "RSD",
+      "original_expression": "return x ? 1 : 0;",
+      "replacement_expression": "/* return x ? 1 : 0; */",
+      "start_line": 106
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 110,
+      "function": "toBool",
+      "mutant_id": "m000283",
+      "operator": "RSD",
+      "original_expression": "return x != 0;",
+      "replacement_expression": "/* return x != 0; */",
+      "start_line": 110
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 257,
+      "function": "hasPermission",
+      "mutant_id": "m000284",
+      "operator": "RSD",
+      "original_expression": "return owner == manager || isAllowed[owner][manager];",
+      "replacement_expression": "/* return owner == manager || isAllowed[owner][manager]; */",
+      "start_line": 257
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 265,
+      "function": "presentValue",
+      "mutant_id": "m000285",
+      "operator": "RSD",
+      "original_expression": "return signed256(presentValueSupply(baseSupplyIndex, uint104(principalValue_)));",
+      "replacement_expression": "signed256(presentValueSupply(baseSupplyIndex, uint104(principalValue_)));",
+      "start_line": 265
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "presentValue",
+      "mutant_id": "m000286",
+      "operator": "RSD",
+      "original_expression": "return -signed256(presentValueBorrow(baseBorrowIndex, uint104(-principalValue_)));",
+      "replacement_expression": "/* return -signed256(presentValueBorrow(baseBorrowIndex, uint104(-principalValue_))); */",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 275,
+      "function": "presentValueSupply",
+      "mutant_id": "m000287",
+      "operator": "RSD",
+      "original_expression": "return uint256(principalValue_) * baseSupplyIndex_ / BASE_INDEX_SCALE;",
+      "replacement_expression": "/* return uint256(principalValue_) * baseSupplyIndex_ / BASE_INDEX_SCALE; */",
+      "start_line": 275
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 282,
+      "function": "presentValueBorrow",
+      "mutant_id": "m000288",
+      "operator": "RSD",
+      "original_expression": "return uint256(principalValue_) * baseBorrowIndex_ / BASE_INDEX_SCALE;",
+      "replacement_expression": "/* return uint256(principalValue_) * baseBorrowIndex_ / BASE_INDEX_SCALE; */",
+      "start_line": 282
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 290,
+      "function": "principalValue",
+      "mutant_id": "m000289",
+      "operator": "RSD",
+      "original_expression": "return signed104(principalValueSupply(baseSupplyIndex, uint256(presentValue_)));",
+      "replacement_expression": "signed104(principalValueSupply(baseSupplyIndex, uint256(presentValue_)));",
+      "start_line": 290
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 292,
+      "function": "principalValue",
+      "mutant_id": "m000290",
+      "operator": "RSD",
+      "original_expression": "return -signed104(principalValueBorrow(baseBorrowIndex, uint256(-presentValue_)));",
+      "replacement_expression": "/* return -signed104(principalValueBorrow(baseBorrowIndex, uint256(-presentValue_))); */",
+      "start_line": 292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 301,
+      "function": "principalValueSupply",
+      "mutant_id": "m000291",
+      "operator": "RSD",
+      "original_expression": "return safe104((presentValue_ * BASE_INDEX_SCALE) / baseSupplyIndex_);",
+      "replacement_expression": "safe104((presentValue_ * BASE_INDEX_SCALE) / baseSupplyIndex_);",
+      "start_line": 301
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 309,
+      "function": "principalValueBorrow",
+      "mutant_id": "m000292",
+      "operator": "RSD",
+      "original_expression": "return safe104((presentValue_ * BASE_INDEX_SCALE + baseBorrowIndex_ - 1) / baseBorrowIndex_);",
+      "replacement_expression": "safe104((presentValue_ * BASE_INDEX_SCALE + baseBorrowIndex_ - 1) / baseBorrowIndex_);",
+      "start_line": 309
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 418,
+      "function": "baseAccrualScale",
+      "mutant_id": "m000293",
+      "operator": "RSD",
+      "original_expression": "return BASE_ACCRUAL_SCALE;",
+      "replacement_expression": "/* return BASE_ACCRUAL_SCALE; */",
+      "start_line": 418
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 419,
+      "function": "baseIndexScale",
+      "mutant_id": "m000294",
+      "operator": "RSD",
+      "original_expression": "return BASE_INDEX_SCALE;",
+      "replacement_expression": "/* return BASE_INDEX_SCALE; */",
+      "start_line": 419
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 420,
+      "function": "factorScale",
+      "mutant_id": "m000295",
+      "operator": "RSD",
+      "original_expression": "return FACTOR_SCALE;",
+      "replacement_expression": "/* return FACTOR_SCALE; */",
+      "start_line": 420
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 421,
+      "function": "priceScale",
+      "mutant_id": "m000296",
+      "operator": "RSD",
+      "original_expression": "return PRICE_SCALE;",
+      "replacement_expression": "/* return PRICE_SCALE; */",
+      "start_line": 421
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 422,
+      "function": "maxAssets",
+      "mutant_id": "m000297",
+      "operator": "RSD",
+      "original_expression": "return MAX_ASSETS;",
+      "replacement_expression": "/* return MAX_ASSETS; */",
+      "start_line": 422
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 437,
+      "function": "totalsBasic",
+      "mutant_id": "m000298",
+      "operator": "RSD",
+      "original_expression": "return TotalsBasic({\n            baseSupplyIndex: baseSupplyIndex,\n            baseBorrowIndex: baseBorrowIndex,\n            trackingSupplyIndex: trackingSupplyIndex,\n            trackingBorrowIndex: trackingBorrowIndex,\n            totalSupplyBase: totalSupplyBase,\n            totalBorrowBase: totalBorrowBase,\n            lastAccrualTime: lastAccrualTime,\n            pauseFlags: pauseFlags\n        });",
+      "replacement_expression": "TotalsBasic({\n            baseSupplyIndex: baseSupplyIndex,\n            baseBorrowIndex: baseBorrowIndex,\n            trackingSupplyIndex: trackingSupplyIndex,\n            trackingBorrowIndex: trackingBorrowIndex,\n            totalSupplyBase: totalSupplyBase,\n            totalBorrowBase: totalBorrowBase,\n            lastAccrualTime: lastAccrualTime,\n            pauseFlags: pauseFlags\n        });",
+      "start_line": 428
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 459,
+      "function": "name",
+      "mutant_id": "m000299",
+      "operator": "RSD",
+      "original_expression": "return string(name_);",
+      "replacement_expression": "string(name_);",
+      "start_line": 459
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 479,
+      "function": "symbol",
+      "mutant_id": "m000300",
+      "operator": "RSD",
+      "original_expression": "return string(symbol_);",
+      "replacement_expression": "string(symbol_);",
+      "start_line": 479
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 489,
+      "function": "collateralBalanceOf",
+      "mutant_id": "m000301",
+      "operator": "RSD",
+      "original_expression": "return userCollateral[account][asset].balance;",
+      "replacement_expression": "/* return userCollateral[account][asset].balance; */",
+      "start_line": 489
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 498,
+      "function": "baseTrackingAccrued",
+      "mutant_id": "m000302",
+      "operator": "RSD",
+      "original_expression": "return userBasic[account].baseTrackingAccrued;",
+      "replacement_expression": "/* return userBasic[account].baseTrackingAccrued; */",
+      "start_line": 498
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 517,
+      "function": "approve",
+      "mutant_id": "m000303",
+      "operator": "RSD",
+      "original_expression": "return true;",
+      "replacement_expression": "/* return true; */",
+      "start_line": 517
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 529,
+      "function": "allowance",
+      "mutant_id": "m000304",
+      "operator": "RSD",
+      "original_expression": "return hasPermission(owner, spender) ? type(uint256).max : 0;",
+      "replacement_expression": "/* return hasPermission(owner, spender) ? type(uint256).max : 0; */",
+      "start_line": 529
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 603,
+      "function": "maxAssets",
+      "mutant_id": "m000305",
+      "operator": "RSD",
+      "original_expression": "return MAX_ASSETS_FOR_ASSET_LIST;",
+      "replacement_expression": "/* return MAX_ASSETS_FOR_ASSET_LIST; */",
+      "start_line": 603
+    },
+    {
+      "compile_status": "failed",
+      "end_line": 573,
+      "function": "allowBySig",
+      "mutant_id": "m000306",
+      "operator": "SKID",
+      "original_expression": "name",
+      "replacement_expression": "super.name",
+      "start_line": 573
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 385,
+      "function": "stateVariable",
+      "mutant_id": "m000307",
+      "operator": "SLR",
+      "original_expression": "\"0\"",
+      "replacement_expression": "\"\"",
+      "start_line": 385
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "presentValue",
+      "mutant_id": "m000308",
+      "operator": "UORD",
+      "original_expression": "-signed256(presentValueBorrow(baseBorrowIndex, uint104(-principalValue_)))",
+      "replacement_expression": " signed256(presentValueBorrow(baseBorrowIndex, uint104(-principalValue_)))",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 267,
+      "function": "presentValue",
+      "mutant_id": "m000309",
+      "operator": "UORD",
+      "original_expression": "-principalValue_",
+      "replacement_expression": " principalValue_",
+      "start_line": 267
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 292,
+      "function": "principalValue",
+      "mutant_id": "m000310",
+      "operator": "UORD",
+      "original_expression": "-signed104(principalValueBorrow(baseBorrowIndex, uint256(-presentValue_)))",
+      "replacement_expression": " signed104(principalValueBorrow(baseBorrowIndex, uint256(-presentValue_)))",
+      "start_line": 292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 292,
+      "function": "principalValue",
+      "mutant_id": "m000311",
+      "operator": "UORD",
+      "original_expression": "-presentValue_",
+      "replacement_expression": " presentValue_",
+      "start_line": 292
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 452,
+      "function": "name",
+      "mutant_id": "m000312",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 452,
+      "function": "name",
+      "mutant_id": "m000313",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 452
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 457,
+      "function": "name",
+      "mutant_id": "m000314",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 457
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 457,
+      "function": "name",
+      "mutant_id": "m000315",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 457
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "symbol",
+      "mutant_id": "m000316",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 472,
+      "function": "symbol",
+      "mutant_id": "m000317",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 472
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 477,
+      "function": "symbol",
+      "mutant_id": "m000318",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": "--",
+      "start_line": 477
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 477,
+      "function": "symbol",
+      "mutant_id": "m000319",
+      "operator": "UORD",
+      "original_expression": "++",
+      "replacement_expression": " ",
+      "start_line": 477
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000320",
+      "operator": "UORD",
+      "original_expression": "serNonce[signatory]++",
+      "replacement_expression": "serNonce[signatory]--",
+      "start_line": 579
+    },
+    {
+      "compile_status": "ok",
+      "end_line": 579,
+      "function": "allowBySig",
+      "mutant_id": "m000321",
+      "operator": "UORD",
+      "original_expression": "serNonce[signatory]++",
+      "replacement_expression": "serNonce[signatory] ",
+      "start_line": 579
+    }
+  ],
+  "subject_id": "compound-finance__comet__CometExtAssetList"
+}

@@ -1,0 +1,5 @@
+Compiling `src/flat.sol`... Done! (1.309585005s)
+Analyzing contract: <workspace>
+Running slither on `src/flat.sol`... Done! (0.641410894s)
+
+echidna: Constructor arguments are required: [("whaleAddress",address),("wagerLimit",uint256)]

@@ -1,0 +1,40 @@
+[
+  [
+    {
+      "args": [
+        "anonymous_hex_00022"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [],
+      "frm": "anonymous_hex_00026",
+      "method": "Deposit",
+      "n": 2,
+      "value": 1000000000000000000
+    }
+  ],
+  [
+    {
+      "args": [
+        "anonymous_hex_00019"
+      ],
+      "frm": "anonymous_hex_00019",
+      "method": "constructor",
+      "n": 1,
+      "value": 0
+    },
+    {
+      "args": [
+        52677533953445421118896979999784211115403703597507195931144997510713534267186
+      ],
+      "frm": "anonymous_hex_00016",
+      "method": "CashOut",
+      "n": 2,
+      "value": 0
+    }
+  ]
+]

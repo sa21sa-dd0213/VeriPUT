@@ -1,0 +1,8 @@
+{
+  "contract": "TrustedIssuersRegistry",
+  "dataset": "Real",
+  "solc": "0.8.35",
+  "solc_bin": "solc",
+  "source_form": "normalized-flat",
+  "subject_id": "ERC-3643__ERC-3643__TrustedIssuersRegistry"
+}
