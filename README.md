@@ -2,8 +2,6 @@
 
 ## Corrections
 
-## Corrections
-
 * In the RQ1 table, `Raw` and `Time` remain the frozen measurements from the first run (3,157 valid units). The `Valid` means use the corrected 3,477-unit corpus: Peer / Real / Patch are `10.60 / 4.35 / 5.44`, not `9.91 / 2.88 / 6.24`.
 * For REAL path coverage, the paired-subject counts for CC-SolBMC / SolTG / SolAR / SynTest / FuzzUtils are `200 / 200 / 201 / 201 / 201`, not `201 / 201 / 202 / 202 / 201`. This miscount also exposes a second problem: the path-coverage bootstrap does not use a fixed denominator. When computing it, we inadvertently excluded the subjects on which a baseline could not run, instead of counting them as zero coverage for that baseline. The reported path-coverage differences between VeriPUT and the baselines are therefore computed over inconsistent subject sets. We will fix this in the next revision by counting every such subject as zero, so that all comparisons share one denominator.
 
